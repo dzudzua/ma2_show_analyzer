@@ -1,0 +1,268 @@
+{
+  "main_sequence_numbers": [
+    "1"
+  ],
+  "main_sequence_count": 1,
+  "cue_count": 2,
+  "patch_fixture_count": 3,
+  "dimmer_value_atom_count": 2,
+  "hard_value_atom_count": 5,
+  "preset_ref_atom_count": 2,
+  "effect_ref_atom_count": 1,
+  "group_ref_atom_count": 1,
+  "sequence_content_rows": [
+    {
+      "sequence_number": "1",
+      "sequence_name": "Intro",
+      "cue_number": "1",
+      "cue_name": "Blackout",
+      "fixture_id": 101,
+      "fixture_name": "Front Left Wash",
+      "fixture_type": "Robe LEDWash 600",
+      "fixture_patch": "1.1",
+      "dimmer": [
+        "D Dimmer=0.00",
+        "P1.5 Dimmer=100.00"
+      ],
+      "position": [],
+      "gobo": [],
+      "color": [],
+      "beam": [],
+      "focus": [],
+      "control": [],
+      "preset_refs": [
+        "1.5"
+      ],
+      "dimmer_value_count": 1,
+      "hard_value_count": 0,
+      "preset_value_count": 1
+    },
+    {
+      "sequence_number": "1",
+      "sequence_name": "Intro",
+      "cue_number": "1",
+      "cue_name": "Blackout",
+      "fixture_id": 102,
+      "fixture_name": "Front Center Wash",
+      "fixture_type": "Robe LEDWash 600",
+      "fixture_patch": "1.17",
+      "dimmer": [],
+      "position": [],
+      "gobo": [],
+      "color": [
+        "P1.5 Color=255.00"
+      ],
+      "beam": [],
+      "focus": [],
+      "control": [],
+      "preset_refs": [
+        "1.5"
+      ],
+      "dimmer_value_count": 0,
+      "hard_value_count": 0,
+      "preset_value_count": 1
+    },
+    {
+      "sequence_number": "1",
+      "sequence_name": "Intro",
+      "cue_number": "1",
+      "cue_name": "Blackout",
+      "fixture_id": 103,
+      "fixture_name": "DS Center Spot",
+      "fixture_type": "Martin MAC Viper",
+      "fixture_patch": "1.33",
+      "dimmer": [],
+      "position": [
+        "P2.7 Position=45.00"
+      ],
+      "gobo": [],
+      "color": [],
+      "beam": [],
+      "focus": [],
+      "control": [],
+      "preset_refs": [
+        "2.7"
+      ],
+      "dimmer_value_count": 0,
+      "hard_value_count": 0,
+      "preset_value_count": 1
+    },
+    {
+      "sequence_number": "1",
+      "sequence_name": "Intro",
+      "cue_number": "2",
+      "cue_name": "Build",
+      "fixture_id": 101,
+      "fixture_name": "Front Left Wash",
+      "fixture_type": "Robe LEDWash 600",
+      "fixture_patch": "1.1",
+      "dimmer": [
+        "D Dimmer=100.00"
+      ],
+      "position": [],
+      "gobo": [],
+      "color": [],
+      "beam": [],
+      "focus": [],
+      "control": [],
+      "preset_refs": [],
+      "dimmer_value_count": 1,
+      "hard_value_count": 0,
+      "preset_value_count": 0
+    },
+    {
+      "sequence_number": "1",
+      "sequence_name": "Intro",
+      "cue_number": "2",
+      "cue_name": "Build",
+      "fixture_id": 102,
+      "fixture_name": "Front Center Wash",
+      "fixture_type": "Robe LEDWash 600",
+      "fixture_patch": "1.17",
+      "dimmer": [],
+      "position": [],
+      "gobo": [],
+      "color": [],
+      "beam": [],
+      "focus": [],
+      "control": [],
+      "preset_refs": [],
+      "dimmer_value_count": 0,
+      "hard_value_count": 0,
+      "preset_value_count": 0
+    },
+    {
+      "sequence_number": "1",
+      "sequence_name": "Intro",
+      "cue_number": "2",
+      "cue_name": "Build",
+      "fixture_id": 103,
+      "fixture_name": "DS Center Spot",
+      "fixture_type": "Martin MAC Viper",
+      "fixture_patch": "1.33",
+      "dimmer": [],
+      "position": [],
+      "gobo": [],
+      "color": [],
+      "beam": [],
+      "focus": [],
+      "control": [],
+      "preset_refs": [],
+      "dimmer_value_count": 0,
+      "hard_value_count": 0,
+      "preset_value_count": 0
+    }
+  ],
+  "cues": [
+    {
+      "sequence_number": "1",
+      "sequence_name": "Intro",
+      "cue_number": "1",
+      "cue_name": "Blackout",
+      "trigger": "go",
+      "trigger_time": null,
+      "fade": "0",
+      "delay": "0",
+      "down_delay": null,
+      "command": "Go Sequence 2 Cue 1",
+      "fixture_ids": [
+        101,
+        102,
+        103
+      ],
+      "fixture_details": [
+        "101 | Front Left Wash | Robe LEDWash 600 | 1.1",
+        "102 | Front Center Wash | Robe LEDWash 600 | 1.17",
+        "103 | DS Center Spot | Martin MAC Viper | 1.33"
+      ],
+      "references": [
+        "preset:1.5",
+        "preset:2.7",
+        "sequence:2"
+      ],
+      "preset_refs": [
+        "preset:1.5",
+        "preset:2.7"
+      ],
+      "effect_refs": [],
+      "group_refs": [],
+      "dimmer_value_count": 1,
+      "hard_value_count": 3,
+      "hard_value_attributes": [
+        "delay",
+        "fade",
+        "text"
+      ],
+      "hard_value_preview": [
+        {
+          "attribute": "fade",
+          "raw_value": "0.00",
+          "fixture_id": null
+        },
+        {
+          "attribute": "delay",
+          "raw_value": "0.00",
+          "fixture_id": null
+        },
+        {
+          "attribute": "text",
+          "raw_value": "Go Sequence 2 Cue 1",
+          "fixture_id": null
+        }
+      ],
+      "source_file": "test_exports\\demo_main_sequences.xml"
+    },
+    {
+      "sequence_number": "1",
+      "sequence_name": "Intro",
+      "cue_number": "2",
+      "cue_name": "Build",
+      "trigger": "follow",
+      "trigger_time": null,
+      "fade": "2",
+      "delay": "0.5",
+      "down_delay": null,
+      "command": null,
+      "fixture_ids": [
+        101,
+        102,
+        103
+      ],
+      "fixture_details": [
+        "101 | Front Left Wash | Robe LEDWash 600 | 1.1",
+        "102 | Front Center Wash | Robe LEDWash 600 | 1.17",
+        "103 | DS Center Spot | Martin MAC Viper | 1.33"
+      ],
+      "references": [
+        "group:3",
+        "effect:12"
+      ],
+      "preset_refs": [],
+      "effect_refs": [
+        "effect:12"
+      ],
+      "group_refs": [
+        "group:3"
+      ],
+      "dimmer_value_count": 1,
+      "hard_value_count": 2,
+      "hard_value_attributes": [
+        "delay",
+        "fade"
+      ],
+      "hard_value_preview": [
+        {
+          "attribute": "fade",
+          "raw_value": "2.00",
+          "fixture_id": null
+        },
+        {
+          "attribute": "delay",
+          "raw_value": "0.50",
+          "fixture_id": null
+        }
+      ],
+      "source_file": "test_exports\\demo_main_sequences.xml"
+    }
+  ]
+}

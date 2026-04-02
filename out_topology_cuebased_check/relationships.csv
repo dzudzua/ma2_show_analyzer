@@ -1,0 +1,10 @@
+source_type,source_id,target_type,target_id,relation_type,evidence
+cue,cue:1:1:demo_main_sequences.xml:1,preset,1.5,reference,preset:1.5
+cue,cue:1:1:demo_main_sequences.xml:1,preset,2.7,reference,preset:2.7
+cue,cue:1:1:demo_main_sequences.xml:1,sequence,2,reference_unresolved,sequence:2
+cue,cue:1:1:demo_main_sequences.xml:1,preset,1.5,value_reference,atom:Dimmer=Preset 1.5
+cue,cue:1:1:demo_main_sequences.xml:1,preset,2.7,value_reference,atom:Position=Preset 2.7
+cue,cue:1:2:demo_main_sequences.xml:2,group,3,reference,group:3
+cue,cue:1:2:demo_main_sequences.xml:2,effect,12,reference,effect:12
+cue,cue:1:2:demo_main_sequences.xml:2,effect,12,value_reference,atom:Effect=Effect 12
+cue,cue:1:2:demo_main_sequences.xml:2,group,3,value_reference,atom:GroupRef=Group 3

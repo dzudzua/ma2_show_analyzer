@@ -1,0 +1,15 @@
+owner_type,owner_id,fixture_name,fixture_type,fixture_patch,attribute,raw_value,value_type,fixture_id,channel_id,subfixture_id,patch_target_type,patch_target_id,patch_target_key,reference_target,raw_reference,reference_display,reference_confidence,reference_scope,flags,source_path
+cue,cue:1:1:demo_main_sequences.xml:1,,,,fade,0.00,hard,,,,fixture,,,,,,,,"[""timing""]",Cue
+cue,cue:1:1:demo_main_sequences.xml:1,,,,delay,0.00,hard,,,,fixture,,,,,,,,"[""timing""]",Cue
+cue,cue:1:1:demo_main_sequences.xml:1,Front Left Wash,Robe LEDWash 600,1.1,Dimmer,0.00,hard,101,,,fixture,101,fixture:101,,,,,,[],Cue/Value
+cue,cue:1:1:demo_main_sequences.xml:1,Front Center Wash,Robe LEDWash 600,1.17,Dimmer,Preset 1.5,preset_ref,102,,,fixture,102,fixture:102,preset:1.5,Preset 1.5,1.5,0.85,inferred,[],Cue/Value
+cue,cue:1:1:demo_main_sequences.xml:1,DS Center Spot,Martin MAC Viper,1.33,Position,Preset 2.7,preset_ref,103,,,fixture,103,fixture:103,preset:2.7,Preset 2.7,2.7,0.85,inferred,[],Cue/Value
+cue,cue:1:1:demo_main_sequences.xml:1,,,,text,Go Sequence 2 Cue 1,hard,,,,fixture,,,,,,,,[],Cue/Command
+cue,cue:1:2:demo_main_sequences.xml:2,,,,fade,2.00,hard,,,,fixture,,,,,,,,"[""timing""]",Cue
+cue,cue:1:2:demo_main_sequences.xml:2,,,,delay,0.50,hard,,,,fixture,,,,,,,,"[""timing""]",Cue
+cue,cue:1:2:demo_main_sequences.xml:2,Front Left Wash,Robe LEDWash 600,1.1,Dimmer,100.00,hard,101,,,fixture,101,fixture:101,,,,,,[],Cue/Value
+cue,cue:1:2:demo_main_sequences.xml:2,Front Center Wash,Robe LEDWash 600,1.17,Effect,Effect 12,effect_ref,102,,,fixture,102,fixture:102,effect:12,Effect 12,effect:12,0.85,inferred,[],Cue/Value
+cue,cue:1:2:demo_main_sequences.xml:2,DS Center Spot,Martin MAC Viper,1.33,GroupRef,Group 3,group_ref,103,,,fixture,103,fixture:103,group:3,Group 3,group:3,0.85,inferred,[],Cue/Value
+preset,preset:1.5:demo_preset_1.xml:1,Front Left Wash,Robe LEDWash 600,1.1,Dimmer,100.00,hard,101,,,fixture,101,fixture:101,,,,,,[],Preset/Value
+preset,preset:1.5:demo_preset_1.xml:1,Front Center Wash,Robe LEDWash 600,1.17,Color,255.00,hard,102,,,fixture,102,fixture:102,,,,,,[],Preset/Value
+preset,preset:2.7:demo_preset_1.xml:2,DS Center Spot,Martin MAC Viper,1.33,Position,45.00,hard,103,,,fixture,103,fixture:103,,,,,,[],Preset/Value

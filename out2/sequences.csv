@@ -1,0 +1,36 @@
+id,number,name,is_main_cue_list,cue_count,source_file
+sequence:0:patch666_main_sequences.xml:1,0,Main QJU,True,127,exports\patch666_main_sequences.xml
+sequence:1:patch666_all_sequences.xml:2,1,Sequence 1,False,4,exports\patch666_all_sequences.xml
+sequence:2:patch666_all_sequences.xml:3,2,hazeL,False,4,exports\patch666_all_sequences.xml
+sequence:3:patch666_all_sequences.xml:4,3,HazeR,False,4,exports\patch666_all_sequences.xml
+sequence:4:patch666_all_sequences.xml:5,4,Kontra 1,False,2,exports\patch666_all_sequences.xml
+sequence:5:patch666_all_sequences.xml:6,5,Kontra 2,False,2,exports\patch666_all_sequences.xml
+sequence:6:patch666_all_sequences.xml:7,6,Spiider,False,2,exports\patch666_all_sequences.xml
+sequence:7:patch666_all_sequences.xml:8,7,SIXPAR,False,2,exports\patch666_all_sequences.xml
+sequence:8:patch666_all_sequences.xml:9,8,Kontra 3,False,2,exports\patch666_all_sequences.xml
+sequence:9:patch666_all_sequences.xml:10,9,Kontra Zem,False,2,exports\patch666_all_sequences.xml
+sequence:10:patch666_all_sequences.xml:11,10,ulice L,False,2,exports\patch666_all_sequences.xml
+sequence:11:patch666_all_sequences.xml:12,11,Sequence 11,False,2,exports\patch666_all_sequences.xml
+sequence:12:patch666_all_sequences.xml:13,12,Ulice C,False,2,exports\patch666_all_sequences.xml
+sequence:13:patch666_all_sequences.xml:14,13,Ulice R,False,2,exports\patch666_all_sequences.xml
+sequence:14:patch666_all_sequences.xml:15,14,gobo,False,2,exports\patch666_all_sequences.xml
+sequence:15:patch666_all_sequences.xml:16,15,KRCEK,False,2,exports\patch666_all_sequences.xml
+sequence:16:patch666_all_sequences.xml:17,16,LIDI),False,2,exports\patch666_all_sequences.xml
+sequence:17:patch666_all_sequences.xml:18,17,STRIP,False,2,exports\patch666_all_sequences.xml
+sequence:18:patch666_all_sequences.xml:19,18,FOH 1,False,2,exports\patch666_all_sequences.xml
+sequence:19:patch666_all_sequences.xml:20,19,FOH 2,False,2,exports\patch666_all_sequences.xml
+sequence:20:patch666_all_sequences.xml:21,20,BULB,False,2,exports\patch666_all_sequences.xml
+sequence:21:patch666_all_sequences.xml:22,21,LED,False,2,exports\patch666_all_sequences.xml
+sequence:22:patch666_all_sequences.xml:23,22,Sequence 22,False,2,exports\patch666_all_sequences.xml
+sequence:23:patch666_all_sequences.xml:24,23,Sequence 23,False,2,exports\patch666_all_sequences.xml
+sequence:24:patch666_all_sequences.xml:25,24,Sequence 24,False,2,exports\patch666_all_sequences.xml
+sequence:25:patch666_all_sequences.xml:26,25,Main QJU#2,False,4,exports\patch666_all_sequences.xml
+sequence:26:patch666_all_sequences.xml:27,26,Sequence 26,False,2,exports\patch666_all_sequences.xml
+sequence:27:patch666_all_sequences.xml:28,27,Sequence 27,False,2,exports\patch666_all_sequences.xml
+sequence:28:patch666_all_sequences.xml:29,28,tezka mlha,False,2,exports\patch666_all_sequences.xml
+sequence:29:patch666_all_sequences.xml:30,29,Sequence 29,False,2,exports\patch666_all_sequences.xml
+sequence:30:patch666_all_sequences.xml:31,30,fix 2,False,2,exports\patch666_all_sequences.xml
+sequence:31:patch666_all_sequences.xml:32,31,Tezka fuk,False,2,exports\patch666_all_sequences.xml
+sequence:32:patch666_all_sequences.xml:33,32,Sequence 32,False,2,exports\patch666_all_sequences.xml
+sequence:33:patch666_all_sequences.xml:34,33,Sequence 33,False,2,exports\patch666_all_sequences.xml
+sequence:34:patch666_all_sequences.xml:35,34,Pracak,False,2,exports\patch666_all_sequences.xml

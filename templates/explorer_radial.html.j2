@@ -1,0 +1,447 @@
+﻿<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>grandMA2 Radial Tree Explorer</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #111827; color: #e5e7eb; }
+    header { padding: 20px 24px; background: #0f172a; }
+    .header-brand { display:flex; gap:12px; align-items:center; margin-bottom:10px; }
+    .header-brand img { width:min(170px, 28vw); max-width:100%; height:auto; object-fit:contain; border-radius:0; padding:0; background:none; border:none; box-shadow:0 6px 18px rgba(0,0,0,.18); }
+    .header-copy { min-width:0; }
+    .wrap { padding: 24px; }
+    .card { background: #1f2937; border-radius: 16px; padding: 16px; box-shadow: 0 4px 20px rgba(0,0,0,.25); margin-bottom: 24px; }
+    .muted { color: #94a3b8; font-size: 12px; }
+    .topbar { display:flex; justify-content:space-between; align-items:flex-start; gap:10px; flex-wrap:wrap; margin-bottom:14px; }
+    .nav-shell { display:grid; gap:8px; min-width:min(640px, 100%); }
+    .category-nav, .page-nav { display:flex; gap:10px; flex-wrap:wrap; }
+    .nav-pill { padding:10px 14px; border-radius:999px; border:1px solid #334155; background:#172033; color:#e5e7eb; text-decoration:none; font-size:13px; }
+    .nav-pill.active { background: rgba(56,189,248,.14); border-color: rgba(56,189,248,.45); color:#e0f2fe; }
+    .nav-pill:hover { background:#22304b; }
+    select { width: 100%; padding: 10px; border-radius: 10px; border: 1px solid #334155; background: #0f172a; color: #e5e7eb; }
+    button { padding: 10px 14px; border-radius: 10px; border: 1px solid #334155; background: #0f172a; color: #e5e7eb; cursor: pointer; }
+    button:hover { background: #162033; }
+    .controls { display:grid; grid-template-columns: auto 1fr auto; gap: 10px; align-items:center; }
+    .grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 20px; }
+    @media (max-width: 1100px) { .grid { grid-template-columns: 1fr; } }
+    @media (max-width: 700px) { .controls { grid-template-columns: 1fr; } }
+    .tree-wrap { height: 78vh; min-height: 560px; border:1px solid #334155; border-radius:12px; background:#0b1220; overflow:hidden; }
+    .tree-wrap svg { width:100%; height:100%; display:block; }
+    .legend { display:flex; gap:12px; flex-wrap:wrap; margin:8px 0 12px; font-size:12px; color:#cbd5e1; }
+    .legend span { display:inline-flex; align-items:center; gap:6px; }
+    .swatch { width:12px; height:12px; display:inline-block; border-radius:50%; }
+    .pre { white-space: pre-wrap; word-break: break-word; }
+    .hint { margin-top: 8px; color:#94a3b8; font-size: 12px; }
+  </style>
+  <link rel="stylesheet" href="app_shell.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+<header>
+  <div class="header-brand">
+    <img src="logo_graindma.png" alt="grandMA2 Show Analyzer logo">
+    <div class="header-copy">
+      <h1 style="margin:0 0 8px;">grandMA2 Radial Tree Explorer</h1>
+      <div class="muted">Samostatny experimentalni radial tidy tree pohled. Hlavni dashboard zustava nedotceny.</div>
+    </div>
+  </div>
+</header>
+<div class="wrap">
+  <div class="topbar">
+    <div class="nav-shell">
+      <div class="category-nav">
+        <a class="nav-pill" href="dashboard.html">Přehled show</a>
+        <a class="nav-pill" href="cue_list.html">Cue a sekvence</a>
+        <a class="nav-pill" href="patch.html">Patch a fixture</a>
+        <a class="nav-pill" href="warnings.html">Rizika a varování</a>
+        <a class="nav-pill active" href="explorer.html">Vztahy a grafy</a>
+      </div>
+      <div class="page-nav">
+        <a class="nav-pill" href="explorer.html">Matrix</a>
+        <a class="nav-pill" href="explorer_d3.html">D3</a>
+        <a class="nav-pill active" href="explorer_radial.html">Radial</a>
+        <a class="nav-pill" href="explorer_sankey.html">Sankey</a>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="muted">Cue-centric radial tree: vybrana cue jako koren, pod ni presety a hard fixtures, pod presetem navazane fixtures.</div>
+    <div class="controls" style="margin-top:12px;">
+      <button id="cuePrev" type="button">Go-</button>
+      <select id="cueSelect"></select>
+      <button id="cueNext" type="button">Go+</button>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <div id="cueStatus" class="muted" style="margin-bottom:10px;"></div>
+      <div class="legend">
+        <span><i class="swatch" style="background:#f97316"></i>Cue</span>
+        <span><i class="swatch" style="background:#38bdf8"></i>Preset</span>
+        <span><i class="swatch" style="background:#22c55e"></i>Fixture</span>
+        <span><i class="swatch" style="background:#ef4444"></i>Hard fixture</span>
+      </div>
+      <div id="cueTree" class="tree-wrap"></div>
+      <div class="hint">Klik na uzel ukaze detail vpravo. Zoom funguje koleckem mysi.</div>
+    </div>
+    <div class="card">
+      <h2 style="margin:0 0 12px;">Cue Tree Detail</h2>
+      <div id="cueDetail" class="pre">Klikni na uzel v radial tree.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="muted">Fixture-centric radial tree: vybrane svetlo jako koren, pod nim cues a pod cue presety pouzite na tom svetle.</div>
+    <div style="margin-top:12px;">
+      <select id="fixtureSelect"></select>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <div id="fixtureStatus" class="muted" style="margin-bottom:10px;"></div>
+      <div class="legend">
+        <span><i class="swatch" style="background:#22c55e"></i>Fixture</span>
+        <span><i class="swatch" style="background:#f97316"></i>Cue</span>
+        <span><i class="swatch" style="background:#38bdf8"></i>Preset</span>
+        <span><i class="swatch" style="background:#ef4444"></i>Hard values</span>
+      </div>
+      <div id="fixtureTree" class="tree-wrap"></div>
+      <div class="hint">Tady jde dobre cist, v kterych cues je svetlo zive a ktere presety se na nem objevuji.</div>
+    </div>
+    <div class="card">
+      <h2 style="margin:0 0 12px;">Fixture Tree Detail</h2>
+      <div id="fixtureDetail" class="pre">Klikni na uzel v radial tree.</div>
+    </div>
+  </div>
+</div>
+<script>
+const DATA = $DATA_JSON;
+const GRAPH = $GRAPH_JSON;
+const MAIN_CUES = DATA.sequences.filter(s => s.is_main_cue_list).flatMap(s => (s.cues || []).map(c => ({...c, sequence_name: s.name, sequence_number: s.number})));
+const GRAPH_NODE_INDEX = Object.fromEntries((GRAPH.nodes || []).map(node => [node.id, node]));
+const GRAPH_LINKS = GRAPH.links || [];
+const PRESET_INDEX = Object.fromEntries((DATA.presets || []).map(preset => [preset.number, preset]));
+const FIXTURE_REGISTRY = DATA.fixture_registry || DATA.patch_fixtures || [];
+const PATCH_INDEX = Object.fromEntries(FIXTURE_REGISTRY.map(patch => [String(patch.fixture_id), patch]));
+
+function normalizePresetNumber(presetNumber, presetType) {
+  const number = String(presetNumber || '').trim();
+  const type = String(presetType || '').trim();
+  if (!number) return '';
+  if (number.includes('.')) return number;
+  if (type === '0') return `0.${number}`;
+  return number;
+}
+
+function formatPresetLabel(presetNumber, presetName, presetType) {
+  const number = normalizePresetNumber(presetNumber, presetType);
+  const name = String(presetName || '').trim();
+  if (!number && !name) return 'Preset';
+  if (!number) return name || 'Preset';
+  if (!name || name === `Preset ${number}` || name === number) return number;
+  return `${number} ${name}`.trim();
+}
+
+function cueAtomsForFixture(cueData, fixtureId) {
+  return ((cueData?.values) || []).filter(atom => Number(atom.fixture_id) === Number(fixtureId));
+}
+
+function presetFixtureAtomsForCueFixture(cueData, fixtureId, directLinks) {
+  const matches = [];
+  directLinks.filter(link => link.type === 'cue_preset').forEach(link => {
+    const presetNumber = String(link.target).replace(/^preset:/, '');
+    const preset = PRESET_INDEX[presetNumber];
+    const atoms = (preset?.values || []).filter(atom => Number(atom.fixture_id) === Number(fixtureId));
+    if (atoms.length) matches.push({ presetNumber, preset, atoms });
+  });
+  return matches;
+}
+
+function nodeColor(kind) {
+  if (kind === 'cue') return '#f97316';
+  if (kind === 'preset') return '#38bdf8';
+  if (kind === 'hard_fixture') return '#ef4444';
+  return '#22c55e';
+}
+
+function describeTreeNode(node) {
+  const data = node.data || {};
+  const lines = [(data.kind || 'node').toUpperCase(), data.label || ''];
+  if (data.meta) {
+    Object.entries(data.meta).forEach(([key, value]) => {
+      if (value !== undefined && value !== null && String(value) !== '') {
+        lines.push(`${key}: ${value}`);
+      }
+    });
+  }
+  return lines.join('\n');
+}
+
+function buildCueHierarchy(cueData) {
+  const cueId = `cue:${cueData.sequence_number}:${cueData.cue_number}`;
+  const directLinks = GRAPH_LINKS.filter(link => link.source === cueId);
+  const presetIds = directLinks.filter(link => link.type === 'cue_preset').map(link => link.target);
+  const hardFixtureIds = directLinks.filter(link => link.type === 'cue_fixture_hard').map(link => link.target);
+  const presetFixtureLinks = GRAPH_LINKS.filter(link => presetIds.includes(link.source) && link.type === 'preset_fixture');
+
+  const hardChildren = hardFixtureIds.map(id => {
+    const fixtureId = GRAPH_NODE_INDEX[id]?.fixture_id;
+    const patch = PATCH_INDEX[String(fixtureId)] || {};
+    const hardAttrs = [...new Set(cueAtomsForFixture(cueData, fixtureId).filter(atom => atom.value_type === 'hard').map(atom => atom.attribute).filter(Boolean))];
+    return {
+      name: `${fixtureId} ${patch.label || patch.name || GRAPH_NODE_INDEX[id]?.label || ''}`.trim(),
+      label: `${fixtureId} ${patch.label || patch.name || GRAPH_NODE_INDEX[id]?.label || ''}`.trim(),
+      kind: 'hard_fixture',
+      meta: {
+        fixture_id: fixtureId,
+        type: patch.fixture_type || '',
+        patch: patch.patch || '',
+        hard_attrs: hardAttrs.join(', '),
+      },
+      children: [],
+    };
+  });
+
+  const presetChildren = presetIds.map(id => {
+    const presetNumber = GRAPH_NODE_INDEX[id]?.preset_number || '';
+    const preset = PRESET_INDEX[presetNumber];
+    const fixtureChildren = presetFixtureLinks
+      .filter(link => link.source === id)
+      .map(link => {
+        const fixtureId = GRAPH_NODE_INDEX[link.target]?.fixture_id;
+        const patch = PATCH_INDEX[String(fixtureId)] || {};
+        return {
+          name: `${fixtureId} ${patch.label || patch.name || GRAPH_NODE_INDEX[link.target]?.label || ''}`.trim(),
+          label: `${fixtureId} ${patch.label || patch.name || GRAPH_NODE_INDEX[link.target]?.label || ''}`.trim(),
+          kind: 'fixture',
+          meta: {
+            fixture_id: fixtureId,
+            type: patch.fixture_type || '',
+            patch: patch.patch || '',
+          },
+          children: [],
+        };
+      });
+    return {
+      name: formatPresetLabel(presetNumber, preset?.name || GRAPH_NODE_INDEX[id]?.label || '', preset?.preset_type || GRAPH_NODE_INDEX[id]?.preset_type || ''),
+      label: formatPresetLabel(presetNumber, preset?.name || GRAPH_NODE_INDEX[id]?.label || '', preset?.preset_type || GRAPH_NODE_INDEX[id]?.preset_type || ''),
+      kind: 'preset',
+      meta: {
+        preset: presetNumber,
+        fixture_count: fixtureChildren.length,
+      },
+      children: fixtureChildren,
+    };
+  });
+
+  return {
+    name: `${cueData.sequence_number}.${cueData.cue_number} ${cueData.name || ''}`.trim(),
+    label: `${cueData.sequence_number}.${cueData.cue_number} ${cueData.name || ''}`.trim(),
+    kind: 'cue',
+    meta: {
+      presets: presetChildren.length,
+      hard_fixtures: hardChildren.length,
+    },
+    children: [...presetChildren, ...hardChildren],
+  };
+}
+
+function buildFixtureHierarchy(fixtureId) {
+  const patch = PATCH_INDEX[String(fixtureId)] || {};
+  const rows = [];
+  MAIN_CUES.forEach(cue => {
+    const cueId = `cue:${cue.sequence_number}:${cue.cue_number}`;
+    const directLinks = GRAPH_LINKS.filter(link => link.source === cueId);
+    const hardAtoms = cueAtomsForFixture(cue, fixtureId).filter(atom => atom.value_type === 'hard');
+    const presetHits = presetFixtureAtomsForCueFixture(cue, fixtureId, directLinks);
+    if (!hardAtoms.length && !presetHits.length) return;
+    rows.push({ cue, hardAtoms, presetHits });
+  });
+
+  return {
+    name: `${fixtureId} ${patch.label || patch.name || ''}`.trim(),
+    label: `${fixtureId} ${patch.label || patch.name || ''}`.trim(),
+    kind: 'fixture',
+    meta: {
+      type: patch.fixture_type || '',
+      patch: patch.patch || '',
+      cues: rows.length,
+    },
+    children: rows.map(row => ({
+      name: `${row.cue.sequence_number}.${row.cue.cue_number} ${row.cue.name || ''}`.trim(),
+      label: `${row.cue.sequence_number}.${row.cue.cue_number} ${row.cue.name || ''}`.trim(),
+      kind: 'cue',
+      meta: {
+        hard_values: row.hardAtoms.length,
+        preset_refs: row.presetHits.length,
+      },
+      children: [
+        ...row.presetHits.map(hit => ({
+          name: formatPresetLabel(hit.presetNumber, hit.preset?.name || '', hit.preset?.preset_type || ''),
+          label: formatPresetLabel(hit.presetNumber, hit.preset?.name || '', hit.preset?.preset_type || ''),
+          kind: 'preset',
+          meta: {
+            preset: hit.presetNumber,
+            attrs: [...new Set(hit.atoms.map(atom => atom.attribute).filter(Boolean))].join(', '),
+          },
+          children: [],
+        })),
+        ...(row.hardAtoms.length ? [{
+          name: 'Hard values',
+          label: 'Hard values',
+          kind: 'hard_fixture',
+          meta: {
+            attrs: [...new Set(row.hardAtoms.map(atom => atom.attribute).filter(Boolean))].join(', '),
+          },
+          children: [],
+        }] : []),
+      ],
+    })),
+  };
+}
+
+function renderRadialTree(containerId, detailId, statusId, rootData, statusText) {
+  const container = document.getElementById(containerId);
+  const detailEl = document.getElementById(detailId);
+  const statusEl = document.getElementById(statusId);
+  container.innerHTML = '';
+  detailEl.textContent = 'Klikni na uzel v radial tree.';
+  statusEl.textContent = statusText;
+
+  if (typeof window.d3 === 'undefined') {
+    detailEl.textContent = 'Tento experimentalni soubor potrebuje D3 skript.';
+    statusEl.textContent = 'D3 library is not available in this browser session.';
+    return;
+  }
+
+  const width = container.clientWidth || 900;
+  const height = container.clientHeight || 640;
+  const radius = Math.min(width, height) / 2 - 70;
+
+  const root = d3.hierarchy(rootData);
+  d3.tree().size([2 * Math.PI, radius])(root);
+
+  const svg = d3.select(container).append('svg')
+    .attr('viewBox', `${-width / 2} ${-height / 2} ${width} ${height}`)
+    .attr('preserveAspectRatio', 'xMidYMid meet');
+
+  const graphRoot = svg.append('g');
+  svg.call(
+    d3.zoom().scaleExtent([0.5, 3]).on('zoom', event => {
+      graphRoot.attr('transform', event.transform);
+    })
+  );
+
+  graphRoot.append('g')
+    .selectAll('path')
+    .data(root.links())
+    .join('path')
+    .attr('fill', 'none')
+    .attr('stroke', '#475569')
+    .attr('stroke-opacity', 0.75)
+    .attr('stroke-width', 1.4)
+    .attr('d', d3.linkRadial().angle(d => d.x).radius(d => d.y));
+
+  const node = graphRoot.append('g')
+    .selectAll('g')
+    .data(root.descendants())
+    .join('g')
+    .attr('transform', d => `
+      rotate(${d.x * 180 / Math.PI - 90})
+      translate(${d.y},0)
+    `)
+    .style('cursor', 'pointer');
+
+  node.append('circle')
+    .attr('r', d => d.depth === 0 ? 8 : 5.5)
+    .attr('fill', d => nodeColor(d.data.kind))
+    .attr('stroke', '#0f172a')
+    .attr('stroke-width', 1.5);
+
+  node.append('text')
+    .attr('dy', '0.31em')
+    .attr('x', d => d.x < Math.PI === !d.children ? 10 : -10)
+    .attr('text-anchor', d => d.x < Math.PI === !d.children ? 'start' : 'end')
+    .attr('transform', d => d.x >= Math.PI ? 'rotate(180)' : null)
+    .style('font-size', d => d.depth === 0 ? '12px' : '11px')
+    .style('font-weight', d => d.depth <= 1 ? '700' : '500')
+    .attr('fill', '#e5e7eb')
+    .text(d => d.data.label || d.data.name || '');
+
+  node.on('click', (event, d) => {
+    detailEl.textContent = describeTreeNode(d);
+    node.attr('opacity', 0.35);
+    d3.select(event.currentTarget).attr('opacity', 1);
+  });
+}
+
+function changeCue(delta) {
+  const cueSelect = document.getElementById('cueSelect');
+  const currentIndex = cueSelect.selectedIndex;
+  if (currentIndex < 0) return;
+  const nextIndex = currentIndex + delta;
+  if (nextIndex < 0 || nextIndex >= cueSelect.options.length) return;
+  cueSelect.selectedIndex = nextIndex;
+  renderCueTree();
+}
+
+function renderCueTree() {
+  const selectedId = document.getElementById('cueSelect').value;
+  const cueData = MAIN_CUES.find(cue => `cue:${cue.sequence_number}:${cue.cue_number}` === selectedId);
+  if (!cueData) return;
+  const hierarchy = buildCueHierarchy(cueData);
+  renderRadialTree(
+    'cueTree',
+    'cueDetail',
+    'cueStatus',
+    hierarchy,
+    `Cue ${cueData.sequence_number}.${cueData.cue_number} | children=${(hierarchy.children || []).length}`
+  );
+}
+
+function renderFixtureTree() {
+  const fixtureId = Number(document.getElementById('fixtureSelect').value);
+  if (!fixtureId) return;
+  const hierarchy = buildFixtureHierarchy(fixtureId);
+  renderRadialTree(
+    'fixtureTree',
+    'fixtureDetail',
+    'fixtureStatus',
+    hierarchy,
+    `Fixture ${fixtureId} | cue children=${(hierarchy.children || []).length}`
+  );
+}
+
+function init() {
+  const cueSelect = document.getElementById('cueSelect');
+  MAIN_CUES.forEach(cue => {
+    const option = document.createElement('option');
+    option.value = `cue:${cue.sequence_number}:${cue.cue_number}`;
+    option.textContent = `${cue.sequence_number}.${cue.cue_number} - ${cue.name || ''}`;
+    cueSelect.appendChild(option);
+  });
+  cueSelect.addEventListener('change', renderCueTree);
+  document.getElementById('cuePrev').addEventListener('click', () => changeCue(-1));
+  document.getElementById('cueNext').addEventListener('click', () => changeCue(1));
+
+  const fixtureSelect = document.getElementById('fixtureSelect');
+  const fixtureIds = [...new Set(MAIN_CUES.flatMap(cue => (cue.fixture_ids || []).map(id => String(id))))].sort((a, b) => Number(a) - Number(b));
+  fixtureIds.forEach(id => {
+    const patch = PATCH_INDEX[id] || {};
+    const option = document.createElement('option');
+    option.value = id;
+    option.textContent = [id, patch.label || patch.name || '', patch.fixture_type || '', patch.patch || ''].filter(Boolean).join(' | ');
+    fixtureSelect.appendChild(option);
+  });
+  fixtureSelect.addEventListener('change', renderFixtureTree);
+
+  renderCueTree();
+  renderFixtureTree();
+}
+
+init();
+</script>
+</body>
+</html>
+

@@ -1,0 +1,101 @@
+fixture_id,fixture_name,fixture_type,fixture_patch,feature_group,hard_cue_count,preset_cue_count,mixed_cue_count,sequence_count,details
+202,SPIDER 33 2,7 Robin Spiider Mode 3,4.436,Dimmer,40,23,16,2,family uses both hard and preset control across 47 cues
+201,SPIDER 33 1,7 Robin Spiider Mode 3,4.403,Dimmer,39,20,14,2,family uses both hard and preset control across 45 cues
+101,RSpiide3 1,7 Robin Spiider Mode 3,4.034,Dimmer,33,25,12,2,family uses both hard and preset control across 46 cues
+102,RSpiide3 2,7 Robin Spiider Mode 3,4.001,Dimmer,32,28,12,2,family uses both hard and preset control across 48 cues
+101,RSpiide3 1,7 Robin Spiider Mode 3,4.034,Color,15,23,8,1,family uses both hard and preset control across 30 cues
+102,RSpiide3 2,7 Robin Spiider Mode 3,4.001,Color,14,26,8,1,family uses both hard and preset control across 32 cues
+201,SPIDER 33 1,7 Robin Spiider Mode 3,4.403,Color,15,18,7,1,family uses both hard and preset control across 26 cues
+108,RSpiide3 8,7 Robin Spiider Mode 3,4.304,Dimmer,35,14,6,2,family uses both hard and preset control across 43 cues
+106,RSpiide3 6,7 Robin Spiider Mode 3,4.166,Dimmer,32,10,6,2,family uses both hard and preset control across 36 cues
+107,RSpiide3 7,7 Robin Spiider Mode 3,4.271,Dimmer,31,16,6,2,family uses both hard and preset control across 41 cues
+101,RSpiide3 1,7 Robin Spiider Mode 3,4.034,Position,17,24,6,1,family uses both hard and preset control across 35 cues
+102,RSpiide3 2,7 Robin Spiider Mode 3,4.001,Position,15,27,6,1,family uses both hard and preset control across 36 cues
+202,SPIDER 33 2,7 Robin Spiider Mode 3,4.436,Color,13,21,6,1,family uses both hard and preset control across 28 cues
+103,RSpiide3 3,7 Robin Spiider Mode 3,4.067,Dimmer,22,8,5,2,family uses both hard and preset control across 25 cues
+201,SPIDER 33 1,7 Robin Spiider Mode 3,4.403,Position,16,19,5,1,family uses both hard and preset control across 30 cues
+202,SPIDER 33 2,7 Robin Spiider Mode 3,4.436,Position,16,22,5,1,family uses both hard and preset control across 33 cues
+108,RSpiide3 8,7 Robin Spiider Mode 3,4.304,Color,13,15,5,2,family uses both hard and preset control across 23 cues
+106,RSpiide3 6,7 Robin Spiider Mode 3,4.166,Position,10,14,5,1,family uses both hard and preset control across 19 cues
+106,RSpiide3 6,7 Robin Spiider Mode 3,4.166,Color,9,15,5,1,family uses both hard and preset control across 19 cues
+105,RSpiide3 5,7 Robin Spiider Mode 3,4.133,Dimmer,20,10,4,2,family uses both hard and preset control across 26 cues
+108,RSpiide3 8,7 Robin Spiider Mode 3,4.304,Position,13,16,4,1,family uses both hard and preset control across 25 cues
+107,RSpiide3 7,7 Robin Spiider Mode 3,4.271,Color,12,17,4,2,family uses both hard and preset control across 25 cues
+101,RSpiide3 1,7 Robin Spiider Mode 3,4.034,Other,7,24,4,1,family uses both hard and preset control across 27 cues
+102,RSpiide3 2,7 Robin Spiider Mode 3,4.001,Other,7,27,4,1,family uses both hard and preset control across 30 cues
+104,RSpiide3 4,7 Robin Spiider Mode 3,4.100,Dimmer,18,7,3,2,family uses both hard and preset control across 22 cues
+201,SPIDER 33 1,7 Robin Spiider Mode 3,4.403,Beam,13,19,3,1,family uses both hard and preset control across 29 cues
+107,RSpiide3 7,7 Robin Spiider Mode 3,4.271,Beam,12,16,3,1,family uses both hard and preset control across 25 cues
+101,RSpiide3 1,7 Robin Spiider Mode 3,4.034,Beam,11,24,3,1,family uses both hard and preset control across 32 cues
+107,RSpiide3 7,7 Robin Spiider Mode 3,4.271,Position,11,18,3,1,family uses both hard and preset control across 26 cues
+21,HelDGB8S 21,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,2.001,Color,10,21,3,3,family uses both hard and preset control across 28 cues
+22,HelDGB8S 22,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,2.025,Color,10,21,3,3,family uses both hard and preset control across 28 cues
+23,HelDGB8S 23,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,2.049,Color,10,21,3,3,family uses both hard and preset control across 28 cues
+24,HelDGB8S 24,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,2.073,Color,10,21,3,3,family uses both hard and preset control across 28 cues
+25,HelDGB8S 25,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,2.097,Color,10,21,3,3,family uses both hard and preset control across 28 cues
+26,HelDGB8S 26,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,2.121,Color,10,21,3,3,family uses both hard and preset control across 28 cues
+27,HelDGB8S 27,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,2.145,Color,10,21,3,3,family uses both hard and preset control across 28 cues
+28,HelDGB8S 28,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,2.169,Color,10,21,3,3,family uses both hard and preset control across 28 cues
+29,HelDGB8S 29,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,2.193,Color,10,21,3,3,family uses both hard and preset control across 28 cues
+30,HelDGB8S 30,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,2.217,Color,9,21,3,3,family uses both hard and preset control across 27 cues
+31,HelDGB8S 31,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,2.241,Color,9,21,3,3,family uses both hard and preset control across 27 cues
+32,HelDGB8S 32,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,2.265,Color,9,21,3,3,family uses both hard and preset control across 27 cues
+201,SPIDER 33 1,7 Robin Spiider Mode 3,4.403,Other,6,19,3,1,family uses both hard and preset control across 22 cues
+202,SPIDER 33 2,7 Robin Spiider Mode 3,4.436,Other,6,22,3,1,family uses both hard and preset control across 25 cues
+103,RSpiide3 3,7 Robin Spiider Mode 3,4.067,Color,5,14,3,1,family uses both hard and preset control across 16 cues
+102,RSpiide3 2,7 Robin Spiider Mode 3,4.001,Beam,8,27,2,1,family uses both hard and preset control across 33 cues
+104,RSpiide3 4,7 Robin Spiider Mode 3,4.100,Color,6,13,2,2,family uses both hard and preset control across 17 cues
+106,RSpiide3 6,7 Robin Spiider Mode 3,4.166,Beam,6,14,2,1,family uses both hard and preset control across 18 cues
+101,RSpiide3 1,7 Robin Spiider Mode 3,4.034,Control,5,23,2,1,family uses both hard and preset control across 26 cues
+102,RSpiide3 2,7 Robin Spiider Mode 3,4.001,Control,5,26,2,1,family uses both hard and preset control across 29 cues
+104,RSpiide3 4,7 Robin Spiider Mode 3,4.100,Position,5,12,2,1,family uses both hard and preset control across 15 cues
+105,RSpiide3 5,7 Robin Spiider Mode 3,4.133,Position,4,14,2,1,family uses both hard and preset control across 16 cues
+103,RSpiide3 3,7 Robin Spiider Mode 3,4.067,Position,3,13,2,1,family uses both hard and preset control across 14 cues
+202,SPIDER 33 2,7 Robin Spiider Mode 3,4.436,Beam,10,22,1,1,family uses both hard and preset control across 31 cues
+40,HelDGB8S 40,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,2.457,Color,8,21,1,1,family uses both hard and preset control across 28 cues
+108,RSpiide3 8,7 Robin Spiider Mode 3,4.304,Beam,8,14,1,1,family uses both hard and preset control across 21 cues
+104,RSpiide3 4,7 Robin Spiider Mode 3,4.100,Beam,6,12,1,1,family uses both hard and preset control across 17 cues
+2,HelDGB8S 2,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,1.025,Color,5,21,1,1,family uses both hard and preset control across 25 cues
+5,HelDGB8S 5,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,1.097,Color,4,21,1,1,family uses both hard and preset control across 24 cues
+15,HelDGB8S 15,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,1.337,Color,4,21,1,1,family uses both hard and preset control across 24 cues
+16,HelDGB8S 16,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,1.361,Color,4,21,1,1,family uses both hard and preset control across 24 cues
+105,RSpiide3 5,7 Robin Spiider Mode 3,4.133,Color,4,15,1,2,family uses both hard and preset control across 18 cues
+201,SPIDER 33 1,7 Robin Spiider Mode 3,4.403,Control,4,18,1,1,family uses both hard and preset control across 21 cues
+202,SPIDER 33 2,7 Robin Spiider Mode 3,4.436,Control,4,21,1,1,family uses both hard and preset control across 24 cues
+107,RSpiide3 7,7 Robin Spiider Mode 3,4.271,Other,2,17,1,1,family uses both hard and preset control across 18 cues
+108,RSpiide3 8,7 Robin Spiider Mode 3,4.304,Other,2,15,1,1,family uses both hard and preset control across 16 cues
+3,HelDGB8S 3,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,1.049,Color,4,21,0,1,family uses both hard and preset control across 25 cues
+13,HelDGB8S 13,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,1.289,Color,4,21,0,2,family uses both hard and preset control across 25 cues
+105,RSpiide3 5,7 Robin Spiider Mode 3,4.133,Beam,4,14,0,1,family uses both hard and preset control across 18 cues
+106,RSpiide3 6,7 Robin Spiider Mode 3,4.166,Control,4,9,0,1,family uses both hard and preset control across 13 cues
+106,RSpiide3 6,7 Robin Spiider Mode 3,4.166,Other,4,10,0,1,family uses both hard and preset control across 14 cues
+1,HelDGB8S 1,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,1.001,Color,3,21,0,1,family uses both hard and preset control across 24 cues
+4,HelDGB8S 4,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,1.073,Color,3,21,0,1,family uses both hard and preset control across 24 cues
+6,HelDGB8S 6,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,1.121,Color,3,21,0,1,family uses both hard and preset control across 24 cues
+7,HelDGB8S 7,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,1.145,Color,3,21,0,1,family uses both hard and preset control across 24 cues
+8,HelDGB8S 8,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,1.169,Color,3,21,0,1,family uses both hard and preset control across 24 cues
+9,HelDGB8S 9,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,1.193,Color,3,21,0,1,family uses both hard and preset control across 24 cues
+10,HelDGB8S 10,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,1.217,Color,3,21,0,1,family uses both hard and preset control across 24 cues
+11,HelDGB8S 11,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,1.241,Color,3,21,0,1,family uses both hard and preset control across 24 cues
+12,HelDGB8S 12,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,1.265,Color,3,21,0,1,family uses both hard and preset control across 24 cues
+14,HelDGB8S 14,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,1.313,Color,3,21,0,1,family uses both hard and preset control across 24 cues
+17,HelDGB8S 17,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,1.385,Color,3,21,0,1,family uses both hard and preset control across 24 cues
+18,HelDGB8S 18,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,1.409,Color,3,21,0,1,family uses both hard and preset control across 24 cues
+19,HelDGB8S 19,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,1.433,Color,3,21,0,1,family uses both hard and preset control across 24 cues
+20,HelDGB8S 20,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,1.457,Color,3,21,0,1,family uses both hard and preset control across 24 cues
+33,HelDGB8S 33,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,2.289,Color,3,21,0,1,family uses both hard and preset control across 24 cues
+34,HelDGB8S 34,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,2.313,Color,3,21,0,1,family uses both hard and preset control across 24 cues
+35,HelDGB8S 35,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,2.337,Color,3,21,0,1,family uses both hard and preset control across 24 cues
+36,HelDGB8S 36,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,2.361,Color,3,21,0,1,family uses both hard and preset control across 24 cues
+37,HelDGB8S 37,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,2.385,Color,3,21,0,1,family uses both hard and preset control across 24 cues
+38,HelDGB8S 38,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,2.409,Color,3,21,0,1,family uses both hard and preset control across 24 cues
+39,HelDGB8S 39,6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off,2.433,Color,3,21,0,1,family uses both hard and preset control across 24 cues
+103,RSpiide3 3,7 Robin Spiider Mode 3,4.067,Control,3,7,0,1,family uses both hard and preset control across 10 cues
+103,RSpiide3 3,7 Robin Spiider Mode 3,4.067,Other,3,8,0,1,family uses both hard and preset control across 11 cues
+104,RSpiide3 4,7 Robin Spiider Mode 3,4.100,Control,3,7,0,1,family uses both hard and preset control across 10 cues
+104,RSpiide3 4,7 Robin Spiider Mode 3,4.100,Other,3,8,0,1,family uses both hard and preset control across 11 cues
+105,RSpiide3 5,7 Robin Spiider Mode 3,4.133,Control,2,10,0,1,family uses both hard and preset control across 12 cues
+105,RSpiide3 5,7 Robin Spiider Mode 3,4.133,Other,2,11,0,1,family uses both hard and preset control across 13 cues
+107,RSpiide3 7,7 Robin Spiider Mode 3,4.271,Control,2,14,0,1,family uses both hard and preset control across 16 cues
+108,RSpiide3 8,7 Robin Spiider Mode 3,4.304,Control,2,12,0,1,family uses both hard and preset control across 14 cues
+103,RSpiide3 3,7 Robin Spiider Mode 3,4.067,Beam,1,13,0,1,family uses both hard and preset control across 14 cues

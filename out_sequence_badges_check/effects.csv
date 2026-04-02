@@ -1,0 +1,2 @@
+id,number,name,fixture_ids,channel_ids,patch_target_keys,fixture_details,references,source_file
+effect:12:demo_effects.xml:1,12,Circle FX,102,,fixture:102,102 | Front Center Wash | Robe LEDWash 600 | 1.17,,test_exports_xmlpatch\demo_effects.xml

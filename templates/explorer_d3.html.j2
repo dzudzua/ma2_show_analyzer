@@ -1,0 +1,901 @@
+﻿<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>grandMA2 D3 Explorer</title>
+  <style>
+    :root {
+      --bg-0: #07111d;
+      --bg-1: #0f172a;
+      --bg-2: #142236;
+      --panel: rgba(18, 27, 43, 0.82);
+      --panel-edge: rgba(130, 165, 215, 0.14);
+      --text: #e7edf8;
+      --muted: #94a3b8;
+      --cue: #fb923c;
+      --preset: #38bdf8;
+      --fixture: #22c55e;
+      --hard: #ef4444;
+    }
+    body {
+      font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+      margin: 0;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 20% 10%, rgba(56, 189, 248, 0.10), transparent 28%),
+        radial-gradient(circle at 78% 14%, rgba(251, 146, 60, 0.10), transparent 26%),
+        radial-gradient(circle at 50% 100%, rgba(34, 197, 94, 0.08), transparent 30%),
+        linear-gradient(180deg, var(--bg-0) 0%, var(--bg-1) 48%, #0a1220 100%);
+    }
+    header {
+      padding: 24px 28px;
+      background:
+        linear-gradient(135deg, rgba(56, 189, 248, 0.10), transparent 30%),
+        linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0)),
+        rgba(6, 12, 22, 0.82);
+      border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+      box-shadow: 0 14px 40px rgba(0,0,0,.26);
+    }
+    .header-brand { display:flex; gap:12px; align-items:center; margin-bottom:10px; }
+    .header-brand img { width:min(180px, 28vw); max-width:100%; height:auto; object-fit:contain; border-radius:0; padding:0; background:none; border:none; box-shadow:0 8px 22px rgba(0,0,0,.20); }
+    .header-copy { min-width:0; }
+    .wrap { padding: 26px; }
+    .card {
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0)),
+        var(--panel);
+      border: 1px solid var(--panel-edge);
+      border-radius: 18px;
+      padding: 18px;
+      box-shadow: 0 18px 48px rgba(0,0,0,.28);
+      backdrop-filter: blur(10px);
+      margin-bottom: 24px;
+    }
+    .muted { color: var(--muted); font-size: 12px; letter-spacing: 0.02em; }
+    .topbar { display:flex; justify-content:space-between; align-items:flex-start; gap:10px; flex-wrap:wrap; margin-bottom:14px; }
+    .nav-shell { display:grid; gap:8px; min-width:min(640px, 100%); }
+    .category-nav, .page-nav { display:flex; gap:10px; flex-wrap:wrap; }
+    .nav-pill {
+      padding:10px 14px;
+      border-radius:999px;
+      border:1px solid rgba(148, 163, 184, 0.24);
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.01)), #0b1525;
+      color: var(--text);
+      text-decoration:none;
+      font-size:13px;
+    }
+    .nav-pill.active { background: rgba(56,189,248,.14); border-color: rgba(56,189,248,.45); color:#e0f2fe; }
+    .nav-pill:hover { background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02)), #122038; }
+    select {
+      width: 100%;
+      padding: 11px 12px;
+      border-radius: 12px;
+      border: 1px solid rgba(148, 163, 184, 0.24);
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01)), #0b1525;
+      color: var(--text);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
+    }
+    button {
+      padding: 11px 15px;
+      border-radius: 12px;
+      border: 1px solid rgba(148, 163, 184, 0.24);
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.01)), #0b1525;
+      color: var(--text);
+      cursor: pointer;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.06);
+    }
+    button:hover { background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02)), #122038; }
+    .controls { display:grid; grid-template-columns: auto 1fr auto; gap: 10px; align-items:center; }
+    .grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 20px; }
+    @media (max-width: 1100px) { .grid { grid-template-columns: 1fr; } }
+    @media (max-width: 700px) { .controls { grid-template-columns: 1fr; } }
+    .graph-wrap {
+      height: 72vh;
+      min-height: 520px;
+      border: 1px solid rgba(148, 163, 184, 0.16);
+      border-radius: 16px;
+      background:
+        radial-gradient(circle at 50% 50%, rgba(56, 189, 248, 0.05), transparent 38%),
+        radial-gradient(circle at 50% 50%, rgba(255,255,255,0.02), transparent 60%),
+        linear-gradient(180deg, #08111d 0%, #091320 100%);
+      overflow: hidden;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.03);
+    }
+    .graph-wrap svg { width:100%; height:100%; display:block; }
+    .pre { white-space: pre-wrap; word-break: break-word; }
+    .legend { display:flex; gap:12px; flex-wrap:wrap; margin:10px 0 14px; font-size:12px; color:#cbd5e1; }
+    .legend span {
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(148, 163, 184, 0.10);
+    }
+    .swatch { width:12px; height:12px; display:inline-block; border-radius:50%; box-shadow: 0 0 12px currentColor; }
+    .hint { margin-top: 8px; color:#94a3b8; font-size: 12px; }
+  </style>
+  <link rel="stylesheet" href="app_shell.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+<header>
+  <div class="header-brand">
+    <img src="logo_graindma.png" alt="grandMA2 Show Analyzer logo">
+    <div class="header-copy">
+      <h1 style="margin:0 0 8px;">grandMA2 D3 Explorer</h1>
+      <div class="muted">Samostatny experimentalni D3 pohled. Hlavni dashboard zustava nedotceny.</div>
+    </div>
+  </div>
+</header>
+<div class="wrap">
+  <div class="topbar">
+    <div class="nav-shell">
+      <div class="category-nav">
+        <a class="nav-pill" href="dashboard.html">Přehled show</a>
+        <a class="nav-pill" href="cue_list.html">Cue a sekvence</a>
+        <a class="nav-pill" href="patch.html">Patch a fixture</a>
+        <a class="nav-pill" href="warnings.html">Rizika a varování</a>
+        <a class="nav-pill active" href="explorer.html">Vztahy a grafy</a>
+      </div>
+      <div class="page-nav">
+        <a class="nav-pill" href="explorer.html">Matrix</a>
+        <a class="nav-pill active" href="explorer_d3.html">D3</a>
+        <a class="nav-pill" href="explorer_radial.html">Radial</a>
+        <a class="nav-pill" href="explorer_sankey.html">Sankey</a>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="muted">Cue-centric graph: Cue -> Preset -> Fixture plus hard vazby Cue -> Fixture.</div>
+    <div class="controls" style="margin-top:12px;">
+      <button id="cuePrev" type="button">Go-</button>
+      <select id="cueSelect"></select>
+      <button id="cueNext" type="button">Go+</button>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <div id="cueStatus" class="muted" style="margin-bottom:10px;"></div>
+      <div class="legend">
+        <span><i class="swatch" style="background:#f97316"></i>Cue</span>
+        <span><i class="swatch" style="background:#38bdf8"></i>Preset</span>
+        <span><i class="swatch" style="background:#22c55e"></i>Fixture</span>
+        <span><i class="swatch" style="background:#ef4444"></i>Hard edge</span>
+      </div>
+      <div id="cueGraph" class="graph-wrap"></div>
+      <div class="hint">Tahni uzly mysi. Klik na uzel ukaze detail vpravo.</div>
+    </div>
+    <div class="card">
+      <h2 style="margin:0 0 12px;">Cue Graph Detail</h2>
+      <div id="cueDetail" class="pre">Klikni na uzel v grafu.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="muted">Fixture-centric graph: vyber svetlo a zobrazime cue/preset zavislosti kolem nej.</div>
+    <div style="margin-top:12px;">
+      <select id="fixtureSelect"></select>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <div id="fixtureStatus" class="muted" style="margin-bottom:10px;"></div>
+      <div class="legend">
+        <span><i class="swatch" style="background:#f97316"></i>Cue</span>
+        <span><i class="swatch" style="background:#38bdf8"></i>Preset</span>
+        <span><i class="swatch" style="background:#22c55e"></i>Fixture</span>
+        <span><i class="swatch" style="background:#ef4444"></i>Hard edge</span>
+      </div>
+      <div id="fixtureGraph" class="graph-wrap"></div>
+      <div class="hint">Tahni uzly mysi. Klik na uzel ukaze detail vpravo.</div>
+    </div>
+    <div class="card">
+      <h2 style="margin:0 0 12px;">Fixture Graph Detail</h2>
+      <div id="fixtureDetail" class="pre">Klikni na uzel v grafu.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="muted">Globalni graph: vsechny cue, vsechny presety, vsechny fixtures a vsechny vazby mezi nimi.</div>
+    <div style="margin-top:12px;">
+      <select id="globalPresetSelect"></select>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <div id="globalStatus" class="muted" style="margin-bottom:10px;"></div>
+      <div class="legend">
+        <span><i class="swatch" style="background:#f97316"></i>Cue</span>
+        <span><i class="swatch" style="background:#38bdf8"></i>Preset</span>
+        <span><i class="swatch" style="background:#22c55e"></i>Fixture</span>
+        <span><i class="swatch" style="background:#ef4444"></i>Hard edge</span>
+      </div>
+      <div id="globalGraph" class="graph-wrap"></div>
+      <div class="hint">Globalni pohled je nejhustejsi. Zoom a tah uzlu mysi jsou skoro nutnost.</div>
+    </div>
+    <div class="card">
+      <h2 style="margin:0 0 12px;">Global Graph Detail</h2>
+      <div id="globalDetail" class="pre">Klikni na uzel v grafu.</div>
+    </div>
+  </div>
+</div>
+<script>
+const DATA = $DATA_JSON;
+const GRAPH = $GRAPH_JSON;
+const MAIN_CUES = DATA.sequences.filter(s => s.is_main_cue_list).flatMap(s => (s.cues || []).map(c => ({...c, sequence_name: s.name, sequence_number: s.number})));
+const GRAPH_NODE_INDEX = Object.fromEntries((GRAPH.nodes || []).map(node => [node.id, node]));
+const GRAPH_LINKS = GRAPH.links || [];
+const PRESET_INDEX = Object.fromEntries((DATA.presets || []).map(preset => [preset.number, preset]));
+const FIXTURE_REGISTRY = DATA.fixture_registry || DATA.patch_fixtures || [];
+const PATCH_INDEX = Object.fromEntries(FIXTURE_REGISTRY.map(patch => [String(patch.fixture_id), patch]));
+
+function normalizePresetNumber(presetNumber, presetType) {
+  const number = String(presetNumber || '').trim();
+  const type = String(presetType || '').trim();
+  if (!number) return '';
+  if (number.includes('.')) return number;
+  if (type === '0') return `0.${number}`;
+  return number;
+}
+
+function formatPresetLabel(presetNumber, presetName, presetType) {
+  const number = normalizePresetNumber(presetNumber, presetType);
+  const name = String(presetName || '').trim();
+  if (!number && !name) return 'Preset';
+  if (!number) return name || 'Preset';
+  if (!name || name === `Preset ${number}` || name === number) return number;
+  return `${number} ${name}`.trim();
+}
+
+function cueAtomsForFixture(cueData, fixtureId) {
+  return ((cueData?.values) || []).filter(atom => Number(atom.fixture_id) === Number(fixtureId));
+}
+
+function presetFixtureAtomsForCueFixture(cueData, fixtureId, directLinks) {
+  const matches = [];
+  directLinks.filter(link => link.type === 'cue_preset').forEach(link => {
+    const presetNumber = String(link.target).replace(/^preset:/, '');
+    const preset = PRESET_INDEX[presetNumber];
+    const atoms = (preset?.values || []).filter(atom => Number(atom.fixture_id) === Number(fixtureId));
+    if (atoms.length) matches.push({ presetNumber, preset, atoms });
+  });
+  return matches;
+}
+
+function attributeProblemTag(attribute) {
+  const normalized = String(attribute || '').toUpperCase();
+  if (!normalized) return '';
+  if (normalized.startsWith('DIM') || normalized.startsWith('SHUT') || normalized.startsWith('STROBE')) return 'D';
+  if (normalized.startsWith('PAN') || normalized.startsWith('TILT') || normalized.startsWith('POSITION') || normalized.startsWith('POS')) return 'PT';
+  if (normalized.startsWith('ZOOM')) return 'Z';
+  if (normalized.startsWith('COLOR') || normalized.startsWith('CTC') || normalized.startsWith('COLORMIX')) return 'C';
+  if (normalized.startsWith('GOBO')) return 'G';
+  if (normalized.startsWith('FOCUS') || normalized.startsWith('IRIS') || normalized.startsWith('PRISM') || normalized.startsWith('FROST') || normalized.startsWith('BEAM')) return 'B';
+  if (normalized.startsWith('CTRL') || normalized.startsWith('CONTROL') || normalized.startsWith('LAMP')) return 'CTL';
+  return normalized.slice(0, 2);
+}
+
+function uniqueAttributeTags(attributes) {
+  const tags = [];
+  const seen = new Set();
+  (attributes || []).forEach(attribute => {
+    const tag = attributeProblemTag(attribute);
+    if (!tag || seen.has(tag)) return;
+    seen.add(tag);
+    tags.push(tag);
+  });
+  return tags.slice(0, 4);
+}
+
+function describeNode(node) {
+  const kind = String(node.kind || '').toUpperCase();
+  const lines = [kind, node.label || ''];
+  if (node.kind === 'preset' && node.presetNumber) {
+    lines.push(`Preset: ${node.presetNumber}`);
+  }
+  if (node.kind === 'fixture' && node.fixtureId) {
+    const patch = PATCH_INDEX[String(node.fixtureId)] || {};
+    if (patch.fixture_type) lines.push(`Type: ${patch.fixture_type}`);
+    if (patch.patch) lines.push(`Patch: ${patch.patch}`);
+  }
+  if (node.kind === 'cue' && node.cueRef) {
+    lines.push(`Cue ref: ${node.cueRef}`);
+  }
+  if ((node.attributeTags || []).length) {
+    lines.push(`Attrs: ${node.attributeTags.join(', ')}`);
+  }
+  return lines.join('\n');
+}
+
+function colorForNode(kind) {
+  if (kind === 'cue') return '#f97316';
+  if (kind === 'preset') return '#38bdf8';
+  return '#22c55e';
+}
+
+function colorForLink(kind) {
+  if (kind === 'cue_fixture_hard') return '#ef4444';
+  if (kind === 'cue_preset') return '#38bdf8';
+  return '#0ea5e9';
+}
+
+function buildNodeIntensity(nodes, links) {
+  const scores = Object.fromEntries(nodes.map(node => [node.id, 1]));
+  const hardScores = Object.fromEntries(nodes.map(node => [node.id, Number(node.baseHardIntensity || 0)]));
+  const presetScores = Object.fromEntries(nodes.map(node => [node.id, Number(node.basePresetIntensity || 0)]));
+  nodes.forEach(node => {
+    scores[node.id] = (scores[node.id] || 1) + Number(node.baseHardIntensity || 0) + Number(node.basePresetIntensity || 0);
+  });
+  links.forEach(link => {
+    const weight = Number(link.weight || 1);
+    scores[link.source] = (scores[link.source] || 1) + weight;
+    scores[link.target] = (scores[link.target] || 1) + weight;
+    if (link.kind === 'cue_fixture_hard') {
+      hardScores[link.source] = (hardScores[link.source] || 0) + weight;
+      hardScores[link.target] = (hardScores[link.target] || 0) + weight;
+    } else {
+      presetScores[link.source] = (presetScores[link.source] || 0) + weight;
+      presetScores[link.target] = (presetScores[link.target] || 0) + weight;
+    }
+  });
+  const values = Object.values(scores);
+  const max = Math.max(...values, 1);
+  const maxHard = Math.max(...Object.values(hardScores), 0);
+  const maxPreset = Math.max(...Object.values(presetScores), 0);
+  nodes.forEach(node => {
+    node.intensity = scores[node.id] || 1;
+    node.sizeScale = max > 1 ? (node.intensity / max) : 1;
+    node.hardIntensity = hardScores[node.id] || 0;
+    node.presetIntensity = presetScores[node.id] || 0;
+    node.hardScale = maxHard > 0 ? node.hardIntensity / maxHard : 0;
+    node.presetScale = maxPreset > 0 ? node.presetIntensity / maxPreset : 0;
+    node.hardStrokeWidth = node.hardIntensity > 0 ? 1.5 + node.hardScale * 5 : 0;
+    node.presetStrokeWidth = node.presetIntensity > 0 ? 1.5 + node.presetScale * 5 : 1.5;
+    if (node.kind === 'fixture') {
+      node.radius = 28 + node.sizeScale * 18;
+      node.collision = node.radius + 18;
+    } else {
+      node.boxWidth = 120 + node.sizeScale * 48;
+      node.boxHeight = 40 + node.sizeScale * 12;
+      node.collision = Math.max(node.boxWidth, node.boxHeight) * 0.6;
+    }
+  });
+}
+
+function changeCue(delta) {
+  const cueSelect = document.getElementById('cueSelect');
+  const currentIndex = cueSelect.selectedIndex;
+  if (currentIndex < 0) return;
+  const nextIndex = currentIndex + delta;
+  if (nextIndex < 0 || nextIndex >= cueSelect.options.length) return;
+  cueSelect.selectedIndex = nextIndex;
+  renderCueGraph();
+}
+
+function renderForceGraph(containerId, detailId, statusId, nodes, links, statusText, onNodeClick) {
+  const container = document.getElementById(containerId);
+  const detailEl = document.getElementById(detailId);
+  const statusEl = document.getElementById(statusId);
+  container.innerHTML = '';
+  detailEl.textContent = 'Klikni na uzel v grafu.';
+  statusEl.textContent = statusText;
+
+  if (typeof window.d3 === 'undefined') {
+    detailEl.textContent = 'Tento experimentalni soubor potrebuje D3 skript.';
+    statusEl.textContent = 'D3 library is not available in this browser session.';
+    return;
+  }
+
+  buildNodeIntensity(nodes, links);
+
+  const width = container.clientWidth || 900;
+  const height = container.clientHeight || 560;
+  const svg = d3.select(container).append('svg')
+    .attr('viewBox', `0 0 ${width} ${height}`)
+    .attr('preserveAspectRatio', 'xMidYMid meet');
+
+  const defs = svg.append('defs');
+  const shadow = defs.append('filter').attr('id', `${containerId}-shadow`).attr('x', '-50%').attr('y', '-50%').attr('width', '200%').attr('height', '200%');
+  shadow.append('feDropShadow').attr('dx', 0).attr('dy', 10).attr('stdDeviation', 10).attr('flood-color', '#020617').attr('flood-opacity', 0.55);
+  const blueGlow = defs.append('filter').attr('id', `${containerId}-blue-glow`).attr('x', '-50%').attr('y', '-50%').attr('width', '200%').attr('height', '200%');
+  blueGlow.append('feDropShadow').attr('dx', 0).attr('dy', 0).attr('stdDeviation', 6).attr('flood-color', '#38bdf8').attr('flood-opacity', 0.45);
+  const redGlow = defs.append('filter').attr('id', `${containerId}-red-glow`).attr('x', '-50%').attr('y', '-50%').attr('width', '200%').attr('height', '200%');
+  redGlow.append('feDropShadow').attr('dx', 0).attr('dy', 0).attr('stdDeviation', 5).attr('flood-color', '#ef4444').attr('flood-opacity', 0.42);
+  const greenGlow = defs.append('filter').attr('id', `${containerId}-green-glow`).attr('x', '-50%').attr('y', '-50%').attr('width', '200%').attr('height', '200%');
+  greenGlow.append('feDropShadow').attr('dx', 0).attr('dy', 0).attr('stdDeviation', 5).attr('flood-color', '#22c55e').attr('flood-opacity', 0.34);
+
+  const root = svg.append('g');
+  root.append('g')
+    .selectAll('circle')
+    .data(d3.range(48))
+    .join('circle')
+    .attr('cx', () => Math.random() * width)
+    .attr('cy', () => Math.random() * height)
+    .attr('r', () => 0.7 + Math.random() * 1.6)
+    .attr('fill', '#dbeafe')
+    .attr('opacity', () => 0.05 + Math.random() * 0.08);
+  svg.call(
+    d3.zoom().scaleExtent([0.5, 2.5]).on('zoom', event => {
+      root.attr('transform', event.transform);
+    })
+  );
+
+  const simulation = d3.forceSimulation(nodes)
+    .force('link', d3.forceLink(links).id(d => d.id).distance(link => link.kind === 'cue_fixture_hard' ? 130 : 165).strength(0.55))
+    .force('charge', d3.forceManyBody().strength(-620))
+    .force('center', d3.forceCenter(width / 2, height / 2))
+    .force('collide', d3.forceCollide().radius(d => d.collision || 70));
+
+  const link = root.append('g')
+    .attr('stroke-linecap', 'round')
+    .selectAll('line')
+    .data(links)
+    .join('line')
+    .attr('stroke', d => colorForLink(d.kind))
+    .attr('stroke-opacity', d => d.kind === 'cue_fixture_hard' ? 0.92 : 0.58)
+    .attr('stroke-width', d => d.kind === 'cue_fixture_hard' ? Math.min(8, 2 + (d.weight || 1) * 0.35) : 2.5)
+    .style('filter', d => d.kind === 'cue_fixture_hard' ? `url(#${containerId}-red-glow)` : `url(#${containerId}-blue-glow)`);
+
+  const node = root.append('g')
+    .selectAll('g')
+    .data(nodes)
+    .join('g')
+    .style('cursor', 'pointer')
+    .style('filter', `url(#${containerId}-shadow)`)
+    .call(
+      d3.drag()
+        .on('start', (event, d) => {
+          if (!event.active) simulation.alphaTarget(0.3).restart();
+          d.fx = d.x;
+          d.fy = d.y;
+        })
+        .on('drag', (event, d) => {
+          d.fx = event.x;
+          d.fy = event.y;
+        })
+        .on('end', (event, d) => {
+          if (!event.active) simulation.alphaTarget(0);
+          d.fx = null;
+          d.fy = null;
+        })
+    )
+    .on('click', (event, d) => {
+      detailEl.textContent = onNodeClick ? onNodeClick(d) : describeNode(d);
+      node.attr('opacity', 0.45);
+      d3.select(event.currentTarget).attr('opacity', 1);
+    });
+
+  node.each(function(d) {
+    const g = d3.select(this);
+    if (d.kind === 'fixture') {
+      g.append('circle')
+        .attr('r', (d.radius || 34) + 10)
+        .attr('fill', colorForNode(d.kind))
+        .attr('opacity', 0.08)
+        .style('filter', `url(#${containerId}-green-glow)`);
+      g.append('circle')
+        .attr('r', d.radius || 34)
+        .attr('fill', colorForNode(d.kind))
+        .attr('fill-opacity', 0.92)
+        .attr('stroke', d.presetIntensity > 0 ? '#38bdf8' : '#0f172a')
+        .attr('stroke-width', d.presetStrokeWidth || 1.5);
+      g.append('circle')
+        .attr('r', (d.radius || 34) * 0.68)
+        .attr('fill', 'rgba(255,255,255,0.08)');
+      if (d.hardIntensity > 0) {
+        g.append('circle')
+          .attr('r', (d.radius || 34) + 4)
+          .attr('fill', 'none')
+          .attr('stroke', '#ef4444')
+          .attr('stroke-width', d.hardStrokeWidth || 2)
+          .attr('stroke-dasharray', '6 4')
+          .attr('opacity', 0.95)
+          .style('filter', `url(#${containerId}-red-glow)`);
+      }
+    } else {
+      g.append('rect')
+        .attr('x', d => -((d.boxWidth || 144) / 2) - 6)
+        .attr('y', d => -((d.boxHeight || 44) / 2) - 6)
+        .attr('width', d => (d.boxWidth || 144) + 12)
+        .attr('height', d => (d.boxHeight || 44) + 12)
+        .attr('rx', 16)
+        .attr('fill', colorForNode(d.kind))
+        .attr('opacity', d.kind === 'preset' ? 0.10 : 0.08)
+        .style('filter', `url(#${containerId}-${d.kind === 'preset' ? 'blue' : 'green'}-glow)`);
+      g.append('rect')
+        .attr('x', d => -(d.boxWidth || 144) / 2)
+        .attr('y', d => -(d.boxHeight || 44) / 2)
+        .attr('width', d => d.boxWidth || 144)
+        .attr('height', d => d.boxHeight || 44)
+        .attr('rx', 12)
+        .attr('fill', colorForNode(d.kind))
+        .attr('fill-opacity', 0.93)
+        .attr('stroke', d.presetIntensity > 0 ? '#38bdf8' : '#0f172a')
+        .attr('stroke-width', d.presetStrokeWidth || 1.5);
+      g.append('rect')
+        .attr('x', d => -(d.boxWidth || 144) / 2)
+        .attr('y', d => -(d.boxHeight || 44) / 2)
+        .attr('width', d => d.boxWidth || 144)
+        .attr('height', d => Math.max(10, (d.boxHeight || 44) * 0.28))
+        .attr('rx', 12)
+        .attr('fill', 'rgba(255,255,255,0.08)');
+      if (d.hardIntensity > 0) {
+        g.append('rect')
+          .attr('x', d => -((d.boxWidth || 144) / 2) - 4)
+          .attr('y', d => -((d.boxHeight || 44) / 2) - 4)
+          .attr('width', d => (d.boxWidth || 144) + 8)
+          .attr('height', d => (d.boxHeight || 44) + 8)
+          .attr('rx', 14)
+          .attr('fill', 'none')
+          .attr('stroke', '#ef4444')
+          .attr('stroke-width', d.hardStrokeWidth || 2)
+          .attr('stroke-dasharray', '6 4')
+          .attr('opacity', 0.95)
+          .style('filter', `url(#${containerId}-red-glow)`);
+      }
+    }
+    g.append('text')
+      .attr('text-anchor', 'middle')
+      .attr('dy', '.35em')
+      .attr('fill', '#07111d')
+      .style('font-size', d.kind === 'preset' ? '11.5px' : '11px')
+      .style('font-weight', '700')
+      .style('letter-spacing', '0.015em')
+      .selectAll('tspan')
+      .data((d.label || '').split(/\s+/).reduce((lines, word) => {
+        const current = lines[lines.length - 1] || '';
+        if ((current + ' ' + word).trim().length > 18) lines.push(word);
+        else lines[lines.length - 1] = (current + ' ' + word).trim();
+        return lines;
+      }, ['']).slice(0, 3))
+      .join('tspan')
+      .attr('x', 0)
+      .attr('dy', (line, i) => i === 0 ? 0 : 13)
+      .text(line => line);
+
+    if ((d.attributeTags || []).length) {
+      const chipGroup = g.append('g')
+        .attr('transform', () => {
+          const count = d.attributeTags.length;
+          const startX = -((count * 24) - 4) / 2;
+          const y = d.kind === 'fixture' ? -((d.radius || 34) + 20) : -((d.boxHeight || 44) / 2 + 18);
+          return `translate(${startX},${y})`;
+        });
+      d.attributeTags.forEach((tag, index) => {
+        const chip = chipGroup.append('g').attr('transform', `translate(${index * 24},0)`);
+        chip.append('rect')
+          .attr('x', 0)
+          .attr('y', 0)
+          .attr('width', tag.length > 2 ? 24 : 20)
+          .attr('height', 12)
+          .attr('rx', 6)
+          .attr('fill', 'rgba(8,17,29,0.92)')
+          .attr('stroke', '#cbd5e1')
+          .attr('stroke-width', 0.8);
+        chip.append('text')
+          .attr('x', tag.length > 2 ? 12 : 10)
+          .attr('y', 8.5)
+          .attr('text-anchor', 'middle')
+          .attr('fill', '#e7edf8')
+          .style('font-size', '8px')
+          .style('font-weight', '800')
+          .text(tag);
+      });
+    }
+  });
+
+  node.attr('opacity', 1);
+
+  simulation.on('tick', () => {
+    link
+      .attr('x1', d => d.source.x)
+      .attr('y1', d => d.source.y)
+      .attr('x2', d => d.target.x)
+      .attr('y2', d => d.target.y);
+
+    node.attr('transform', d => `translate(${d.x},${d.y})`);
+  });
+}
+
+function renderCueGraph() {
+  const selectedId = document.getElementById('cueSelect').value;
+  const cueData = MAIN_CUES.find(cue => `cue:${cue.sequence_number}:${cue.cue_number}` === selectedId);
+  if (!cueData) return;
+  const directLinks = GRAPH_LINKS.filter(link => link.source === selectedId);
+  const presetIds = directLinks.filter(link => link.type === 'cue_preset').map(link => link.target);
+  const hardFixtureIds = directLinks.filter(link => link.type === 'cue_fixture_hard').map(link => link.target);
+  const presetFixtureLinks = GRAPH_LINKS.filter(link => presetIds.includes(link.source) && link.type === 'preset_fixture');
+  const fixtureIds = [...new Set([...hardFixtureIds, ...presetFixtureLinks.map(link => link.target)])];
+
+  const nodes = [
+    {
+      id: selectedId,
+      label: `${cueData.cue_number} ${cueData.name || ''}`.trim(),
+      kind: 'cue',
+      cueRef: `${cueData.sequence_number}.${cueData.cue_number}`,
+      attributeTags: uniqueAttributeTags((cueData.values || []).map(atom => atom.attribute).filter(Boolean)),
+    },
+    ...presetIds.map(id => ({
+      id,
+      label: formatPresetLabel(GRAPH_NODE_INDEX[id]?.preset_number || '', GRAPH_NODE_INDEX[id]?.label || '', GRAPH_NODE_INDEX[id]?.preset_type || ''),
+      kind: 'preset',
+      presetNumber: GRAPH_NODE_INDEX[id]?.preset_number || '',
+      basePresetIntensity: presetFixtureLinks.filter(link => link.source === id).length,
+      attributeTags: uniqueAttributeTags(((PRESET_INDEX[GRAPH_NODE_INDEX[id]?.preset_number || '']?.values) || []).map(atom => atom.attribute).filter(Boolean)),
+    })),
+    ...fixtureIds.map(id => ({
+      id,
+      label: `${GRAPH_NODE_INDEX[id]?.fixture_id || ''} ${GRAPH_NODE_INDEX[id]?.label || ''}`.trim(),
+      kind: 'fixture',
+      fixtureId: GRAPH_NODE_INDEX[id]?.fixture_id || '',
+      baseHardIntensity: cueAtomsForFixture(cueData, GRAPH_NODE_INDEX[id]?.fixture_id).filter(atom => atom.value_type === 'hard').length || 0,
+      attributeTags: uniqueAttributeTags([
+        ...cueAtomsForFixture(cueData, GRAPH_NODE_INDEX[id]?.fixture_id).map(atom => atom.attribute).filter(Boolean),
+        ...presetFixtureAtomsForCueFixture(cueData, GRAPH_NODE_INDEX[id]?.fixture_id, directLinks).flatMap(item => (item.atoms || []).map(atom => atom.attribute).filter(Boolean)),
+      ]),
+    })),
+  ];
+
+  const links = [
+    ...presetIds.map(id => ({ source: selectedId, target: id, kind: 'cue_preset', weight: 1 })),
+    ...presetFixtureLinks.map(link => ({ source: link.source, target: link.target, kind: 'preset_fixture', weight: 1 })),
+    ...hardFixtureIds.map(id => ({
+      source: selectedId,
+      target: id,
+      kind: 'cue_fixture_hard',
+      weight: cueAtomsForFixture(cueData, GRAPH_NODE_INDEX[id]?.fixture_id).filter(atom => atom.value_type === 'hard').length || 1,
+    })),
+  ];
+
+  renderForceGraph(
+    'cueGraph',
+    'cueDetail',
+    'cueStatus',
+    nodes,
+    links,
+    `Cue ${cueData.sequence_number}.${cueData.cue_number} | presets=${presetIds.length} | fixtures=${fixtureIds.length}`,
+    node => {
+      if (node.kind !== 'fixture') {
+        return describeNode(node);
+      }
+      const atoms = cueAtomsForFixture(cueData, node.fixtureId);
+      const hardAttrs = [...new Set(atoms.filter(atom => atom.value_type === 'hard').map(atom => atom.attribute).filter(Boolean))];
+      const lines = [describeNode(node)];
+      if (hardAttrs.length) {
+        lines.push('', `Hard values v cue: ${hardAttrs.join(', ')}`);
+      }
+      return lines.join('\n');
+    }
+  );
+}
+
+function renderFixtureGraph() {
+  const fixtureId = Number(document.getElementById('fixtureSelect').value);
+  const patch = PATCH_INDEX[String(fixtureId)] || {};
+  const fixtureNodeId = `fixture:${fixtureId}`;
+  const rows = [];
+  MAIN_CUES.forEach(cue => {
+    const cueId = `cue:${cue.sequence_number}:${cue.cue_number}`;
+    const directLinks = GRAPH_LINKS.filter(link => link.source === cueId);
+    const hardAtoms = cueAtomsForFixture(cue, fixtureId).filter(atom => atom.value_type === 'hard');
+    const presetHits = presetFixtureAtomsForCueFixture(cue, fixtureId, directLinks);
+    if (!hardAtoms.length && !presetHits.length) return;
+    rows.push({ cue, cueId, hardAtoms, presetHits });
+  });
+  const presetNumbers = [...new Set(rows.flatMap(row => row.presetHits.map(item => item.presetNumber)))];
+
+  const nodes = [
+    {
+      id: fixtureNodeId,
+      label: `${fixtureId} ${patch.label || patch.name || ''}`.trim(),
+      kind: 'fixture',
+      fixtureId,
+      attributeTags: uniqueAttributeTags(rows.flatMap(row => [
+        ...(row.hardAtoms || []).map(atom => atom.attribute).filter(Boolean),
+        ...(row.presetHits || []).flatMap(item => (item.atoms || []).map(atom => atom.attribute).filter(Boolean)),
+      ])),
+    },
+    ...rows.map(row => ({
+      id: row.cueId,
+      label: `${row.cue.cue_number} ${row.cue.name || ''}`.trim(),
+      kind: 'cue',
+      cueRef: `${row.cue.sequence_number}.${row.cue.cue_number}`,
+      attributeTags: uniqueAttributeTags([
+        ...(row.hardAtoms || []).map(atom => atom.attribute).filter(Boolean),
+        ...(row.presetHits || []).flatMap(item => (item.atoms || []).map(atom => atom.attribute).filter(Boolean)),
+      ]),
+    })),
+    ...presetNumbers.map(number => ({
+      id: `preset:${number}`,
+      label: formatPresetLabel(number, PRESET_INDEX[number]?.name || '', PRESET_INDEX[number]?.preset_type || ''),
+      kind: 'preset',
+      presetNumber: number,
+      attributeTags: uniqueAttributeTags(((PRESET_INDEX[number]?.values) || []).map(atom => atom.attribute).filter(Boolean)),
+    })),
+  ];
+
+  const links = [
+    ...rows.map(row => ({ source: row.cueId, target: fixtureNodeId, kind: 'cue_fixture_hard', weight: row.hardAtoms.length || 1 })),
+    ...presetNumbers.map(number => ({ source: fixtureNodeId, target: `preset:${number}`, kind: 'preset_fixture', weight: 1 })),
+  ];
+
+  function fixtureGraphDetail(node) {
+    if (node.kind !== 'preset') {
+      return describeNode(node);
+    }
+    const matchingRows = rows.filter(row => row.presetHits.some(hit => hit.presetNumber === node.presetNumber));
+    const lines = [
+      'PRESET',
+      node.label || '',
+      '',
+      `Pouzit v cues: ${matchingRows.length}`,
+      '',
+    ];
+    matchingRows.forEach(row => {
+      const matchingHit = row.presetHits.find(hit => hit.presetNumber === node.presetNumber);
+      const hardCount = row.hardAtoms.length;
+      lines.push(`${row.cue.sequence_number}.${row.cue.cue_number} ${row.cue.name || ''}`.trim());
+      if (matchingHit?.atoms?.length) {
+        const attrs = [...new Set(matchingHit.atoms.map(atom => atom.attribute).filter(Boolean))];
+        if (attrs.length) {
+          lines.push(`  preset attrs: ${attrs.join(', ')}`);
+        }
+      }
+      if (hardCount) {
+        const hardAttrs = [...new Set(row.hardAtoms.map(atom => atom.attribute).filter(Boolean))];
+        lines.push(`  hard values: ${hardAttrs.join(', ')}`);
+      }
+      lines.push('');
+    });
+    return lines.join('\n').trim();
+  }
+
+  renderForceGraph(
+    'fixtureGraph',
+    'fixtureDetail',
+    'fixtureStatus',
+    nodes,
+    links,
+    `Fixture ${fixtureId} ${patch.label || patch.name || ''} | cues=${rows.length} | presets=${presetNumbers.length}`,
+    fixtureGraphDetail
+  );
+}
+
+function renderGlobalGraph() {
+  const selectedPreset = document.getElementById('globalPresetSelect')?.value || '';
+  const allNodes = (GRAPH.nodes || [])
+    .filter(node => ['cue', 'preset', 'fixture'].includes(node.type))
+    .map(node => {
+      if (node.type === 'cue') {
+        return {
+          id: node.id,
+          label: `${node.sequence_number || ''}.${node.cue_number || ''} ${node.label || ''}`.trim(),
+          kind: 'cue',
+          cueRef: `${node.sequence_number || ''}.${node.cue_number || ''}`,
+          attributeTags: uniqueAttributeTags((MAIN_CUES.find(cue => `cue:${cue.sequence_number}:${cue.cue_number}` === node.id)?.values || []).map(atom => atom.attribute).filter(Boolean)),
+        };
+      }
+      if (node.type === 'preset') {
+        return {
+          id: node.id,
+          label: formatPresetLabel(node.preset_number || '', node.label || '', node.preset_type || ''),
+          kind: 'preset',
+          presetNumber: node.preset_number || '',
+          attributeTags: uniqueAttributeTags(((PRESET_INDEX[node.preset_number || '']?.values) || []).map(atom => atom.attribute).filter(Boolean)),
+        };
+      }
+      return {
+        id: node.id,
+        label: `${node.fixture_id || ''} ${node.label || ''}`.trim(),
+        kind: 'fixture',
+        fixtureId: node.fixture_id || '',
+        attributeTags: uniqueAttributeTags([
+          ...MAIN_CUES.flatMap(cue => cueAtomsForFixture(cue, node.fixture_id || '').map(atom => atom.attribute).filter(Boolean)),
+          ...((GRAPH.links || [])
+            .filter(link => link.type === 'preset_fixture' && link.target === node.id)
+            .flatMap(link => ((PRESET_INDEX[String(link.source).replace(/^preset:/, '')]?.values) || [])
+              .filter(atom => Number(atom.fixture_id) === Number(node.fixture_id || 0))
+              .map(atom => atom.attribute)
+              .filter(Boolean))),
+        ]),
+      };
+    });
+
+  const allowedLinks = ['cue_preset', 'cue_fixture_hard', 'preset_fixture'];
+  const allLinks = (GRAPH.links || [])
+    .filter(link => allowedLinks.includes(link.type))
+    .map(link => ({
+      source: link.source,
+      target: link.target,
+      kind: link.type,
+      weight: Number(link.weight || 1),
+    }))
+    .filter(link => allNodes.some(node => node.id === link.source) && allNodes.some(node => node.id === link.target));
+
+  let globalNodes = allNodes;
+  let globalLinks = allLinks;
+
+  if (selectedPreset) {
+    const selectedPresetId = `preset:${selectedPreset}`;
+    const presetFixtureLinks = allLinks.filter(link => link.kind === 'preset_fixture' && link.source === selectedPresetId);
+    const fixtureIds = new Set(presetFixtureLinks.map(link => link.target));
+    const cuePresetLinks = allLinks.filter(link => link.kind === 'cue_preset' && link.target === selectedPresetId);
+    const cueIds = new Set(cuePresetLinks.map(link => link.source));
+    const hardLinks = allLinks.filter(link => link.kind === 'cue_fixture_hard' && cueIds.has(link.source) && fixtureIds.has(link.target));
+    const allowedNodeIds = new Set([selectedPresetId, ...fixtureIds, ...cueIds]);
+    globalNodes = allNodes.filter(node => allowedNodeIds.has(node.id));
+    globalLinks = [...cuePresetLinks, ...presetFixtureLinks, ...hardLinks];
+  }
+
+  renderForceGraph(
+    'globalGraph',
+    'globalDetail',
+    'globalStatus',
+    globalNodes,
+    globalLinks,
+    `Globalni rozsah | cues=${globalNodes.filter(node => node.kind === 'cue').length} | presets=${globalNodes.filter(node => node.kind === 'preset').length} | fixtures=${globalNodes.filter(node => node.kind === 'fixture').length} | links=${globalLinks.length}`,
+    node => {
+      const base = describeNode(node);
+      if (node.kind !== 'preset') return base;
+      const matchingCues = globalLinks.filter(link => link.kind === 'cue_preset' && link.target === node.id).map(link => link.source);
+      const cueLabels = globalNodes
+        .filter(item => matchingCues.includes(item.id))
+        .map(item => item.label)
+        .sort();
+      if (!cueLabels.length) return base;
+      return `${base}\n\nPouzit v cues:\n- ${cueLabels.join('\n- ')}`;
+    }
+  );
+}
+
+function init() {
+  const cueSelect = document.getElementById('cueSelect');
+  MAIN_CUES.forEach(cue => {
+    const option = document.createElement('option');
+    option.value = `cue:${cue.sequence_number}:${cue.cue_number}`;
+    option.textContent = `${cue.sequence_number}.${cue.cue_number} - ${cue.name || ''}`;
+    cueSelect.appendChild(option);
+  });
+  cueSelect.addEventListener('change', renderCueGraph);
+  document.getElementById('cuePrev').addEventListener('click', () => changeCue(-1));
+  document.getElementById('cueNext').addEventListener('click', () => changeCue(1));
+
+  const fixtureSelect = document.getElementById('fixtureSelect');
+  const fixtureIds = [...new Set(MAIN_CUES.flatMap(cue => (cue.fixture_ids || []).map(id => String(id))))].sort((a, b) => Number(a) - Number(b));
+  fixtureIds.forEach(id => {
+    const patch = PATCH_INDEX[id] || {};
+    const option = document.createElement('option');
+    option.value = id;
+    option.textContent = [id, patch.label || patch.name || '', patch.fixture_type || '', patch.patch || ''].filter(Boolean).join(' | ');
+    fixtureSelect.appendChild(option);
+  });
+  fixtureSelect.addEventListener('change', renderFixtureGraph);
+
+  const globalPresetSelect = document.getElementById('globalPresetSelect');
+  const allPresetNumbers = [...new Set((GRAPH.nodes || []).filter(node => node.type === 'preset').map(node => node.preset_number).filter(Boolean))];
+  const allOption = document.createElement('option');
+  allOption.value = '';
+  allOption.textContent = 'Vsechny presety';
+  globalPresetSelect.appendChild(allOption);
+  allPresetNumbers.sort((a, b) => String(a).localeCompare(String(b), undefined, { numeric: true })).forEach(number => {
+    const preset = PRESET_INDEX[number];
+    const option = document.createElement('option');
+    option.value = number;
+    option.textContent = formatPresetLabel(number, preset?.name || '', preset?.preset_type || '');
+    globalPresetSelect.appendChild(option);
+  });
+  globalPresetSelect.addEventListener('change', renderGlobalGraph);
+
+  renderCueGraph();
+  renderFixtureGraph();
+  renderGlobalGraph();
+}
+
+init();
+</script>
+</body>
+</html>
+

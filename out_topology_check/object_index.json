@@ -1,0 +1,20 @@
+{
+  "sequence_numbers": [
+    "1"
+  ],
+  "preset_numbers": [
+    "1.5",
+    "2.7"
+  ],
+  "group_numbers": [
+    "3"
+  ],
+  "effect_numbers": [
+    "12"
+  ],
+  "fixture_ids": [
+    101,
+    102,
+    103
+  ]
+}

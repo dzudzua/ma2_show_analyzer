@@ -1,0 +1,563 @@
+[
+  {
+    "fixture_id": 1,
+    "name": "RSpiide3 1",
+    "label": null,
+    "fixture_type": null,
+    "mode": null,
+    "patch": null,
+    "universe": null,
+    "address": null,
+    "source_file": "exports\\patch666_patch.xml",
+    "metadata": {
+      "index": "0",
+      "name": "RSpiide3 1",
+      "fixtureid": "1",
+      "fixturetype.name": "6 SPIIDER 33CH Mode 3",
+      "subfixture.index": "0",
+      "subfixture.reacttograndmaster": "true",
+      "subfixture.color": "ffffff"
+    }
+  },
+  {
+    "fixture_id": 2,
+    "name": "RSpiide3 2",
+    "label": null,
+    "fixture_type": null,
+    "mode": null,
+    "patch": null,
+    "universe": null,
+    "address": null,
+    "source_file": "exports\\patch666_patch.xml",
+    "metadata": {
+      "index": "1",
+      "name": "RSpiide3 2",
+      "fixtureid": "2",
+      "fixturetype.name": "6 SPIIDER 33CH Mode 3",
+      "subfixture.index": "0",
+      "subfixture.reacttograndmaster": "true",
+      "subfixture.color": "ffffff"
+    }
+  },
+  {
+    "fixture_id": 3,
+    "name": "RSpiide3 3",
+    "label": null,
+    "fixture_type": null,
+    "mode": null,
+    "patch": null,
+    "universe": null,
+    "address": null,
+    "source_file": "exports\\patch666_patch.xml",
+    "metadata": {
+      "index": "2",
+      "name": "RSpiide3 3",
+      "fixtureid": "3",
+      "fixturetype.name": "6 SPIIDER 33CH Mode 3",
+      "subfixture.index": "0",
+      "subfixture.reacttograndmaster": "true",
+      "subfixture.color": "ffffff"
+    }
+  },
+  {
+    "fixture_id": 4,
+    "name": "RSpiide3 4",
+    "label": null,
+    "fixture_type": null,
+    "mode": null,
+    "patch": null,
+    "universe": null,
+    "address": null,
+    "source_file": "exports\\patch666_patch.xml",
+    "metadata": {
+      "index": "3",
+      "name": "RSpiide3 4",
+      "fixtureid": "4",
+      "fixturetype.name": "6 SPIIDER 33CH Mode 3",
+      "subfixture.index": "0",
+      "subfixture.reacttograndmaster": "true",
+      "subfixture.color": "ffffff"
+    }
+  },
+  {
+    "fixture_id": 5,
+    "name": "RSpiide3 5",
+    "label": null,
+    "fixture_type": null,
+    "mode": null,
+    "patch": null,
+    "universe": null,
+    "address": null,
+    "source_file": "exports\\patch666_patch.xml",
+    "metadata": {
+      "index": "4",
+      "name": "RSpiide3 5",
+      "fixtureid": "5",
+      "fixturetype.name": "6 SPIIDER 33CH Mode 3",
+      "subfixture.index": "0",
+      "subfixture.reacttograndmaster": "true",
+      "subfixture.color": "ffffff"
+    }
+  },
+  {
+    "fixture_id": 6,
+    "name": "RSpiide3 6",
+    "label": null,
+    "fixture_type": null,
+    "mode": null,
+    "patch": null,
+    "universe": null,
+    "address": null,
+    "source_file": "exports\\patch666_patch.xml",
+    "metadata": {
+      "index": "5",
+      "name": "RSpiide3 6",
+      "fixtureid": "6",
+      "fixturetype.name": "6 SPIIDER 33CH Mode 3",
+      "subfixture.index": "0",
+      "subfixture.reacttograndmaster": "true",
+      "subfixture.color": "ffffff"
+    }
+  },
+  {
+    "fixture_id": 7,
+    "name": "RSpiide3 7",
+    "label": null,
+    "fixture_type": null,
+    "mode": null,
+    "patch": null,
+    "universe": null,
+    "address": null,
+    "source_file": "exports\\patch666_patch.xml",
+    "metadata": {
+      "index": "6",
+      "name": "RSpiide3 7",
+      "fixtureid": "7",
+      "fixturetype.name": "6 SPIIDER 33CH Mode 3",
+      "subfixture.index": "0",
+      "subfixture.reacttograndmaster": "true",
+      "subfixture.color": "ffffff"
+    }
+  },
+  {
+    "fixture_id": 8,
+    "name": "RSpiide3 8",
+    "label": null,
+    "fixture_type": null,
+    "mode": null,
+    "patch": null,
+    "universe": null,
+    "address": null,
+    "source_file": "exports\\patch666_patch.xml",
+    "metadata": {
+      "index": "7",
+      "name": "RSpiide3 8",
+      "fixtureid": "8",
+      "fixturetype.name": "6 SPIIDER 33CH Mode 3",
+      "subfixture.index": "0",
+      "subfixture.reacttograndmaster": "true",
+      "subfixture.color": "ffffff"
+    }
+  },
+  {
+    "fixture_id": 21,
+    "name": "Sp30012 1",
+    "label": null,
+    "fixture_type": null,
+    "mode": null,
+    "patch": null,
+    "universe": null,
+    "address": null,
+    "source_file": "exports\\patch666_patch.xml",
+    "metadata": {
+      "index": "9",
+      "name": "Sp30012 1",
+      "fixtureid": "21",
+      "fixturetype.name": "9 Robin 300 LEDWash Mode 2",
+      "subfixture.index": "0",
+      "subfixture.reacttograndmaster": "true",
+      "subfixture.color": "ffffff"
+    }
+  },
+  {
+    "fixture_id": 22,
+    "name": "Sp30012 2",
+    "label": null,
+    "fixture_type": null,
+    "mode": null,
+    "patch": null,
+    "universe": null,
+    "address": null,
+    "source_file": "exports\\patch666_patch.xml",
+    "metadata": {
+      "index": "10",
+      "name": "Sp30012 2",
+      "fixtureid": "22",
+      "fixturetype.name": "9 Robin 300 LEDWash Mode 2",
+      "subfixture.index": "0",
+      "subfixture.reacttograndmaster": "true",
+      "subfixture.color": "ffffff"
+    }
+  },
+  {
+    "fixture_id": 23,
+    "name": "Sp30012 3",
+    "label": null,
+    "fixture_type": null,
+    "mode": null,
+    "patch": null,
+    "universe": null,
+    "address": null,
+    "source_file": "exports\\patch666_patch.xml",
+    "metadata": {
+      "index": "11",
+      "name": "Sp30012 3",
+      "fixtureid": "23",
+      "fixturetype.name": "9 Robin 300 LEDWash Mode 2",
+      "subfixture.index": "0",
+      "subfixture.reacttograndmaster": "true",
+      "subfixture.color": "ffffff"
+    }
+  },
+  {
+    "fixture_id": 24,
+    "name": "Sp30012 4",
+    "label": null,
+    "fixture_type": null,
+    "mode": null,
+    "patch": null,
+    "universe": null,
+    "address": null,
+    "source_file": "exports\\patch666_patch.xml",
+    "metadata": {
+      "index": "12",
+      "name": "Sp30012 4",
+      "fixtureid": "24",
+      "fixturetype.name": "9 Robin 300 LEDWash Mode 2",
+      "subfixture.index": "0",
+      "subfixture.reacttograndmaster": "true",
+      "subfixture.color": "ffffff"
+    }
+  },
+  {
+    "fixture_id": 25,
+    "name": "Sp30012 5",
+    "label": null,
+    "fixture_type": null,
+    "mode": null,
+    "patch": null,
+    "universe": null,
+    "address": null,
+    "source_file": "exports\\patch666_patch.xml",
+    "metadata": {
+      "index": "15",
+      "name": "Sp30012 5",
+      "fixtureid": "25",
+      "fixturetype.name": "4 Sixpar 300 12 Channel",
+      "subfixture.index": "0",
+      "subfixture.reacttograndmaster": "true",
+      "subfixture.color": "ffffff"
+    }
+  },
+  {
+    "fixture_id": 26,
+    "name": "Sp30012 6",
+    "label": null,
+    "fixture_type": null,
+    "mode": null,
+    "patch": null,
+    "universe": null,
+    "address": null,
+    "source_file": "exports\\patch666_patch.xml",
+    "metadata": {
+      "index": "16",
+      "name": "Sp30012 6",
+      "fixtureid": "26",
+      "fixturetype.name": "4 Sixpar 300 12 Channel",
+      "subfixture.index": "0",
+      "subfixture.reacttograndmaster": "true",
+      "subfixture.color": "ffffff"
+    }
+  },
+  {
+    "fixture_id": 27,
+    "name": "Sp30012 7",
+    "label": null,
+    "fixture_type": null,
+    "mode": null,
+    "patch": null,
+    "universe": null,
+    "address": null,
+    "source_file": "exports\\patch666_patch.xml",
+    "metadata": {
+      "index": "17",
+      "name": "Sp30012 7",
+      "fixtureid": "27",
+      "fixturetype.name": "4 Sixpar 300 12 Channel",
+      "subfixture.index": "0",
+      "subfixture.reacttograndmaster": "true",
+      "subfixture.color": "ffffff"
+    }
+  },
+  {
+    "fixture_id": 28,
+    "name": "Sp30012 8",
+    "label": null,
+    "fixture_type": null,
+    "mode": null,
+    "patch": null,
+    "universe": null,
+    "address": null,
+    "source_file": "exports\\patch666_patch.xml",
+    "metadata": {
+      "index": "18",
+      "name": "Sp30012 8",
+      "fixtureid": "28",
+      "fixturetype.name": "4 Sixpar 300 12 Channel",
+      "subfixture.index": "0",
+      "subfixture.reacttograndmaster": "true",
+      "subfixture.color": "ffffff"
+    }
+  },
+  {
+    "fixture_id": 31,
+    "name": "NP300cR 1",
+    "label": null,
+    "fixture_type": null,
+    "mode": null,
+    "patch": null,
+    "universe": null,
+    "address": null,
+    "source_file": "exports\\patch666_patch.xml",
+    "metadata": {
+      "index": "13",
+      "name": "NP300cR 1",
+      "fixtureid": "31",
+      "fixturetype.name": "8 FP1 Titan Tube RGBS 1 Pixel - Strobe On",
+      "subfixture.index": "0",
+      "subfixture.reacttograndmaster": "true",
+      "subfixture.color": "ffffff"
+    }
+  },
+  {
+    "fixture_id": 32,
+    "name": "NP300cR 2",
+    "label": null,
+    "fixture_type": null,
+    "mode": null,
+    "patch": null,
+    "universe": null,
+    "address": null,
+    "source_file": "exports\\patch666_patch.xml",
+    "metadata": {
+      "index": "14",
+      "name": "NP300cR 2",
+      "fixtureid": "32",
+      "fixturetype.name": "8 FP1 Titan Tube RGBS 1 Pixel - Strobe On",
+      "subfixture.index": "0",
+      "subfixture.reacttograndmaster": "true",
+      "subfixture.color": "ffffff"
+    }
+  },
+  {
+    "fixture_id": 41,
+    "name": "RPointe1 1",
+    "label": null,
+    "fixture_type": null,
+    "mode": null,
+    "patch": null,
+    "universe": null,
+    "address": null,
+    "source_file": "exports\\patch666_patch.xml",
+    "metadata": {
+      "index": "23",
+      "name": "RPointe1 1",
+      "fixtureid": "41",
+      "fixturetype.name": "10 Robin Pointe Mode 1",
+      "subfixture.index": "0",
+      "subfixture.reacttograndmaster": "true",
+      "subfixture.color": "ffffff"
+    }
+  },
+  {
+    "fixture_id": 42,
+    "name": "RPointe1 2",
+    "label": null,
+    "fixture_type": null,
+    "mode": null,
+    "patch": null,
+    "universe": null,
+    "address": null,
+    "source_file": "exports\\patch666_patch.xml",
+    "metadata": {
+      "index": "24",
+      "name": "RPointe1 2",
+      "fixtureid": "42",
+      "fixturetype.name": "10 Robin Pointe Mode 1",
+      "subfixture.index": "0",
+      "subfixture.reacttograndmaster": "true",
+      "subfixture.color": "ffffff"
+    }
+  },
+  {
+    "fixture_id": 43,
+    "name": "RPointe1 3",
+    "label": null,
+    "fixture_type": null,
+    "mode": null,
+    "patch": null,
+    "universe": null,
+    "address": null,
+    "source_file": "exports\\patch666_patch.xml",
+    "metadata": {
+      "index": "25",
+      "name": "RPointe1 3",
+      "fixtureid": "43",
+      "fixturetype.name": "10 Robin Pointe Mode 1",
+      "subfixture.index": "0",
+      "subfixture.reacttograndmaster": "true",
+      "subfixture.color": "ffffff"
+    }
+  },
+  {
+    "fixture_id": 51,
+    "name": "LUMI 1",
+    "label": null,
+    "fixture_type": null,
+    "mode": null,
+    "patch": null,
+    "universe": null,
+    "address": null,
+    "source_file": "exports\\patch666_patch.xml",
+    "metadata": {
+      "index": "26",
+      "name": "LUMI 1",
+      "fixtureid": "51",
+      "fixturetype.name": "11 Lumipix 16H 8 channel",
+      "subfixture.index": "0",
+      "subfixture.reacttograndmaster": "true",
+      "subfixture.color": "ffffff"
+    }
+  },
+  {
+    "fixture_id": 52,
+    "name": "LUMI 2",
+    "label": null,
+    "fixture_type": null,
+    "mode": null,
+    "patch": null,
+    "universe": null,
+    "address": null,
+    "source_file": "exports\\patch666_patch.xml",
+    "metadata": {
+      "index": "27",
+      "name": "LUMI 2",
+      "fixtureid": "52",
+      "fixturetype.name": "11 Lumipix 16H 8 channel",
+      "subfixture.index": "0",
+      "subfixture.reacttograndmaster": "true",
+      "subfixture.color": "ffffff"
+    }
+  },
+  {
+    "fixture_id": 53,
+    "name": "LUMI 3",
+    "label": null,
+    "fixture_type": null,
+    "mode": null,
+    "patch": null,
+    "universe": null,
+    "address": null,
+    "source_file": "exports\\patch666_patch.xml",
+    "metadata": {
+      "index": "28",
+      "name": "LUMI 3",
+      "fixtureid": "53",
+      "fixturetype.name": "11 Lumipix 16H 8 channel",
+      "subfixture.index": "0",
+      "subfixture.reacttograndmaster": "true",
+      "subfixture.color": "ffffff"
+    }
+  },
+  {
+    "fixture_id": 222,
+    "name": "R3LEDWm2 1",
+    "label": null,
+    "fixture_type": null,
+    "mode": null,
+    "patch": null,
+    "universe": null,
+    "address": null,
+    "source_file": "exports\\patch666_patch.xml",
+    "metadata": {
+      "index": "8",
+      "name": "R3LEDWm2 1",
+      "fixtureid": "222",
+      "fixturetype.name": "9 Robin 300 LEDWash Mode 2",
+      "subfixture.index": "0",
+      "subfixture.reacttograndmaster": "true",
+      "subfixture.color": "ffffff"
+    }
+  },
+  {
+    "fixture_id": 666,
+    "name": "Unique21 1",
+    "label": null,
+    "fixture_type": null,
+    "mode": null,
+    "patch": null,
+    "universe": null,
+    "address": null,
+    "source_file": "exports\\patch666_patch.xml",
+    "metadata": {
+      "index": "19",
+      "name": "Unique21 1",
+      "fixtureid": "666",
+      "fixturetype.name": "5 Unique 2.1 00",
+      "subfixture.index": "0",
+      "subfixture.reacttograndmaster": "true",
+      "subfixture.color": "ffffff"
+    }
+  },
+  {
+    "fixture_id": 667,
+    "name": "Unique21 2",
+    "label": null,
+    "fixture_type": null,
+    "mode": null,
+    "patch": null,
+    "universe": null,
+    "address": null,
+    "source_file": "exports\\patch666_patch.xml",
+    "metadata": {
+      "index": "20",
+      "name": "Unique21 2",
+      "fixtureid": "667",
+      "fixturetype.name": "5 Unique 2.1 00",
+      "subfixture.index": "0",
+      "subfixture.reacttograndmaster": "true",
+      "subfixture.color": "ffffff"
+    }
+  },
+  {
+    "fixture_id": 668,
+    "name": "Tezka",
+    "label": null,
+    "fixture_type": null,
+    "mode": null,
+    "patch": null,
+    "universe": null,
+    "address": null,
+    "source_file": "exports\\patch666_patch.xml",
+    "metadata": {
+      "index": "21",
+      "name": "Tezka",
+      "fixtureid": "668",
+      "channelid": "668",
+      "fixturetype.name": "2 Dimmer 00",
+      "subfixture.index": "0",
+      "subfixture.reacttograndmaster": "true",
+      "subfixture.color": "ffffff"
+    }
+  }
+]

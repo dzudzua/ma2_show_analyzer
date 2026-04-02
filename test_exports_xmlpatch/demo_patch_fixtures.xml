@@ -1,0 +1,5 @@
+<Fixtures>
+  <Fixture fixtureid="101" name="Wash 101" label="Front Left Wash" fixturetype="Robe LEDWash 600" mode="Mode 1" universe="1" address="1" patch="1.1" />
+  <Fixture fixtureid="102" name="Wash 102" label="Front Center Wash" fixturetype="Robe LEDWash 600" mode="Mode 1" universe="1" address="17" patch="1.17" />
+  <Fixture fixtureid="103" name="Spot 103" label="DS Center Spot" fixturetype="Martin MAC Viper" mode="Extended" universe="1" address="33" patch="1.33" />
+</Fixtures>

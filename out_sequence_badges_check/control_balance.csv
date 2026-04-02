@@ -1,0 +1,5 @@
+sequence_number,cue_number,cue_name,fixture_id,fixture_name,fixture_type,fixture_patch,control_mode,hard_attribute_count,hard_attributes,dimmer_attribute_count,dimmer_attributes,preset_ref_count,preset_refs,preset_types
+1,1,Blackout,101,Front Left Wash,Robe LEDWash 600,1.1,preset_only,0,[],1,"[""Dimmer""]",1,"[""1.5""]","[""1""]"
+1,1,Blackout,102,Front Center Wash,Robe LEDWash 600,1.17,preset_only,0,[],0,[],1,"[""1.5""]","[""1""]"
+1,1,Blackout,103,DS Center Spot,Martin MAC Viper,1.33,preset_only,0,[],0,[],1,"[""2.7""]","[""2""]"
+1,2,Build,101,Front Left Wash,Robe LEDWash 600,1.1,none,0,[],1,"[""Dimmer""]",0,[],[]

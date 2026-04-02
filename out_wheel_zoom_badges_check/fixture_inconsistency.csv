@@ -1,0 +1,145 @@
+fixture_id,fixture_name,fixture_type,fixture_patch,feature_group,hard_cue_count,preset_cue_count,mixed_cue_count,sequence_count,details
+101,,,,Color,15,31,8,2,family uses both hard and preset control across 38 cues
+102,,,,Color,14,34,8,2,family uses both hard and preset control across 40 cues
+201,,,,Color,15,25,7,2,family uses both hard and preset control across 33 cues
+101,,,,Position,17,32,6,2,family uses both hard and preset control across 43 cues
+102,,,,Position,15,35,6,2,family uses both hard and preset control across 44 cues
+202,,,,Color,13,28,6,2,family uses both hard and preset control across 35 cues
+201,,,,Position,16,25,5,2,family uses both hard and preset control across 36 cues
+202,,,,Position,16,28,5,2,family uses both hard and preset control across 39 cues
+21,,,,Color,12,30,5,3,family uses both hard and preset control across 37 cues
+22,,,,Color,12,30,5,3,family uses both hard and preset control across 37 cues
+23,,,,Color,12,30,5,3,family uses both hard and preset control across 37 cues
+24,,,,Color,12,30,5,3,family uses both hard and preset control across 37 cues
+25,,,,Color,12,30,5,3,family uses both hard and preset control across 37 cues
+26,,,,Color,12,30,5,3,family uses both hard and preset control across 37 cues
+108,RSpiide3 8,7 Robin Spiider Mode 3,4.304,Color,12,42,5,2,family uses both hard and preset control across 49 cues
+106,RSpiide3 6,7 Robin Spiider Mode 3,4.166,Position,10,22,5,2,family uses both hard and preset control across 27 cues
+106,RSpiide3 6,7 Robin Spiider Mode 3,4.166,Color,9,23,5,2,family uses both hard and preset control across 27 cues
+5,,,,Color,28,42,4,4,family uses both hard and preset control across 66 cues
+2,,,,Color,16,42,4,3,family uses both hard and preset control across 54 cues
+108,RSpiide3 8,7 Robin Spiider Mode 3,4.304,Position,13,43,4,2,family uses both hard and preset control across 52 cues
+107,RSpiide3 7,7 Robin Spiider Mode 3,4.271,Color,11,44,4,2,family uses both hard and preset control across 51 cues
+27,,,,Color,9,27,4,2,family uses both hard and preset control across 32 cues
+28,,,,Color,9,27,4,2,family uses both hard and preset control across 32 cues
+101,,,,Other,7,31,4,2,family uses both hard and preset control across 34 cues
+102,,,,Other,7,34,4,2,family uses both hard and preset control across 37 cues
+1,,,,Color,27,42,3,4,family uses both hard and preset control across 66 cues
+3,,,,Color,15,43,3,3,family uses both hard and preset control across 55 cues
+4,,,,Color,15,42,3,4,family uses both hard and preset control across 54 cues
+6,,,,Color,14,42,3,3,family uses both hard and preset control across 53 cues
+7,,,,Color,14,43,3,3,family uses both hard and preset control across 54 cues
+8,,,,Color,14,42,3,3,family uses both hard and preset control across 53 cues
+201,,,,Beam,13,25,3,2,family uses both hard and preset control across 35 cues
+107,RSpiide3 7,7 Robin Spiider Mode 3,4.271,Beam,12,43,3,2,family uses both hard and preset control across 52 cues
+101,,,,Beam,11,32,3,2,family uses both hard and preset control across 40 cues
+107,RSpiide3 7,7 Robin Spiider Mode 3,4.271,Position,11,45,3,2,family uses both hard and preset control across 53 cues
+29,,,,Color,8,24,3,2,family uses both hard and preset control across 29 cues
+30,,,,Color,7,24,3,2,family uses both hard and preset control across 28 cues
+31,,,,Color,7,24,3,2,family uses both hard and preset control across 28 cues
+32,,,,Color,7,24,3,2,family uses both hard and preset control across 28 cues
+15,,,,Color,6,28,3,2,family uses both hard and preset control across 31 cues
+201,,,,Other,6,25,3,2,family uses both hard and preset control across 28 cues
+202,,,,Other,6,28,3,2,family uses both hard and preset control across 31 cues
+103,RSpiide3 3,7 Robin Spiider Mode 3,4.067,Color,5,29,3,2,family uses both hard and preset control across 31 cues
+41,RLB350M1 1,12 Robin LEDBeam 350 Mode 1,13.001,Color,19,30,2,2,family uses both hard and preset control across 47 cues
+42,RLB350M1 2,12 Robin LEDBeam 350 Mode 1,13.023,Color,19,30,2,2,family uses both hard and preset control across 47 cues
+47,RLB350M1 7,12 Robin LEDBeam 350 Mode 1,5.001,Color,19,30,2,2,family uses both hard and preset control across 47 cues
+48,RLB350M1 8,12 Robin LEDBeam 350 Mode 1,5.023,Color,19,30,2,2,family uses both hard and preset control across 47 cues
+102,,,,Beam,8,35,2,2,family uses both hard and preset control across 41 cues
+14,,,,Color,7,30,2,3,family uses both hard and preset control across 35 cues
+43,RLB350M1 3,12 Robin LEDBeam 350 Mode 1,13.045,Color,6,18,2,1,family uses both hard and preset control across 22 cues
+44,RLB350M1 4,12 Robin LEDBeam 350 Mode 1,13.067,Color,6,18,2,1,family uses both hard and preset control across 22 cues
+45,RLB350M1 5,12 Robin LEDBeam 350 Mode 1,13.089,Color,6,18,2,1,family uses both hard and preset control across 22 cues
+46,RLB350M1 6,12 Robin LEDBeam 350 Mode 1,13.111,Color,6,18,2,1,family uses both hard and preset control across 22 cues
+49,RLB350M1 9,12 Robin LEDBeam 350 Mode 1,5.045,Color,6,18,2,1,family uses both hard and preset control across 22 cues
+50,RLB350M1 10,12 Robin LEDBeam 350 Mode 1,5.067,Color,6,18,2,1,family uses both hard and preset control across 22 cues
+51,RLB350M1 11,12 Robin LEDBeam 350 Mode 1,5.089,Color,6,18,2,1,family uses both hard and preset control across 22 cues
+52,RLB350M1 12,12 Robin LEDBeam 350 Mode 1,5.111,Color,6,18,2,1,family uses both hard and preset control across 22 cues
+106,RSpiide3 6,7 Robin Spiider Mode 3,4.166,Beam,6,22,2,2,family uses both hard and preset control across 26 cues
+14,,,,Position,5,7,2,2,family uses both hard and preset control across 10 cues
+14,,,,Beam,5,7,2,2,family uses both hard and preset control across 10 cues
+16,,,,Color,5,34,2,6,family uses both hard and preset control across 37 cues
+101,,,,Control,5,30,2,2,family uses both hard and preset control across 33 cues
+102,,,,Control,5,33,2,2,family uses both hard and preset control across 36 cues
+104,RSpiide3 4,7 Robin Spiider Mode 3,4.100,Position,5,18,2,2,family uses both hard and preset control across 21 cues
+104,RSpiide3 4,7 Robin Spiider Mode 3,4.100,Color,5,19,2,2,family uses both hard and preset control across 22 cues
+105,RSpiide3 5,7 Robin Spiider Mode 3,4.133,Position,4,20,2,2,family uses both hard and preset control across 22 cues
+21,,,,Position,3,6,2,2,family uses both hard and preset control across 7 cues
+22,,,,Position,3,6,2,2,family uses both hard and preset control across 7 cues
+23,,,,Position,3,6,2,2,family uses both hard and preset control across 7 cues
+24,,,,Position,3,6,2,2,family uses both hard and preset control across 7 cues
+25,,,,Position,3,6,2,2,family uses both hard and preset control across 7 cues
+26,,,,Position,3,6,2,2,family uses both hard and preset control across 7 cues
+103,RSpiide3 3,7 Robin Spiider Mode 3,4.067,Position,3,28,2,2,family uses both hard and preset control across 29 cues
+15,,,,Position,2,5,2,1,family uses both hard and preset control across 5 cues
+15,,,,Beam,2,5,2,1,family uses both hard and preset control across 5 cues
+202,,,,Beam,10,28,1,2,family uses both hard and preset control across 37 cues
+40,,,,Color,8,24,1,2,family uses both hard and preset control across 31 cues
+108,RSpiide3 8,7 Robin Spiider Mode 3,4.304,Beam,8,41,1,2,family uses both hard and preset control across 48 cues
+104,RSpiide3 4,7 Robin Spiider Mode 3,4.100,Beam,6,18,1,2,family uses both hard and preset control across 23 cues
+11,,,,Color,4,39,1,6,family uses both hard and preset control across 42 cues
+201,,,,Control,4,23,1,2,family uses both hard and preset control across 26 cues
+202,,,,Control,4,26,1,2,family uses both hard and preset control across 29 cues
+67,HotboxW8 1,14 Hotbox RGBW 8 channel,1.401,Color,3,5,1,2,family uses both hard and preset control across 7 cues
+105,RSpiide3 5,7 Robin Spiider Mode 3,4.133,Color,3,21,1,2,family uses both hard and preset control across 23 cues
+21,,,,Beam,2,6,1,2,family uses both hard and preset control across 7 cues
+22,,,,Beam,2,6,1,2,family uses both hard and preset control across 7 cues
+23,,,,Beam,2,6,1,2,family uses both hard and preset control across 7 cues
+24,,,,Beam,2,6,1,2,family uses both hard and preset control across 7 cues
+25,,,,Beam,2,6,1,2,family uses both hard and preset control across 7 cues
+26,,,,Beam,2,6,1,2,family uses both hard and preset control across 7 cues
+107,RSpiide3 7,7 Robin Spiider Mode 3,4.271,Other,2,44,1,2,family uses both hard and preset control across 45 cues
+108,RSpiide3 8,7 Robin Spiider Mode 3,4.304,Other,2,42,1,2,family uses both hard and preset control across 43 cues
+11,,,,Gobo,1,16,1,5,family uses both hard and preset control across 16 cues
+11,,,,Other,1,16,1,5,family uses both hard and preset control across 16 cues
+11,,,,Position,1,16,1,5,family uses both hard and preset control across 16 cues
+11,,,,Beam,1,16,1,5,family uses both hard and preset control across 16 cues
+13,,,,Color,5,25,0,3,family uses both hard and preset control across 30 cues
+13,,,,Position,5,2,0,2,family uses both hard and preset control across 7 cues
+13,,,,Beam,5,2,0,2,family uses both hard and preset control across 7 cues
+14,,,,Other,4,5,0,2,family uses both hard and preset control across 9 cues
+105,RSpiide3 5,7 Robin Spiider Mode 3,4.133,Beam,4,20,0,2,family uses both hard and preset control across 24 cues
+106,RSpiide3 6,7 Robin Spiider Mode 3,4.166,Control,4,14,0,2,family uses both hard and preset control across 18 cues
+106,RSpiide3 6,7 Robin Spiider Mode 3,4.166,Other,4,15,0,2,family uses both hard and preset control across 19 cues
+9,,,,Color,3,23,0,2,family uses both hard and preset control across 26 cues
+10,,,,Color,3,23,0,2,family uses both hard and preset control across 26 cues
+12,,,,Color,3,36,0,6,family uses both hard and preset control across 39 cues
+14,,,,Gobo,3,5,0,2,family uses both hard and preset control across 8 cues
+17,,,,Color,3,37,0,6,family uses both hard and preset control across 40 cues
+18,,,,Color,3,33,0,2,family uses both hard and preset control across 36 cues
+19,,,,Color,3,23,0,2,family uses both hard and preset control across 26 cues
+20,,,,Color,3,23,0,2,family uses both hard and preset control across 26 cues
+33,,,,Color,3,23,0,2,family uses both hard and preset control across 26 cues
+34,,,,Color,3,23,0,2,family uses both hard and preset control across 26 cues
+35,,,,Color,3,23,0,2,family uses both hard and preset control across 26 cues
+36,,,,Color,3,23,0,2,family uses both hard and preset control across 26 cues
+37,,,,Color,3,23,0,2,family uses both hard and preset control across 26 cues
+38,,,,Color,3,23,0,2,family uses both hard and preset control across 26 cues
+39,,,,Color,3,23,0,2,family uses both hard and preset control across 26 cues
+103,RSpiide3 3,7 Robin Spiider Mode 3,4.067,Control,3,19,0,2,family uses both hard and preset control across 22 cues
+103,RSpiide3 3,7 Robin Spiider Mode 3,4.067,Other,3,20,0,2,family uses both hard and preset control across 23 cues
+104,RSpiide3 4,7 Robin Spiider Mode 3,4.100,Control,3,13,0,2,family uses both hard and preset control across 16 cues
+104,RSpiide3 4,7 Robin Spiider Mode 3,4.100,Other,3,14,0,2,family uses both hard and preset control across 17 cues
+15,,,,Gobo,2,2,0,1,family uses both hard and preset control across 4 cues
+15,,,,Other,2,2,0,1,family uses both hard and preset control across 4 cues
+105,RSpiide3 5,7 Robin Spiider Mode 3,4.133,Control,2,16,0,2,family uses both hard and preset control across 18 cues
+105,RSpiide3 5,7 Robin Spiider Mode 3,4.133,Other,2,17,0,2,family uses both hard and preset control across 19 cues
+107,RSpiide3 7,7 Robin Spiider Mode 3,4.271,Control,2,41,0,2,family uses both hard and preset control across 43 cues
+108,RSpiide3 8,7 Robin Spiider Mode 3,4.304,Control,2,39,0,2,family uses both hard and preset control across 41 cues
+4,,,,Position,1,20,0,2,family uses both hard and preset control across 21 cues
+4,,,,Beam,1,20,0,2,family uses both hard and preset control across 21 cues
+13,,,,Gobo,1,2,0,2,family uses both hard and preset control across 3 cues
+13,,,,Other,1,2,0,2,family uses both hard and preset control across 3 cues
+16,,,,Other,1,13,0,6,family uses both hard and preset control across 14 cues
+65,HotboxW8 5,14 Hotbox RGBW 8 channel,2.249,Color,1,4,0,2,family uses both hard and preset control across 5 cues
+66,HotboxW8 6,14 Hotbox RGBW 8 channel,2.257,Color,1,4,0,2,family uses both hard and preset control across 5 cues
+71,HelM1 1,16 Helios Tube 1: RGB - 1 Pixel - Strobe Off,14.001,Color,1,4,0,2,family uses both hard and preset control across 5 cues
+72,HelM1 2,16 Helios Tube 1: RGB - 1 Pixel - Strobe Off,14.004,Color,1,4,0,2,family uses both hard and preset control across 5 cues
+73,HelM1 3,16 Helios Tube 1: RGB - 1 Pixel - Strobe Off,14.007,Color,1,4,0,2,family uses both hard and preset control across 5 cues
+74,HelM1 4,16 Helios Tube 1: RGB - 1 Pixel - Strobe Off,14.010,Color,1,4,0,2,family uses both hard and preset control across 5 cues
+75,HelM1 5,16 Helios Tube 1: RGB - 1 Pixel - Strobe Off,14.013,Color,1,4,0,2,family uses both hard and preset control across 5 cues
+76,HelM1 6,16 Helios Tube 1: RGB - 1 Pixel - Strobe Off,14.016,Color,1,4,0,2,family uses both hard and preset control across 5 cues
+77,HelM1 7,16 Helios Tube 1: RGB - 1 Pixel - Strobe Off,14.019,Color,1,4,0,2,family uses both hard and preset control across 5 cues
+78,HelM1 8,16 Helios Tube 1: RGB - 1 Pixel - Strobe Off,14.022,Color,1,4,0,2,family uses both hard and preset control across 5 cues
+103,RSpiide3 3,7 Robin Spiider Mode 3,4.067,Beam,1,28,0,2,family uses both hard and preset control across 29 cues

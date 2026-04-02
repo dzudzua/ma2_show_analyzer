@@ -1,0 +1,23 @@
+[
+  {
+    "fixture_type": "Robe LEDWash 600",
+    "modes": [
+      "Mode 1"
+    ],
+    "fixture_ids": [
+      101,
+      102
+    ],
+    "count": 2
+  },
+  {
+    "fixture_type": "Martin MAC Viper",
+    "modes": [
+      "Extended"
+    ],
+    "fixture_ids": [
+      103
+    ],
+    "count": 1
+  }
+]

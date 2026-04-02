@@ -1,0 +1,495 @@
+﻿<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>grandMA2 Warnings Overview</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #111827; color: #e5e7eb; }
+    header { padding: 14px 20px; background: #0f172a; position: sticky; top: 0; z-index: 10; border-bottom: 1px solid #334155; }
+    .header-brand { display:flex; gap:12px; align-items:center; margin-bottom:10px; }
+    .header-brand img { width:min(170px, 28vw); max-width:100%; height:auto; object-fit:contain; border-radius:0; padding:0; background:none; border:none; box-shadow:0 6px 18px rgba(0,0,0,.18); }
+    .header-copy { min-width:0; }
+    .wrap { padding: 24px; }
+    .card { background: #1f2937; border-radius: 16px; padding: 16px; box-shadow: 0 4px 20px rgba(0,0,0,.25); margin-bottom: 20px; }
+    .muted { color: #94a3b8; font-size: 12px; }
+    .topbar { display:flex; justify-content:space-between; align-items:flex-start; gap:10px; flex-wrap:wrap; }
+    .nav-shell { display:grid; gap:8px; min-width:min(640px, 100%); }
+    .category-nav, .page-nav { display:flex; gap:10px; flex-wrap:wrap; }
+    .nav-pill, .page-nav button { padding: 8px 12px; border-radius: 999px; border: 1px solid #334155; background: #172033; color: #e5e7eb; text-decoration: none; cursor: pointer; font-size: 13px; }
+    .nav-pill.active { background: rgba(56,189,248,.14); border-color: rgba(56,189,248,.45); color:#e0f2fe; }
+    .nav-pill:hover, .page-nav button:hover { background: #22304b; }
+    input, select { width: 100%; padding: 10px; border-radius: 10px; border: 1px solid #334155; background: #0f172a; color: #e5e7eb; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { text-align: left; border-bottom: 1px solid #334155; padding: 8px; vertical-align: top; }
+    th { position: sticky; top: 0; background: #172033; z-index: 1; }
+    th.sortable { cursor: pointer; user-select: none; }
+    th.sortable:hover { background: #22304b; }
+    .layout { display:grid; grid-template-columns: 320px 1fr; gap: 20px; }
+    @media (max-width: 1000px) { .layout { grid-template-columns: 1fr; } }
+    .checklist { display:grid; gap:8px; }
+    .checkline { display:flex; align-items:center; gap:8px; }
+    .checkline input[type="checkbox"] { width:auto; }
+    .stats { display:grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap:12px; margin-top:16px; }
+    .stat { background:#172033; border-radius:12px; padding:12px; }
+    .table-wrap { overflow:auto; max-height: 74vh; border:1px solid #334155; border-radius:12px; }
+    .selected-row td { background: rgba(56,189,248,.08); }
+    .warning-row-high td { background: rgba(127,29,29,.18); }
+    .warning-row-medium td { background: rgba(120,53,15,.16); }
+    .warning-row-low td { background: rgba(30,58,138,.12); }
+    .selected-row.warning-row-high td,
+    .selected-row.warning-row-medium td,
+    .selected-row.warning-row-low td { background: rgba(56,189,248,.18); }
+    .detail-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:12px; }
+    .detail-box { background:#172033; border-radius:12px; padding:12px; }
+    .detail-table { width:100%; border-collapse: collapse; }
+    .detail-table td { padding: 6px 8px; border-bottom: 1px solid #334155; vertical-align: top; }
+    .detail-table td:first-child { width: 32%; color:#94a3b8; }
+    .pill { display:inline-block; padding:2px 8px; background:#334155; border-radius:999px; font-size:12px; }
+    .pill-high { background:#7f1d1d; color:#fecaca; font-weight:700; }
+    .pill-medium { background:#78350f; color:#fde68a; font-weight:700; }
+    .pill-low { background:#1e3a8a; color:#bfdbfe; font-weight:700; }
+    .pre { white-space: pre-wrap; word-break: break-word; }
+    @media print {
+      body { background: #fff; color: #000; }
+      header, .controls-print-hide { display: none !important; }
+      .wrap { padding: 0; }
+      .card { box-shadow: none; border: 1px solid #ccc; background: #fff; color: #000; }
+      th, td { border-bottom: 1px solid #ccc; color: #000; }
+      th { background: #f1f5f9; }
+      .layout { display:block; }
+      .table-wrap { max-height: none; overflow: visible; border: none; }
+    }
+  </style>
+  <link rel="stylesheet" href="app_shell.css">
+</head>
+<body>
+<header>
+  <div class="header-brand">
+    <img src="logo_graindma.png" alt="grandMA2 Show Analyzer logo">
+    <div class="header-copy">
+      <h1 style="margin:0 0 8px;">grandMA2 Warnings Overview</h1>
+      <div class="muted">Validace show modelu se severity, filtry a PDF exportem.</div>
+    </div>
+  </div>
+  <div class="topbar">
+    <div class="nav-shell">
+      <div class="category-nav">
+        <a class="nav-pill" href="dashboard.html">Přehled show</a>
+        <a class="nav-pill" href="cue_list.html">Cue a sekvence</a>
+        <a class="nav-pill" href="patch.html">Patch a fixture</a>
+        <a class="nav-pill active" href="warnings.html">Rizika a varování</a>
+        <a class="nav-pill" href="explorer.html">Vztahy a grafy</a>
+      </div>
+      <div class="page-nav">
+        <a class="nav-pill active" href="warnings.html">Warnings</a>
+        <a class="nav-pill" href="cue_quality.html">Cue quality</a>
+        <a class="nav-pill" href="preset_logic_breaks.html">Preset logic breaks</a>
+        <a class="nav-pill" href="missing_preset_opportunities.html">Missing preset opportunities</a>
+        <a class="nav-pill" href="patch.html">Patch</a>
+        <a class="nav-pill" href="cue_list.html">Cue list</a>
+        <button id="printBtn" type="button">Export do PDF</button>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="wrap">
+  <div class="stats controls-print-hide">
+    <div class="stat"><div class="muted">Warnings</div><div id="warningCount" style="font-size:24px; font-weight:700;">0</div></div>
+    <div class="stat"><div class="muted">High</div><div id="highCount" style="font-size:24px; font-weight:700;">0</div></div>
+    <div class="stat"><div class="muted">Medium</div><div id="mediumCount" style="font-size:24px; font-weight:700;">0</div></div>
+    <div class="stat"><div class="muted">Low</div><div id="lowCount" style="font-size:24px; font-weight:700;">0</div></div>
+    <div class="stat"><div class="muted">Visible rows</div><div id="visibleCount" style="font-size:24px; font-weight:700;">0</div></div>
+    <div class="stat"><div class="muted">Selected rows</div><div id="selectedCount" style="font-size:24px; font-weight:700;">0</div></div>
+    <div class="stat"><div class="muted">Visible columns</div><div id="visibleColumnsCount" style="font-size:24px; font-weight:700;">0</div></div>
+  </div>
+
+  <div class="layout" style="margin-top:20px;">
+    <div class="controls-print-hide">
+      <div class="card">
+        <h2 style="margin-top:0;">Filtr</h2>
+        <input id="warningFilter" placeholder="Filtrovat podle severity, kind, fixture, detailu nebo cue">
+        <div class="checkline" style="margin-top:12px;">
+          <input id="selectedOnlyToggle" type="checkbox">
+          <label for="selectedOnlyToggle">Zobrazit jen vybrane radky</label>
+        </div>
+      </div>
+      <div class="card">
+        <h2 style="margin-top:0;">Severity</h2>
+        <div class="checkline"><input id="severityHigh" type="checkbox" checked><label for="severityHigh">High</label></div>
+        <div class="checkline"><input id="severityMedium" type="checkbox" checked><label for="severityMedium">Medium</label></div>
+        <div class="checkline"><input id="severityLow" type="checkbox" checked><label for="severityLow">Low</label></div>
+        <div class="checkline" style="margin-top:12px;"><input id="muteLowToggle" type="checkbox"><label for="muteLowToggle">Mute low warnings</label></div>
+      </div>
+      <div class="card">
+        <h2 style="margin-top:0;">Kind</h2>
+        <select id="kindFilter"></select>
+      </div>
+      <div class="card">
+        <h2 style="margin-top:0;">Sloupce</h2>
+        <div id="columnControls" class="checklist"></div>
+      </div>
+      <div class="card">
+        <h2 style="margin-top:0;">Radky</h2>
+        <div class="checkline">
+          <input id="selectAllVisibleRows" type="checkbox">
+          <label for="selectAllVisibleRows">Vybrat vsechny viditelne</label>
+        </div>
+        <div class="muted" style="margin-top:8px;">Vyber radky pro soustredeny pohled a PDF export.</div>
+      </div>
+    </div>
+
+    <div>
+      <div class="card">
+        <h2 style="margin-top:0;">Warnings Table</h2>
+        <div class="table-wrap">
+          <table id="warningTable">
+            <thead><tr id="warningHeadRow"></tr></thead>
+            <tbody id="warningBody"></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card">
+        <h2 style="margin-top:0;">Warning Detail</h2>
+        <div id="warningDetail"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="table_panzoom.js"></script>
+<script>
+const DATA = $DATA_JSON;
+const FIXTURE_INDEX = Object.fromEntries((DATA.fixture_registry || DATA.patch_fixtures || []).map(row => [String(row.fixture_id), row]));
+const PAGE_QUERY = new URLSearchParams(window.location.search);
+
+function severityRank(severity) {
+  if (severity === 'high') return 3;
+  if (severity === 'medium') return 2;
+  if (severity === 'low') return 1;
+  return 0;
+}
+
+function warningBadgeHtml(severity) {
+  const sev = String(severity || 'low').toLowerCase();
+  return `<span class="pill pill-${sev}">${sev.toUpperCase()}</span>`;
+}
+
+function buildCueIndexByFixture() {
+  const index = {};
+  for (const sequence of (DATA.sequences || [])) {
+    for (const cue of (sequence.cues || [])) {
+      (cue.fixture_ids || []).forEach(fixtureId => {
+        const key = String(fixtureId);
+        if (!index[key]) index[key] = [];
+        index[key].push({
+          row_id: cue.id,
+          sequence_number: sequence.number || '',
+          sequence_name: sequence.name || '',
+          cue_number: cue.cue_number || '',
+          cue_name: cue.name || '',
+        });
+      });
+    }
+  }
+  return index;
+}
+
+const CUES_BY_FIXTURE = buildCueIndexByFixture();
+const WARNING_ROWS = (DATA.warnings || []).map((warning, index) => {
+  const fixture = warning.fixture_id !== undefined && warning.fixture_id !== null
+    ? FIXTURE_INDEX[String(warning.fixture_id)] || null
+    : null;
+  const touchingCues = warning.fixture_id !== undefined && warning.fixture_id !== null
+    ? (CUES_BY_FIXTURE[String(warning.fixture_id)] || [])
+    : [];
+  return {
+    row_id: `${warning.kind || 'warning'}:${warning.fixture_id ?? 'na'}:${index}`,
+    severity: String(warning.severity || 'low').toLowerCase(),
+    kind: warning.kind || '',
+    title: warning.title || warning.kind || '',
+    message: warning.message || warning.details || '',
+    suggestion: warning.suggestion || '',
+    subject: warning.subject || '',
+    details: warning.message || warning.details || '',
+    fixture_id: warning.fixture_id ?? '',
+    fixture_name: fixture?.label || fixture?.name || '',
+    fixture_type: fixture?.fixture_type || '',
+    patch: fixture?.patch || '',
+    cue_count: touchingCues.length,
+    cues_text: touchingCues.map(cue => `${cue.sequence_number}.${cue.cue_number} ${cue.cue_name || ''}`.trim()).join('\n'),
+  };
+});
+const WARNING_KINDS = [...new Set(WARNING_ROWS.map(row => row.kind).filter(Boolean))].sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
+
+const WARNING_COLUMNS = [
+  { key: 'selected', label: 'Sel', isSelection: true, visible: true },
+  { key: 'severity', label: 'Severity', visible: true },
+  { key: 'title', label: 'Co je špatně', visible: true },
+  { key: 'fixture_id', label: 'Fixture ID', visible: true },
+  { key: 'fixture_name', label: 'Fixture Name', visible: true },
+  { key: 'fixture_type', label: 'Fixture Type', visible: false },
+  { key: 'patch', label: 'Patch', visible: false },
+  { key: 'cue_count', label: 'Touched Cues', visible: true },
+  { key: 'subject', label: 'Technický cíl', visible: false },
+  { key: 'details', label: 'Vysvětlení', visible: true },
+  { key: 'suggestion', label: 'Doporučení', visible: false },
+  { key: 'kind', label: 'Technický kód', visible: false },
+  { key: 'cues_text', label: 'Cues', visible: false },
+];
+
+const selectedRows = new Set();
+let focusedRowId = WARNING_ROWS[0]?.row_id || null;
+let sortKey = 'severity';
+let sortDirection = 'desc';
+
+function visibleColumns() {
+  return WARNING_COLUMNS.filter(column => column.visible);
+}
+
+function renderColumnControls() {
+  const root = document.getElementById('columnControls');
+  root.innerHTML = '';
+  WARNING_COLUMNS.forEach(column => {
+    const line = document.createElement('label');
+    line.className = 'checkline';
+    const input = document.createElement('input');
+    input.type = 'checkbox';
+    input.checked = column.visible;
+    input.addEventListener('change', () => {
+      column.visible = input.checked;
+      renderWarningsTable();
+    });
+    line.appendChild(input);
+    const text = document.createElement('span');
+    text.textContent = column.label;
+    line.appendChild(text);
+    root.appendChild(line);
+  });
+}
+
+function rowMatchesFilter(row, filter) {
+  return `${row.severity} ${row.kind} ${row.title} ${row.subject} ${row.details} ${row.suggestion} ${row.fixture_id} ${row.fixture_name} ${row.fixture_type} ${row.patch} ${row.cues_text}`.toLowerCase().includes(filter);
+}
+
+function renderKindFilter() {
+  const select = document.getElementById('kindFilter');
+  select.innerHTML = '';
+  const all = document.createElement('option');
+  all.value = '';
+  all.textContent = 'Všechny typy';
+  select.appendChild(all);
+  WARNING_KINDS.forEach(kind => {
+    const option = document.createElement('option');
+    option.value = kind;
+    option.textContent = kind;
+    select.appendChild(option);
+  });
+}
+
+function sortableValue(row, key) {
+  if (key === 'severity') return severityRank(String(row.severity || '').toLowerCase());
+  const value = row?.[key];
+  if (value === undefined || value === null) return '';
+  return String(value).trim();
+}
+
+function compareRows(left, right) {
+  const a = sortableValue(left, sortKey);
+  const b = sortableValue(right, sortKey);
+  const aNum = Number(a);
+  const bNum = Number(b);
+  const aIsNum = a !== '' && Number.isFinite(aNum);
+  const bIsNum = b !== '' && Number.isFinite(bNum);
+  if (aIsNum && bIsNum) {
+    if (aNum < bNum) return -1;
+    if (aNum > bNum) return 1;
+    return 0;
+  }
+  return String(a).localeCompare(String(b), undefined, { numeric: true, sensitivity: 'base' });
+}
+
+function currentRows() {
+  const filter = document.getElementById('warningFilter').value.toLowerCase().trim();
+  const kindFilter = document.getElementById('kindFilter').value;
+  const selectedOnly = document.getElementById('selectedOnlyToggle').checked;
+  const allowHigh = document.getElementById('severityHigh').checked;
+  const allowMedium = document.getElementById('severityMedium').checked;
+  const allowLow = document.getElementById('severityLow').checked;
+  const direction = sortDirection === 'desc' ? -1 : 1;
+  return WARNING_ROWS.filter(row => {
+    if (selectedOnly && !selectedRows.has(row.row_id)) return false;
+    if (kindFilter && row.kind !== kindFilter) return false;
+    if (row.severity === 'high' && !allowHigh) return false;
+    if (row.severity === 'medium' && !allowMedium) return false;
+    if (row.severity === 'low' && !allowLow) return false;
+    if (!filter) return true;
+    return rowMatchesFilter(row, filter);
+  }).slice().sort((left, right) => compareRows(left, right) * direction);
+}
+
+function updateStats(rows) {
+  document.getElementById('warningCount').textContent = String(WARNING_ROWS.length);
+  document.getElementById('highCount').textContent = String(WARNING_ROWS.filter(row => row.severity === 'high').length);
+  document.getElementById('mediumCount').textContent = String(WARNING_ROWS.filter(row => row.severity === 'medium').length);
+  document.getElementById('lowCount').textContent = String(WARNING_ROWS.filter(row => row.severity === 'low').length);
+  document.getElementById('visibleCount').textContent = String(rows.length);
+  document.getElementById('selectedCount').textContent = String(selectedRows.size);
+  document.getElementById('visibleColumnsCount').textContent = String(visibleColumns().length);
+}
+
+function renderWarningDetail() {
+  const root = document.getElementById('warningDetail');
+  const row = WARNING_ROWS.find(item => item.row_id === focusedRowId) || WARNING_ROWS[0];
+  if (!row) {
+    root.innerHTML = '<div class="muted">Warnings zatim nejsou k dispozici.</div>';
+    return;
+  }
+  focusedRowId = row.row_id;
+  root.innerHTML = `
+    <div class="detail-grid">
+      <div class="detail-box">
+        <div class="muted">Severity</div>
+        <div style="font-size:20px; font-weight:700;">${warningBadgeHtml(row.severity)}</div>
+        <div style="margin-top:8px;">${row.title || row.kind || '-'}</div>
+      </div>
+      <div class="detail-box">
+        <div class="muted">Fixture</div>
+        <div style="font-size:20px; font-weight:700;">${row.fixture_id || '-'}</div>
+        <div style="margin-top:8px;">${row.fixture_name || 'Bez fixture vazby'}</div>
+      </div>
+      <div class="detail-box">
+        <div class="muted">Touched cues</div>
+        <div style="font-size:20px; font-weight:700;">${row.cue_count || 0}</div>
+        <div style="margin-top:8px;">${row.patch || '-'}</div>
+      </div>
+    </div>
+    <div class="card" style="margin-top:16px; margin-bottom:16px;">
+      <h3 style="margin-top:0;">Warning</h3>
+      <table class="detail-table"><tbody>
+        <tr><td>Severity</td><td>${String(row.severity || '').toUpperCase()}</td></tr>
+        <tr><td>Co je špatně</td><td>${row.title || ''}</td></tr>
+        <tr><td>Vysvětlení</td><td>${row.details || ''}</td></tr>
+        <tr><td>Doporučení</td><td>${row.suggestion || ''}</td></tr>
+        <tr><td>Technický kód</td><td>${row.kind || ''}</td></tr>
+        <tr><td>Technický cíl</td><td>${row.subject || ''}</td></tr>
+      </tbody></table>
+    </div>
+    <div class="card" style="margin-top:0; margin-bottom:16px;">
+      <h3 style="margin-top:0;">Fixture context</h3>
+      <table class="detail-table"><tbody>
+        <tr><td>Fixture ID</td><td>${row.fixture_id || ''}</td></tr>
+        <tr><td>Name</td><td>${row.fixture_name || ''}</td></tr>
+        <tr><td>Type</td><td>${row.fixture_type || ''}</td></tr>
+        <tr><td>Patch</td><td>${row.patch || ''}</td></tr>
+      </tbody></table>
+    </div>
+    <div class="card" style="margin-top:0; margin-bottom:0;">
+      <h3 style="margin-top:0;">Touched cues</h3>
+      <div class="pre">${row.cues_text || 'No related cues detected.'}</div>
+    </div>
+  `;
+}
+
+function toggleSort(columnKey) {
+  if (sortKey === columnKey) {
+    sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
+  } else {
+    sortKey = columnKey;
+    sortDirection = columnKey === 'severity' ? 'desc' : 'asc';
+  }
+  renderWarningsTable();
+}
+
+function renderWarningsTable() {
+  const rows = currentRows();
+  const columns = visibleColumns();
+  const head = document.getElementById('warningHeadRow');
+  const body = document.getElementById('warningBody');
+  head.innerHTML = '';
+  body.innerHTML = '';
+
+  columns.forEach(column => {
+    const th = document.createElement('th');
+    if (!column.isSelection) {
+      th.className = 'sortable';
+      th.addEventListener('click', () => toggleSort(column.key));
+    }
+    const marker = !column.isSelection && sortKey === column.key ? (sortDirection === 'asc' ? ' \u2191' : ' \u2193') : '';
+    th.textContent = `${column.label}${marker}`;
+    head.appendChild(th);
+  });
+
+  rows.forEach(row => {
+    const tr = document.createElement('tr');
+    const classes = [];
+    if (row.severity) classes.push(`warning-row-${row.severity}`);
+    if (selectedRows.has(row.row_id) || row.row_id === focusedRowId) classes.push('selected-row');
+    if (classes.length) tr.className = classes.join(' ');
+    tr.addEventListener('click', event => {
+      if (event.target.tagName !== 'INPUT') {
+        focusedRowId = row.row_id;
+        renderWarningsTable();
+      }
+    });
+    columns.forEach(column => {
+      const td = document.createElement('td');
+      if (column.isSelection) {
+        const input = document.createElement('input');
+        input.type = 'checkbox';
+        input.checked = selectedRows.has(row.row_id);
+        input.addEventListener('change', () => {
+          if (input.checked) selectedRows.add(row.row_id);
+          else selectedRows.delete(row.row_id);
+          renderWarningsTable();
+        });
+        td.appendChild(input);
+      } else if (column.key === 'severity') {
+        td.innerHTML = warningBadgeHtml(row.severity);
+      } else if (column.key === 'cues_text') {
+        td.className = 'pre';
+        td.textContent = row.cues_text || '';
+      } else {
+        td.textContent = row[column.key] || '';
+      }
+      tr.appendChild(td);
+    });
+    body.appendChild(tr);
+  });
+
+  const allVisibleSelected = rows.length > 0 && rows.every(row => selectedRows.has(row.row_id));
+  document.getElementById('selectAllVisibleRows').checked = allVisibleSelected;
+  updateStats(rows);
+  renderWarningDetail();
+}
+
+document.getElementById('warningFilter').addEventListener('input', renderWarningsTable);
+document.getElementById('kindFilter').addEventListener('change', renderWarningsTable);
+document.getElementById('selectedOnlyToggle').addEventListener('change', renderWarningsTable);
+document.getElementById('severityHigh').addEventListener('change', renderWarningsTable);
+document.getElementById('severityMedium').addEventListener('change', renderWarningsTable);
+document.getElementById('severityLow').addEventListener('change', renderWarningsTable);
+document.getElementById('muteLowToggle').addEventListener('change', event => {
+  const enabled = !event.target.checked;
+  document.getElementById('severityLow').checked = enabled;
+  renderWarningsTable();
+});
+document.getElementById('selectAllVisibleRows').addEventListener('change', event => {
+  const rows = currentRows();
+  if (event.target.checked) rows.forEach(row => selectedRows.add(row.row_id));
+  else rows.forEach(row => selectedRows.delete(row.row_id));
+  renderWarningsTable();
+});
+document.getElementById('printBtn').addEventListener('click', () => window.print());
+
+const initialFilter = PAGE_QUERY.get('q');
+if (initialFilter) {
+  document.getElementById('warningFilter').value = initialFilter;
+}
+
+renderColumnControls();
+renderKindFilter();
+renderWarningsTable();
+</script>
+</body>
+</html>
+

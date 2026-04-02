@@ -1,0 +1,870 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="styles/fixture+layer+layers@csv.xsl"?>
+<?xml-stylesheet type="text/xsl" href="styles/fixture+layer+layers@html@default.xsl" alternate="yes"?>
+<MA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.malighting.de/grandma2/xml/MA" xsi:schemaLocation="http://schemas.malighting.de/grandma2/xml/MA http://schemas.malighting.de/grandma2/xml/3.9.61/MA.xsd" major_vers="3" minor_vers="9" stream_vers="61">
+	<Info datetime="2026-03-30T14:30:21" showfile="dekkadancers_studio54" />
+	<Fixture index="0" name="Par 1" channel_id="1">
+		<FixtureType name="4 Dimmer 00">
+			<No>4</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>48</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="1" name="Par 2" channel_id="2">
+		<FixtureType name="4 Dimmer 00">
+			<No>4</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>59</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="2" name="Par 3" channel_id="3">
+		<FixtureType name="4 Dimmer 00">
+			<No>4</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>25</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="3" name="Par 4" channel_id="4">
+		<FixtureType name="4 Dimmer 00">
+			<No>4</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>157</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="4" name="Par 5" channel_id="5">
+		<FixtureType name="4 Dimmer 00">
+			<No>4</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>160</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="5" name="Par 6" channel_id="6">
+		<FixtureType name="4 Dimmer 00">
+			<No>4</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>176</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="6" name="Par 7" channel_id="7">
+		<FixtureType name="4 Dimmer 00">
+			<No>4</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>175</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="7" name="Par 8" channel_id="8">
+		<FixtureType name="4 Dimmer 00">
+			<No>4</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>37</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="8" name="Par 9" channel_id="9">
+		<FixtureType name="4 Dimmer 00">
+			<No>4</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>90</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="9" name="Par 10" channel_id="10">
+		<FixtureType name="4 Dimmer 00">
+			<No>4</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>45</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="10" name="Par 11" channel_id="11">
+		<FixtureType name="4 Dimmer 00">
+			<No>4</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>64</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="11" name="Par 12" channel_id="12">
+		<FixtureType name="4 Dimmer 00">
+			<No>4</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>28</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="12" name="Par 13" channel_id="13">
+		<FixtureType name="4 Dimmer 00">
+			<No>4</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>161</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="13" name="Par 14" channel_id="14">
+		<FixtureType name="4 Dimmer 00">
+			<No>4</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>162</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="14" name="Par 15" channel_id="15">
+		<FixtureType name="4 Dimmer 00">
+			<No>4</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>179</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="15" name="Par 16" channel_id="16">
+		<FixtureType name="4 Dimmer 00">
+			<No>4</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>178</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="16" name="Par 17" channel_id="17">
+		<FixtureType name="4 Dimmer 00">
+			<No>4</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>40</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="17" name="Par 18" channel_id="18">
+		<FixtureType name="4 Dimmer 00">
+			<No>4</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>81</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="23" name="GULA" channel_id="21">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>177</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="49" name="Bar" channel_id="31">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>148</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="50" name="Klavir" channel_id="32">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>152</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="51" name="Bar" channel_id="33">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>149</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="0" name="kour" channel_id="998">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>3572</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="48" name="Haze" channel_id="999">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>3582</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="18" name="Lidi" channel_id="1001">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>211</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="19" name="Lidi" channel_id="1002">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>212</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="20" name="Lidi" channel_id="1003">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>213</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="21" name="Lidi" channel_id="1004">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>214</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="22" name="Lidi" channel_id="1005">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>215</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="24" name="Lidi" channel_id="1006">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>216</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="25" name="Lidi" channel_id="1007">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>217</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="26" name="Lidi" channel_id="1008">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>218</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="27" name="Lidi" channel_id="1009">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>219</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="28" name="Lidi" channel_id="1010">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>220</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="29" name="Lidi" channel_id="1011">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>221</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="30" name="Lidi" channel_id="1012">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>222</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="31" name="Lidi" channel_id="1013">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>223</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="32" name="Lidi" channel_id="1014">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>224</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="33" name="Lidi" channel_id="1015">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>225</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="34" name="Lidi" channel_id="1016">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>226</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="35" name="Lidi" channel_id="1017">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>227</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="36" name="Lidi" channel_id="1018">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>228</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="37" name="Lidi" channel_id="1019">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>229</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="38" name="Lidi" channel_id="1020">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>230</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="39" name="Lidi" channel_id="1021">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>231</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="40" name="Lidi" channel_id="1022">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>232</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="41" name="Lidi" channel_id="1023">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>233</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="42" name="Lidi" channel_id="1024">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>234</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="43" name="Lidi" channel_id="1025">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>235</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="44" name="Lidi" channel_id="1026">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>236</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="45" name="Lidi" channel_id="1027">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>237</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="46" name="Lidi" channel_id="1028">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>238</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="47" name="Lidi" channel_id="1029">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>239</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="48" name="Lidi" channel_id="1030">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>240</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+</MA>

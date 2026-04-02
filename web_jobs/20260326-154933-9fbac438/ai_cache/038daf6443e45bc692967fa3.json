@@ -1,0 +1,8 @@
+{
+  "ok": true,
+  "cached": false,
+  "provider": "ollama",
+  "model": "llama3.1:8b",
+  "analysis": "# Shrnuti\nVyhodnoceny soubor obsahuje seznam cue z show programu v sekvenci č. 2, které jsou označeny jako rizika. Všechny cue kromě Cue Zero mají vysoké hodnoty hard hodnot (v rozsahu 27-265) a většina z nich má více než 40 hard hodnot.\n\n# Co se v cue nebo sekvenci deje\nKaždý z cue je označen rizikovou hodnotou (10, 9 nebo 8). Některé cue jsou závislé na mnoha přednastavených presetech. Většina cue používá mnohá hard hodnoty (nejvyšší hodnota je 265) a dotýká se více než 40 atributů.\n\n# Rizika / nejasnosti\nNejrizikovější cue jsou:\n\n* Seq 2 Cue 25 Vilda odchazi: Má nejvíce hard hodnot (72) a závisí na mnoha presetech.\n* Seq 2 Cue 85 Dekovacka: Má druhou nejvyšší počet hard hodnot (197) a také závisí na mnoha presetech.\n\n# Zajímavé detaily\nCue Zero má nejnižší rizikovou hodnotu (7), ale také má nejvíce hard hodnot (344). To naznačuje, že Cue Zero může být klíčovým cue pro celý show program. \n\nRizika jsou rozdělená mezi cue s nízkými (elevated) a vysokými hard hodnotami. Cue s vyššími rizikovými hodnotami mají často více závislostí na presetech.\n\n# Doporučení\nPokud je cílem minimalizace rizika v show programu, mělo by být věnováno zvýšenou pozornost cue s vysokými rizikovými hodnotami (10 a 9), zejména Seq 2 Cue 25 Vilda odchazi a Seq 2 Cue 85 Dekovacka. Dále by bylo vhodné analyzovat závislosti na presetech u všech cue, aby se eliminovaly případné nedostatky v show programu.\n\nJe také důležité poznamenat, že Cue Zero má nejvíce hard hodnot (344), ale má nejnižší rizikovou hodnotu (7). To naznačuje, že Cue Zero je důležitým cue pro celý show program a měl by být pečlivě ověřen.",
+  "sequence_number": "2"
+}

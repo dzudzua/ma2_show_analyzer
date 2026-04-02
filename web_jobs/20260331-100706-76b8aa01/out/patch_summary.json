@@ -1,0 +1,9 @@
+{
+  "total_targets": 355,
+  "fixture_targets": 63,
+  "channel_targets": 54,
+  "subfixture_targets": 238,
+  "patched_targets": 117,
+  "targets_with_usage": 347,
+  "unpatched_used_targets": 238
+}

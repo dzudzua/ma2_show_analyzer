@@ -1,0 +1,267 @@
+fixture_id,fixture_name,fixture_type,fixture_patch,attribute,raw_value,cue_count,sequence_count,cue_list_preview,details
+1,,,,COLORRGB31,0.00,23,3,1.1 Cue 1 | 10.27 beegees 6:37.6 | 10.40 Flash | 10.42 Flash | 10.44 Flash | 10.46 Flash | 10.48 Flash | 10.50 Flash ...,repeated hard value candidate for preset cleanup
+1,,,,COLORRGB32,0.00,23,3,1.1 Cue 1 | 10.27 beegees 6:37.6 | 10.40 Flash | 10.42 Flash | 10.44 Flash | 10.46 Flash | 10.48 Flash | 10.50 Flash ...,repeated hard value candidate for preset cleanup
+1,,,,COLORRGB33,0.00,23,3,1.1 Cue 1 | 10.27 beegees 6:37.6 | 10.40 Flash | 10.42 Flash | 10.44 Flash | 10.46 Flash | 10.48 Flash | 10.50 Flash ...,repeated hard value candidate for preset cleanup
+1,,,,COLORRGB35,0.00,23,3,1.1 Cue 1 | 10.27 beegees 6:37.6 | 10.40 Flash | 10.42 Flash | 10.44 Flash | 10.46 Flash | 10.48 Flash | 10.50 Flash ...,repeated hard value candidate for preset cleanup
+5,,,,COLORRGB31,0.00,23,3,1.1 Cue 1 | 10.27 beegees 6:37.6 | 10.40 Flash | 10.42 Flash | 10.44 Flash | 10.46 Flash | 10.48 Flash | 10.50 Flash ...,repeated hard value candidate for preset cleanup
+5,,,,COLORRGB32,0.00,23,3,1.1 Cue 1 | 10.27 beegees 6:37.6 | 10.40 Flash | 10.42 Flash | 10.44 Flash | 10.46 Flash | 10.48 Flash | 10.50 Flash ...,repeated hard value candidate for preset cleanup
+5,,,,COLORRGB33,0.00,23,3,1.1 Cue 1 | 10.27 beegees 6:37.6 | 10.40 Flash | 10.42 Flash | 10.44 Flash | 10.46 Flash | 10.48 Flash | 10.50 Flash ...,repeated hard value candidate for preset cleanup
+5,,,,COLORRGB35,0.00,23,3,1.1 Cue 1 | 10.27 beegees 6:37.6 | 10.40 Flash | 10.42 Flash | 10.44 Flash | 10.46 Flash | 10.48 Flash | 10.50 Flash ...,repeated hard value candidate for preset cleanup
+41,RLB350M1 1,12 Robin LEDBeam 350 Mode 1,13.001,COLORRGB5,100.00,16,2,10.6 najezd strobo | 10.40 Flash | 10.42 Flash | 10.44 Flash | 10.46 Flash | 10.48 Flash | 10.50 Flash | 10.52 Flash ...,repeated hard value candidate for preset cleanup
+42,RLB350M1 2,12 Robin LEDBeam 350 Mode 1,13.023,COLORRGB5,100.00,16,2,10.6 najezd strobo | 10.40 Flash | 10.42 Flash | 10.44 Flash | 10.46 Flash | 10.48 Flash | 10.50 Flash | 10.52 Flash ...,repeated hard value candidate for preset cleanup
+47,RLB350M1 7,12 Robin LEDBeam 350 Mode 1,5.001,COLORRGB5,100.00,16,2,10.6 najezd strobo | 10.40 Flash | 10.42 Flash | 10.44 Flash | 10.46 Flash | 10.48 Flash | 10.50 Flash | 10.52 Flash ...,repeated hard value candidate for preset cleanup
+48,RLB350M1 8,12 Robin LEDBeam 350 Mode 1,5.023,COLORRGB5,100.00,16,2,10.6 najezd strobo | 10.40 Flash | 10.42 Flash | 10.44 Flash | 10.46 Flash | 10.48 Flash | 10.50 Flash | 10.52 Flash ...,repeated hard value candidate for preset cleanup
+1,,,,COLORRGB5,100.00,15,2,10.40 Flash | 10.42 Flash | 10.44 Flash | 10.46 Flash | 10.48 Flash | 10.50 Flash | 10.52 Flash | 10.54 Flash ...,repeated hard value candidate for preset cleanup
+5,,,,COLORRGB5,100.00,15,2,10.40 Flash | 10.42 Flash | 10.44 Flash | 10.46 Flash | 10.48 Flash | 10.50 Flash | 10.52 Flash | 10.54 Flash ...,repeated hard value candidate for preset cleanup
+1,,,,COLORRGB1,99.40,12,1,10.40 Flash | 10.42 Flash | 10.44 Flash | 10.46 Flash | 10.48 Flash | 10.50 Flash | 10.52 Flash | 10.54 Flash ...,repeated hard value candidate for preset cleanup
+1,,,,COLORRGB2,99.40,12,1,10.40 Flash | 10.42 Flash | 10.44 Flash | 10.46 Flash | 10.48 Flash | 10.50 Flash | 10.52 Flash | 10.54 Flash ...,repeated hard value candidate for preset cleanup
+1,,,,COLORRGB3,99.40,12,1,10.40 Flash | 10.42 Flash | 10.44 Flash | 10.46 Flash | 10.48 Flash | 10.50 Flash | 10.52 Flash | 10.54 Flash ...,repeated hard value candidate for preset cleanup
+5,,,,COLORRGB1,99.40,12,1,10.40 Flash | 10.42 Flash | 10.44 Flash | 10.46 Flash | 10.48 Flash | 10.50 Flash | 10.52 Flash | 10.54 Flash ...,repeated hard value candidate for preset cleanup
+5,,,,COLORRGB2,99.40,12,1,10.40 Flash | 10.42 Flash | 10.44 Flash | 10.46 Flash | 10.48 Flash | 10.50 Flash | 10.52 Flash | 10.54 Flash ...,repeated hard value candidate for preset cleanup
+5,,,,COLORRGB3,99.40,12,1,10.40 Flash | 10.42 Flash | 10.44 Flash | 10.46 Flash | 10.48 Flash | 10.50 Flash | 10.52 Flash | 10.54 Flash ...,repeated hard value candidate for preset cleanup
+41,RLB350M1 1,12 Robin LEDBeam 350 Mode 1,13.001,COLORRGB1,97.02,12,1,10.40 Flash | 10.42 Flash | 10.44 Flash | 10.46 Flash | 10.48 Flash | 10.50 Flash | 10.52 Flash | 10.54 Flash ...,repeated hard value candidate for preset cleanup
+41,RLB350M1 1,12 Robin LEDBeam 350 Mode 1,13.001,COLORRGB2,97.02,12,1,10.40 Flash | 10.42 Flash | 10.44 Flash | 10.46 Flash | 10.48 Flash | 10.50 Flash | 10.52 Flash | 10.54 Flash ...,repeated hard value candidate for preset cleanup
+41,RLB350M1 1,12 Robin LEDBeam 350 Mode 1,13.001,COLORRGB3,97.02,12,1,10.40 Flash | 10.42 Flash | 10.44 Flash | 10.46 Flash | 10.48 Flash | 10.50 Flash | 10.52 Flash | 10.54 Flash ...,repeated hard value candidate for preset cleanup
+42,RLB350M1 2,12 Robin LEDBeam 350 Mode 1,13.023,COLORRGB1,97.02,12,1,10.40 Flash | 10.42 Flash | 10.44 Flash | 10.46 Flash | 10.48 Flash | 10.50 Flash | 10.52 Flash | 10.54 Flash ...,repeated hard value candidate for preset cleanup
+42,RLB350M1 2,12 Robin LEDBeam 350 Mode 1,13.023,COLORRGB2,97.02,12,1,10.40 Flash | 10.42 Flash | 10.44 Flash | 10.46 Flash | 10.48 Flash | 10.50 Flash | 10.52 Flash | 10.54 Flash ...,repeated hard value candidate for preset cleanup
+42,RLB350M1 2,12 Robin LEDBeam 350 Mode 1,13.023,COLORRGB3,97.02,12,1,10.40 Flash | 10.42 Flash | 10.44 Flash | 10.46 Flash | 10.48 Flash | 10.50 Flash | 10.52 Flash | 10.54 Flash ...,repeated hard value candidate for preset cleanup
+47,RLB350M1 7,12 Robin LEDBeam 350 Mode 1,5.001,COLORRGB1,97.02,12,1,10.40 Flash | 10.42 Flash | 10.44 Flash | 10.46 Flash | 10.48 Flash | 10.50 Flash | 10.52 Flash | 10.54 Flash ...,repeated hard value candidate for preset cleanup
+47,RLB350M1 7,12 Robin LEDBeam 350 Mode 1,5.001,COLORRGB2,97.02,12,1,10.40 Flash | 10.42 Flash | 10.44 Flash | 10.46 Flash | 10.48 Flash | 10.50 Flash | 10.52 Flash | 10.54 Flash ...,repeated hard value candidate for preset cleanup
+47,RLB350M1 7,12 Robin LEDBeam 350 Mode 1,5.001,COLORRGB3,97.02,12,1,10.40 Flash | 10.42 Flash | 10.44 Flash | 10.46 Flash | 10.48 Flash | 10.50 Flash | 10.52 Flash | 10.54 Flash ...,repeated hard value candidate for preset cleanup
+48,RLB350M1 8,12 Robin LEDBeam 350 Mode 1,5.023,COLORRGB1,97.02,12,1,10.40 Flash | 10.42 Flash | 10.44 Flash | 10.46 Flash | 10.48 Flash | 10.50 Flash | 10.52 Flash | 10.54 Flash ...,repeated hard value candidate for preset cleanup
+48,RLB350M1 8,12 Robin LEDBeam 350 Mode 1,5.023,COLORRGB2,97.02,12,1,10.40 Flash | 10.42 Flash | 10.44 Flash | 10.46 Flash | 10.48 Flash | 10.50 Flash | 10.52 Flash | 10.54 Flash ...,repeated hard value candidate for preset cleanup
+48,RLB350M1 8,12 Robin LEDBeam 350 Mode 1,5.023,COLORRGB3,97.02,12,1,10.40 Flash | 10.42 Flash | 10.44 Flash | 10.46 Flash | 10.48 Flash | 10.50 Flash | 10.52 Flash | 10.54 Flash ...,repeated hard value candidate for preset cleanup
+4,,,,COLORRGB31,0.00,11,3,1.1 Cue 1 | 8.1 Cue 1 | 10.27 beegees 6:37.6 | 10.65 final flash | 10.76 ondra hodi koukain novy track | 10.79 chuze STYCH od garaze velky | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.81 disko gula dolu ...,repeated hard value candidate for preset cleanup
+4,,,,COLORRGB32,0.00,11,3,1.1 Cue 1 | 8.1 Cue 1 | 10.27 beegees 6:37.6 | 10.65 final flash | 10.76 ondra hodi koukain novy track | 10.79 chuze STYCH od garaze velky | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.81 disko gula dolu ...,repeated hard value candidate for preset cleanup
+4,,,,COLORRGB33,0.00,11,3,1.1 Cue 1 | 8.1 Cue 1 | 10.27 beegees 6:37.6 | 10.65 final flash | 10.76 ondra hodi koukain novy track | 10.79 chuze STYCH od garaze velky | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.81 disko gula dolu ...,repeated hard value candidate for preset cleanup
+4,,,,COLORRGB35,0.00,11,3,1.1 Cue 1 | 8.1 Cue 1 | 10.27 beegees 6:37.6 | 10.65 final flash | 10.76 ondra hodi koukain novy track | 10.79 chuze STYCH od garaze velky | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.81 disko gula dolu ...,repeated hard value candidate for preset cleanup
+2,,,,COLORRGB31,0.00,10,2,1.1 Cue 1 | 10.27 beegees 6:37.6 | 10.65 final flash | 10.76 ondra hodi koukain novy track | 10.79 chuze STYCH od garaze velky | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.81 disko gula dolu | 10.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+2,,,,COLORRGB32,0.00,10,2,1.1 Cue 1 | 10.27 beegees 6:37.6 | 10.65 final flash | 10.76 ondra hodi koukain novy track | 10.79 chuze STYCH od garaze velky | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.81 disko gula dolu | 10.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+2,,,,COLORRGB33,0.00,10,2,1.1 Cue 1 | 10.27 beegees 6:37.6 | 10.65 final flash | 10.76 ondra hodi koukain novy track | 10.79 chuze STYCH od garaze velky | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.81 disko gula dolu | 10.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+2,,,,COLORRGB35,0.00,10,2,1.1 Cue 1 | 10.27 beegees 6:37.6 | 10.65 final flash | 10.76 ondra hodi koukain novy track | 10.79 chuze STYCH od garaze velky | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.81 disko gula dolu | 10.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+3,,,,COLORRGB31,0.00,10,2,1.1 Cue 1 | 10.27 beegees 6:37.6 | 10.65 final flash | 10.76 ondra hodi koukain novy track | 10.79 chuze STYCH od garaze velky | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.81 disko gula dolu | 10.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+3,,,,COLORRGB32,0.00,10,2,1.1 Cue 1 | 10.27 beegees 6:37.6 | 10.65 final flash | 10.76 ondra hodi koukain novy track | 10.79 chuze STYCH od garaze velky | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.81 disko gula dolu | 10.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+3,,,,COLORRGB33,0.00,10,2,1.1 Cue 1 | 10.27 beegees 6:37.6 | 10.65 final flash | 10.76 ondra hodi koukain novy track | 10.79 chuze STYCH od garaze velky | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.81 disko gula dolu | 10.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+3,,,,COLORRGB35,0.00,10,2,1.1 Cue 1 | 10.27 beegees 6:37.6 | 10.65 final flash | 10.76 ondra hodi koukain novy track | 10.79 chuze STYCH od garaze velky | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.81 disko gula dolu | 10.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+6,,,,COLORRGB31,0.00,10,2,1.1 Cue 1 | 10.27 beegees 6:37.6 | 10.65 final flash | 10.76 ondra hodi koukain novy track | 10.79 chuze STYCH od garaze velky | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.81 disko gula dolu | 10.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+6,,,,COLORRGB32,0.00,10,2,1.1 Cue 1 | 10.27 beegees 6:37.6 | 10.65 final flash | 10.76 ondra hodi koukain novy track | 10.79 chuze STYCH od garaze velky | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.81 disko gula dolu | 10.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+6,,,,COLORRGB33,0.00,10,2,1.1 Cue 1 | 10.27 beegees 6:37.6 | 10.65 final flash | 10.76 ondra hodi koukain novy track | 10.79 chuze STYCH od garaze velky | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.81 disko gula dolu | 10.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+6,,,,COLORRGB35,0.00,10,2,1.1 Cue 1 | 10.27 beegees 6:37.6 | 10.65 final flash | 10.76 ondra hodi koukain novy track | 10.79 chuze STYCH od garaze velky | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.81 disko gula dolu | 10.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+7,,,,COLORRGB31,0.00,10,2,1.1 Cue 1 | 10.27 beegees 6:37.6 | 10.65 final flash | 10.76 ondra hodi koukain novy track | 10.79 chuze STYCH od garaze velky | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.81 disko gula dolu | 10.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+7,,,,COLORRGB32,0.00,10,2,1.1 Cue 1 | 10.27 beegees 6:37.6 | 10.65 final flash | 10.76 ondra hodi koukain novy track | 10.79 chuze STYCH od garaze velky | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.81 disko gula dolu | 10.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+7,,,,COLORRGB33,0.00,10,2,1.1 Cue 1 | 10.27 beegees 6:37.6 | 10.65 final flash | 10.76 ondra hodi koukain novy track | 10.79 chuze STYCH od garaze velky | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.81 disko gula dolu | 10.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+7,,,,COLORRGB35,0.00,10,2,1.1 Cue 1 | 10.27 beegees 6:37.6 | 10.65 final flash | 10.76 ondra hodi koukain novy track | 10.79 chuze STYCH od garaze velky | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.81 disko gula dolu | 10.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+8,,,,COLORRGB31,0.00,10,2,1.1 Cue 1 | 10.27 beegees 6:37.6 | 10.65 final flash | 10.76 ondra hodi koukain novy track | 10.79 chuze STYCH od garaze velky | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.81 disko gula dolu | 10.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+8,,,,COLORRGB32,0.00,10,2,1.1 Cue 1 | 10.27 beegees 6:37.6 | 10.65 final flash | 10.76 ondra hodi koukain novy track | 10.79 chuze STYCH od garaze velky | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.81 disko gula dolu | 10.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+8,,,,COLORRGB33,0.00,10,2,1.1 Cue 1 | 10.27 beegees 6:37.6 | 10.65 final flash | 10.76 ondra hodi koukain novy track | 10.79 chuze STYCH od garaze velky | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.81 disko gula dolu | 10.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+8,,,,COLORRGB35,0.00,10,2,1.1 Cue 1 | 10.27 beegees 6:37.6 | 10.65 final flash | 10.76 ondra hodi koukain novy track | 10.79 chuze STYCH od garaze velky | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.81 disko gula dolu | 10.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+1,,,,COLORRGB3,100.00,6,3,1.1 Cue 1 | 2.55 Groteska boj o zradlo - Velikeho racka | 10.27 beegees 6:37.6 | 10.75 Projede Lavka | 10.89 koks KOUR GARAZ | 10.98 Flo BLESK kdyz se vyfoti tereze,repeated hard value candidate for preset cleanup
+2,,,,COLORRGB1,100.00,6,3,1.1 Cue 1 | 2.36 Jen prava strana - Wilda na schodech | 2.46 Velkej ptak | 2.55 Groteska boj o zradlo - Velikeho racka | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.89 koks KOUR GARAZ,repeated hard value candidate for preset cleanup
+2,,,,COLORRGB3,100.00,6,3,1.1 Cue 1 | 2.55 Groteska boj o zradlo - Velikeho racka | 10.27 beegees 6:37.6 | 10.75 Projede Lavka | 10.89 koks KOUR GARAZ | 10.98 Flo BLESK kdyz se vyfoti tereze,repeated hard value candidate for preset cleanup
+3,,,,COLORRGB3,100.00,6,3,1.1 Cue 1 | 2.55 Groteska boj o zradlo - Velikeho racka | 10.27 beegees 6:37.6 | 10.75 Projede Lavka | 10.89 koks KOUR GARAZ | 10.98 Flo BLESK kdyz se vyfoti tereze,repeated hard value candidate for preset cleanup
+4,,,,COLORRGB3,100.00,6,3,1.1 Cue 1 | 2.55 Groteska boj o zradlo - Velikeho racka | 10.27 beegees 6:37.6 | 10.75 Projede Lavka | 10.89 koks KOUR GARAZ | 10.98 Flo BLESK kdyz se vyfoti tereze,repeated hard value candidate for preset cleanup
+5,,,,COLORRGB3,100.00,6,3,1.1 Cue 1 | 2.55 Groteska boj o zradlo - Velikeho racka | 10.27 beegees 6:37.6 | 10.75 Projede Lavka | 10.89 koks KOUR GARAZ | 10.98 Flo BLESK kdyz se vyfoti tereze,repeated hard value candidate for preset cleanup
+6,,,,COLORRGB3,100.00,6,3,1.1 Cue 1 | 2.55 Groteska boj o zradlo - Velikeho racka | 10.27 beegees 6:37.6 | 10.75 Projede Lavka | 10.89 koks KOUR GARAZ | 10.98 Flo BLESK kdyz se vyfoti tereze,repeated hard value candidate for preset cleanup
+7,,,,COLORRGB3,100.00,6,3,1.1 Cue 1 | 2.55 Groteska boj o zradlo - Velikeho racka | 10.27 beegees 6:37.6 | 10.75 Projede Lavka | 10.89 koks KOUR GARAZ | 10.98 Flo BLESK kdyz se vyfoti tereze,repeated hard value candidate for preset cleanup
+8,,,,COLORRGB3,100.00,6,3,1.1 Cue 1 | 2.55 Groteska boj o zradlo - Velikeho racka | 10.27 beegees 6:37.6 | 10.75 Projede Lavka | 10.89 koks KOUR GARAZ | 10.98 Flo BLESK kdyz se vyfoti tereze,repeated hard value candidate for preset cleanup
+21,,,,COLORRGB1,100.00,6,3,2.9 Racek astery 2:32 | 2.25 Vilda odchazi | 2.55 Groteska boj o zradlo - Velikeho racka | 10.106 DUHA | 10.109 Blesk MIDI | 26.1 Cue 1,repeated hard value candidate for preset cleanup
+22,,,,COLORRGB1,100.00,6,3,2.9 Racek astery 2:32 | 2.25 Vilda odchazi | 2.55 Groteska boj o zradlo - Velikeho racka | 10.106 DUHA | 10.109 Blesk MIDI | 26.1 Cue 1,repeated hard value candidate for preset cleanup
+24,,,,COLORRGB2,100.00,6,3,2.30.5 Soud - zelena- - bici hudba | 2.31 Soud - proces-Na-schody | 2.55 Groteska boj o zradlo - Velikeho racka | 10.106 DUHA | 10.109 Blesk MIDI | 26.1 Cue 1,repeated hard value candidate for preset cleanup
+25,,,,COLORRGB2,100.00,6,3,2.30.5 Soud - zelena- - bici hudba | 2.31 Soud - proces-Na-schody | 2.55 Groteska boj o zradlo - Velikeho racka | 10.106 DUHA | 10.109 Blesk MIDI | 26.1 Cue 1,repeated hard value candidate for preset cleanup
+26,,,,COLORRGB1,100.00,6,3,2.9 Racek astery 2:32 | 2.25 Vilda odchazi | 2.55 Groteska boj o zradlo - Velikeho racka | 10.106 DUHA | 10.109 Blesk MIDI | 26.1 Cue 1,repeated hard value candidate for preset cleanup
+26,,,,COLORRGB2,100.00,6,3,2.30.5 Soud - zelena- - bici hudba | 2.31 Soud - proces-Na-schody | 2.55 Groteska boj o zradlo - Velikeho racka | 10.106 DUHA | 10.109 Blesk MIDI | 26.1 Cue 1,repeated hard value candidate for preset cleanup
+1,,,,COLORRGB5,0.00,5,2,1.1 Cue 1 | 10.27 beegees 6:37.6 | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.89 koks KOUR GARAZ | 10.98 Flo BLESK kdyz se vyfoti tereze,repeated hard value candidate for preset cleanup
+2,,,,COLORRGB5,0.00,5,2,1.1 Cue 1 | 10.27 beegees 6:37.6 | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.89 koks KOUR GARAZ | 10.98 Flo BLESK kdyz se vyfoti tereze,repeated hard value candidate for preset cleanup
+3,,,,COLORRGB1,100.00,5,3,1.1 Cue 1 | 2.36 Jen prava strana - Wilda na schodech | 2.55 Groteska boj o zradlo - Velikeho racka | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.89 koks KOUR GARAZ,repeated hard value candidate for preset cleanup
+3,,,,COLORRGB5,0.00,5,2,1.1 Cue 1 | 10.27 beegees 6:37.6 | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.89 koks KOUR GARAZ | 10.98 Flo BLESK kdyz se vyfoti tereze,repeated hard value candidate for preset cleanup
+4,,,,COLORRGB5,0.00,5,2,1.1 Cue 1 | 10.27 beegees 6:37.6 | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.89 koks KOUR GARAZ | 10.98 Flo BLESK kdyz se vyfoti tereze,repeated hard value candidate for preset cleanup
+5,,,,COLORRGB1,100.00,5,3,1.1 Cue 1 | 2.46 Velkej ptak | 2.55 Groteska boj o zradlo - Velikeho racka | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.89 koks KOUR GARAZ,repeated hard value candidate for preset cleanup
+5,,,,COLORRGB5,0.00,5,2,1.1 Cue 1 | 10.27 beegees 6:37.6 | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.89 koks KOUR GARAZ | 10.98 Flo BLESK kdyz se vyfoti tereze,repeated hard value candidate for preset cleanup
+6,,,,COLORRGB5,0.00,5,2,1.1 Cue 1 | 10.27 beegees 6:37.6 | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.89 koks KOUR GARAZ | 10.98 Flo BLESK kdyz se vyfoti tereze,repeated hard value candidate for preset cleanup
+7,,,,COLORRGB5,0.00,5,2,1.1 Cue 1 | 10.27 beegees 6:37.6 | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.89 koks KOUR GARAZ | 10.98 Flo BLESK kdyz se vyfoti tereze,repeated hard value candidate for preset cleanup
+8,,,,COLORRGB5,0.00,5,2,1.1 Cue 1 | 10.27 beegees 6:37.6 | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.89 koks KOUR GARAZ | 10.98 Flo BLESK kdyz se vyfoti tereze,repeated hard value candidate for preset cleanup
+21,,,,COLORRGB2,100.00,5,3,2.30.5 Soud - zelena- - bici hudba | 2.31 Soud - proces-Na-schody | 2.55 Groteska boj o zradlo - Velikeho racka | 10.106 DUHA | 26.1 Cue 1,repeated hard value candidate for preset cleanup
+21,,,,COLORRGB3,0.00,5,2,2.9 Racek astery 2:32 | 2.25 Vilda odchazi | 10.1 lidi | 10.106 DUHA | 10.109 Blesk MIDI,repeated hard value candidate for preset cleanup
+22,,,,COLORRGB2,100.00,5,3,2.30.5 Soud - zelena- - bici hudba | 2.31 Soud - proces-Na-schody | 2.55 Groteska boj o zradlo - Velikeho racka | 10.106 DUHA | 26.1 Cue 1,repeated hard value candidate for preset cleanup
+22,,,,COLORRGB3,100.00,5,3,2.24 Jonatanuv PAD | 2.55 Groteska boj o zradlo - Velikeho racka | 10.106 DUHA | 10.109 Blesk MIDI | 26.1 Cue 1,repeated hard value candidate for preset cleanup
+23,,,,COLORRGB1,100.00,5,3,2.9 Racek astery 2:32 | 2.25 Vilda odchazi | 2.55 Groteska boj o zradlo - Velikeho racka | 10.106 DUHA | 26.1 Cue 1,repeated hard value candidate for preset cleanup
+23,,,,COLORRGB2,100.00,5,3,2.30.5 Soud - zelena- - bici hudba | 2.31 Soud - proces-Na-schody | 2.55 Groteska boj o zradlo - Velikeho racka | 10.106 DUHA | 26.1 Cue 1,repeated hard value candidate for preset cleanup
+23,,,,COLORRGB3,100.00,5,3,2.24 Jonatanuv PAD | 2.55 Groteska boj o zradlo - Velikeho racka | 10.106 DUHA | 10.109 Blesk MIDI | 26.1 Cue 1,repeated hard value candidate for preset cleanup
+24,,,,COLORRGB1,100.00,5,3,2.9 Racek astery 2:32 | 2.25 Vilda odchazi | 2.55 Groteska boj o zradlo - Velikeho racka | 10.106 DUHA | 26.1 Cue 1,repeated hard value candidate for preset cleanup
+24,,,,COLORRGB3,100.00,5,3,2.24 Jonatanuv PAD | 2.55 Groteska boj o zradlo - Velikeho racka | 10.106 DUHA | 10.109 Blesk MIDI | 26.1 Cue 1,repeated hard value candidate for preset cleanup
+25,,,,COLORRGB1,100.00,5,3,2.9 Racek astery 2:32 | 2.25 Vilda odchazi | 2.55 Groteska boj o zradlo - Velikeho racka | 10.106 DUHA | 26.1 Cue 1,repeated hard value candidate for preset cleanup
+25,,,,COLORRGB3,0.00,5,2,2.9 Racek astery 2:32 | 2.25 Vilda odchazi | 10.1 lidi | 10.106 DUHA | 10.109 Blesk MIDI,repeated hard value candidate for preset cleanup
+26,,,,COLORRGB3,0.00,5,2,2.9 Racek astery 2:32 | 2.25 Vilda odchazi | 10.1 lidi | 10.106 DUHA | 10.109 Blesk MIDI,repeated hard value candidate for preset cleanup
+40,,,,COLORRGB2,100.00,5,1,2.30.5 Soud - zelena- - bici hudba | 2.31 Soud - proces-Na-schody | 2.35 zustava sam LET- GESTO | 2.52 dialog | 2.76 J+F duet - S hudbou,repeated hard value candidate for preset cleanup
+1,,,,COLORRGB1,100.00,4,3,1.1 Cue 1 | 2.55 Groteska boj o zradlo - Velikeho racka | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.89 koks KOUR GARAZ,repeated hard value candidate for preset cleanup
+4,,,,COLORRGB1,100.00,4,3,1.1 Cue 1 | 2.55 Groteska boj o zradlo - Velikeho racka | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.89 koks KOUR GARAZ,repeated hard value candidate for preset cleanup
+6,,,,COLORRGB1,100.00,4,3,1.1 Cue 1 | 2.55 Groteska boj o zradlo - Velikeho racka | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.89 koks KOUR GARAZ,repeated hard value candidate for preset cleanup
+7,,,,COLORRGB1,100.00,4,3,1.1 Cue 1 | 2.55 Groteska boj o zradlo - Velikeho racka | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.89 koks KOUR GARAZ,repeated hard value candidate for preset cleanup
+8,,,,COLORRGB1,100.00,4,3,1.1 Cue 1 | 2.55 Groteska boj o zradlo - Velikeho racka | 10.80 Alex gr STYCH od klaviru patrik osuka alexe | 10.89 koks KOUR GARAZ,repeated hard value candidate for preset cleanup
+21,,,,COLORRGB3,100.00,4,3,2.24 Jonatanuv PAD | 2.55 Groteska boj o zradlo - Velikeho racka | 10.106 DUHA | 26.1 Cue 1,repeated hard value candidate for preset cleanup
+25,,,,COLORRGB3,100.00,4,3,2.24 Jonatanuv PAD | 2.55 Groteska boj o zradlo - Velikeho racka | 10.106 DUHA | 26.1 Cue 1,repeated hard value candidate for preset cleanup
+26,,,,COLORRGB3,100.00,4,3,2.24 Jonatanuv PAD | 2.55 Groteska boj o zradlo - Velikeho racka | 10.106 DUHA | 26.1 Cue 1,repeated hard value candidate for preset cleanup
+27,,,,COLORRGB1,100.00,4,2,2.9 Racek astery 2:32 | 2.25 Vilda odchazi | 2.55 Groteska boj o zradlo - Velikeho racka | 10.89 koks KOUR GARAZ,repeated hard value candidate for preset cleanup
+27,,,,COLORRGB2,100.00,4,2,2.30.5 Soud - zelena- - bici hudba | 2.31 Soud - proces-Na-schody | 2.55 Groteska boj o zradlo - Velikeho racka | 10.89 koks KOUR GARAZ,repeated hard value candidate for preset cleanup
+28,,,,COLORRGB1,100.00,4,2,2.9 Racek astery 2:32 | 2.25 Vilda odchazi | 2.55 Groteska boj o zradlo - Velikeho racka | 10.89 koks KOUR GARAZ,repeated hard value candidate for preset cleanup
+28,,,,COLORRGB2,100.00,4,2,2.30.5 Soud - zelena- - bici hudba | 2.31 Soud - proces-Na-schody | 2.55 Groteska boj o zradlo - Velikeho racka | 10.89 koks KOUR GARAZ,repeated hard value candidate for preset cleanup
+61,HotboxW8 1,14 Hotbox RGBW 8 channel,2.217,COLORRGB3,100.00,4,2,10.1 lidi | 10.36 9:46.888 | 10.36.5 koule pryc | 23.1 Cue 1,repeated hard value candidate for preset cleanup
+61,HotboxW8 1,14 Hotbox RGBW 8 channel,2.217,COLORRGB5,0.00,4,2,10.1 lidi | 10.36 9:46.888 | 10.36.5 koule pryc | 23.1 Cue 1,repeated hard value candidate for preset cleanup
+62,HotboxW8 2,14 Hotbox RGBW 8 channel,2.225,COLORRGB3,100.00,4,2,10.1 lidi | 10.36 9:46.888 | 10.36.5 koule pryc | 23.1 Cue 1,repeated hard value candidate for preset cleanup
+62,HotboxW8 2,14 Hotbox RGBW 8 channel,2.225,COLORRGB5,0.00,4,2,10.1 lidi | 10.36 9:46.888 | 10.36.5 koule pryc | 23.1 Cue 1,repeated hard value candidate for preset cleanup
+63,HotboxW8 3,14 Hotbox RGBW 8 channel,2.233,COLORRGB3,100.00,4,2,10.1 lidi | 10.36 9:46.888 | 10.36.5 koule pryc | 23.1 Cue 1,repeated hard value candidate for preset cleanup
+63,HotboxW8 3,14 Hotbox RGBW 8 channel,2.233,COLORRGB5,0.00,4,2,10.1 lidi | 10.36 9:46.888 | 10.36.5 koule pryc | 23.1 Cue 1,repeated hard value candidate for preset cleanup
+64,HotboxW8 4,14 Hotbox RGBW 8 channel,2.241,COLORRGB3,100.00,4,2,10.1 lidi | 10.36 9:46.888 | 10.36.5 koule pryc | 23.1 Cue 1,repeated hard value candidate for preset cleanup
+64,HotboxW8 4,14 Hotbox RGBW 8 channel,2.241,COLORRGB5,0.00,4,2,10.1 lidi | 10.36 9:46.888 | 10.36.5 koule pryc | 23.1 Cue 1,repeated hard value candidate for preset cleanup
+101,,,,COLORMIXER,0.00,4,1,2.11 J. SOLO - 2:47 | 2.18 Rackove rostazeny nohy 5:05 | 2.25 Vilda odchazi | 2.76 J+F duet - S hudbou,repeated hard value candidate for preset cleanup
+101,,,,COLORMIXMODE,29.20,4,1,2.11 J. SOLO - 2:47 | 2.18 Rackove rostazeny nohy 5:05 | 2.25 Vilda odchazi | 2.76 J+F duet - S hudbou,repeated hard value candidate for preset cleanup
+101,,,,CTC,0.00,4,1,2.11 J. SOLO - 2:47 | 2.18 Rackove rostazeny nohy 5:05 | 2.25 Vilda odchazi | 2.76 J+F duet - S hudbou,repeated hard value candidate for preset cleanup
+101,,,,LAMPCONTROL,0.00,4,1,2.11 J. SOLO - 2:47 | 2.18 Rackove rostazeny nohy 5:05 | 2.25 Vilda odchazi | 2.76 J+F duet - S hudbou,repeated hard value candidate for preset cleanup
+101,,,,POSITIONMSPEED,0.00,4,1,2.11 J. SOLO - 2:47 | 2.18 Rackove rostazeny nohy 5:05 | 2.25 Vilda odchazi | 2.76 J+F duet - S hudbou,repeated hard value candidate for preset cleanup
+102,,,,COLORMIXER,0.00,4,1,2.11 J. SOLO - 2:47 | 2.18 Rackove rostazeny nohy 5:05 | 2.25 Vilda odchazi | 2.76 J+F duet - S hudbou,repeated hard value candidate for preset cleanup
+102,,,,COLORMIXMODE,29.20,4,1,2.11 J. SOLO - 2:47 | 2.18 Rackove rostazeny nohy 5:05 | 2.25 Vilda odchazi | 2.76 J+F duet - S hudbou,repeated hard value candidate for preset cleanup
+102,,,,CTC,0.00,4,1,2.11 J. SOLO - 2:47 | 2.18 Rackove rostazeny nohy 5:05 | 2.25 Vilda odchazi | 2.76 J+F duet - S hudbou,repeated hard value candidate for preset cleanup
+102,,,,LAMPCONTROL,0.00,4,1,2.11 J. SOLO - 2:47 | 2.18 Rackove rostazeny nohy 5:05 | 2.25 Vilda odchazi | 2.76 J+F duet - S hudbou,repeated hard value candidate for preset cleanup
+102,,,,POSITIONMSPEED,0.00,4,1,2.11 J. SOLO - 2:47 | 2.18 Rackove rostazeny nohy 5:05 | 2.25 Vilda odchazi | 2.76 J+F duet - S hudbou,repeated hard value candidate for preset cleanup
+1,,,,COLORRGB2,100.00,3,3,1.1 Cue 1 | 2.55 Groteska boj o zradlo - Velikeho racka | 10.89 koks KOUR GARAZ,repeated hard value candidate for preset cleanup
+2,,,,COLORRGB2,100.00,3,3,1.1 Cue 1 | 2.55 Groteska boj o zradlo - Velikeho racka | 10.89 koks KOUR GARAZ,repeated hard value candidate for preset cleanup
+3,,,,COLORRGB2,100.00,3,3,1.1 Cue 1 | 2.55 Groteska boj o zradlo - Velikeho racka | 10.89 koks KOUR GARAZ,repeated hard value candidate for preset cleanup
+4,,,,COLORRGB2,100.00,3,3,1.1 Cue 1 | 2.55 Groteska boj o zradlo - Velikeho racka | 10.89 koks KOUR GARAZ,repeated hard value candidate for preset cleanup
+4,,,,COLORRGB5,100.00,3,2,8.1 Cue 1 | 10.65 final flash | 10.109 Blesk MIDI,repeated hard value candidate for preset cleanup
+5,,,,COLORRGB2,100.00,3,3,1.1 Cue 1 | 2.55 Groteska boj o zradlo - Velikeho racka | 10.89 koks KOUR GARAZ,repeated hard value candidate for preset cleanup
+6,,,,COLORRGB2,100.00,3,3,1.1 Cue 1 | 2.55 Groteska boj o zradlo - Velikeho racka | 10.89 koks KOUR GARAZ,repeated hard value candidate for preset cleanup
+7,,,,COLORRGB2,100.00,3,3,1.1 Cue 1 | 2.55 Groteska boj o zradlo - Velikeho racka | 10.89 koks KOUR GARAZ,repeated hard value candidate for preset cleanup
+8,,,,COLORRGB2,100.00,3,3,1.1 Cue 1 | 2.55 Groteska boj o zradlo - Velikeho racka | 10.89 koks KOUR GARAZ,repeated hard value candidate for preset cleanup
+13,,,,PAN,-31.86,3,1,10.1 lidi | 10.36 9:46.888 | 10.36.5 koule pryc,repeated hard value candidate for preset cleanup
+13,,,,TILT,-53.62,3,1,10.1 lidi | 10.36 9:46.888 | 10.36.5 koule pryc,repeated hard value candidate for preset cleanup
+13,,,,ZOOM,100.00,3,1,10.1 lidi | 10.36 9:46.888 | 10.36.5 koule pryc,repeated hard value candidate for preset cleanup
+14,,,,ANIMATIONINDEXROTATE,50.20,3,2,10.1 lidi | 10.36 9:46.888 | 28.1 Cue 1,repeated hard value candidate for preset cleanup
+14,,,,ANIMATIONWHEEL,0.00,3,2,10.1 lidi | 10.36 9:46.888 | 28.1 Cue 1,repeated hard value candidate for preset cleanup
+14,,,,BLADE1A,0.00,3,2,10.1 lidi | 10.36 9:46.888 | 28.1 Cue 1,repeated hard value candidate for preset cleanup
+14,,,,BLADE1B,50.20,3,2,10.1 lidi | 10.36 9:46.888 | 28.1 Cue 1,repeated hard value candidate for preset cleanup
+14,,,,BLADE2A,0.00,3,2,10.1 lidi | 10.36 9:46.888 | 28.1 Cue 1,repeated hard value candidate for preset cleanup
+14,,,,BLADE2B,50.20,3,2,10.1 lidi | 10.36 9:46.888 | 28.1 Cue 1,repeated hard value candidate for preset cleanup
+14,,,,BLADE3A,0.00,3,2,10.1 lidi | 10.36 9:46.888 | 28.1 Cue 1,repeated hard value candidate for preset cleanup
+14,,,,BLADE3B,50.20,3,2,10.1 lidi | 10.36 9:46.888 | 28.1 Cue 1,repeated hard value candidate for preset cleanup
+14,,,,BLADE4A,0.00,3,2,10.1 lidi | 10.36 9:46.888 | 28.1 Cue 1,repeated hard value candidate for preset cleanup
+14,,,,BLADE4B,50.20,3,2,10.1 lidi | 10.36 9:46.888 | 28.1 Cue 1,repeated hard value candidate for preset cleanup
+14,,,,COLORMIXER,0.00,3,2,10.1 lidi | 10.36 9:46.888 | 28.1 Cue 1,repeated hard value candidate for preset cleanup
+14,,,,COLORMIXMSPEED,0.00,3,2,10.1 lidi | 10.36 9:46.888 | 28.1 Cue 1,repeated hard value candidate for preset cleanup
+14,,,,COLORMIXMSPEED2,0.00,3,2,10.1 lidi | 10.36 9:46.888 | 28.1 Cue 1,repeated hard value candidate for preset cleanup
+14,,,,COLORRGB3,100.00,3,3,2.55 Groteska boj o zradlo - Velikeho racka | 10.95 ukotveny zebrikr ondra nahoru blikam 111 | 28.1 Cue 1,repeated hard value candidate for preset cleanup
+14,,,,CTO,0.00,3,2,10.1 lidi | 10.36 9:46.888 | 28.1 Cue 1,repeated hard value candidate for preset cleanup
+14,,,,EFFECTINDEXROTATE,0.00,3,2,10.1 lidi | 10.36 9:46.888 | 28.1 Cue 1,repeated hard value candidate for preset cleanup
+14,,,,EFFECTMACROS,0.00,3,2,10.1 lidi | 10.36 9:46.888 | 28.1 Cue 1,repeated hard value candidate for preset cleanup
+14,,,,EFFECTWHEEL,0.00,3,2,10.1 lidi | 10.36 9:46.888 | 28.1 Cue 1,repeated hard value candidate for preset cleanup
+14,,,,FIXTUREGLOBALRESET,0.00,3,2,10.1 lidi | 10.36 9:46.888 | 28.1 Cue 1,repeated hard value candidate for preset cleanup
+14,,,,GOBO1,0.00,3,2,10.1 lidi | 10.36 9:46.888 | 28.1 Cue 1,repeated hard value candidate for preset cleanup
+14,,,,GOBO2,0.00,3,2,10.1 lidi | 10.36 9:46.888 | 28.1 Cue 1,repeated hard value candidate for preset cleanup
+14,,,,GOBO2_POS,50.20,3,2,10.1 lidi | 10.36 9:46.888 | 28.1 Cue 1,repeated hard value candidate for preset cleanup
+14,,,,INTENSITYMACROS,0.00,3,2,10.1 lidi | 10.36 9:46.888 | 28.1 Cue 1,repeated hard value candidate for preset cleanup
+14,,,,IRIS,75.00,3,2,10.1 lidi | 10.36 9:46.888 | 28.1 Cue 1,repeated hard value candidate for preset cleanup
+14,,,,POSITIONMSPEED,0.00,3,2,10.1 lidi | 10.36 9:46.888 | 28.1 Cue 1,repeated hard value candidate for preset cleanup
+14,,,,PWMFREQUENCY,0.00,3,2,10.1 lidi | 10.36 9:46.888 | 28.1 Cue 1,repeated hard value candidate for preset cleanup
+14,,,,PWMFREQUENCYADJUST,50.20,3,2,10.1 lidi | 10.36 9:46.888 | 28.1 Cue 1,repeated hard value candidate for preset cleanup
+14,,,,SHAPER ROT,50.20,3,2,10.1 lidi | 10.36 9:46.888 | 28.1 Cue 1,repeated hard value candidate for preset cleanup
+14,,,,ZOOMMSPEED,0.00,3,2,10.1 lidi | 10.36 9:46.888 | 28.1 Cue 1,repeated hard value candidate for preset cleanup
+21,,,,COLORRGB2,0.00,3,1,10.1 lidi | 10.106 DUHA | 10.109 Blesk MIDI,repeated hard value candidate for preset cleanup
+21,,,,COLORRGB5,0.00,3,1,10.1 lidi | 10.106 DUHA | 10.109 Blesk MIDI,repeated hard value candidate for preset cleanup
+22,,,,COLORRGB2,0.00,3,1,10.1 lidi | 10.106 DUHA | 10.109 Blesk MIDI,repeated hard value candidate for preset cleanup
+22,,,,COLORRGB3,0.00,3,2,2.9 Racek astery 2:32 | 2.25 Vilda odchazi | 10.1 lidi,repeated hard value candidate for preset cleanup
+22,,,,COLORRGB5,0.00,3,1,10.1 lidi | 10.106 DUHA | 10.109 Blesk MIDI,repeated hard value candidate for preset cleanup
+23,,,,COLORRGB1,0.00,3,1,10.1 lidi | 10.106 DUHA | 10.109 Blesk MIDI,repeated hard value candidate for preset cleanup
+23,,,,COLORRGB2,0.00,3,1,10.1 lidi | 10.106 DUHA | 10.109 Blesk MIDI,repeated hard value candidate for preset cleanup
+23,,,,COLORRGB3,0.00,3,2,2.9 Racek astery 2:32 | 2.25 Vilda odchazi | 10.1 lidi,repeated hard value candidate for preset cleanup
+23,,,,COLORRGB5,0.00,3,1,10.1 lidi | 10.106 DUHA | 10.109 Blesk MIDI,repeated hard value candidate for preset cleanup
+24,,,,COLORRGB1,0.00,3,1,10.1 lidi | 10.106 DUHA | 10.109 Blesk MIDI,repeated hard value candidate for preset cleanup
+24,,,,COLORRGB3,0.00,3,2,2.9 Racek astery 2:32 | 2.25 Vilda odchazi | 10.1 lidi,repeated hard value candidate for preset cleanup
+24,,,,COLORRGB5,0.00,3,1,10.1 lidi | 10.106 DUHA | 10.109 Blesk MIDI,repeated hard value candidate for preset cleanup
+25,,,,COLORRGB1,0.00,3,1,10.1 lidi | 10.106 DUHA | 10.109 Blesk MIDI,repeated hard value candidate for preset cleanup
+25,,,,COLORRGB5,0.00,3,1,10.1 lidi | 10.106 DUHA | 10.109 Blesk MIDI,repeated hard value candidate for preset cleanup
+26,,,,COLORRGB5,0.00,3,1,10.1 lidi | 10.106 DUHA | 10.109 Blesk MIDI,repeated hard value candidate for preset cleanup
+27,,,,COLORRGB3,100.00,3,2,2.24 Jonatanuv PAD | 2.55 Groteska boj o zradlo - Velikeho racka | 10.89 koks KOUR GARAZ,repeated hard value candidate for preset cleanup
+28,,,,COLORRGB3,100.00,3,2,2.24 Jonatanuv PAD | 2.55 Groteska boj o zradlo - Velikeho racka | 10.89 koks KOUR GARAZ,repeated hard value candidate for preset cleanup
+29,,,,COLORRGB1,100.00,3,1,2.9 Racek astery 2:32 | 2.25 Vilda odchazi | 2.55 Groteska boj o zradlo - Velikeho racka,repeated hard value candidate for preset cleanup
+29,,,,COLORRGB2,100.00,3,1,2.30.5 Soud - zelena- - bici hudba | 2.31 Soud - proces-Na-schody | 2.55 Groteska boj o zradlo - Velikeho racka,repeated hard value candidate for preset cleanup
+30,,,,COLORRGB1,100.00,3,1,2.9 Racek astery 2:32 | 2.25 Vilda odchazi | 2.55 Groteska boj o zradlo - Velikeho racka,repeated hard value candidate for preset cleanup
+31,,,,COLORRGB1,100.00,3,1,2.9 Racek astery 2:32 | 2.25 Vilda odchazi | 2.55 Groteska boj o zradlo - Velikeho racka,repeated hard value candidate for preset cleanup
+32,,,,COLORRGB1,100.00,3,1,2.9 Racek astery 2:32 | 2.25 Vilda odchazi | 2.55 Groteska boj o zradlo - Velikeho racka,repeated hard value candidate for preset cleanup
+40,,,,COLORRGB1,DefaultLink,3,1,2.0 Cue Zero | 2.55 Groteska boj o zradlo - Velikeho racka | 2.86 lidi,repeated hard value candidate for preset cleanup
+40,,,,COLORRGB1,100.00,3,1,2.35 zustava sam LET- GESTO | 2.52 dialog | 2.76 J+F duet - S hudbou,repeated hard value candidate for preset cleanup
+40,,,,COLORRGB2,DefaultLink,3,1,2.0 Cue Zero | 2.55 Groteska boj o zradlo - Velikeho racka | 2.86 lidi,repeated hard value candidate for preset cleanup
+40,,,,COLORRGB3,DefaultLink,3,1,2.0 Cue Zero | 2.55 Groteska boj o zradlo - Velikeho racka | 2.86 lidi,repeated hard value candidate for preset cleanup
+40,,,,COLORRGB3,100.00,3,1,2.35 zustava sam LET- GESTO | 2.52 dialog | 2.76 J+F duet - S hudbou,repeated hard value candidate for preset cleanup
+43,RLB350M1 3,12 Robin LEDBeam 350 Mode 1,13.045,COLORRGB5,100.00,3,1,10.6 najezd strobo | 10.65 final flash | 10.109 Blesk MIDI,repeated hard value candidate for preset cleanup
+44,RLB350M1 4,12 Robin LEDBeam 350 Mode 1,13.067,COLORRGB5,100.00,3,1,10.6 najezd strobo | 10.65 final flash | 10.109 Blesk MIDI,repeated hard value candidate for preset cleanup
+45,RLB350M1 5,12 Robin LEDBeam 350 Mode 1,13.089,COLORRGB5,100.00,3,1,10.6 najezd strobo | 10.65 final flash | 10.109 Blesk MIDI,repeated hard value candidate for preset cleanup
+46,RLB350M1 6,12 Robin LEDBeam 350 Mode 1,13.111,COLORRGB5,100.00,3,1,10.6 najezd strobo | 10.65 final flash | 10.109 Blesk MIDI,repeated hard value candidate for preset cleanup
+49,RLB350M1 9,12 Robin LEDBeam 350 Mode 1,5.045,COLORRGB5,100.00,3,1,10.6 najezd strobo | 10.65 final flash | 10.109 Blesk MIDI,repeated hard value candidate for preset cleanup
+50,RLB350M1 10,12 Robin LEDBeam 350 Mode 1,5.067,COLORRGB5,100.00,3,1,10.6 najezd strobo | 10.65 final flash | 10.109 Blesk MIDI,repeated hard value candidate for preset cleanup
+51,RLB350M1 11,12 Robin LEDBeam 350 Mode 1,5.089,COLORRGB5,100.00,3,1,10.6 najezd strobo | 10.65 final flash | 10.109 Blesk MIDI,repeated hard value candidate for preset cleanup
+52,RLB350M1 12,12 Robin LEDBeam 350 Mode 1,5.111,COLORRGB5,100.00,3,1,10.6 najezd strobo | 10.65 final flash | 10.109 Blesk MIDI,repeated hard value candidate for preset cleanup
+61,HotboxW8 1,14 Hotbox RGBW 8 channel,2.217,COLORRGB1,23.93,3,1,10.1 lidi | 10.36 9:46.888 | 10.36.5 koule pryc,repeated hard value candidate for preset cleanup
+61,HotboxW8 1,14 Hotbox RGBW 8 channel,2.217,COLORRGB2,30.85,3,1,10.1 lidi | 10.36 9:46.888 | 10.36.5 koule pryc,repeated hard value candidate for preset cleanup
+62,HotboxW8 2,14 Hotbox RGBW 8 channel,2.225,COLORRGB1,23.93,3,1,10.1 lidi | 10.36 9:46.888 | 10.36.5 koule pryc,repeated hard value candidate for preset cleanup
+62,HotboxW8 2,14 Hotbox RGBW 8 channel,2.225,COLORRGB2,30.85,3,1,10.1 lidi | 10.36 9:46.888 | 10.36.5 koule pryc,repeated hard value candidate for preset cleanup
+63,HotboxW8 3,14 Hotbox RGBW 8 channel,2.233,COLORRGB1,23.93,3,1,10.1 lidi | 10.36 9:46.888 | 10.36.5 koule pryc,repeated hard value candidate for preset cleanup
+63,HotboxW8 3,14 Hotbox RGBW 8 channel,2.233,COLORRGB2,30.85,3,1,10.1 lidi | 10.36 9:46.888 | 10.36.5 koule pryc,repeated hard value candidate for preset cleanup
+64,HotboxW8 4,14 Hotbox RGBW 8 channel,2.241,COLORRGB1,23.93,3,1,10.1 lidi | 10.36 9:46.888 | 10.36.5 koule pryc,repeated hard value candidate for preset cleanup
+64,HotboxW8 4,14 Hotbox RGBW 8 channel,2.241,COLORRGB2,30.85,3,1,10.1 lidi | 10.36 9:46.888 | 10.36.5 koule pryc,repeated hard value candidate for preset cleanup
+67,HotboxW8 1,14 Hotbox RGBW 8 channel,1.401,COLORRGB5,0.00,3,2,10.105.5 PLATFORMA | 10.105.6 PLATFORMA | 33.1 Cue 1,repeated hard value candidate for preset cleanup
+101,,,,COLORRGB1,59.54,3,1,2.7 Jirka ze schodu u soklu - 1:50 | 2.52 dialog | 2.85 Dekovacka,repeated hard value candidate for preset cleanup
+101,,,,COLORRGB2,84.37,3,1,2.7 Jirka ze schodu u soklu - 1:50 | 2.52 dialog | 2.85 Dekovacka,repeated hard value candidate for preset cleanup
+101,,,,COLORRGB3,100.00,3,1,2.7 Jirka ze schodu u soklu - 1:50 | 2.46 Velkej ptak | 2.85 Dekovacka,repeated hard value candidate for preset cleanup
+101,,,,COLORRGB5,0.00,3,1,2.7 Jirka ze schodu u soklu - 1:50 | 2.46 Velkej ptak | 2.85 Dekovacka,repeated hard value candidate for preset cleanup
+101,,,,FLOWERCOLORMACROS,DefaultLink,3,1,2.0 Cue Zero | 2.85 Dekovacka | 2.86 lidi,repeated hard value candidate for preset cleanup
+101,,,,FLOWEREFFECT,DefaultLink,3,1,2.0 Cue Zero | 2.85 Dekovacka | 2.86 lidi,repeated hard value candidate for preset cleanup
+101,,,,TILT,104.65,3,1,2.9 Racek astery 2:32 | 2.25 Vilda odchazi | 2.80 Flo konec sola stred,repeated hard value candidate for preset cleanup
+102,,,,FLOWERCOLORMACROS,DefaultLink,3,1,2.0 Cue Zero | 2.85 Dekovacka | 2.86 lidi,repeated hard value candidate for preset cleanup
+102,,,,FLOWEREFFECT,DefaultLink,3,1,2.0 Cue Zero | 2.85 Dekovacka | 2.86 lidi,repeated hard value candidate for preset cleanup
+102,,,,TILT,104.65,3,1,2.9 Racek astery 2:32 | 2.25 Vilda odchazi | 2.29 Skupina posmesky,repeated hard value candidate for preset cleanup
+103,RSpiide3 3,7 Robin Spiider Mode 3,4.067,COLORMIXER,DefaultLink,3,1,2.0 Cue Zero | 2.85 Dekovacka | 2.86 lidi,repeated hard value candidate for preset cleanup
+103,RSpiide3 3,7 Robin Spiider Mode 3,4.067,COLORMIXMODE,DefaultLink,3,1,2.0 Cue Zero | 2.85 Dekovacka | 2.86 lidi,repeated hard value candidate for preset cleanup
+103,RSpiide3 3,7 Robin Spiider Mode 3,4.067,COLORRGB1,0.00,3,1,2.3 Prichod tanecniku | 2.32 Po procesu - s hudbou | 2.85 Dekovacka,repeated hard value candidate for preset cleanup
+103,RSpiide3 3,7 Robin Spiider Mode 3,4.067,CTC,DefaultLink,3,1,2.0 Cue Zero | 2.85 Dekovacka | 2.86 lidi,repeated hard value candidate for preset cleanup
+103,RSpiide3 3,7 Robin Spiider Mode 3,4.067,LAMPCONTROL,DefaultLink,3,1,2.0 Cue Zero | 2.85 Dekovacka | 2.86 lidi,repeated hard value candidate for preset cleanup
+103,RSpiide3 3,7 Robin Spiider Mode 3,4.067,PIXELEFFECTS,DefaultLink,3,1,2.0 Cue Zero | 2.85 Dekovacka | 2.86 lidi,repeated hard value candidate for preset cleanup
+103,RSpiide3 3,7 Robin Spiider Mode 3,4.067,PIXELEFFECTSFADE,DefaultLink,3,1,2.0 Cue Zero | 2.85 Dekovacka | 2.86 lidi,repeated hard value candidate for preset cleanup
+103,RSpiide3 3,7 Robin Spiider Mode 3,4.067,PIXELEFFECTSSPEED,DefaultLink,3,1,2.0 Cue Zero | 2.85 Dekovacka | 2.86 lidi,repeated hard value candidate for preset cleanup
+103,RSpiide3 3,7 Robin Spiider Mode 3,4.067,POSITIONMSPEED,DefaultLink,3,1,2.0 Cue Zero | 2.85 Dekovacka | 2.86 lidi,repeated hard value candidate for preset cleanup
+104,RSpiide3 4,7 Robin Spiider Mode 3,4.100,COLORMIXER,DefaultLink,3,1,2.0 Cue Zero | 2.85 Dekovacka | 2.86 lidi,repeated hard value candidate for preset cleanup
+104,RSpiide3 4,7 Robin Spiider Mode 3,4.100,COLORMIXMODE,DefaultLink,3,1,2.0 Cue Zero | 2.85 Dekovacka | 2.86 lidi,repeated hard value candidate for preset cleanup
+104,RSpiide3 4,7 Robin Spiider Mode 3,4.100,CTC,DefaultLink,3,1,2.0 Cue Zero | 2.85 Dekovacka | 2.86 lidi,repeated hard value candidate for preset cleanup
+104,RSpiide3 4,7 Robin Spiider Mode 3,4.100,LAMPCONTROL,DefaultLink,3,1,2.0 Cue Zero | 2.85 Dekovacka | 2.86 lidi,repeated hard value candidate for preset cleanup
+104,RSpiide3 4,7 Robin Spiider Mode 3,4.100,PIXELEFFECTS,DefaultLink,3,1,2.0 Cue Zero | 2.85 Dekovacka | 2.86 lidi,repeated hard value candidate for preset cleanup
+104,RSpiide3 4,7 Robin Spiider Mode 3,4.100,PIXELEFFECTSFADE,DefaultLink,3,1,2.0 Cue Zero | 2.85 Dekovacka | 2.86 lidi,repeated hard value candidate for preset cleanup
+104,RSpiide3 4,7 Robin Spiider Mode 3,4.100,PIXELEFFECTSSPEED,DefaultLink,3,1,2.0 Cue Zero | 2.85 Dekovacka | 2.86 lidi,repeated hard value candidate for preset cleanup
+104,RSpiide3 4,7 Robin Spiider Mode 3,4.100,POSITIONMSPEED,DefaultLink,3,1,2.0 Cue Zero | 2.85 Dekovacka | 2.86 lidi,repeated hard value candidate for preset cleanup
+106,RSpiide3 6,7 Robin Spiider Mode 3,4.166,TILT,112.70,3,1,2.20 Solo Zacatek Bert | 2.21 cela plocha | 2.76 J+F duet - S hudbou,repeated hard value candidate for preset cleanup
+106,RSpiide3 6,7 Robin Spiider Mode 3,4.166,ZOOM,38.00,3,1,2.20 Solo Zacatek Bert | 2.21 cela plocha | 2.76 J+F duet - S hudbou,repeated hard value candidate for preset cleanup
+107,RSpiide3 7,7 Robin Spiider Mode 3,4.271,COLORRGB2,0.00,3,1,2.18 Rackove rostazeny nohy 5:05 | 2.38 Vkladaji astery POZA se k lidem-zastavi se | 2.55 Groteska boj o zradlo - Velikeho racka,repeated hard value candidate for preset cleanup
+107,RSpiide3 7,7 Robin Spiider Mode 3,4.271,COLORRGB3,0.00,3,1,2.54 TRIO do prostoru | 2.77 J+F Duet 2 | 2.85 Dekovacka,repeated hard value candidate for preset cleanup
+107,RSpiide3 7,7 Robin Spiider Mode 3,4.271,TILT,-88.55,3,1,2.55 Groteska boj o zradlo - Velikeho racka | 2.67 Jdou na schody | 2.85 Dekovacka,repeated hard value candidate for preset cleanup
+107,RSpiide3 7,7 Robin Spiider Mode 3,4.271,ZOOM,79.50,3,1,2.2 lidi | 2.18 Rackove rostazeny nohy 5:05 | 2.86 lidi,repeated hard value candidate for preset cleanup
+108,RSpiide3 8,7 Robin Spiider Mode 3,4.304,COLORRGB1,0.00,3,1,2.14 Groteska W. hodi zradlo | 2.46 Velkej ptak | 2.85 Dekovacka,repeated hard value candidate for preset cleanup
+108,RSpiide3 8,7 Robin Spiider Mode 3,4.304,COLORRGB2,0.00,3,1,2.18 Rackove rostazeny nohy 5:05 | 2.38 Vkladaji astery POZA se k lidem-zastavi se | 2.55 Groteska boj o zradlo - Velikeho racka,repeated hard value candidate for preset cleanup
+108,RSpiide3 8,7 Robin Spiider Mode 3,4.304,COLORRGB3,0.00,3,1,2.46.6 Labus u astery | 2.54 TRIO do prostoru | 2.77 J+F Duet 2,repeated hard value candidate for preset cleanup
+108,RSpiide3 8,7 Robin Spiider Mode 3,4.304,PAN,-62.10,3,1,2.14 Groteska W. hodi zradlo | 2.55 Groteska boj o zradlo - Velikeho racka | 2.85 Dekovacka,repeated hard value candidate for preset cleanup
+108,RSpiide3 8,7 Robin Spiider Mode 3,4.304,TILT,-92.00,3,1,2.55 Groteska boj o zradlo - Velikeho racka | 2.67 Jdou na schody | 2.85 Dekovacka,repeated hard value candidate for preset cleanup
+201,,,,COLORMIXER,0.00,3,1,2.11 J. SOLO - 2:47 | 2.18 Rackove rostazeny nohy 5:05 | 2.76 J+F duet - S hudbou,repeated hard value candidate for preset cleanup
+201,,,,COLORMIXMODE,29.20,3,1,2.11 J. SOLO - 2:47 | 2.18 Rackove rostazeny nohy 5:05 | 2.76 J+F duet - S hudbou,repeated hard value candidate for preset cleanup
+201,,,,COLORRGB1,59.54,3,1,2.7 Jirka ze schodu u soklu - 1:50 | 2.52 dialog | 2.85 Dekovacka,repeated hard value candidate for preset cleanup
+201,,,,COLORRGB2,84.37,3,1,2.7 Jirka ze schodu u soklu - 1:50 | 2.52 dialog | 2.85 Dekovacka,repeated hard value candidate for preset cleanup
+201,,,,COLORRGB3,100.00,3,1,2.7 Jirka ze schodu u soklu - 1:50 | 2.46 Velkej ptak | 2.85 Dekovacka,repeated hard value candidate for preset cleanup
+201,,,,COLORRGB5,0.00,3,1,2.7 Jirka ze schodu u soklu - 1:50 | 2.46 Velkej ptak | 2.85 Dekovacka,repeated hard value candidate for preset cleanup
+201,,,,CTC,0.00,3,1,2.11 J. SOLO - 2:47 | 2.18 Rackove rostazeny nohy 5:05 | 2.76 J+F duet - S hudbou,repeated hard value candidate for preset cleanup
+201,,,,FLOWERCOLORMACROS,DefaultLink,3,1,2.0 Cue Zero | 2.85 Dekovacka | 2.86 lidi,repeated hard value candidate for preset cleanup
+201,,,,FLOWEREFFECT,DefaultLink,3,1,2.0 Cue Zero | 2.85 Dekovacka | 2.86 lidi,repeated hard value candidate for preset cleanup
+201,,,,LAMPCONTROL,0.00,3,1,2.11 J. SOLO - 2:47 | 2.18 Rackove rostazeny nohy 5:05 | 2.76 J+F duet - S hudbou,repeated hard value candidate for preset cleanup
+201,,,,POSITIONMSPEED,0.00,3,1,2.11 J. SOLO - 2:47 | 2.18 Rackove rostazeny nohy 5:05 | 2.76 J+F duet - S hudbou,repeated hard value candidate for preset cleanup
+202,,,,COLORMIXER,0.00,3,1,2.11 J. SOLO - 2:47 | 2.18 Rackove rostazeny nohy 5:05 | 2.76 J+F duet - S hudbou,repeated hard value candidate for preset cleanup
+202,,,,COLORMIXMODE,29.20,3,1,2.11 J. SOLO - 2:47 | 2.18 Rackove rostazeny nohy 5:05 | 2.76 J+F duet - S hudbou,repeated hard value candidate for preset cleanup
+202,,,,CTC,0.00,3,1,2.11 J. SOLO - 2:47 | 2.18 Rackove rostazeny nohy 5:05 | 2.76 J+F duet - S hudbou,repeated hard value candidate for preset cleanup
+202,,,,FLOWERCOLORMACROS,DefaultLink,3,1,2.0 Cue Zero | 2.85 Dekovacka | 2.86 lidi,repeated hard value candidate for preset cleanup
+202,,,,FLOWEREFFECT,DefaultLink,3,1,2.0 Cue Zero | 2.85 Dekovacka | 2.86 lidi,repeated hard value candidate for preset cleanup
+202,,,,LAMPCONTROL,0.00,3,1,2.11 J. SOLO - 2:47 | 2.18 Rackove rostazeny nohy 5:05 | 2.76 J+F duet - S hudbou,repeated hard value candidate for preset cleanup
+202,,,,PAN,-4.05,3,1,2.10 Klek zjeveni | 2.27 Jonatan - ze svicky dopredu | 2.29 Skupina posmesky,repeated hard value candidate for preset cleanup
+202,,,,POSITIONMSPEED,0.00,3,1,2.11 J. SOLO - 2:47 | 2.18 Rackove rostazeny nohy 5:05 | 2.76 J+F duet - S hudbou,repeated hard value candidate for preset cleanup

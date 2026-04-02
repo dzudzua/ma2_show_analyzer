@@ -1,0 +1,3 @@
+id,preset_type,number,xml_index,name,fixture_ids,channel_ids,patch_target_keys,fixture_details,references,value_count,source_file
+preset:1.5:demo_preset_1.xml:1,1,1.5,,Warm Front,101 102,,fixture:101 | fixture:102,101 | Front Left Wash | Robe LEDWash 600 | 1.1 || 102 | Front Center Wash | Robe LEDWash 600 | 1.17,,2,test_exports_xmlpatch\demo_preset_1.xml
+preset:2.7:demo_preset_1.xml:2,2,2.7,,DS Center,103,,fixture:103,103 | DS Center Spot | Martin MAC Viper | 1.33,,1,test_exports_xmlpatch\demo_preset_1.xml

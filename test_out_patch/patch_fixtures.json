@@ -1,0 +1,65 @@
+[
+  {
+    "fixture_id": 101,
+    "name": "Wash 101",
+    "label": "Front Left Wash",
+    "fixture_type": "Robe LEDWash 600",
+    "mode": "Mode 1",
+    "patch": "1.1",
+    "universe": "1",
+    "address": "1",
+    "source_file": "test_exports\\demo_patch.csv",
+    "metadata": {
+      "fixtureid": "101",
+      "name": "Wash 101",
+      "label": "Front Left Wash",
+      "fixturetype": "Robe LEDWash 600",
+      "mode": "Mode 1",
+      "universe": "1",
+      "address": "1",
+      "patch": "1.1"
+    }
+  },
+  {
+    "fixture_id": 102,
+    "name": "Wash 102",
+    "label": "Front Center Wash",
+    "fixture_type": "Robe LEDWash 600",
+    "mode": "Mode 1",
+    "patch": "1.17",
+    "universe": "1",
+    "address": "17",
+    "source_file": "test_exports\\demo_patch.csv",
+    "metadata": {
+      "fixtureid": "102",
+      "name": "Wash 102",
+      "label": "Front Center Wash",
+      "fixturetype": "Robe LEDWash 600",
+      "mode": "Mode 1",
+      "universe": "1",
+      "address": "17",
+      "patch": "1.17"
+    }
+  },
+  {
+    "fixture_id": 103,
+    "name": "Spot 103",
+    "label": "DS Center Spot",
+    "fixture_type": "Martin MAC Viper",
+    "mode": "Extended",
+    "patch": "1.33",
+    "universe": "1",
+    "address": "33",
+    "source_file": "test_exports\\demo_patch.csv",
+    "metadata": {
+      "fixtureid": "103",
+      "name": "Spot 103",
+      "label": "DS Center Spot",
+      "fixturetype": "Martin MAC Viper",
+      "mode": "Extended",
+      "universe": "1",
+      "address": "33",
+      "patch": "1.33"
+    }
+  }
+]

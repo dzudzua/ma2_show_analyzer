@@ -1,0 +1,5 @@
+object_type,object_number,object_name,usage_count,sequence_count,status
+preset,1.5,Warm Front,1,1,live
+preset,2.7,DS Center,1,1,live
+group,3,Washes,1,1,live
+effect,12,Circle FX,1,1,live

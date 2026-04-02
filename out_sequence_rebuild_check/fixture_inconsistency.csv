@@ -1,0 +1,2 @@
+fixture_id,fixture_name,fixture_type,fixture_patch,feature_group,hard_cue_count,preset_cue_count,mixed_cue_count,sequence_count,details
+101,Front Left Wash,Robe LEDWash 600,1.1,Dimmer,2,1,1,1,family uses both hard and preset control across 2 cues

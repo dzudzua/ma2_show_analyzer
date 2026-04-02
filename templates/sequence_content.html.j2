@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>grandMA2 Sequence Content</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #111827; color: #e5e7eb; }
+    header { padding: 14px 20px; background: #0f172a; position: sticky; top: 0; z-index: 10; border-bottom: 1px solid #334155; }
+    .header-brand { display:flex; gap:12px; align-items:center; margin-bottom:10px; }
+    .header-brand img { width:min(170px, 28vw); max-width:100%; height:auto; object-fit:contain; border-radius:0; padding:0; background:none; border:none; box-shadow:0 6px 18px rgba(0,0,0,.18); }
+    .header-copy { min-width:0; }
+    .wrap { padding: 24px; }
+    .card { background: #1f2937; border-radius: 16px; padding: 16px; box-shadow: 0 4px 20px rgba(0,0,0,.25); margin-bottom: 20px; }
+    .muted { color: #94a3b8; font-size: 12px; }
+    .topbar { display:flex; justify-content:space-between; align-items:flex-start; gap:10px; flex-wrap:wrap; }
+    .nav-shell { display:grid; gap:8px; min-width:min(640px, 100%); }
+    .category-nav, .page-nav { display:flex; gap:10px; flex-wrap:wrap; }
+    .nav-pill, .page-nav button { padding: 8px 12px; border-radius: 999px; border: 1px solid #334155; background: #172033; color: #e5e7eb; text-decoration: none; cursor: pointer; font-size: 13px; }
+    .nav-pill.active { background: rgba(56,189,248,.14); border-color: rgba(56,189,248,.45); color:#e0f2fe; }
+    .nav-pill:hover, .page-nav button:hover { background: #22304b; }
+    input, select { width: 100%; padding: 10px; border-radius: 10px; border: 1px solid #334155; background: #0f172a; color: #e5e7eb; }
+    .layout { display:grid; grid-template-columns: 340px 1fr; gap: 20px; }
+    @media (max-width: 1100px) { .layout { grid-template-columns: 1fr; } }
+    .stats { display:grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap:12px; margin-top:16px; }
+    .stat { background:#172033; border-radius:12px; padding:12px; }
+    .cue-list { display:grid; gap:8px; margin-top:12px; max-height:44vh; overflow:auto; padding-right:4px; }
+    .cue-list-item { width:100%; text-align:left; border:1px solid #334155; border-radius:12px; background:#0f172a; padding:10px 12px; color:#e5e7eb; cursor:pointer; }
+    .cue-list-item:hover { background:#162033; border-color:#475569; }
+    .cue-list-item.is-active { background:rgba(56,189,248,.12); border-color:rgba(56,189,248,.48); box-shadow: inset 0 0 0 1px rgba(56,189,248,.18); }
+    .cue-list-head { display:flex; align-items:center; justify-content:space-between; gap:10px; }
+    .cue-list-title { font-size:12px; font-weight:800; color:#f8fafc; }
+    .cue-list-name { margin-top:4px; font-size:12px; color:#cbd5e1; line-height:1.35; }
+    .cue-list-meta { margin-top:8px; display:flex; gap:6px; flex-wrap:wrap; }
+    .sequence-content-controls { display:flex; gap:14px; flex-wrap:wrap; align-items:center; margin-top:12px; }
+    .sequence-content-controls label { display:inline-flex; gap:8px; align-items:center; color:#cbd5e1; font-size:12px; }
+    .sequence-content-controls input[type="checkbox"] { width:auto; margin:0; }
+    .table-wrap { overflow:auto; max-height: 76vh; border:1px solid #334155; border-radius:12px; }
+    table { width: 100%; border-collapse: separate; border-spacing: 0; }
+    th, td { text-align: left; border-bottom: 1px solid #334155; padding: 8px; vertical-align: top; }
+    th { position: sticky; top: 0; z-index: 3; background: #172033; }
+    .sequence-content-table { min-width: 1600px; }
+    .sequence-content-table th:first-child, .sequence-content-table td:first-child { position: sticky; left: 0; z-index: 2; background: #172033; }
+    .sequence-content-table th:nth-child(2), .sequence-content-table td:nth-child(2) { position: sticky; left: 110px; z-index: 2; background: #1f2937; }
+    .sequence-content-table th:first-child, .sequence-content-table th:nth-child(2) { z-index: 4; }
+    .seq-id-cell { width: 90px; min-width: 90px; font-weight: 800; }
+    .seq-fixture-cell { min-width: 270px; }
+    .seq-fixture-title { font-weight: 800; color:#f8fafc; }
+    .seq-fixture-meta { margin-top: 4px; font-size: 11px; color:#94a3b8; line-height: 1.35; }
+    .seq-fixture-badges { display:flex; flex-wrap:wrap; gap:6px; margin-top:8px; }
+    .seq-fixture-badge { display:inline-flex; align-items:center; justify-content:center; min-height:20px; padding:0 8px; border-radius:999px; font-size:10px; font-weight:800; letter-spacing:.03em; }
+    .seq-fixture-badge.is-hard { background:#7f1d1d; color:#fecaca; border:1px solid #fecaca; }
+    .seq-fixture-badge.is-dimmer { background:#f59e0b; color:#1f2937; border:1px solid #fdba74; }
+    .seq-family-cell { min-width: 180px; vertical-align: top; }
+    .seq-family-block { display:grid; gap:6px; }
+    .seq-family-group { border:1px solid #334155; border-radius:10px; padding:6px 8px; background:#0f172a; }
+    .seq-family-group.is-hard { border-color:#7f1d1d; background:rgba(127,29,29,.12); }
+    .seq-family-group.is-dimmer { border-color:#b45309; background:rgba(180,83,9,.15); }
+    .seq-family-group.is-preset { border-color:#082f49; background:rgba(8,47,73,.18); }
+    .seq-family-label { display:flex; align-items:center; gap:6px; margin-bottom:4px; font-size:11px; font-weight:700; color:#cbd5e1; }
+    .seq-family-lines { display:grid; gap:4px; }
+    .seq-family-line { font-size:11px; line-height:1.35; color:#e5e7eb; }
+    .seq-family-empty { color:#475569; font-size:11px; }
+    .seq-mode-cell { min-width: 160px; }
+    .seq-preset-cell { min-width: 220px; }
+    .pill { display: inline-block; padding: 2px 8px; background: #334155; border-radius: 999px; margin: 2px; font-size: 12px; }
+    .pill-hard { background:#7f1d1d; color:#fecaca; font-weight:700; }
+    .pill-dimmer { background:#b45309; color:#ffedd5; font-weight:700; }
+    .pill-preset { background:#082f49; color:#bae6fd; font-weight:700; }
+    .pill-mixed { background:#78350f; color:#fde68a; font-weight:700; }
+    .pill-neutral { background:#334155; color:#e5e7eb; font-weight:700; }
+    .pre { white-space: pre-wrap; word-break: break-word; }
+    @media print {
+      body { background: #fff; color: #000; }
+      header, .controls-print-hide { display: none !important; }
+      .wrap { padding: 0; }
+      .card { box-shadow: none; border: 1px solid #ccc; background: #fff; color: #000; }
+      th, td { border-bottom: 1px solid #ccc; color: #000; }
+      th { background: #f1f5f9; }
+      .layout { display:block; }
+      .table-wrap { max-height: none; overflow: visible; border: none; }
+    }
+  </style>
+  <link rel="stylesheet" href="app_shell.css">
+</head>
+<body>
+<header>
+  <div class="header-brand">
+    <img src="logo_graindma.png" alt="grandMA2 Show Analyzer logo">
+    <div class="header-copy">
+      <h1 style="margin:0 0 8px;">grandMA2 Sequence Content</h1>
+      <div class="muted">Samostatny content sheet inspirovany MA2 Sequence Content.</div>
+    </div>
+  </div>
+  <div class="topbar">
+    <div class="nav-shell">
+      <div class="category-nav">
+        <a class="nav-pill" href="dashboard.html">Přehled show</a>
+        <a class="nav-pill active" href="cue_list.html">Cue a sekvence</a>
+        <a class="nav-pill" href="patch.html">Patch a fixture</a>
+        <a class="nav-pill" href="warnings.html">Rizika a varování</a>
+        <a class="nav-pill" href="explorer.html">Vztahy a grafy</a>
+      </div>
+      <div class="page-nav">
+        <a class="nav-pill" href="cue_list.html">Cue list</a>
+        <a class="nav-pill active" href="sequence_content.html">Sequence content</a>
+        <a class="nav-pill" href="sequence_inspector.html">Sequence inspector</a>
+        <a class="nav-pill" href="cue_quality.html">Cue quality</a>
+        <a class="nav-pill" href="preset_logic_breaks.html">Preset logic breaks</a>
+        <a class="nav-pill" href="missing_preset_opportunities.html">Missing preset opportunities</a>
+        <button id="printBtn" type="button">Export do PDF</button>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="wrap">
+  <div class="stats controls-print-hide">
+    <div class="stat"><div class="muted">Main cues</div><div id="cueCount" style="font-size:24px; font-weight:700;">0</div></div>
+    <div class="stat"><div class="muted">Visible fixtures</div><div id="fixtureCount" style="font-size:24px; font-weight:700;">0</div></div>
+    <div class="stat"><div class="muted">Mixed fixtures</div><div id="mixedCount" style="font-size:24px; font-weight:700;">0</div></div>
+    <div class="stat"><div class="muted">Hard only</div><div id="hardOnlyCount" style="font-size:24px; font-weight:700;">0</div></div>
+    <div class="stat"><div class="muted">Preset only</div><div id="presetOnlyCount" style="font-size:24px; font-weight:700;">0</div></div>
+    <div class="stat"><div class="muted">Visible families</div><div id="familyCount" style="font-size:24px; font-weight:700;">0</div></div>
+  </div>
+
+  <div class="layout" style="margin-top:20px;">
+    <div class="controls-print-hide">
+      <div class="card">
+        <h2 style="margin-top:0;">Cue List</h2>
+        <div class="muted">Klikni na cue a zobrazi se jeho content sheet. U kazdeho cue vidis prehled H a P zasahu.</div>
+        <input id="cueListFilter" placeholder="Filtrovat cue podle cisla nebo nazvu" style="margin-top:12px;">
+        <div class="sequence-content-controls">
+          <label><input id="cueListHardOnlyToggle" type="checkbox"> Only cues with H &gt; 0</label>
+        </div>
+        <div id="cueList" class="cue-list"></div>
+        <input id="fixtureFilter" placeholder="Filtrovat fixture podle cisla, nazvu nebo patch">
+        <div class="sequence-content-controls">
+          <label><input id="activeOnlyToggle" type="checkbox"> Only active families</label>
+          <label><input id="hardOnlyToggle" type="checkbox"> Only fixtures with H</label>
+        </div>
+      </div>
+      <div class="card">
+        <h2 style="margin-top:0;">Cue Summary</h2>
+        <div id="sequenceContentMeta" class="pre muted"></div>
+      </div>
+      <div class="card">
+        <h2 style="margin-top:0;">Legend</h2>
+        <div class="pre muted"><span class="pill pill-hard">H</span> hard values
+<span class="pill pill-dimmer">D</span> dimmer hard values
+<span class="pill pill-preset">P</span> preset values
+<span class="pill pill-mixed">mixed</span> fixture uses both styles in this cue</div>
+      </div>
+    </div>
+    <div class="card">
+      <h2 style="margin-top:0;">Content Sheet</h2>
+      <div class="table-wrap">
+        <table class="sequence-content-table">
+          <thead>
+            <tr>
+              <th rowspan="2">Fix</th>
+              <th rowspan="2">Fixture</th>
+              <th class="seq-col-family-Dimmer">Feature Group</th>
+              <th class="seq-col-family-Position">Feature Group</th>
+              <th class="seq-col-family-Gobo">Feature Group</th>
+              <th class="seq-col-family-Color">Feature Group</th>
+              <th class="seq-col-family-Beam">Feature Group</th>
+              <th class="seq-col-family-Focus">Feature Group</th>
+              <th class="seq-col-family-Control">Feature Group</th>
+              <th rowspan="2">Mode</th>
+              <th rowspan="2">Presets</th>
+            </tr>
+            <tr>
+              <th class="seq-col-family-Dimmer">Dimmer</th>
+              <th class="seq-col-family-Position">Position</th>
+              <th class="seq-col-family-Gobo">Gobo</th>
+              <th class="seq-col-family-Color">Color</th>
+              <th class="seq-col-family-Beam">Beam</th>
+              <th class="seq-col-family-Focus">Focus</th>
+              <th class="seq-col-family-Control">Control</th>
+            </tr>
+          </thead>
+          <tbody id="sequenceContentBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="table_panzoom.js"></script>
+<script>
+const DATA = $DATA_JSON;
+const GRAPH = $GRAPH_JSON;
+const MAIN_CUES = DATA.sequences.filter(s => s.is_main_cue_list).flatMap(s => (s.cues || []).map(c => ({...c, sequence_name: s.name, sequence_number: s.number})));
+const PRESET_INDEX = Object.fromEntries((DATA.presets || []).map(preset => [preset.number, preset]));
+const FIXTURE_REGISTRY = DATA.fixture_registry || DATA.patch_fixtures || [];
+const PATCH_INDEX = Object.fromEntries(FIXTURE_REGISTRY.map(patch => [String(patch.fixture_id), patch]));
+let sequenceContentLastRows = [];
+let selectedCueId = MAIN_CUES[0]?.id || '';
+
+function normalizePresetNumber(presetNumber, presetType) {
+  const number = String(presetNumber || '').trim();
+  const type = String(presetType || '').trim();
+  if (!number) return '';
+  if (number.includes('.')) return number;
+  if (type === '0') return `0.${number}`;
+  return number;
+}
+
+function formatPresetLabel(presetNumber, presetName, presetType) {
+  const number = normalizePresetNumber(presetNumber, presetType);
+  const name = String(presetName || '').trim();
+  return name ? `${number} ${name}` : number;
+}
+
+function sortPresetNumbers(values) {
+  return [...new Set([...(values || [])])].sort((a, b) => String(a).localeCompare(String(b), undefined, { numeric: true }));
+}
+
+function attributeFamily(attribute) {
+  const normalized = String(attribute || '').toUpperCase();
+  if (normalized.startsWith('COLOR')) return 'Color';
+  if (normalized.startsWith('GOBO')) return 'Gobo';
+  if (normalized.startsWith('FOCUS')) return 'Focus';
+  if (normalized.startsWith('DIM') || normalized.startsWith('SHUT') || normalized.startsWith('STROBE')) return 'Dimmer';
+  if (normalized.startsWith('PAN') || normalized.startsWith('TILT') || normalized.startsWith('POS') || normalized.startsWith('POSITION')) return 'Position';
+  if (normalized.startsWith('ZOOM') || normalized.startsWith('IRIS') || normalized.startsWith('PRISM') || normalized.startsWith('FROST') || normalized.startsWith('BEAM')) return 'Beam';
+  if (normalized.startsWith('CTRL') || normalized.startsWith('CONTROL') || normalized.startsWith('LAMP')) return 'Control';
+  return 'Control';
+}
+
+function controlModeBadge(mode) {
+  const normalized = String(mode || 'none');
+  const cls = normalized === 'hard_only'
+    ? 'pill pill-hard'
+    : normalized === 'dimmer_only'
+      ? 'pill pill-dimmer'
+    : normalized === 'preset_only'
+      ? 'pill pill-preset'
+      : normalized === 'mixed'
+        ? 'pill pill-mixed'
+        : 'pill pill-neutral';
+  return `<span class="${cls}">${normalized}</span>`;
+}
+
+function makeSequenceFamilyCell(entries) {
+  if (!(entries || []).length) {
+    return '<div class="seq-family-empty">-</div>';
+  }
+  const hard = entries.filter(entry => entry.kind === 'hard');
+  const dimmer = entries.filter(entry => entry.kind === 'dimmer');
+  const preset = entries.filter(entry => entry.kind !== 'hard' && entry.kind !== 'dimmer');
+  const blocks = [];
+  if (hard.length) {
+    blocks.push(`
+      <div class="seq-family-group is-hard">
+        <div class="seq-family-label"><span class="pill pill-hard">H</span> Hard</div>
+        <div class="seq-family-lines">${hard.map(entry => `<div class="seq-family-line">${entry.text}</div>`).join('')}</div>
+      </div>
+    `);
+  }
+  if (dimmer.length) {
+    blocks.push(`
+      <div class="seq-family-group is-dimmer">
+        <div class="seq-family-label"><span class="pill pill-dimmer">D</span> Dimmer hard</div>
+        <div class="seq-family-lines">${dimmer.map(entry => `<div class="seq-family-line">${entry.text}</div>`).join('')}</div>
+      </div>
+    `);
+  }
+  if (preset.length) {
+    blocks.push(`
+      <div class="seq-family-group is-preset">
+        <div class="seq-family-label"><span class="pill pill-preset">P</span> Preset</div>
+        <div class="seq-family-lines">${preset.map(entry => `<div class="seq-family-line">${entry.source ? `<strong>${entry.source}</strong>: ` : ''}${entry.text}</div>`).join('')}</div>
+      </div>
+    `);
+  }
+  return `<div class="seq-family-block">${blocks.join('')}</div>`;
+}
+
+function hardFamilyCode(attribute) {
+  const value = String(attribute || '').toUpperCase();
+  if (!value) return '';
+  if (value.startsWith('DIM') || value.startsWith('SHUT') || value.startsWith('STROBE')) return 'DIM';
+  if (value.startsWith('PAN') || value.startsWith('TILT') || value.startsWith('POS') || value.startsWith('POSITION')) return 'POS';
+  if (value.startsWith('ZOOM')) return 'ZOOM';
+  if (value.startsWith('COLOR')) return 'COLOR';
+  if (value.startsWith('GOBO')) return 'GOBO';
+  if (value.startsWith('FOCUS')) return 'FOCUS';
+  if (value.startsWith('IRIS') || value.startsWith('PRISM') || value.startsWith('FROST') || value.startsWith('BEAM')) return 'BEAM';
+  if (value.startsWith('CTRL') || value.startsWith('CONTROL') || value.startsWith('LAMP')) return 'CTRL';
+  return value.slice(0, 6);
+}
+
+function familyBadgesHtml(row) {
+  const seen = new Set();
+  const badges = [];
+  Object.values(row.families || {}).forEach(entries => {
+    (entries || []).forEach(entry => {
+      if (entry.kind !== 'hard' && entry.kind !== 'dimmer') return;
+      const attribute = String(entry.attribute || entry.text || '').split('=')[0].split('->')[0].trim();
+      const label = hardFamilyCode(attribute);
+      if (!label) return;
+      const key = `${entry.kind}:${label}`;
+      if (seen.has(key)) return;
+      seen.add(key);
+      badges.push(`<span class="seq-fixture-badge ${entry.kind === 'dimmer' ? 'is-dimmer' : 'is-hard'}">${label}</span>`);
+    });
+  });
+  return badges.length ? `<div class="seq-fixture-badges">${badges.join('')}</div>` : '';
+}
+
+function cueCounts(cue) {
+  const hardFixtures = new Set();
+  const presetFixtures = new Set();
+  let hardCount = 0;
+  let presetCount = 0;
+  (cue.values || []).forEach(atom => {
+    if (atom.fixture_id === null || atom.fixture_id === undefined) return;
+    if (atom.value_type === 'hard' && attributeFamily(atom.attribute) !== 'Dimmer') {
+      hardCount += 1;
+      hardFixtures.add(String(atom.fixture_id));
+    } else if (atom.value_type === 'preset_ref') {
+      presetCount += 1;
+      presetFixtures.add(String(atom.fixture_id));
+    }
+  });
+  buildDirectLinks(cue.id)
+    .filter(link => link.type === 'cue_preset')
+    .forEach(link => {
+      const presetNumber = String(link.target).replace(/^preset:/, '');
+      const preset = PRESET_INDEX[presetNumber];
+      (preset?.values || []).forEach(atom => {
+        if (atom.fixture_id === null || atom.fixture_id === undefined) return;
+        presetCount += 1;
+        presetFixtures.add(String(atom.fixture_id));
+      });
+  });
+  return { hardCount, presetCount, hardFixtures: hardFixtures.size, presetFixtures: presetFixtures.size };
+}
+
+function filteredCueList() {
+  const text = String(document.getElementById('cueListFilter')?.value || '').trim().toLowerCase();
+  const hardOnly = !!document.getElementById('cueListHardOnlyToggle')?.checked;
+  return MAIN_CUES.filter(cue => {
+    const counts = cueCounts(cue);
+    if (hardOnly && counts.hardCount <= 0) return false;
+    if (!text) return true;
+    return `${cue.sequence_number || ''} ${cue.cue_number || ''} ${cue.name || ''}`.toLowerCase().includes(text);
+  });
+}
+
+function fillCueList() {
+  const list = document.getElementById('cueList');
+  list.innerHTML = '';
+  const cues = filteredCueList();
+  if (!cues.some(cue => cue.id === selectedCueId)) {
+    selectedCueId = cues[0]?.id || '';
+  }
+  cues.forEach(cue => {
+    const counts = cueCounts(cue);
+    const item = document.createElement('button');
+    item.type = 'button';
+    item.className = `cue-list-item${selectedCueId === cue.id ? ' is-active' : ''}`;
+    item.innerHTML = `
+      <div class="cue-list-head">
+        <div class="cue-list-title">${cue.sequence_number || '-'} . ${cue.cue_number || '-'}</div>
+        <div><span class="pill pill-hard">H ${counts.hardCount}</span><span class="pill pill-preset">P ${counts.presetCount}</span></div>
+      </div>
+      <div class="cue-list-name">${cue.name || 'Cue without name'}</div>
+      <div class="cue-list-meta">
+        <span class="pill pill-neutral">Fix H ${counts.hardFixtures}</span>
+        <span class="pill pill-neutral">Fix P ${counts.presetFixtures}</span>
+      </div>
+    `;
+    item.addEventListener('click', () => {
+      selectedCueId = cue.id;
+      fillCueList();
+      renderSequenceContent();
+    });
+    list.appendChild(item);
+  });
+  if (!cues.length) {
+    const empty = document.createElement('div');
+    empty.className = 'muted';
+    empty.textContent = 'Zadny cue neodpovida aktivnimu filtru.';
+    list.appendChild(empty);
+  }
+  document.getElementById('cueCount').textContent = String(cues.length);
+}
+
+function moveCue(step) {
+  const cues = filteredCueList();
+  if (!cues.length) return;
+  const currentIndex = Math.max(0, cues.findIndex(cue => cue.id === selectedCueId));
+  const nextIndex = Math.max(0, Math.min(cues.length - 1, currentIndex + step));
+  if (nextIndex === currentIndex) return;
+  selectedCueId = cues[nextIndex].id;
+  fillCueList();
+  renderSequenceContent();
+}
+
+function getSelectedCue() {
+  return filteredCueList().find(cue => cue.id === selectedCueId) || filteredCueList()[0] || null;
+}
+
+function buildDirectLinks(cueId) {
+  return (GRAPH.links || []).filter(link => String(link.source) === String(cueId));
+}
+
+function renderSequenceContent() {
+  const cueData = getSelectedCue();
+  const body = document.getElementById('sequenceContentBody');
+  const meta = document.getElementById('sequenceContentMeta');
+  const activeOnly = !!document.getElementById('activeOnlyToggle').checked;
+  const hardOnly = !!document.getElementById('hardOnlyToggle').checked;
+  const fixtureFilter = document.getElementById('fixtureFilter').value.trim().toLowerCase();
+  body.innerHTML = '';
+  meta.textContent = '';
+  if (!cueData) {
+    meta.textContent = 'No cue selected.';
+    return;
+  }
+
+  const directLinks = buildDirectLinks(cueData.id);
+  const fixtureMap = new Map();
+  const ensureFixture = (fixtureId) => {
+    const key = String(fixtureId);
+    if (!fixtureMap.has(key)) {
+      const patch = PATCH_INDEX[key] || {};
+      fixtureMap.set(key, {
+        fixture_id: Number(fixtureId),
+        name: patch.label || patch.name || `Fixture ${fixtureId}`,
+        fixture_type: patch.fixture_type || '',
+        patch: patch.patch || '',
+        families: { Dimmer: [], Position: [], Gobo: [], Color: [], Beam: [], Focus: [], Control: [] },
+        presetRefs: new Set(),
+        hardCount: 0,
+        dimmerCount: 0,
+        presetCount: 0,
+      });
+    }
+    return fixtureMap.get(key);
+  };
+
+  (cueData.fixture_ids || []).forEach(fixtureId => ensureFixture(fixtureId));
+
+  (cueData.values || []).forEach(atom => {
+    if (atom.fixture_id === null || atom.fixture_id === undefined) return;
+    const fixture = ensureFixture(atom.fixture_id);
+    const family = attributeFamily(atom.attribute);
+    if (atom.value_type === 'hard') {
+      if (family === 'Dimmer') {
+        fixture.dimmerCount += 1;
+        fixture.families[family].push({ kind: 'dimmer', attribute: atom.attribute || '?', text: `${atom.attribute || '?'} = ${atom.raw_value}` });
+      } else {
+        fixture.hardCount += 1;
+        fixture.families[family].push({ kind: 'hard', attribute: atom.attribute || '?', text: `${atom.attribute || '?'} = ${atom.raw_value}` });
+      }
+    } else if (atom.value_type === 'preset_ref') {
+      const presetNumber = String(atom.reference_target || '').replace(/^preset:/, '');
+      const preset = PRESET_INDEX[presetNumber];
+      fixture.presetRefs.add(presetNumber);
+      fixture.presetCount += 1;
+      fixture.families[family].push({ kind: 'preset_ref', attribute: atom.attribute || '?', text: `${atom.attribute || '?'} -> ${formatPresetLabel(presetNumber, preset?.name || '', preset?.preset_type || '')}` });
+    }
+  });
+
+  directLinks.filter(link => link.type === 'cue_preset').forEach(link => {
+    const presetNumber = String(link.target).replace(/^preset:/, '');
+    const preset = PRESET_INDEX[presetNumber];
+    (preset?.values || []).forEach(atom => {
+      if (atom.fixture_id === null || atom.fixture_id === undefined) return;
+      const fixture = ensureFixture(atom.fixture_id);
+      const family = attributeFamily(atom.attribute);
+      fixture.presetCount += 1;
+      fixture.families[family].push({
+        kind: 'preset',
+        attribute: atom.attribute || '?',
+        text: `${atom.attribute || '?'} = ${atom.raw_value}`,
+        source: formatPresetLabel(presetNumber, preset?.name || '', preset?.preset_type || ''),
+      });
+      fixture.presetRefs.add(presetNumber);
+    });
+  });
+
+  const familyOrder = ['Dimmer', 'Position', 'Gobo', 'Color', 'Beam', 'Focus', 'Control'];
+  let rows = [...fixtureMap.values()].sort((a, b) => a.fixture_id - b.fixture_id);
+  if (fixtureFilter) {
+    rows = rows.filter(row => [row.fixture_id, row.name, row.fixture_type, row.patch].join(' ').toLowerCase().includes(fixtureFilter));
+  }
+  if (hardOnly) {
+    rows = rows.filter(row => row.hardCount > 0);
+  }
+  const visibleFamilies = familyOrder.filter(family => !activeOnly || rows.some(row => (row.families[family] || []).length));
+  familyOrder.forEach(family => {
+    document.querySelectorAll(`.seq-col-family-${family}`).forEach(node => {
+      node.style.display = visibleFamilies.includes(family) ? '' : 'none';
+    });
+  });
+
+  const mixedCount = rows.filter(row => row.hardCount && row.presetCount).length;
+  const hardOnlyCount = rows.filter(row => row.hardCount && !row.presetCount).length;
+  const dimmerOnlyCount = rows.filter(row => !row.hardCount && row.dimmerCount && !row.presetCount).length;
+  const presetOnlyCount = rows.filter(row => !row.hardCount && !row.dimmerCount && row.presetCount).length;
+  document.getElementById('fixtureCount').textContent = String(rows.length);
+  document.getElementById('mixedCount').textContent = String(mixedCount);
+  document.getElementById('hardOnlyCount').textContent = String(hardOnlyCount);
+  document.getElementById('presetOnlyCount').textContent = String(presetOnlyCount);
+  document.getElementById('familyCount').textContent = String(visibleFamilies.length);
+
+  meta.textContent = [
+    `Sequence: ${cueData.sequence_number || '-'} ${cueData.sequence_name || ''}`.trim(),
+    `Cue: ${cueData.cue_number || '-'} ${cueData.name || ''}`.trim(),
+    `Fixtures shown: ${rows.length}`,
+    `Filter H only: ${hardOnly ? 'yes' : 'no'}`,
+    `Preset links in cue: ${directLinks.filter(link => link.type === 'cue_preset').length}`,
+    `Mixed fixtures: ${mixedCount} | hard-only: ${hardOnlyCount} | dimmer-only: ${dimmerOnlyCount} | preset-only: ${presetOnlyCount}`,
+  ].join('\n');
+
+  rows.forEach(row => {
+    const tr = document.createElement('tr');
+    const idTd = document.createElement('td');
+    idTd.className = 'seq-id-cell';
+    idTd.textContent = String(row.fixture_id);
+    tr.appendChild(idTd);
+
+    const fixtureTd = document.createElement('td');
+    fixtureTd.className = 'seq-fixture-cell';
+    fixtureTd.innerHTML = `<div class="seq-fixture-title">${row.name || `Fixture ${row.fixture_id}`}</div><div class="seq-fixture-meta">${[row.fixture_type || '-', row.patch || '-'].join(' | ')}</div>${familyBadgesHtml(row)}`;
+    tr.appendChild(fixtureTd);
+
+    visibleFamilies.forEach(family => {
+      const td = document.createElement('td');
+      td.className = `seq-family-cell seq-col-family-${family}`;
+      td.innerHTML = makeSequenceFamilyCell(row.families[family]);
+      tr.appendChild(td);
+    });
+
+    const modeTd = document.createElement('td');
+    modeTd.className = 'seq-mode-cell';
+    const controlMode = row.hardCount && row.presetCount ? 'mixed' : row.hardCount ? 'hard_only' : row.presetCount ? 'preset_only' : row.dimmerCount ? 'dimmer_only' : 'none';
+    modeTd.innerHTML = `${controlModeBadge(controlMode)}<div class="muted"><span class="pill pill-hard">H</span> ${row.hardCount} | <span class="pill pill-dimmer">D</span> ${row.dimmerCount} | <span class="pill pill-preset">P</span> ${row.presetCount}</div>`;
+    tr.appendChild(modeTd);
+
+    const presetTd = document.createElement('td');
+    presetTd.className = 'seq-preset-cell';
+    presetTd.innerHTML = sortPresetNumbers(row.presetRefs).map(ref => `<span class="pill pill-preset">${formatPresetLabel(ref, PRESET_INDEX[ref]?.name || '', PRESET_INDEX[ref]?.preset_type || '')}</span>`).join(' ');
+    tr.appendChild(presetTd);
+    body.appendChild(tr);
+  });
+
+  if (!rows.length) {
+    const tr = document.createElement('tr');
+    const td = document.createElement('td');
+    td.colSpan = 4 + visibleFamilies.length + 2;
+    td.textContent = 'No fixture content found for selected cue.';
+    tr.appendChild(td);
+    body.appendChild(tr);
+  }
+}
+
+document.getElementById('activeOnlyToggle').addEventListener('change', renderSequenceContent);
+document.getElementById('hardOnlyToggle').addEventListener('change', renderSequenceContent);
+document.getElementById('fixtureFilter').addEventListener('input', renderSequenceContent);
+document.getElementById('cueListFilter').addEventListener('input', () => {
+  fillCueList();
+  renderSequenceContent();
+});
+document.getElementById('cueListHardOnlyToggle').addEventListener('change', () => {
+  fillCueList();
+  renderSequenceContent();
+});
+document.getElementById('printBtn').addEventListener('click', () => window.print());
+window.addEventListener('keydown', event => {
+  const tag = String(event.target?.tagName || '').toLowerCase();
+  if (tag === 'input' || tag === 'textarea' || tag === 'select' || event.target?.isContentEditable) return;
+  if (event.key === 'ArrowLeft') {
+    event.preventDefault();
+    moveCue(-1);
+  } else if (event.key === 'ArrowRight') {
+    event.preventDefault();
+    moveCue(1);
+  }
+});
+
+fillCueList();
+renderSequenceContent();
+</script>
+</body>
+</html>

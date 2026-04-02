@@ -1,0 +1,82 @@
+{
+  "101": {
+    "sequence_count": 1,
+    "cue_count": 2,
+    "preset_count": 1,
+    "group_count": 1,
+    "effect_count": 0,
+    "sequences": [
+      "sequence:1:demo_main_sequences.xml:1"
+    ],
+    "cues": [
+      "cue:1:1:demo_main_sequences.xml:1",
+      "cue:1:2:demo_main_sequences.xml:2"
+    ],
+    "presets": [
+      "preset:1.5:demo_preset_1.xml:1"
+    ],
+    "groups": [
+      "group:3:demo_groups.xml:1"
+    ],
+    "effects": [],
+    "hard_value_atoms": 3,
+    "preset_ref_atoms": 0,
+    "effect_ref_atoms": 0,
+    "group_ref_atoms": 0,
+    "fixture_id": 101
+  },
+  "102": {
+    "sequence_count": 1,
+    "cue_count": 2,
+    "preset_count": 1,
+    "group_count": 1,
+    "effect_count": 1,
+    "sequences": [
+      "sequence:1:demo_main_sequences.xml:1"
+    ],
+    "cues": [
+      "cue:1:1:demo_main_sequences.xml:1",
+      "cue:1:2:demo_main_sequences.xml:2"
+    ],
+    "presets": [
+      "preset:1.5:demo_preset_1.xml:1"
+    ],
+    "groups": [
+      "group:3:demo_groups.xml:1"
+    ],
+    "effects": [
+      "effect:12:demo_effects.xml:1"
+    ],
+    "hard_value_atoms": 1,
+    "preset_ref_atoms": 1,
+    "effect_ref_atoms": 1,
+    "group_ref_atoms": 0,
+    "fixture_id": 102
+  },
+  "103": {
+    "sequence_count": 1,
+    "cue_count": 2,
+    "preset_count": 1,
+    "group_count": 1,
+    "effect_count": 0,
+    "sequences": [
+      "sequence:1:demo_main_sequences.xml:1"
+    ],
+    "cues": [
+      "cue:1:1:demo_main_sequences.xml:1",
+      "cue:1:2:demo_main_sequences.xml:2"
+    ],
+    "presets": [
+      "preset:2.7:demo_preset_1.xml:2"
+    ],
+    "groups": [
+      "group:3:demo_groups.xml:1"
+    ],
+    "effects": [],
+    "hard_value_atoms": 1,
+    "preset_ref_atoms": 1,
+    "effect_ref_atoms": 0,
+    "group_ref_atoms": 1,
+    "fixture_id": 103
+  }
+}

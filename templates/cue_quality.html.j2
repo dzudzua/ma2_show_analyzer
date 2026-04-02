@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>grandMA2 Cue Quality Overview</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #111827; color: #e5e7eb; }
+    header { padding: 14px 20px; background: #0f172a; position: sticky; top: 0; z-index: 10; border-bottom: 1px solid #334155; }
+    .header-brand { display:flex; gap:12px; align-items:center; margin-bottom:10px; }
+    .header-brand img { width:min(170px, 28vw); max-width:100%; height:auto; object-fit:contain; border-radius:0; padding:0; background:none; border:none; box-shadow:0 6px 18px rgba(0,0,0,.18); }
+    .header-copy { min-width:0; }
+    .wrap { padding: 24px; }
+    .card { background: #1f2937; border-radius: 16px; padding: 16px; box-shadow: 0 4px 20px rgba(0,0,0,.25); margin-bottom: 20px; }
+    .muted { color: #94a3b8; font-size: 12px; }
+    .topbar { display:flex; justify-content:space-between; align-items:flex-start; gap:10px; flex-wrap:wrap; }
+    .nav-shell { display:grid; gap:8px; min-width:min(640px, 100%); }
+    .category-nav, .page-nav { display:flex; gap:10px; flex-wrap:wrap; }
+    .nav-pill, .page-nav button { padding: 8px 12px; border-radius: 999px; border: 1px solid #334155; background: #172033; color: #e5e7eb; text-decoration: none; cursor: pointer; font-size: 13px; }
+    .nav-pill.active { background: rgba(56,189,248,.14); border-color: rgba(56,189,248,.45); color:#e0f2fe; }
+    .nav-pill:hover, .page-nav button:hover { background: #22304b; }
+    input { width: 100%; padding: 10px; border-radius: 10px; border: 1px solid #334155; background: #0f172a; color: #e5e7eb; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { text-align: left; border-bottom: 1px solid #334155; padding: 8px; vertical-align: top; }
+    th { position: sticky; top: 0; background: #172033; z-index: 1; }
+    th.sortable { cursor: pointer; user-select: none; }
+    th.sortable:hover { background: #22304b; }
+    .layout { display:grid; grid-template-columns: 320px 1fr; gap: 20px; }
+    @media (max-width: 1000px) { .layout { grid-template-columns: 1fr; } }
+    .checklist { display:grid; gap:8px; }
+    .checkline { display:flex; align-items:center; gap:8px; }
+    .checkline input[type="checkbox"] { width:auto; }
+    .stats { display:grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap:12px; margin-top:16px; }
+    .stat { background:#172033; border-radius:12px; padding:12px; }
+    .table-wrap { overflow:auto; max-height: 74vh; border:1px solid #334155; border-radius:12px; }
+    .selected-row td { background: rgba(56,189,248,.08); }
+    .severity-high td { background: rgba(127,29,29,.18); }
+    .severity-medium td { background: rgba(120,53,15,.16); }
+    .severity-low td { background: rgba(30,58,138,.12); }
+    .selected-row.severity-high td, .selected-row.severity-medium td, .selected-row.severity-low td { background: rgba(56,189,248,.18); }
+    .detail-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:12px; }
+    .detail-box { background:#172033; border-radius:12px; padding:12px; }
+    .detail-table { width:100%; border-collapse: collapse; }
+    .detail-table td { padding: 6px 8px; border-bottom: 1px solid #334155; vertical-align: top; }
+    .detail-table td:first-child { width: 34%; color:#94a3b8; }
+    .pill { display:inline-block; padding:2px 8px; background:#334155; border-radius:999px; font-size:12px; }
+    .pill-high { background:#7f1d1d; color:#fecaca; font-weight:700; }
+    .pill-medium { background:#78350f; color:#fde68a; font-weight:700; }
+    .pill-low { background:#1e3a8a; color:#bfdbfe; font-weight:700; }
+    .pre { white-space: pre-wrap; word-break: break-word; }
+    @media print {
+      body { background: #fff; color: #000; }
+      header, .controls-print-hide { display: none !important; }
+      .wrap { padding: 0; }
+      .card { box-shadow: none; border: 1px solid #ccc; background: #fff; color: #000; }
+      th, td { border-bottom: 1px solid #ccc; color: #000; }
+      th { background: #f1f5f9; }
+      .layout { display:block; }
+      .table-wrap { max-height: none; overflow: visible; border: none; }
+    }
+  </style>
+  <link rel="stylesheet" href="app_shell.css">
+</head>
+<body>
+<header>
+  <div class="header-brand">
+    <img src="logo_graindma.png" alt="grandMA2 Show Analyzer logo">
+    <div class="header-copy">
+      <h1 style="margin:0 0 8px;">grandMA2 Cue Quality Overview</h1>
+      <div class="muted">Skoring cue listu, nejhorsi bloky a kandidati na cleanup.</div>
+    </div>
+  </div>
+  <div class="topbar">
+    <div class="nav-shell">
+      <div class="category-nav">
+        <a class="nav-pill" href="dashboard.html">Přehled show</a>
+        <a class="nav-pill active" href="cue_list.html">Cue a sekvence</a>
+        <a class="nav-pill" href="patch.html">Patch a fixture</a>
+        <a class="nav-pill" href="warnings.html">Rizika a varování</a>
+        <a class="nav-pill" href="explorer.html">Vztahy a grafy</a>
+      </div>
+      <div class="page-nav">
+        <a class="nav-pill" href="cue_list.html">Cue list</a>
+        <a class="nav-pill" href="sequence_content.html">Sequence content</a>
+        <a class="nav-pill" href="sequence_inspector.html">Sequence inspector</a>
+        <a class="nav-pill active" href="cue_quality.html">Cue quality</a>
+        <a class="nav-pill" href="preset_logic_breaks.html">Preset logic breaks</a>
+        <a class="nav-pill" href="missing_preset_opportunities.html">Missing preset opportunities</a>
+        <a class="nav-pill" href="warnings.html">Warnings</a>
+        <button id="printBtn" type="button">Export do PDF</button>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="wrap">
+  <div class="stats controls-print-hide">
+    <div class="stat"><div class="muted">Cue rows</div><div id="cueCount" style="font-size:24px; font-weight:700;">0</div></div>
+    <div class="stat"><div class="muted">High</div><div id="highCount" style="font-size:24px; font-weight:700;">0</div></div>
+    <div class="stat"><div class="muted">Medium</div><div id="mediumCount" style="font-size:24px; font-weight:700;">0</div></div>
+    <div class="stat"><div class="muted">Low</div><div id="lowCount" style="font-size:24px; font-weight:700;">0</div></div>
+    <div class="stat"><div class="muted">Visible rows</div><div id="visibleCount" style="font-size:24px; font-weight:700;">0</div></div>
+    <div class="stat"><div class="muted">Selected rows</div><div id="selectedCount" style="font-size:24px; font-weight:700;">0</div></div>
+    <div class="stat"><div class="muted">Visible columns</div><div id="visibleColumnsCount" style="font-size:24px; font-weight:700;">0</div></div>
+  </div>
+  <div class="layout" style="margin-top:20px;">
+    <div class="controls-print-hide">
+      <div class="card">
+        <h2 style="margin-top:0;">Filtr</h2>
+        <input id="cueFilter" placeholder="Filtrovat podle sequence, cue, nazvu nebo reasons">
+        <div class="checkline" style="margin-top:12px;"><input id="selectedOnlyToggle" type="checkbox"><label for="selectedOnlyToggle">Zobrazit jen vybrane radky</label></div>
+        <div class="checkline" style="margin-top:12px;"><input id="mainOnlyToggle" type="checkbox"><label for="mainOnlyToggle">Jen hlavni cue list</label></div>
+      </div>
+      <div class="card">
+        <h2 style="margin-top:0;">Severity</h2>
+        <div class="checkline"><input id="severityHigh" type="checkbox" checked><label for="severityHigh">High</label></div>
+        <div class="checkline"><input id="severityMedium" type="checkbox" checked><label for="severityMedium">Medium</label></div>
+        <div class="checkline"><input id="severityLow" type="checkbox" checked><label for="severityLow">Low</label></div>
+      </div>
+      <div class="card">
+        <h2 style="margin-top:0;">Sloupce</h2>
+        <div id="columnControls" class="checklist"></div>
+      </div>
+      <div class="card">
+        <h2 style="margin-top:0;">Radky</h2>
+        <div class="checkline"><input id="selectAllVisibleRows" type="checkbox"><label for="selectAllVisibleRows">Vybrat vsechny viditelne</label></div>
+        <div class="muted" style="margin-top:8px;">Vyber si podezrele cues pro tisk a dalsi review.</div>
+      </div>
+      <div class="card">
+        <h2 style="margin-top:0;">Worst blocks</h2>
+        <div id="worstBlocks"></div>
+      </div>
+    </div>
+    <div>
+      <div class="card">
+        <h2 style="margin-top:0;">Cue Quality Detail</h2>
+        <div id="cueDetail"></div>
+      </div>
+      <div class="card">
+        <h2 style="margin-top:0;">Cue Quality Table</h2>
+        <div class="table-wrap">
+          <table id="cueTable">
+            <thead><tr id="cueHeadRow"></tr></thead>
+            <tbody id="cueBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="table_panzoom.js"></script>
+<script>
+const DATA = $DATA_JSON;
+const AUDIT = $AUDIT_JSON;
+const CUE_ROWS = AUDIT.cue_quality || [];
+const WORST_BLOCKS = AUDIT.worst_blocks || [];
+const selectedRows = new Set();
+let focusedRowId = CUE_ROWS[0]?.cue_id || null;
+let sortKey = 'quality_risk_score';
+let sortDirection = 'desc';
+
+const CUE_COLUMNS = [
+  { key: 'selected', label: 'Sel', isSelection: true, visible: true },
+  { key: 'severity', label: 'Severity', visible: true },
+  { key: 'quality_risk_score', label: 'Score', visible: true },
+  { key: 'sequence_number', label: 'Seq', visible: true },
+  { key: 'cue_number', label: 'Cue', visible: true },
+  { key: 'cue_name', label: 'Name', visible: true },
+  { key: 'dimmer_value_count', label: 'D', visible: true },
+  { key: 'hard_value_count', label: 'Hard', visible: true },
+  { key: 'preset_ref_count', label: 'Presets', visible: true },
+  { key: 'mixed_fixture_count', label: 'Mixed Fixtures', visible: true },
+  { key: 'mixed_family_count', label: 'Mixed Families', visible: false },
+  { key: 'zero_like_count', label: 'Zero-like', visible: false },
+  { key: 'feature_group_count', label: 'Families', visible: true },
+  { key: 'local_similarity', label: 'Similarity', visible: true },
+  { key: 'trigger', label: 'Trigger', visible: false },
+  { key: 'fade', label: 'Fade', visible: false },
+  { key: 'delay', label: 'Delay', visible: false },
+  { key: 'reasons_text', label: 'Reasons', visible: true },
+];
+
+function severityBadgeHtml(severity) {
+  const sev = String(severity || 'low').toLowerCase();
+  return `<span class="pill pill-${sev}">${sev.toUpperCase()}</span>`;
+}
+
+function visibleColumns() {
+  return CUE_COLUMNS.filter(column => column.visible);
+}
+
+function renderColumnControls() {
+  const root = document.getElementById('columnControls');
+  root.innerHTML = '';
+  CUE_COLUMNS.forEach(column => {
+    const line = document.createElement('label');
+    line.className = 'checkline';
+    const input = document.createElement('input');
+    input.type = 'checkbox';
+    input.checked = column.visible;
+    input.addEventListener('change', () => {
+      column.visible = input.checked;
+      renderCueTable();
+    });
+    line.appendChild(input);
+    const text = document.createElement('span');
+    text.textContent = column.label;
+    line.appendChild(text);
+    root.appendChild(line);
+  });
+}
+
+function passesSeverity(row) {
+  if (row.severity === 'high' && !document.getElementById('severityHigh').checked) return false;
+  if (row.severity === 'medium' && !document.getElementById('severityMedium').checked) return false;
+  if (row.severity === 'low' && !document.getElementById('severityLow').checked) return false;
+  return true;
+}
+
+function filteredRows() {
+  const filter = document.getElementById('cueFilter').value.trim().toLowerCase();
+  const selectedOnly = document.getElementById('selectedOnlyToggle').checked;
+  const mainOnly = document.getElementById('mainOnlyToggle').checked;
+  return CUE_ROWS.filter(row => {
+    if (selectedOnly && !selectedRows.has(row.cue_id)) return false;
+    if (mainOnly && !row.is_main_cue_list) return false;
+    if (!passesSeverity(row)) return false;
+    if (!filter) return true;
+    const haystack = [row.sequence_number, row.sequence_name, row.cue_number, row.cue_name, row.trigger, row.reasons_text].join(' ').toLowerCase();
+    return haystack.includes(filter);
+  });
+}
+
+function compareRows(a, b) {
+  const av = a[sortKey];
+  const bv = b[sortKey];
+  let comparison = 0;
+  const an = Number(av);
+  const bn = Number(bv);
+  if (!Number.isNaN(an) && !Number.isNaN(bn)) {
+    comparison = an === bn ? 0 : (an > bn ? 1 : -1);
+  } else {
+    comparison = String(av || '').localeCompare(String(bv || ''), undefined, { numeric: true, sensitivity: 'base' });
+  }
+  return sortDirection === 'asc' ? comparison : -comparison;
+}
+
+function renderWorstBlocks() {
+  const root = document.getElementById('worstBlocks');
+  root.innerHTML = '';
+  if (!WORST_BLOCKS.length) {
+    root.innerHTML = '<div class="muted">Zatim bez dat.</div>';
+    return;
+  }
+  WORST_BLOCKS.slice(0, 8).forEach(block => {
+    const box = document.createElement('div');
+    box.className = 'detail-box';
+    box.style.marginBottom = '10px';
+    box.innerHTML = `<div style="font-weight:700;">Seq ${block.sequence_number} | cues ${block.cue_range}</div><div class="muted">avg score ${block.average_score} | worst ${block.worst_cue_score}</div><div style="margin-top:6px;">${block.summary}</div>`;
+    root.appendChild(box);
+  });
+}
+
+function renderCueDetail(row) {
+  const root = document.getElementById('cueDetail');
+  if (!row) {
+    root.innerHTML = '<div class="muted">Vyber cue z tabulky.</div>';
+    return;
+  }
+  root.innerHTML = `
+    <div class="detail-grid">
+      <div class="detail-box">
+        <table class="detail-table">
+          <tr><td>Sequence</td><td>${row.sequence_number || ''} ${row.sequence_name || ''}</td></tr>
+          <tr><td>Cue</td><td>${row.cue_number || ''} ${row.cue_name || ''}</td></tr>
+          <tr><td>Severity</td><td>${severityBadgeHtml(row.severity)}</td></tr>
+          <tr><td>Score</td><td>${row.quality_risk_score || 0}</td></tr>
+          <tr><td>Trigger</td><td>${row.trigger || ''}</td></tr>
+          <tr><td>Fade / Delay</td><td>${row.fade || '-'} / ${row.delay || '-'}</td></tr>
+          <tr><td>Control mode</td><td>${row.control_mode || ''}</td></tr>
+        </table>
+      </div>
+      <div class="detail-box">
+        <table class="detail-table">
+          <tr><td>Fixtures</td><td>${row.fixture_count || 0}</td></tr>
+          <tr><td>Attributes</td><td>${row.attribute_count || 0}</td></tr>
+          <tr><td>Dimmer hard</td><td>${row.dimmer_value_count || 0}</td></tr>
+          <tr><td>Hard values</td><td>${row.hard_value_count || 0}</td></tr>
+          <tr><td>Preset refs</td><td>${row.preset_ref_count || 0}</td></tr>
+          <tr><td>Mixed fixtures</td><td>${row.mixed_fixture_count || 0}</td></tr>
+          <tr><td>Mixed families</td><td>${row.mixed_family_count || 0}</td></tr>
+          <tr><td>Zero-like</td><td>${row.zero_like_count || 0}</td></tr>
+        </table>
+      </div>
+      <div class="detail-box">
+        <table class="detail-table">
+          <tr><td>Prev similarity</td><td>${row.prev_similarity ?? ''}</td></tr>
+          <tr><td>Next similarity</td><td>${row.next_similarity ?? ''}</td></tr>
+          <tr><td>Local similarity</td><td>${row.local_similarity ?? ''}</td></tr>
+          <tr><td>Local avg dimmer</td><td>${row.local_avg_dimmer ?? ''}</td></tr>
+          <tr><td>Local avg hard</td><td>${row.local_avg_hard ?? ''}</td></tr>
+          <tr><td>Local avg preset</td><td>${row.local_avg_preset ?? ''}</td></tr>
+          <tr><td>Local avg zero</td><td>${row.local_avg_zero ?? ''}</td></tr>
+          <tr><td>Local avg families</td><td>${row.local_avg_feature_groups ?? ''}</td></tr>
+        </table>
+      </div>
+    </div>
+    <div class="detail-box" style="margin-top:12px;">
+      <div class="muted" style="margin-bottom:8px;">Reasons</div>
+      <div class="pre">${(row.reasons || []).length ? row.reasons.join('\n') : 'stable cue profile'}</div>
+    </div>
+  `;
+}
+
+function renderCueTable() {
+  const rows = [...filteredRows()].sort(compareRows);
+  const columns = visibleColumns();
+  const headRow = document.getElementById('cueHeadRow');
+  const body = document.getElementById('cueBody');
+
+  document.getElementById('cueCount').textContent = String(CUE_ROWS.length);
+  document.getElementById('visibleCount').textContent = String(rows.length);
+  document.getElementById('selectedCount').textContent = String(selectedRows.size);
+  document.getElementById('visibleColumnsCount').textContent = String(columns.filter(column => !column.isSelection).length);
+  document.getElementById('highCount').textContent = String(CUE_ROWS.filter(row => row.severity === 'high').length);
+  document.getElementById('mediumCount').textContent = String(CUE_ROWS.filter(row => row.severity === 'medium').length);
+  document.getElementById('lowCount').textContent = String(CUE_ROWS.filter(row => row.severity === 'low').length);
+
+  headRow.innerHTML = '';
+  columns.forEach(column => {
+    const th = document.createElement('th');
+    if (column.isSelection) {
+      th.textContent = column.label;
+    } else {
+      th.className = 'sortable';
+      th.textContent = column.label + (sortKey === column.key ? (sortDirection === 'asc' ? ' ▲' : ' ▼') : '');
+      th.addEventListener('click', () => {
+        if (sortKey === column.key) {
+          sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
+        } else {
+          sortKey = column.key;
+          sortDirection = column.key === 'sequence_number' || column.key === 'cue_number' ? 'asc' : 'desc';
+        }
+        renderCueTable();
+      });
+    }
+    headRow.appendChild(th);
+  });
+
+  body.innerHTML = '';
+  rows.forEach(row => {
+    const tr = document.createElement('tr');
+    tr.className = `severity-${row.severity || 'low'}`;
+    if (selectedRows.has(row.cue_id)) tr.classList.add('selected-row');
+    if (row.cue_id === focusedRowId) tr.style.outline = '2px solid #38bdf8';
+    tr.addEventListener('click', () => {
+      focusedRowId = row.cue_id;
+      renderCueDetail(row);
+      renderCueTable();
+    });
+    columns.forEach(column => {
+      const td = document.createElement('td');
+      if (column.isSelection) {
+        td.addEventListener('click', event => event.stopPropagation());
+        const input = document.createElement('input');
+        input.type = 'checkbox';
+        input.checked = selectedRows.has(row.cue_id);
+        input.addEventListener('change', () => {
+          if (input.checked) selectedRows.add(row.cue_id); else selectedRows.delete(row.cue_id);
+          renderCueTable();
+        });
+        td.appendChild(input);
+      } else if (column.key === 'severity') {
+        td.innerHTML = severityBadgeHtml(row.severity);
+      } else {
+        td.textContent = String(row[column.key] ?? '');
+      }
+      tr.appendChild(td);
+    });
+    body.appendChild(tr);
+  });
+
+  const selectAll = document.getElementById('selectAllVisibleRows');
+  selectAll.checked = rows.length > 0 && rows.every(row => selectedRows.has(row.cue_id));
+  selectAll.indeterminate = rows.some(row => selectedRows.has(row.cue_id)) && !selectAll.checked;
+
+  if (!rows.length) {
+    renderCueDetail(null);
+  } else if (!rows.some(row => row.cue_id === focusedRowId)) {
+    focusedRowId = rows[0].cue_id;
+    renderCueDetail(rows[0]);
+  } else {
+    renderCueDetail(rows.find(row => row.cue_id === focusedRowId));
+  }
+}
+
+document.getElementById('cueFilter').addEventListener('input', renderCueTable);
+document.getElementById('selectedOnlyToggle').addEventListener('change', renderCueTable);
+document.getElementById('mainOnlyToggle').addEventListener('change', renderCueTable);
+document.getElementById('severityHigh').addEventListener('change', renderCueTable);
+document.getElementById('severityMedium').addEventListener('change', renderCueTable);
+document.getElementById('severityLow').addEventListener('change', renderCueTable);
+document.getElementById('selectAllVisibleRows').addEventListener('change', event => {
+  const rows = filteredRows();
+  if (event.target.checked) rows.forEach(row => selectedRows.add(row.cue_id));
+  else rows.forEach(row => selectedRows.delete(row.cue_id));
+  renderCueTable();
+});
+document.getElementById('printBtn').addEventListener('click', () => window.print());
+
+renderColumnControls();
+renderWorstBlocks();
+renderCueTable();
+</script>
+</body>
+</html>

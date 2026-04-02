@@ -1,0 +1,12 @@
+sequence_number,sequence_name,cue_number,cue_name,attribute,raw_value,value_type,fixture_id,fixture_name,fixture_type,fixture_patch,reference_target,flags,source_path,is_hard_value,source_file
+1,Intro,1,Blackout,fade,0,hard,,,,,,"[""timing""]",Cue,True,test_exports\demo_main_sequences.xml
+1,Intro,1,Blackout,delay,0,hard,,,,,,"[""timing""]",Cue,True,test_exports\demo_main_sequences.xml
+1,Intro,1,Blackout,Dimmer,0,hard,101,Front Left Wash,Robe LEDWash 600,1.1,,[],Cue/Value,True,test_exports\demo_main_sequences.xml
+1,Intro,1,Blackout,Dimmer,Preset 1.5,preset_ref,102,Front Center Wash,Robe LEDWash 600,1.17,preset:1.5,[],Cue/Value,False,test_exports\demo_main_sequences.xml
+1,Intro,1,Blackout,Position,Preset 2.7,preset_ref,103,DS Center Spot,Martin MAC Viper,1.33,preset:2.7,[],Cue/Value,False,test_exports\demo_main_sequences.xml
+1,Intro,1,Blackout,text,Go Sequence 2 Cue 1,hard,,,,,,[],Cue/Command,True,test_exports\demo_main_sequences.xml
+1,Intro,2,Build,fade,2,hard,,,,,,"[""timing""]",Cue,True,test_exports\demo_main_sequences.xml
+1,Intro,2,Build,delay,0.5,hard,,,,,,"[""timing""]",Cue,True,test_exports\demo_main_sequences.xml
+1,Intro,2,Build,Dimmer,100,hard,101,Front Left Wash,Robe LEDWash 600,1.1,,[],Cue/Value,True,test_exports\demo_main_sequences.xml
+1,Intro,2,Build,Effect,Effect 12,effect_ref,102,Front Center Wash,Robe LEDWash 600,1.17,effect:12,[],Cue/Value,False,test_exports\demo_main_sequences.xml
+1,Intro,2,Build,GroupRef,Group 3,group_ref,103,DS Center Spot,Martin MAC Viper,1.33,group:3,[],Cue/Value,False,test_exports\demo_main_sequences.xml

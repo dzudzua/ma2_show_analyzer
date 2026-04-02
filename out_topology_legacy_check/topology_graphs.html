@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>grandMA2 Topology Graphs</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #111827; color: #e5e7eb; }
+    header { padding: 24px; background: #0f172a; position: sticky; top: 0; z-index: 10; }
+    h1, h2, h3 { margin: 0 0 12px; }
+    .wrap { padding: 24px; }
+    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 24px; }
+    .card { background: #1f2937; border-radius: 16px; padding: 16px; box-shadow: 0 4px 20px rgba(0,0,0,.25); }
+    .muted { color: #94a3b8; font-size: 12px; line-height: 1.45; }
+    input, select, button { width: 100%; padding: 10px; border-radius: 10px; border: 1px solid #334155; background: #0f172a; color: #e5e7eb; }
+    button { cursor: pointer; }
+    button:hover { background: #162033; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+    .pill { display: inline-block; padding: 2px 8px; background: #334155; border-radius: 999px; margin: 2px; font-size: 12px; }
+    .pill-hard { background:#7f1d1d; color:#fecaca; font-weight:700; }
+    .pill-preset { background:#082f49; color:#bae6fd; font-weight:700; }
+    .pill-fixture { background:#14532d; color:#bbf7d0; font-weight:700; }
+    .pill-neutral { background:#334155; color:#e5e7eb; font-weight:700; }
+    .pre { white-space: pre-wrap; word-break: break-word; }
+    .svg-wrap { overflow:auto; background:#0b1220; border:1px solid #334155; border-radius:12px; }
+    .legend { display:flex; gap:12px; flex-wrap:wrap; margin:8px 0 12px; font-size:12px; color:#cbd5e1; }
+    .legend span { display:inline-flex; align-items:center; gap:6px; }
+    .swatch { width:12px; height:12px; display:inline-block; border-radius:3px; }
+    .graph-nav { display:grid; grid-template-columns: 1fr; gap:10px; margin-bottom:12px; }
+    .graph-toolbar { display:flex; gap:10px; flex-wrap:wrap; margin:10px 0 12px; }
+    .graph-toolbar button { width:auto; padding:10px 12px; }
+    .graph-toolbar .grow { flex:1 1 240px; }
+    .cy-wrap { height: 720px; min-height: 560px; border:1px solid #334155; border-radius:12px; background:#0b1220; }
+    .top-links { display:flex; gap:12px; flex-wrap:wrap; margin-top:10px; }
+    .top-links a { color:#7dd3fc; text-decoration:none; }
+    .top-links a:hover { text-decoration:underline; }
+    .detail-box { max-height: 280px; overflow:auto; background:#172033; border-radius:12px; padding:12px; }
+  </style>
+  <script src="https://unpkg.com/cytoscape@3.30.4/dist/cytoscape.min.js"></script>
+</head>
+<body>
+<header>
+  <h1>grandMA2 Topology Graphs</h1>
+  <div class="muted">Offline HTML report from XML exports. Tahle stranka vraci puvodni graph cast stareho dashboardu jako samostatny report.</div>
+  <div class="top-links">
+    <a href="dashboard.html">Otevrit dashboard</a>
+    <a href="cue_list.html">Otevrit Cue List</a>
+    <a href="sequence_inspector.html">Otevrit Sequence Inspector</a>
+    <a href="warnings.html">Otevrit Warnings</a>
+  </div>
+</header>
+
+<div class="wrap">
+  <div id="stats" class="stats"></div>
+
+  <div class="card" style="margin-top:24px;">
+    <h2>Topology Graph</h2>
+    <div class="muted">Globalni topology graph cele show. Cue, preset a fixture vazby v jedne siti podobne jako ve starem dashboardu.</div>
+    <div class="grid" style="margin-top:12px;">
+      <div>
+        <div class="graph-toolbar">
+          <button id="globalFitBtn" type="button">Fit</button>
+          <button id="globalResetBtn" type="button">Reset</button>
+        </div>
+        <div class="legend">
+          <span><i class="swatch" style="background:#f97316"></i>Cue</span>
+          <span><i class="swatch" style="background:#38bdf8"></i>Preset</span>
+          <span><i class="swatch" style="background:#22c55e"></i>Fixture</span>
+          <span><i class="swatch" style="background:#ef4444"></i>Hard override</span>
+        </div>
+        <div id="globalStatus" class="pre muted"></div>
+        <div class="svg-wrap" style="margin-top:12px;">
+          <div id="globalCy" class="cy-wrap"></div>
+        </div>
+      </div>
+      <div>
+        <h3>Selected Node Detail</h3>
+        <div id="globalDetail" class="detail-box pre">Click a fixture, preset or cue node in the graph.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:24px;">
+    <h2>Preset Graph</h2>
+    <div class="muted">Preset-only graph pro prohlizeni preset poolu a vazeb na fixture a cues.</div>
+    <div class="grid" style="margin-top:12px;">
+      <div>
+        <div class="graph-nav">
+          <select id="presetSelect"></select>
+        </div>
+        <div class="graph-toolbar">
+          <button id="presetFitBtn" type="button">Fit</button>
+          <button id="presetResetBtn" type="button">Reset</button>
+        </div>
+        <div class="legend">
+          <span><i class="swatch" style="background:#38bdf8"></i>Preset</span>
+          <span><i class="swatch" style="background:#22c55e"></i>Fixture</span>
+          <span><i class="swatch" style="background:#f97316"></i>Cue</span>
+        </div>
+        <div id="presetStatus" class="pre muted"></div>
+        <div class="svg-wrap" style="margin-top:12px;">
+          <div id="presetCy" class="cy-wrap"></div>
+        </div>
+      </div>
+      <div>
+        <h3>Selected Preset Detail</h3>
+        <div id="presetDetail" class="detail-box pre">Click a preset, fixture or cue node.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:24px;">
+    <h2>Fixture Topology</h2>
+    <div class="muted">Fixture-centric dependency graph. Vyber jedno svetlo a uvidis, ktere cues ho meni a ktere presety jsou na nej navazane.</div>
+    <div class="grid" style="margin-top:12px;">
+      <div>
+        <div class="graph-nav">
+          <select id="fixtureSelect"></select>
+        </div>
+        <div class="graph-toolbar">
+          <button id="fixtureFitBtn" type="button">Fit</button>
+          <button id="fixtureResetBtn" type="button">Reset</button>
+        </div>
+        <div class="legend">
+          <span><i class="swatch" style="background:#22c55e"></i>Fixture</span>
+          <span><i class="swatch" style="background:#f97316"></i>Cue</span>
+          <span><i class="swatch" style="background:#38bdf8"></i>Preset</span>
+          <span><i class="swatch" style="background:#ef4444"></i>Hard on fixture</span>
+        </div>
+        <div id="fixtureStatus" class="pre muted"></div>
+        <div class="svg-wrap" style="margin-top:12px;">
+          <div id="fixtureCy" class="cy-wrap"></div>
+        </div>
+      </div>
+      <div>
+        <h3>Selected Detail</h3>
+        <div id="fixtureDetail" class="detail-box pre">Select a fixture and then click cue or preset nodes.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const DATA = {"sequences": [{"id": "sequence:1:demo_main_sequences.xml:1", "number": "1", "name": "Intro", "source_file": "test_exports_xmlpatch\\demo_main_sequences.xml", "cues": [{"id": "cue:1:1:demo_main_sequences.xml:1", "sequence_number": "1", "cue_number": "1", "name": "Blackout", "fade": "0", "delay": "0", "trigger": "go", "command": "Go Sequence 2 Cue 1", "part": null, "fixture_ids": [101, 102, 103], "references": ["preset:1.5", "preset:2.7", "sequence:2"], "values": [{"attribute": "fade", "raw_value": "0.00", "value_type": "hard", "fixture_id": null, "reference_target": null, "raw_reference": null, "reference_display": null, "reference_confidence": null, "reference_scope": null, "flags": ["timing"], "source_path": "Cue"}, {"attribute": "delay", "raw_value": "0.00", "value_type": "hard", "fixture_id": null, "reference_target": null, "raw_reference": null, "reference_display": null, "reference_confidence": null, "reference_scope": null, "flags": ["timing"], "source_path": "Cue"}, {"attribute": "Dimmer", "raw_value": "0.00", "value_type": "hard", "fixture_id": 101, "reference_target": null, "raw_reference": null, "reference_display": null, "reference_confidence": null, "reference_scope": null, "flags": [], "source_path": "Cue/Value"}, {"attribute": "Dimmer", "raw_value": "Preset 1.5", "value_type": "preset_ref", "fixture_id": 102, "reference_target": "preset:1.5", "raw_reference": "Preset 1.5", "reference_display": "1.5", "reference_confidence": 0.85, "reference_scope": "inferred", "flags": [], "source_path": "Cue/Value"}, {"attribute": "Position", "raw_value": "Preset 2.7", "value_type": "preset_ref", "fixture_id": 103, "reference_target": "preset:2.7", "raw_reference": "Preset 2.7", "reference_display": "2.7", "reference_confidence": 0.85, "reference_scope": "inferred", "flags": [], "source_path": "Cue/Value"}, {"attribute": "text", "raw_value": "Go Sequence 2 Cue 1", "value_type": "hard", "fixture_id": null, "reference_target": null, "raw_reference": null, "reference_display": null, "reference_confidence": null, "reference_scope": null, "flags": [], "source_path": "Cue/Command"}], "metadata": {"number": "1", "name": "Blackout", "fade": "0", "delay": "0", "trigger": "go", "value.fixtureid": ["101", "102", "103"], "value.attribute": ["Dimmer", "Position"], "value.value": ["0", "Preset 1.5", "Preset 2.7"], "command": "Go Sequence 2 Cue 1"}, "source_file": "test_exports_xmlpatch\\demo_main_sequences.xml", "is_main_cue_list": true}, {"id": "cue:1:2:demo_main_sequences.xml:2", "sequence_number": "1", "cue_number": "2", "name": "Build", "fade": "2", "delay": "0.5", "trigger": "follow", "command": null, "part": null, "fixture_ids": [101, 102, 103], "references": ["group:3", "effect:12"], "values": [{"attribute": "fade", "raw_value": "2.00", "value_type": "hard", "fixture_id": null, "reference_target": null, "raw_reference": null, "reference_display": null, "reference_confidence": null, "reference_scope": null, "flags": ["timing"], "source_path": "Cue"}, {"attribute": "delay", "raw_value": "0.50", "value_type": "hard", "fixture_id": null, "reference_target": null, "raw_reference": null, "reference_display": null, "reference_confidence": null, "reference_scope": null, "flags": ["timing"], "source_path": "Cue"}, {"attribute": "Dimmer", "raw_value": "100.00", "value_type": "hard", "fixture_id": 101, "reference_target": null, "raw_reference": null, "reference_display": null, "reference_confidence": null, "reference_scope": null, "flags": [], "source_path": "Cue/Value"}, {"attribute": "Effect", "raw_value": "Effect 12", "value_type": "effect_ref", "fixture_id": 102, "reference_target": "effect:12", "raw_reference": "Effect 12", "reference_display": "effect:12", "reference_confidence": 0.85, "reference_scope": "inferred", "flags": [], "source_path": "Cue/Value"}, {"attribute": "GroupRef", "raw_value": "Group 3", "value_type": "group_ref", "fixture_id": 103, "reference_target": "group:3", "raw_reference": "Group 3", "reference_display": "group:3", "reference_confidence": 0.85, "reference_scope": "inferred", "flags": [], "source_path": "Cue/Value"}], "metadata": {"number": "2", "name": "Build", "fade": "2", "delay": "0.5", "trigger": "follow", "value.fixtureid": ["101", "102", "103"], "value.attribute": ["Dimmer", "Effect", "GroupRef"], "value.value": ["100", "Effect 12", "Group 3"]}, "source_file": "test_exports_xmlpatch\\demo_main_sequences.xml", "is_main_cue_list": true}], "metadata": {"number": "1", "name": "Intro", "cue.number": ["1", "2"], "cue.name": ["Blackout", "Build"], "cue.fade": ["0", "2"], "cue.delay": ["0", "0.5"], "cue.trigger": ["go", "follow"]}, "is_main_cue_list": true}], "presets": [{"id": "preset:1.5:demo_preset_1.xml:1", "preset_type": "1", "number": "1.5", "name": "Warm Front", "fixture_ids": [101, 102], "references": [], "values": [{"attribute": "Dimmer", "raw_value": "100.00", "value_type": "hard", "fixture_id": 101, "reference_target": null, "raw_reference": null, "reference_display": null, "reference_confidence": null, "reference_scope": null, "flags": [], "source_path": "Preset/Value"}, {"attribute": "Color", "raw_value": "255.00", "value_type": "hard", "fixture_id": 102, "reference_target": null, "raw_reference": null, "reference_display": null, "reference_confidence": null, "reference_scope": null, "flags": [], "source_path": "Preset/Value"}], "metadata": {"number": "1.5", "name": "Warm Front", "value.fixtureid": ["101", "102"], "value.attribute": ["Dimmer", "Color"], "value.value": ["100", "255"]}, "source_file": "test_exports_xmlpatch\\demo_preset_1.xml"}, {"id": "preset:2.7:demo_preset_1.xml:2", "preset_type": "2", "number": "2.7", "name": "DS Center", "fixture_ids": [103], "references": [], "values": [{"attribute": "Position", "raw_value": "45.00", "value_type": "hard", "fixture_id": 103, "reference_target": null, "raw_reference": null, "reference_display": null, "reference_confidence": null, "reference_scope": null, "flags": [], "source_path": "Preset/Value"}], "metadata": {"number": "2.7", "name": "DS Center", "value.fixtureid": "103", "value.attribute": "Position", "value.value": "45"}, "source_file": "test_exports_xmlpatch\\demo_preset_1.xml"}], "groups": [{"id": "group:3:demo_groups.xml:1", "number": "3", "name": "Washes", "fixture_ids": [101, 102, 103], "metadata": {"number": "3", "name": "Washes", "fixture.fixtureid": ["101", "102", "103"]}, "source_file": "test_exports_xmlpatch\\demo_groups.xml"}], "effects": [{"id": "effect:12:demo_effects.xml:1", "number": "12", "name": "Circle FX", "fixture_ids": [102], "references": [], "metadata": {"number": "12", "name": "Circle FX", "apply.fixtureid": "102"}, "source_file": "test_exports_xmlpatch\\demo_effects.xml"}], "patch_fixtures": [{"fixture_id": 101, "name": "Wash 101", "label": "Front Left Wash", "fixture_type": "Robe LEDWash 600", "mode": "Mode 1", "patch": "1.1", "universe": "1", "address": "1", "pos_x": null, "pos_y": null, "pos_z": null, "rot_x": null, "rot_y": null, "rot_z": null, "scale_x": null, "scale_y": null, "scale_z": null, "source_file": "test_exports_xmlpatch\\demo_patch_fixtures.xml", "metadata": {"fixtureid": "101", "name": "Wash 101", "label": "Front Left Wash", "fixturetype": "Robe LEDWash 600", "mode": "Mode 1", "universe": "1", "address": "1", "patch": "1.1"}}, {"fixture_id": 102, "name": "Wash 102", "label": "Front Center Wash", "fixture_type": "Robe LEDWash 600", "mode": "Mode 1", "patch": "1.17", "universe": "1", "address": "17", "pos_x": null, "pos_y": null, "pos_z": null, "rot_x": null, "rot_y": null, "rot_z": null, "scale_x": null, "scale_y": null, "scale_z": null, "source_file": "test_exports_xmlpatch\\demo_patch_fixtures.xml", "metadata": {"fixtureid": "102", "name": "Wash 102", "label": "Front Center Wash", "fixturetype": "Robe LEDWash 600", "mode": "Mode 1", "universe": "1", "address": "17", "patch": "1.17"}}, {"fixture_id": 103, "name": "Spot 103", "label": "DS Center Spot", "fixture_type": "Martin MAC Viper", "mode": "Extended", "patch": "1.33", "universe": "1", "address": "33", "pos_x": null, "pos_y": null, "pos_z": null, "rot_x": null, "rot_y": null, "rot_z": null, "scale_x": null, "scale_y": null, "scale_z": null, "source_file": "test_exports_xmlpatch\\demo_patch_fixtures.xml", "metadata": {"fixtureid": "103", "name": "Spot 103", "label": "DS Center Spot", "fixturetype": "Martin MAC Viper", "mode": "Extended", "universe": "1", "address": "33", "patch": "1.33"}}], "generic_objects": [], "relationships": [{"source_type": "cue", "source_id": "cue:1:1:demo_main_sequences.xml:1", "target_type": "preset", "target_id": "1.5", "relation_type": "reference", "evidence": "preset:1.5"}, {"source_type": "cue", "source_id": "cue:1:1:demo_main_sequences.xml:1", "target_type": "preset", "target_id": "2.7", "relation_type": "reference", "evidence": "preset:2.7"}, {"source_type": "cue", "source_id": "cue:1:1:demo_main_sequences.xml:1", "target_type": "sequence", "target_id": "2", "relation_type": "reference_unresolved", "evidence": "sequence:2"}, {"source_type": "cue", "source_id": "cue:1:1:demo_main_sequences.xml:1", "target_type": "preset", "target_id": "1.5", "relation_type": "value_reference", "evidence": "atom:Dimmer=Preset 1.5"}, {"source_type": "cue", "source_id": "cue:1:1:demo_main_sequences.xml:1", "target_type": "preset", "target_id": "2.7", "relation_type": "value_reference", "evidence": "atom:Position=Preset 2.7"}, {"source_type": "cue", "source_id": "cue:1:2:demo_main_sequences.xml:2", "target_type": "group", "target_id": "3", "relation_type": "reference", "evidence": "group:3"}, {"source_type": "cue", "source_id": "cue:1:2:demo_main_sequences.xml:2", "target_type": "effect", "target_id": "12", "relation_type": "reference", "evidence": "effect:12"}, {"source_type": "cue", "source_id": "cue:1:2:demo_main_sequences.xml:2", "target_type": "effect", "target_id": "12", "relation_type": "value_reference", "evidence": "atom:Effect=Effect 12"}, {"source_type": "cue", "source_id": "cue:1:2:demo_main_sequences.xml:2", "target_type": "group", "target_id": "3", "relation_type": "value_reference", "evidence": "atom:GroupRef=Group 3"}], "fixture_usage": {"101": {"sequence_count": 1, "cue_count": 2, "preset_count": 1, "group_count": 1, "effect_count": 0, "sequences": ["sequence:1:demo_main_sequences.xml:1"], "cues": ["cue:1:1:demo_main_sequences.xml:1", "cue:1:2:demo_main_sequences.xml:2"], "presets": ["preset:1.5:demo_preset_1.xml:1"], "groups": ["group:3:demo_groups.xml:1"], "effects": [], "hard_value_atoms": 3, "preset_ref_atoms": 0, "effect_ref_atoms": 0, "group_ref_atoms": 0, "fixture_id": 101}, "102": {"sequence_count": 1, "cue_count": 2, "preset_count": 1, "group_count": 1, "effect_count": 1, "sequences": ["sequence:1:demo_main_sequences.xml:1"], "cues": ["cue:1:1:demo_main_sequences.xml:1", "cue:1:2:demo_main_sequences.xml:2"], "presets": ["preset:1.5:demo_preset_1.xml:1"], "groups": ["group:3:demo_groups.xml:1"], "effects": ["effect:12:demo_effects.xml:1"], "hard_value_atoms": 1, "preset_ref_atoms": 1, "effect_ref_atoms": 1, "group_ref_atoms": 0, "fixture_id": 102}, "103": {"sequence_count": 1, "cue_count": 2, "preset_count": 1, "group_count": 1, "effect_count": 0, "sequences": ["sequence:1:demo_main_sequences.xml:1"], "cues": ["cue:1:1:demo_main_sequences.xml:1", "cue:1:2:demo_main_sequences.xml:2"], "presets": ["preset:2.7:demo_preset_1.xml:2"], "groups": ["group:3:demo_groups.xml:1"], "effects": [], "hard_value_atoms": 1, "preset_ref_atoms": 1, "effect_ref_atoms": 0, "group_ref_atoms": 1, "fixture_id": 103}}, "main_sequence_numbers": ["1"], "warnings": [{"kind": "inferred_reference", "severity": "low", "subject": "cue:cue:1:1:demo_main_sequences.xml:1", "details": "preset:1.5 via inferred", "owner_type": "cue", "owner_id": "cue:1:1:demo_main_sequences.xml:1", "target": "preset:1.5", "attribute": "Dimmer", "confidence": 0.85, "scope": "inferred"}, {"kind": "inferred_reference", "severity": "low", "subject": "cue:cue:1:1:demo_main_sequences.xml:1", "details": "preset:2.7 via inferred", "owner_type": "cue", "owner_id": "cue:1:1:demo_main_sequences.xml:1", "target": "preset:2.7", "attribute": "Position", "confidence": 0.85, "scope": "inferred"}, {"kind": "missing_target_object", "severity": "high", "subject": "cue:cue:1:1:demo_main_sequences.xml:1", "details": "missing target sequence:2", "owner_type": "cue", "owner_id": "cue:1:1:demo_main_sequences.xml:1", "target": "sequence:2", "attribute": null, "raw_reference": "sequence:2"}, {"kind": "inferred_reference", "severity": "low", "subject": "cue:cue:1:2:demo_main_sequences.xml:2", "details": "effect:12 via inferred", "owner_type": "cue", "owner_id": "cue:1:2:demo_main_sequences.xml:2", "target": "effect:12", "attribute": "Effect", "confidence": 0.85, "scope": "inferred"}, {"kind": "inferred_reference", "severity": "low", "subject": "cue:cue:1:2:demo_main_sequences.xml:2", "details": "group:3 via inferred", "owner_type": "cue", "owner_id": "cue:1:2:demo_main_sequences.xml:2", "target": "group:3", "attribute": "GroupRef", "confidence": 0.85, "scope": "inferred"}], "model_version": 2, "fixture_registry": [{"fixture_id": 101, "name": "Wash 101", "label": "Front Left Wash", "display_name": "Front Left Wash", "fixture_type": "Robe LEDWash 600", "mode": "Mode 1", "patch": "1.1", "universe": "1", "address": "1", "pos_x": null, "pos_y": null, "pos_z": null, "rot_x": null, "rot_y": null, "rot_z": null, "scale_x": null, "scale_y": null, "scale_z": null, "source_files": ["test_exports_xmlpatch\\demo_patch_fixtures.xml"], "flags": {"is_patched": true, "is_used_in_cues": true, "is_used_in_presets": true, "has_spatial_data": false, "has_patch_data": true, "has_fixture_type": true, "referenced_in_atoms": true}}, {"fixture_id": 102, "name": "Wash 102", "label": "Front Center Wash", "display_name": "Front Center Wash", "fixture_type": "Robe LEDWash 600", "mode": "Mode 1", "patch": "1.17", "universe": "1", "address": "17", "pos_x": null, "pos_y": null, "pos_z": null, "rot_x": null, "rot_y": null, "rot_z": null, "scale_x": null, "scale_y": null, "scale_z": null, "source_files": ["test_exports_xmlpatch\\demo_patch_fixtures.xml"], "flags": {"is_patched": true, "is_used_in_cues": true, "is_used_in_presets": true, "has_spatial_data": false, "has_patch_data": true, "has_fixture_type": true, "referenced_in_atoms": true}}, {"fixture_id": 103, "name": "Spot 103", "label": "DS Center Spot", "display_name": "DS Center Spot", "fixture_type": "Martin MAC Viper", "mode": "Extended", "patch": "1.33", "universe": "1", "address": "33", "pos_x": null, "pos_y": null, "pos_z": null, "rot_x": null, "rot_y": null, "rot_z": null, "scale_x": null, "scale_y": null, "scale_z": null, "source_files": ["test_exports_xmlpatch\\demo_patch_fixtures.xml"], "flags": {"is_patched": true, "is_used_in_cues": true, "is_used_in_presets": true, "has_spatial_data": false, "has_patch_data": true, "has_fixture_type": true, "referenced_in_atoms": true}}], "fixture_types": [{"fixture_type": "Robe LEDWash 600", "modes": ["Mode 1"], "fixture_ids": [101, 102], "count": 2}, {"fixture_type": "Martin MAC Viper", "modes": ["Extended"], "fixture_ids": [103], "count": 1}], "normalized_references": [{"owner_type": "cue", "owner_id": "cue:1:1:demo_main_sequences.xml:1", "kind": "preset_ref", "target": "preset:1.5", "display": "1.5", "raw_reference": "Preset 1.5", "confidence": 0.85, "scope": "inferred", "fixture_id": 102, "attribute": "Dimmer", "target_exists": true, "source_path": "Cue/Value", "source_file": "test_exports_xmlpatch\\demo_main_sequences.xml"}, {"owner_type": "cue", "owner_id": "cue:1:1:demo_main_sequences.xml:1", "kind": "preset_ref", "target": "preset:2.7", "display": "2.7", "raw_reference": "Preset 2.7", "confidence": 0.85, "scope": "inferred", "fixture_id": 103, "attribute": "Position", "target_exists": true, "source_path": "Cue/Value", "source_file": "test_exports_xmlpatch\\demo_main_sequences.xml"}, {"owner_type": "cue", "owner_id": "cue:1:1:demo_main_sequences.xml:1", "kind": "preset_ref", "target": "preset:1.5", "display": "1.5", "raw_reference": "preset:1.5", "confidence": 1.0, "scope": "explicit", "fixture_id": null, "attribute": null, "target_exists": true, "source_path": null, "source_file": "test_exports_xmlpatch\\demo_main_sequences.xml"}, {"owner_type": "cue", "owner_id": "cue:1:1:demo_main_sequences.xml:1", "kind": "preset_ref", "target": "preset:2.7", "display": "2.7", "raw_reference": "preset:2.7", "confidence": 1.0, "scope": "explicit", "fixture_id": null, "attribute": null, "target_exists": true, "source_path": null, "source_file": "test_exports_xmlpatch\\demo_main_sequences.xml"}, {"owner_type": "cue", "owner_id": "cue:1:1:demo_main_sequences.xml:1", "kind": "sequence_ref", "target": "sequence:2", "display": "sequence:2", "raw_reference": "sequence:2", "confidence": 1.0, "scope": "explicit", "fixture_id": null, "attribute": null, "target_exists": false, "source_path": null, "source_file": "test_exports_xmlpatch\\demo_main_sequences.xml"}, {"owner_type": "cue", "owner_id": "cue:1:2:demo_main_sequences.xml:2", "kind": "effect_ref", "target": "effect:12", "display": "effect:12", "raw_reference": "Effect 12", "confidence": 0.85, "scope": "inferred", "fixture_id": 102, "attribute": "Effect", "target_exists": true, "source_path": "Cue/Value", "source_file": "test_exports_xmlpatch\\demo_main_sequences.xml"}, {"owner_type": "cue", "owner_id": "cue:1:2:demo_main_sequences.xml:2", "kind": "group_ref", "target": "group:3", "display": "group:3", "raw_reference": "Group 3", "confidence": 0.85, "scope": "inferred", "fixture_id": 103, "attribute": "GroupRef", "target_exists": true, "source_path": "Cue/Value", "source_file": "test_exports_xmlpatch\\demo_main_sequences.xml"}, {"owner_type": "cue", "owner_id": "cue:1:2:demo_main_sequences.xml:2", "kind": "group_ref", "target": "group:3", "display": "group:3", "raw_reference": "group:3", "confidence": 1.0, "scope": "explicit", "fixture_id": null, "attribute": null, "target_exists": true, "source_path": null, "source_file": "test_exports_xmlpatch\\demo_main_sequences.xml"}, {"owner_type": "cue", "owner_id": "cue:1:2:demo_main_sequences.xml:2", "kind": "effect_ref", "target": "effect:12", "display": "effect:12", "raw_reference": "effect:12", "confidence": 1.0, "scope": "explicit", "fixture_id": null, "attribute": null, "target_exists": true, "source_path": null, "source_file": "test_exports_xmlpatch\\demo_main_sequences.xml"}], "source_index": {"sequence_sources": ["test_exports_xmlpatch\\demo_main_sequences.xml"], "preset_sources": ["test_exports_xmlpatch\\demo_preset_1.xml"], "group_sources": ["test_exports_xmlpatch\\demo_groups.xml"], "effect_sources": ["test_exports_xmlpatch\\demo_effects.xml"], "patch_sources": ["test_exports_xmlpatch\\demo_patch_fixtures.xml"], "generic_sources": []}};
+const GRAPH = {"nodes": [{"id": "fixture:101", "type": "fixture", "label": "Front Left Wash", "fixture_id": 101, "fixture_type": "Robe LEDWash 600", "patch": "1.1"}, {"id": "fixture:102", "type": "fixture", "label": "Front Center Wash", "fixture_id": 102, "fixture_type": "Robe LEDWash 600", "patch": "1.17"}, {"id": "fixture:103", "type": "fixture", "label": "DS Center Spot", "fixture_id": 103, "fixture_type": "Martin MAC Viper", "patch": "1.33"}, {"id": "preset:1.5", "type": "preset", "label": "Warm Front", "preset_number": "1.5", "preset_type": "1", "preset_xml_index": null}, {"id": "preset:2.7", "type": "preset", "label": "DS Center", "preset_number": "2.7", "preset_type": "2", "preset_xml_index": null}, {"id": "group:3", "type": "group", "label": "Washes", "group_number": "3"}, {"id": "cue:1:1", "type": "cue", "label": "Blackout", "cue_number": "1", "sequence_number": "1", "fade": "0", "trigger": "go", "is_main": true}, {"id": "cue:1:2", "type": "cue", "label": "Build", "cue_number": "2", "sequence_number": "1", "fade": "2", "trigger": "follow", "is_main": true}], "links": [{"source": "preset:1.5", "target": "fixture:101", "type": "preset_fixture", "weight": 1}, {"source": "preset:1.5", "target": "fixture:102", "type": "preset_fixture", "weight": 1}, {"source": "preset:2.7", "target": "fixture:103", "type": "preset_fixture", "weight": 1}, {"source": "group:3", "target": "fixture:101", "type": "group_fixture", "weight": 1}, {"source": "group:3", "target": "fixture:102", "type": "group_fixture", "weight": 1}, {"source": "group:3", "target": "fixture:103", "type": "group_fixture", "weight": 1}, {"source": "cue:1:1", "target": "fixture:101", "type": "cue_fixture_hard", "weight": 1, "attributes": ["Dimmer"]}, {"source": "cue:1:1", "target": "preset:1.5", "type": "cue_preset", "weight": 1}, {"source": "cue:1:1", "target": "preset:2.7", "type": "cue_preset", "weight": 1}, {"source": "cue:1:2", "target": "fixture:101", "type": "cue_fixture_hard", "weight": 1, "attributes": ["Dimmer"]}, {"source": "cue:1:2", "target": "group:3", "type": "cue_group", "weight": 1}], "main_cue_ids": ["cue:1:1", "cue:1:2"], "cue_summaries": [{"id": "cue:1:1", "sequence_number": "1", "cue_number": "1", "name": "Blackout", "fade": "0", "trigger": "go", "is_main": true, "hard_fixture_count": 1, "hard_value_count": 1, "preset_count": 2, "group_count": 0}, {"id": "cue:1:2", "sequence_number": "1", "cue_number": "2", "name": "Build", "fade": "2", "trigger": "follow", "is_main": true, "hard_fixture_count": 1, "hard_value_count": 1, "preset_count": 0, "group_count": 1}]};
+const NODES = GRAPH.nodes || [];
+const LINKS = GRAPH.links || [];
+const NODE_INDEX = Object.fromEntries(NODES.map(node => [node.id, node]));
+const PRESET_INDEX = Object.fromEntries((DATA.presets || []).map(preset => [String(preset.number || ''), preset]));
+const FIXTURE_INDEX = Object.fromEntries((DATA.fixture_registry || DATA.patch_fixtures || []).map(fixture => [String(fixture.fixture_id), fixture]));
+let globalCy = null;
+let fixtureCy = null;
+let presetCy = null;
+
+function escapeHtml(value) {
+  return String(value || '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+function describeNode(data) {
+  const lines = [(data.kind || data.type || 'node').toUpperCase(), data.label || ''];
+  if (data.sequenceNumber) lines.push(`Sequence: ${data.sequenceNumber}`);
+  if (data.cueNumber) lines.push(`Cue: ${data.cueNumber}`);
+  if (data.presetNumber) lines.push(`Preset: ${data.presetNumber}`);
+  if (data.fixtureId) {
+    const patch = FIXTURE_INDEX[String(data.fixtureId)] || {};
+    if (patch.fixture_type) lines.push(`Type: ${patch.fixture_type}`);
+    if (patch.patch) lines.push(`Patch: ${patch.patch}`);
+  }
+  return lines.join('\n');
+}
+
+function createCy(containerId, detailId, statusId, elements, layout, statusText) {
+  const statusEl = document.getElementById(statusId);
+  const detailEl = document.getElementById(detailId);
+  if (typeof window.cytoscape !== 'function') {
+    statusEl.textContent = 'Cytoscape library is not available in this browser session.';
+    detailEl.textContent = 'Tento graph potrebuje Cytoscape skript.';
+    return null;
+  }
+  statusEl.textContent = statusText;
+  const cy = window.cytoscape({
+    container: document.getElementById(containerId),
+    elements,
+    style: [
+      { selector: 'node', style: { 'label': 'data.label', 'text-wrap': 'wrap', 'text-max-width': 140, 'font-size': 10, 'color': '#e5e7eb', 'text-valign': 'center', 'text-halign': 'center', 'border-width': 1, 'border-color': '#0f172a' } },
+      { selector: 'node[kind="cue"]', style: { 'background-color': '#f97316', 'shape': 'round-rectangle', 'width': 150, 'height': 44, 'color': '#08111d', 'font-weight': '700' } },
+      { selector: 'node[kind="preset"]', style: { 'background-color': '#38bdf8', 'shape': 'round-rectangle', 'width': 150, 'height': 44, 'color': '#08111d', 'font-weight': '700' } },
+      { selector: 'node[kind="fixture"]', style: { 'background-color': '#22c55e', 'shape': 'ellipse', 'width': 150, 'height': 42, 'color': '#08111d', 'font-weight': '700' } },
+      { selector: 'edge', style: { 'curve-style': 'bezier', 'target-arrow-shape': 'triangle', 'arrow-scale': 0.9, 'width': 2, 'opacity': 0.9 } },
+      { selector: 'edge[kind="cue_preset"]', style: { 'line-color': '#38bdf8', 'target-arrow-color': '#38bdf8' } },
+      { selector: 'edge[kind="cue_fixture_hard"]', style: { 'line-color': '#ef4444', 'target-arrow-color': '#ef4444', 'width': 'mapData(weight, 1, 20, 2, 8)' } },
+      { selector: 'edge[kind="preset_fixture"]', style: { 'line-color': '#0ea5e9', 'target-arrow-color': '#0ea5e9' } }
+    ],
+    layout,
+  });
+  detailEl.textContent = 'Click a fixture, preset or cue node in the graph.';
+  cy.on('tap', 'node', evt => {
+    detailEl.textContent = describeNode(evt.target.data());
+  });
+  return cy;
+}
+
+function renderStats() {
+  document.getElementById('stats').innerHTML = [
+    { label: 'Nodes', value: NODES.length, pill: 'pill-neutral' },
+    { label: 'Links', value: LINKS.length, pill: 'pill-neutral' },
+    { label: 'Fixtures', value: NODES.filter(node => node.type === 'fixture').length, pill: 'pill-fixture' },
+    { label: 'Presets', value: NODES.filter(node => node.type === 'preset').length, pill: 'pill-preset' },
+    { label: 'Cue nodes', value: NODES.filter(node => node.type === 'cue').length, pill: 'pill-neutral' },
+    { label: 'Hard edges', value: LINKS.filter(link => link.type === 'cue_fixture_hard').length, pill: 'pill-hard' },
+  ].map(item => `<div class="card"><div class="muted">${escapeHtml(item.label)}</div><div style="font-size:28px; font-weight:700; margin-top:6px;">${escapeHtml(item.value)}</div><div style="margin-top:8px;"><span class="pill ${item.pill}">${escapeHtml(item.label)}</span></div></div>`).join('');
+}
+
+function formatPresetLabel(number, name) {
+  return [String(number || '').trim(), String(name || '').trim()].filter(Boolean).join(' ');
+}
+
+function renderGlobalGraph() {
+  const elements = [
+    ...NODES.map(node => ({
+      data: {
+        id: node.id,
+        label: node.label || node.id,
+        kind: node.type,
+        sequenceNumber: node.sequence_number,
+        cueNumber: node.cue_number,
+        presetNumber: node.preset_number,
+        fixtureId: node.fixture_id,
+      }
+    })),
+    ...LINKS.map((link, index) => ({
+      data: {
+        id: `global-${index}`,
+        source: link.source,
+        target: link.target,
+        kind: link.type,
+        weight: link.weight || 1,
+      }
+    })),
+  ];
+  if (globalCy) globalCy.destroy();
+  globalCy = createCy('globalCy', 'globalDetail', 'globalStatus', elements, { name: 'cose', animate: false, padding: 28, nodeRepulsion: 9000 }, `Global topology | nodes=${NODES.length} | links=${LINKS.length}`);
+}
+
+function renderPresetOptions() {
+  const select = document.getElementById('presetSelect');
+  const presets = (DATA.presets || []).slice().sort((a, b) => String(a.number || '').localeCompare(String(b.number || ''), undefined, { numeric: true }));
+  select.innerHTML = presets.map(preset => `<option value="${escapeHtml(String(preset.number || ''))}">${escapeHtml(formatPresetLabel(preset.number || '', preset.name || '') || 'Preset')}</option>`).join('');
+}
+
+function renderPresetGraph() {
+  const presetNumber = String(document.getElementById('presetSelect').value || '');
+  const presetNodeId = `preset:${presetNumber}`;
+  const fixtureLinks = LINKS.filter(link => link.source === presetNodeId && link.type === 'preset_fixture');
+  const cueLinks = LINKS.filter(link => link.target === presetNodeId && link.type === 'cue_preset');
+  const nodeIds = new Set([presetNodeId, ...fixtureLinks.map(link => link.target), ...cueLinks.map(link => link.source)]);
+  const elements = [
+    ...[...nodeIds].map(id => {
+      const node = NODE_INDEX[id] || {};
+      return {
+        data: {
+          id,
+          label: node.label || id,
+          kind: node.type,
+          sequenceNumber: node.sequence_number,
+          cueNumber: node.cue_number,
+          presetNumber: node.preset_number,
+          fixtureId: node.fixture_id,
+        }
+      };
+    }),
+    ...LINKS
+      .filter(link => nodeIds.has(link.source) && nodeIds.has(link.target))
+      .map((link, index) => ({ data: { id: `preset-${index}`, source: link.source, target: link.target, kind: link.type, weight: link.weight || 1 } })),
+  ];
+  if (presetCy) presetCy.destroy();
+  const preset = PRESET_INDEX[presetNumber] || {};
+  presetCy = createCy('presetCy', 'presetDetail', 'presetStatus', elements, { name: 'breadthfirst', directed: true, padding: 28, roots: [`#${presetNodeId.replace(/[:.]/g, '\\$&')}`] }, `Preset graph | preset=${formatPresetLabel(presetNumber, preset.name || '')} | fixtures=${fixtureLinks.length} | cues=${cueLinks.length}`);
+}
+
+function renderFixtureOptions() {
+  const select = document.getElementById('fixtureSelect');
+  const fixtures = (DATA.fixture_registry || DATA.patch_fixtures || []).slice().sort((a, b) => Number(a.fixture_id || 0) - Number(b.fixture_id || 0));
+  select.innerHTML = fixtures.map(fixture => `<option value="${fixture.fixture_id}">${fixture.fixture_id} | ${escapeHtml(fixture.label || fixture.name || 'Fixture')} | ${escapeHtml(fixture.fixture_type || '-')} | ${escapeHtml(fixture.patch || '-')}</option>`).join('');
+}
+
+function renderFixtureGraph() {
+  const fixtureId = Number(document.getElementById('fixtureSelect').value);
+  const fixtureNodeId = `fixture:${fixtureId}`;
+  const cueLinks = LINKS.filter(link => link.target === fixtureNodeId && link.type === 'cue_fixture_hard');
+  const presetLinks = LINKS.filter(link => link.target === fixtureNodeId && link.type === 'preset_fixture');
+  const presetIds = [...new Set(presetLinks.map(link => link.source))];
+  const cueIds = [...new Set([
+    ...cueLinks.map(link => link.source),
+    ...LINKS.filter(link => presetIds.includes(link.target) && link.type === 'cue_preset').map(link => link.source),
+  ])];
+  const nodeIds = new Set([fixtureNodeId, ...presetIds, ...cueIds]);
+  const elements = [
+    ...[...nodeIds].map(id => {
+      const node = NODE_INDEX[id] || {};
+      return {
+        data: {
+          id,
+          label: node.label || id,
+          kind: node.type,
+          sequenceNumber: node.sequence_number,
+          cueNumber: node.cue_number,
+          presetNumber: node.preset_number,
+          fixtureId: node.fixture_id,
+        }
+      };
+    }),
+    ...LINKS
+      .filter(link => nodeIds.has(link.source) && nodeIds.has(link.target))
+      .map((link, index) => ({ data: { id: `fixture-${index}`, source: link.source, target: link.target, kind: link.type, weight: link.weight || 1 } })),
+  ];
+  if (fixtureCy) fixtureCy.destroy();
+  const patch = FIXTURE_INDEX[String(fixtureId)] || {};
+  fixtureCy = createCy('fixtureCy', 'fixtureDetail', 'fixtureStatus', elements, { name: 'breadthfirst', directed: true, padding: 28, roots: [`#${fixtureNodeId.replace(/[:.]/g, '\\$&')}`] }, `Fixture topology | fixture=${fixtureId} ${patch.label || patch.name || ''} | cues=${cueIds.length} | presets=${presetIds.length}`);
+}
+
+document.getElementById('presetSelect').addEventListener('change', renderPresetGraph);
+document.getElementById('fixtureSelect').addEventListener('change', renderFixtureGraph);
+document.getElementById('globalFitBtn').addEventListener('click', () => globalCy && globalCy.fit());
+document.getElementById('globalResetBtn').addEventListener('click', () => globalCy && globalCy.reset());
+document.getElementById('presetFitBtn').addEventListener('click', () => presetCy && presetCy.fit());
+document.getElementById('presetResetBtn').addEventListener('click', () => presetCy && presetCy.reset());
+document.getElementById('fixtureFitBtn').addEventListener('click', () => fixtureCy && fixtureCy.fit());
+document.getElementById('fixtureResetBtn').addEventListener('click', () => fixtureCy && fixtureCy.reset());
+
+renderStats();
+renderGlobalGraph();
+renderPresetOptions();
+renderPresetGraph();
+renderFixtureOptions();
+renderFixtureGraph();
+</script>
+</body>
+</html>

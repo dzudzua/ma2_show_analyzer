@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ma2showanalyzer"
+version = "1.0.0"
+description = "grandMA2 XML show analyzer"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "OpenAI"}]
+dependencies = []
+
+[project.scripts]
+ma2showanalyzer = "ma2showanalyzer.cli:main"
+ma2showanalyzer-web = "ma2showanalyzer.webapp:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

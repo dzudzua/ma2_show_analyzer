@@ -1,0 +1,1773 @@
+[
+  {
+    "kind": "missing_target_object",
+    "severity": "high",
+    "subject": "cue:cue:10:31:Studio54_main_sequences.xml:34",
+    "details": "missing target effect:29",
+    "owner_type": "cue",
+    "owner_id": "cue:10:31:Studio54_main_sequences.xml:34",
+    "target": "effect:29",
+    "attribute": null,
+    "raw_reference": "effect:29"
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:1",
+    "details": "Channel 1",
+    "fixture_id": 1
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:1",
+    "details": "Channel 1",
+    "fixture_id": 1
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:2",
+    "details": "Channel 2",
+    "fixture_id": 2
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:2",
+    "details": "Channel 2",
+    "fixture_id": 2
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:3",
+    "details": "Channel 3",
+    "fixture_id": 3
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:3",
+    "details": "Channel 3",
+    "fixture_id": 3
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:4",
+    "details": "Channel 4",
+    "fixture_id": 4
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:4",
+    "details": "Channel 4",
+    "fixture_id": 4
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:5",
+    "details": "Channel 5",
+    "fixture_id": 5
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:5",
+    "details": "Channel 5",
+    "fixture_id": 5
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:6",
+    "details": "Channel 6",
+    "fixture_id": 6
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:6",
+    "details": "Channel 6",
+    "fixture_id": 6
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:7",
+    "details": "Channel 7",
+    "fixture_id": 7
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:7",
+    "details": "Channel 7",
+    "fixture_id": 7
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:8",
+    "details": "Channel 8",
+    "fixture_id": 8
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:8",
+    "details": "Channel 8",
+    "fixture_id": 8
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:9",
+    "details": "Channel 9",
+    "fixture_id": 9
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:9",
+    "details": "Channel 9",
+    "fixture_id": 9
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:10",
+    "details": "Channel 10",
+    "fixture_id": 10
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:10",
+    "details": "Channel 10",
+    "fixture_id": 10
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:11",
+    "details": "Channel 11",
+    "fixture_id": 11
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:11",
+    "details": "Channel 11",
+    "fixture_id": 11
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:12",
+    "details": "Channel 12",
+    "fixture_id": 12
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:12",
+    "details": "Channel 12",
+    "fixture_id": 12
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:13",
+    "details": "Channel 13",
+    "fixture_id": 13
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:13",
+    "details": "Channel 13",
+    "fixture_id": 13
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:14",
+    "details": "Channel 14",
+    "fixture_id": 14
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:14",
+    "details": "Channel 14",
+    "fixture_id": 14
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:15",
+    "details": "Channel 15",
+    "fixture_id": 15
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:15",
+    "details": "Channel 15",
+    "fixture_id": 15
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:16",
+    "details": "Channel 16",
+    "fixture_id": 16
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:16",
+    "details": "Channel 16",
+    "fixture_id": 16
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:17",
+    "details": "Channel 17",
+    "fixture_id": 17
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:17",
+    "details": "Channel 17",
+    "fixture_id": 17
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:18",
+    "details": "Channel 18",
+    "fixture_id": 18
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:18",
+    "details": "Channel 18",
+    "fixture_id": 18
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:21",
+    "details": "Channel 21",
+    "fixture_id": 21
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:21",
+    "details": "Channel 21",
+    "fixture_id": 21
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:31",
+    "details": "Channel 31",
+    "fixture_id": 31
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:31",
+    "details": "Channel 31",
+    "fixture_id": 31
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:32",
+    "details": "Channel 32",
+    "fixture_id": 32
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:32",
+    "details": "Channel 32",
+    "fixture_id": 32
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:998",
+    "details": "Channel 998",
+    "fixture_id": 998
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:998",
+    "details": "Channel 998",
+    "fixture_id": 998
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:999",
+    "details": "Channel 999",
+    "fixture_id": 999
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:999",
+    "details": "Channel 999",
+    "fixture_id": 999
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:1001",
+    "details": "Channel 1001",
+    "fixture_id": 1001
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:1001",
+    "details": "Channel 1001",
+    "fixture_id": 1001
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:1002",
+    "details": "Channel 1002",
+    "fixture_id": 1002
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:1002",
+    "details": "Channel 1002",
+    "fixture_id": 1002
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:1003",
+    "details": "Channel 1003",
+    "fixture_id": 1003
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:1003",
+    "details": "Channel 1003",
+    "fixture_id": 1003
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:1004",
+    "details": "Channel 1004",
+    "fixture_id": 1004
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:1004",
+    "details": "Channel 1004",
+    "fixture_id": 1004
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:1005",
+    "details": "Channel 1005",
+    "fixture_id": 1005
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:1005",
+    "details": "Channel 1005",
+    "fixture_id": 1005
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:1006",
+    "details": "Channel 1006",
+    "fixture_id": 1006
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:1006",
+    "details": "Channel 1006",
+    "fixture_id": 1006
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:1007",
+    "details": "Channel 1007",
+    "fixture_id": 1007
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:1007",
+    "details": "Channel 1007",
+    "fixture_id": 1007
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:1008",
+    "details": "Channel 1008",
+    "fixture_id": 1008
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:1008",
+    "details": "Channel 1008",
+    "fixture_id": 1008
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:1009",
+    "details": "Channel 1009",
+    "fixture_id": 1009
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:1009",
+    "details": "Channel 1009",
+    "fixture_id": 1009
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:1010",
+    "details": "Channel 1010",
+    "fixture_id": 1010
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:1010",
+    "details": "Channel 1010",
+    "fixture_id": 1010
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:1011",
+    "details": "Channel 1011",
+    "fixture_id": 1011
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:1011",
+    "details": "Channel 1011",
+    "fixture_id": 1011
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:1012",
+    "details": "Channel 1012",
+    "fixture_id": 1012
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:1012",
+    "details": "Channel 1012",
+    "fixture_id": 1012
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:1013",
+    "details": "Channel 1013",
+    "fixture_id": 1013
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:1013",
+    "details": "Channel 1013",
+    "fixture_id": 1013
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:1014",
+    "details": "Channel 1014",
+    "fixture_id": 1014
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:1014",
+    "details": "Channel 1014",
+    "fixture_id": 1014
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:1015",
+    "details": "Channel 1015",
+    "fixture_id": 1015
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:1015",
+    "details": "Channel 1015",
+    "fixture_id": 1015
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:1016",
+    "details": "Channel 1016",
+    "fixture_id": 1016
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:1016",
+    "details": "Channel 1016",
+    "fixture_id": 1016
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:1017",
+    "details": "Channel 1017",
+    "fixture_id": 1017
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:1017",
+    "details": "Channel 1017",
+    "fixture_id": 1017
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:1018",
+    "details": "Channel 1018",
+    "fixture_id": 1018
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:1018",
+    "details": "Channel 1018",
+    "fixture_id": 1018
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:1019",
+    "details": "Channel 1019",
+    "fixture_id": 1019
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:1019",
+    "details": "Channel 1019",
+    "fixture_id": 1019
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:1020",
+    "details": "Channel 1020",
+    "fixture_id": 1020
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:1020",
+    "details": "Channel 1020",
+    "fixture_id": 1020
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:1021",
+    "details": "Channel 1021",
+    "fixture_id": 1021
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:1021",
+    "details": "Channel 1021",
+    "fixture_id": 1021
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:1022",
+    "details": "Channel 1022",
+    "fixture_id": 1022
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:1022",
+    "details": "Channel 1022",
+    "fixture_id": 1022
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:1023",
+    "details": "Channel 1023",
+    "fixture_id": 1023
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:1023",
+    "details": "Channel 1023",
+    "fixture_id": 1023
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:1024",
+    "details": "Channel 1024",
+    "fixture_id": 1024
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:1024",
+    "details": "Channel 1024",
+    "fixture_id": 1024
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:1025",
+    "details": "Channel 1025",
+    "fixture_id": 1025
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:1025",
+    "details": "Channel 1025",
+    "fixture_id": 1025
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:1026",
+    "details": "Channel 1026",
+    "fixture_id": 1026
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:1026",
+    "details": "Channel 1026",
+    "fixture_id": 1026
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:1027",
+    "details": "Channel 1027",
+    "fixture_id": 1027
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:1027",
+    "details": "Channel 1027",
+    "fixture_id": 1027
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:1028",
+    "details": "Channel 1028",
+    "fixture_id": 1028
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:1028",
+    "details": "Channel 1028",
+    "fixture_id": 1028
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:1029",
+    "details": "Channel 1029",
+    "fixture_id": 1029
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:1029",
+    "details": "Channel 1029",
+    "fixture_id": 1029
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:1030",
+    "details": "Channel 1030",
+    "fixture_id": 1030
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:1030",
+    "details": "Channel 1030",
+    "fixture_id": 1030
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:1",
+    "details": "Fixture 1",
+    "fixture_id": 1
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:1",
+    "details": "Fixture 1",
+    "fixture_id": 1
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:2",
+    "details": "Fixture 2",
+    "fixture_id": 2
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:2",
+    "details": "Fixture 2",
+    "fixture_id": 2
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:3",
+    "details": "Fixture 3",
+    "fixture_id": 3
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:3",
+    "details": "Fixture 3",
+    "fixture_id": 3
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:4",
+    "details": "Fixture 4",
+    "fixture_id": 4
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:4",
+    "details": "Fixture 4",
+    "fixture_id": 4
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:5",
+    "details": "Fixture 5",
+    "fixture_id": 5
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:5",
+    "details": "Fixture 5",
+    "fixture_id": 5
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:6",
+    "details": "Fixture 6",
+    "fixture_id": 6
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:6",
+    "details": "Fixture 6",
+    "fixture_id": 6
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:7",
+    "details": "Fixture 7",
+    "fixture_id": 7
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:7",
+    "details": "Fixture 7",
+    "fixture_id": 7
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:8",
+    "details": "Fixture 8",
+    "fixture_id": 8
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:8",
+    "details": "Fixture 8",
+    "fixture_id": 8
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:9",
+    "details": "Fixture 9",
+    "fixture_id": 9
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:9",
+    "details": "Fixture 9",
+    "fixture_id": 9
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:10",
+    "details": "Fixture 10",
+    "fixture_id": 10
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:10",
+    "details": "Fixture 10",
+    "fixture_id": 10
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:11",
+    "details": "Fixture 11",
+    "fixture_id": 11
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:11",
+    "details": "Fixture 11",
+    "fixture_id": 11
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:12",
+    "details": "Fixture 12",
+    "fixture_id": 12
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:12",
+    "details": "Fixture 12",
+    "fixture_id": 12
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:13",
+    "details": "Fixture 13",
+    "fixture_id": 13
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:13",
+    "details": "Fixture 13",
+    "fixture_id": 13
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:14",
+    "details": "Fixture 14",
+    "fixture_id": 14
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:14",
+    "details": "Fixture 14",
+    "fixture_id": 14
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:15",
+    "details": "Fixture 15",
+    "fixture_id": 15
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:15",
+    "details": "Fixture 15",
+    "fixture_id": 15
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:16",
+    "details": "Fixture 16",
+    "fixture_id": 16
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:16",
+    "details": "Fixture 16",
+    "fixture_id": 16
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:17",
+    "details": "Fixture 17",
+    "fixture_id": 17
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:17",
+    "details": "Fixture 17",
+    "fixture_id": 17
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:18",
+    "details": "Fixture 18",
+    "fixture_id": 18
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:18",
+    "details": "Fixture 18",
+    "fixture_id": 18
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:19",
+    "details": "Fixture 19",
+    "fixture_id": 19
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:19",
+    "details": "Fixture 19",
+    "fixture_id": 19
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:20",
+    "details": "Fixture 20",
+    "fixture_id": 20
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:20",
+    "details": "Fixture 20",
+    "fixture_id": 20
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:21",
+    "details": "Fixture 21",
+    "fixture_id": 21
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:21",
+    "details": "Fixture 21",
+    "fixture_id": 21
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:22",
+    "details": "Fixture 22",
+    "fixture_id": 22
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:22",
+    "details": "Fixture 22",
+    "fixture_id": 22
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:23",
+    "details": "Fixture 23",
+    "fixture_id": 23
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:23",
+    "details": "Fixture 23",
+    "fixture_id": 23
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:24",
+    "details": "Fixture 24",
+    "fixture_id": 24
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:24",
+    "details": "Fixture 24",
+    "fixture_id": 24
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:25",
+    "details": "Fixture 25",
+    "fixture_id": 25
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:25",
+    "details": "Fixture 25",
+    "fixture_id": 25
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:26",
+    "details": "Fixture 26",
+    "fixture_id": 26
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:26",
+    "details": "Fixture 26",
+    "fixture_id": 26
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:27",
+    "details": "Fixture 27",
+    "fixture_id": 27
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:27",
+    "details": "Fixture 27",
+    "fixture_id": 27
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:28",
+    "details": "Fixture 28",
+    "fixture_id": 28
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:28",
+    "details": "Fixture 28",
+    "fixture_id": 28
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:29",
+    "details": "Fixture 29",
+    "fixture_id": 29
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:29",
+    "details": "Fixture 29",
+    "fixture_id": 29
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:30",
+    "details": "Fixture 30",
+    "fixture_id": 30
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:30",
+    "details": "Fixture 30",
+    "fixture_id": 30
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:31",
+    "details": "Fixture 31",
+    "fixture_id": 31
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:31",
+    "details": "Fixture 31",
+    "fixture_id": 31
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:32",
+    "details": "Fixture 32",
+    "fixture_id": 32
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:32",
+    "details": "Fixture 32",
+    "fixture_id": 32
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:33",
+    "details": "Fixture 33",
+    "fixture_id": 33
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:33",
+    "details": "Fixture 33",
+    "fixture_id": 33
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:34",
+    "details": "Fixture 34",
+    "fixture_id": 34
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:34",
+    "details": "Fixture 34",
+    "fixture_id": 34
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:35",
+    "details": "Fixture 35",
+    "fixture_id": 35
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:35",
+    "details": "Fixture 35",
+    "fixture_id": 35
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:36",
+    "details": "Fixture 36",
+    "fixture_id": 36
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:36",
+    "details": "Fixture 36",
+    "fixture_id": 36
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:37",
+    "details": "Fixture 37",
+    "fixture_id": 37
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:37",
+    "details": "Fixture 37",
+    "fixture_id": 37
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:38",
+    "details": "Fixture 38",
+    "fixture_id": 38
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:38",
+    "details": "Fixture 38",
+    "fixture_id": 38
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:39",
+    "details": "Fixture 39",
+    "fixture_id": 39
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:39",
+    "details": "Fixture 39",
+    "fixture_id": 39
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:40",
+    "details": "Fixture 40",
+    "fixture_id": 40
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:40",
+    "details": "Fixture 40",
+    "fixture_id": 40
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:101",
+    "details": "Fixture 101",
+    "fixture_id": 101
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:101",
+    "details": "Fixture 101",
+    "fixture_id": 101
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:102",
+    "details": "Fixture 102",
+    "fixture_id": 102
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:102",
+    "details": "Fixture 102",
+    "fixture_id": 102
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:111",
+    "details": "Fixture 111",
+    "fixture_id": 111
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:111",
+    "details": "Fixture 111",
+    "fixture_id": 111
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:112",
+    "details": "Fixture 112",
+    "fixture_id": 112
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:112",
+    "details": "Fixture 112",
+    "fixture_id": 112
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:201",
+    "details": "Fixture 201",
+    "fixture_id": 201
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:201",
+    "details": "Fixture 201",
+    "fixture_id": 201
+  },
+  {
+    "kind": "fixture_used_without_patch_data",
+    "severity": "high",
+    "subject": "fixture:202",
+    "details": "Fixture 202",
+    "fixture_id": 202
+  },
+  {
+    "kind": "fixture_used_without_type",
+    "severity": "medium",
+    "subject": "fixture:202",
+    "details": "Fixture 202",
+    "fixture_id": 202
+  },
+  {
+    "kind": "duplicate_patch_address",
+    "severity": "high",
+    "subject": "patch:2.217",
+    "details": "Fixtures 30, 61",
+    "patch": "2.217",
+    "fixture_ids": [
+      30,
+      61
+    ]
+  },
+  {
+    "kind": "duplicate_patch_address",
+    "severity": "high",
+    "subject": "patch:2.241",
+    "details": "Fixtures 31, 64",
+    "patch": "2.241",
+    "fixture_ids": [
+      31,
+      64
+    ]
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:0.29",
+    "details": "Preset 0.29",
+    "preset_id": "preset:0.29:Studio54_preset_0.xml:8",
+    "preset_number": "0.29"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:0.35",
+    "details": "spii stred",
+    "preset_id": "preset:0.35:Studio54_preset_0.xml:14",
+    "preset_number": "0.35"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:0.38",
+    "details": "animacnigobo",
+    "preset_id": "preset:0.38:Studio54_preset_0.xml:17",
+    "preset_number": "0.38"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:0.39",
+    "details": "gobo",
+    "preset_id": "preset:0.39:Studio54_preset_0.xml:18",
+    "preset_number": "0.39"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:0.40",
+    "details": "tetra vstup",
+    "preset_id": "preset:0.40:Studio54_preset_0.xml:19",
+    "preset_number": "0.40"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:0.46",
+    "details": "spot fotka",
+    "preset_id": "preset:0.46:Studio54_preset_0.xml:25",
+    "preset_number": "0.46"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:0.48",
+    "details": "lidi",
+    "preset_id": "preset:0.48:Studio54_preset_0.xml:27",
+    "preset_number": "0.48"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:0.53",
+    "details": "Astery Start",
+    "preset_id": "preset:0.53:Studio54_preset_0.xml:32",
+    "preset_number": "0.53"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:0.59",
+    "details": "Preset 0.59",
+    "preset_id": "preset:0.59:Studio54_preset_0.xml:38",
+    "preset_number": "0.59"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:0.69",
+    "details": "Preset 0.69",
+    "preset_id": "preset:0.69:Studio54_preset_0.xml:43",
+    "preset_number": "0.69"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:0.79",
+    "details": "bejk nahore",
+    "preset_id": "preset:0.79:Studio54_preset_0.xml:51",
+    "preset_number": "0.79"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:0.80",
+    "details": "fial do halue",
+    "preset_id": "preset:0.80:Studio54_preset_0.xml:52",
+    "preset_number": "0.80"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:0.89",
+    "details": "bejk nahore350",
+    "preset_id": "preset:0.89:Studio54_preset_0.xml:58",
+    "preset_number": "0.89"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:2.1",
+    "details": "Preset 2.1",
+    "preset_id": "preset:2.1:Studio54_preset_2.xml:1",
+    "preset_number": "2.1"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:2.2",
+    "details": "Preset 2.2",
+    "preset_id": "preset:2.2:Studio54_preset_2.xml:2",
+    "preset_number": "2.2"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:0.3",
+    "details": "Schody",
+    "preset_id": "preset:0.3:Tram_Analyz_preset_0.xml:2",
+    "preset_number": "0.3"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:0.9",
+    "details": "Preset 0.9",
+    "preset_id": "preset:0.9:Tram_Analyz_preset_0.xml:8",
+    "preset_number": "0.9"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:0.11",
+    "details": "Eff Front",
+    "preset_id": "preset:0.11:Tram_Analyz_preset_0.xml:10",
+    "preset_number": "0.11"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:0.13",
+    "details": "q80-flo",
+    "preset_id": "preset:0.13:Tram_Analyz_preset_0.xml:12",
+    "preset_number": "0.13"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:0.24",
+    "details": "Prava strana",
+    "preset_id": "preset:0.24:Tram_Analyz_preset_0.xml:23",
+    "preset_number": "0.24"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:0.53",
+    "details": "Kalibrace-stredni zadni kostka",
+    "preset_id": "preset:0.53:Tram_Analyz_preset_0.xml:39",
+    "preset_number": "0.53"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:0.71",
+    "details": "Labus vrch",
+    "preset_id": "preset:0.71:Tram_Analyz_preset_0.xml:50",
+    "preset_number": "0.71"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:2.1",
+    "details": "Preset 2.1",
+    "preset_id": "preset:2.1:Tram_Analyz_preset_2.xml:1",
+    "preset_number": "2.1"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:2.31",
+    "details": "White",
+    "preset_id": "preset:2.31:Tram_Analyz_preset_2.xml:2",
+    "preset_number": "2.31"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:2.32",
+    "details": "Red",
+    "preset_id": "preset:2.32:Tram_Analyz_preset_2.xml:3",
+    "preset_number": "2.32"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:2.33",
+    "details": "Orange",
+    "preset_id": "preset:2.33:Tram_Analyz_preset_2.xml:4",
+    "preset_number": "2.33"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:2.34",
+    "details": "Yellow",
+    "preset_id": "preset:2.34:Tram_Analyz_preset_2.xml:5",
+    "preset_number": "2.34"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:2.35",
+    "details": "Fern Green",
+    "preset_id": "preset:2.35:Tram_Analyz_preset_2.xml:6",
+    "preset_number": "2.35"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:2.36",
+    "details": "Green",
+    "preset_id": "preset:2.36:Tram_Analyz_preset_2.xml:7",
+    "preset_number": "2.36"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:2.37",
+    "details": "Sea Green",
+    "preset_id": "preset:2.37:Tram_Analyz_preset_2.xml:8",
+    "preset_number": "2.37"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:2.38",
+    "details": "Cyan",
+    "preset_id": "preset:2.38:Tram_Analyz_preset_2.xml:9",
+    "preset_number": "2.38"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:2.39",
+    "details": "Lavender",
+    "preset_id": "preset:2.39:Tram_Analyz_preset_2.xml:10",
+    "preset_number": "2.39"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:2.40",
+    "details": "Blue",
+    "preset_id": "preset:2.40:Tram_Analyz_preset_2.xml:11",
+    "preset_number": "2.40"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:2.41",
+    "details": "Violet",
+    "preset_id": "preset:2.41:Tram_Analyz_preset_2.xml:12",
+    "preset_number": "2.41"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:2.42",
+    "details": "Magenta",
+    "preset_id": "preset:2.42:Tram_Analyz_preset_2.xml:13",
+    "preset_number": "2.42"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:2.43",
+    "details": "Pink",
+    "preset_id": "preset:2.43:Tram_Analyz_preset_2.xml:14",
+    "preset_number": "2.43"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:4.2",
+    "details": "Light blue",
+    "preset_id": "preset:4.2:Tram_Analyz_preset_4.xml:2",
+    "preset_number": "4.2"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:4.3",
+    "details": "orange",
+    "preset_id": "preset:4.3:Tram_Analyz_preset_4.xml:3",
+    "preset_number": "4.3"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:4.13",
+    "details": "Light orange",
+    "preset_id": "preset:4.13:Tram_Analyz_preset_4.xml:7",
+    "preset_number": "4.13"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:4.15",
+    "details": "green",
+    "preset_id": "preset:4.15:Tram_Analyz_preset_4.xml:8",
+    "preset_number": "4.15"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:4.16",
+    "details": "Zlata",
+    "preset_id": "preset:4.16:Tram_Analyz_preset_4.xml:9",
+    "preset_number": "4.16"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:4.18",
+    "details": "fern green",
+    "preset_id": "preset:4.18:Tram_Analyz_preset_4.xml:10",
+    "preset_number": "4.18"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:4.21",
+    "details": "Preset 4.21",
+    "preset_id": "preset:4.21:Tram_Analyz_preset_4.xml:12",
+    "preset_number": "4.21"
+  },
+  {
+    "kind": "unused_preset",
+    "severity": "low",
+    "subject": "preset:4.23",
+    "details": "Novy toon",
+    "preset_id": "preset:4.23:Tram_Analyz_preset_4.xml:13",
+    "preset_number": "4.23"
+  }
+]

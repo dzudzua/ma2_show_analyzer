@@ -1,0 +1,6 @@
+kind,severity,subject,details,owner_type,owner_id,target,attribute,confidence,scope,raw_reference
+inferred_reference,low,cue:cue:1:1:demo_main_sequences.xml:1,preset:1.5 via inferred,cue,cue:1:1:demo_main_sequences.xml:1,preset:1.5,Dimmer,0.85,inferred,
+inferred_reference,low,cue:cue:1:1:demo_main_sequences.xml:1,preset:2.7 via inferred,cue,cue:1:1:demo_main_sequences.xml:1,preset:2.7,Position,0.85,inferred,
+missing_target_object,high,cue:cue:1:1:demo_main_sequences.xml:1,missing target sequence:2,cue,cue:1:1:demo_main_sequences.xml:1,sequence:2,,,,sequence:2
+inferred_reference,low,cue:cue:1:2:demo_main_sequences.xml:2,effect:12 via inferred,cue,cue:1:2:demo_main_sequences.xml:2,effect:12,Effect,0.85,inferred,
+inferred_reference,low,cue:cue:1:2:demo_main_sequences.xml:2,group:3 via inferred,cue,cue:1:2:demo_main_sequences.xml:2,group:3,GroupRef,0.85,inferred,

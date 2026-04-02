@@ -1,0 +1,148 @@
+preset_number,preset_type,preset_name,cue_count,sequence_count,main_cue_count,fixture_count,fixture_types,value_count,usage_status,is_unused,is_single_cue,duplicate_candidates,duplicate_candidate_count,source_file
+0.34,0,350 plocha,21,1,21,12,"[""12 Robin LEDBeam 350 Mode 1"", ""7 Robin Spiider Mode 3""]",168,active,False,False,[],0,exports\Studio54_preset_0.xml
+0.34,0,Pruvany rackove,21,1,21,2,"[""12 Robin LEDBeam 350 Mode 1"", ""7 Robin Spiider Mode 3""]",34,active,False,False,[],0,exports\Tram_Analyz_preset_0.xml
+0.45,0,plocha spiider,18,1,18,8,[],200,active,False,False,[],0,exports\Studio54_preset_0.xml
+4.10,4,orange,18,1,18,40,[],120,active,False,False,[],0,exports\Tram_Analyz_preset_4.xml
+0.49,0,BAR,9,2,9,12,"[""14 Hotbox RGBW 8 channel"", ""16 Helios Tube 1: RGB - 1 Pixel - Strobe Off"", ""7 Robin Spiider Mode 3""]",50,active,False,False,[],0,exports\Studio54_preset_0.xml
+0.49,0,Do zdi-Start,9,2,9,2,"[""14 Hotbox RGBW 8 channel"", ""16 Helios Tube 1: RGB - 1 Pixel - Strobe Off"", ""7 Robin Spiider Mode 3""]",34,active,False,False,[],0,exports\Tram_Analyz_preset_0.xml
+0.58,0,Projzi scan,7,2,7,12,"[""12 Robin LEDBeam 350 Mode 1"", ""7 Robin Spiider Mode 3""]",168,active,False,False,[],0,exports\Studio54_preset_0.xml
+0.58,0,Prave schodiste-Klouzacka,7,2,7,1,"[""12 Robin LEDBeam 350 Mode 1"", ""7 Robin Spiider Mode 3""]",16,active,False,False,[],0,exports\Tram_Analyz_preset_0.xml
+0.86,0,blesk pre show,6,5,1,4,[],160,active,False,False,[],0,exports\Studio54_preset_0.xml
+0.26,0,strobo hor,5,2,5,31,"[""7 Robin Spiider Mode 3""]",16,active,False,False,[],0,exports\Studio54_preset_0.xml
+0.26,0,Pruvany,5,2,5,2,"[""7 Robin Spiider Mode 3""]",34,active,False,False,[],0,exports\Tram_Analyz_preset_0.xml
+0.31,0,vostra gula,5,1,5,4,[],160,active,False,False,[],0,exports\Studio54_preset_0.xml
+0.90,0,signal,5,1,5,1,"[""14 Hotbox RGBW 8 channel""]",5,active,False,False,[],0,exports\Studio54_preset_0.xml
+0.30,0,gula,4,2,4,12,"[""12 Robin LEDBeam 350 Mode 1"", ""7 Robin Spiider Mode 3""]",168,active,False,False,[],0,exports\Studio54_preset_0.xml
+0.30,0,Florian,4,2,4,6,"[""12 Robin LEDBeam 350 Mode 1"", ""7 Robin Spiider Mode 3""]",20,active,False,False,[],0,exports\Tram_Analyz_preset_0.xml
+0.41,0,tetra scan,4,2,3,25,[],132,active,False,False,[],0,exports\Studio54_preset_0.xml
+0.50,0,stred,4,2,4,2,[],22,active,False,False,[],0,exports\Studio54_preset_0.xml
+0.50,0,Spot Stred,4,2,4,4,[],68,active,False,False,[],0,exports\Tram_Analyz_preset_0.xml
+0.57,0,Miki lavka prejezd,4,2,4,1,"[""7 Robin Spiider Mode 3""]",40,active,False,False,[],0,exports\Studio54_preset_0.xml
+0.57,0,Prave schodiste,4,2,4,1,"[""7 Robin Spiider Mode 3""]",16,active,False,False,[],0,exports\Tram_Analyz_preset_0.xml
+0.16,0,Start Front,4,1,4,4,[],68,active,False,False,[],0,exports\Tram_Analyz_preset_0.xml
+0.18,0,F-DoHnizda,4,1,4,2,[],34,active,False,False,[],0,exports\Tram_Analyz_preset_0.xml
+0.5,0,front,4,1,4,4,[],40,active,False,False,[],0,exports\Tram_Analyz_preset_0.xml
+0.6,0,Zeme Pruvany,4,1,4,2,"[""7 Robin Spiider Mode 3""]",8,active,False,False,[],0,exports\Tram_Analyz_preset_0.xml
+0.36,0,ondra klavir,3,2,3,1,[],40,active,False,False,[],0,exports\Studio54_preset_0.xml
+0.36,0,STREDSTRED FRONT,3,2,3,4,[],68,active,False,False,[],0,exports\Tram_Analyz_preset_0.xml
+0.17,0,Q6-9,3,1,3,4,[],68,active,False,False,[],0,exports\Tram_Analyz_preset_0.xml
+0.20,0,Soud,3,1,3,10,"[""7 Robin Spiider Mode 3""]",170,active,False,False,[],0,exports\Tram_Analyz_preset_0.xml
+0.4,0,tepla vsude,3,1,3,10,"[""7 Robin Spiider Mode 3""]",74,active,False,False,[],0,exports\Tram_Analyz_preset_0.xml
+0.56,0,vytah,3,1,3,24,"[""7 Robin Spiider Mode 3""]",44,active,False,False,[],0,exports\Studio54_preset_0.xml
+0.56,0,Preset 0.56,3,1,3,10,"[""7 Robin Spiider Mode 3""]",170,active,False,False,[],0,exports\Tram_Analyz_preset_0.xml
+0.66,0,Jirka-Schody,3,1,3,1,"[""7 Robin Spiider Mode 3""]",17,active,False,False,[],0,exports\Tram_Analyz_preset_0.xml
+0.85,0,do lidi do ksicht,3,1,3,12,"[""12 Robin LEDBeam 350 Mode 1""]",216,active,False,False,[],0,exports\Studio54_preset_0.xml
+0.60,0,spii stred,2,2,2,8,"[""7 Robin Spiider Mode 3""]",200,active,False,False,[],0,exports\Studio54_preset_0.xml
+0.60,0,Q53 zacatek TRIO,2,2,2,2,"[""7 Robin Spiider Mode 3""]",32,active,False,False,[],0,exports\Tram_Analyz_preset_0.xml
+0.70,0,stripterka v satne na miste,2,2,2,1,[],40,active,False,False,[],0,exports\Studio54_preset_0.xml
+0.70,0,Labus vilda stred,2,2,2,4,[],32,active,False,False,[],0,exports\Tram_Analyz_preset_0.xml
+0.72,0,satna350,2,2,2,12,"[""12 Robin LEDBeam 350 Mode 1"", ""7 Robin Spiider Mode 3""]",216,active,False,False,[],0,exports\Studio54_preset_0.xml
+0.72,0,Pravy Schody,2,2,2,1,"[""12 Robin LEDBeam 350 Mode 1"", ""7 Robin Spiider Mode 3""]",17,active,False,False,[],0,exports\Tram_Analyz_preset_0.xml
+0.76,0,vrata,2,2,2,1,[],40,active,False,False,[],0,exports\Studio54_preset_0.xml
+0.76,0,Bert na stred,2,2,2,2,[],34,active,False,False,[],0,exports\Tram_Analyz_preset_0.xml
+0.1,0,Kontra Zaklad,2,1,2,4,"[""7 Robin Spiider Mode 3""]",28,active,False,False,[],0,exports\Tram_Analyz_preset_0.xml
+0.12,0,Vilda,2,1,2,1,"[""7 Robin Spiider Mode 3""]",17,active,False,False,[],0,exports\Tram_Analyz_preset_0.xml
+0.15,0,soud2,2,1,2,2,[],34,active,False,False,[],0,exports\Tram_Analyz_preset_0.xml
+0.23,0,350 doleva,2,1,2,12,"[""12 Robin LEDBeam 350 Mode 1""]",96,active,False,False,[],0,exports\Studio54_preset_0.xml
+0.23,0,stred,2,1,2,2,"[""12 Robin LEDBeam 350 Mode 1""]",34,active,False,False,[],0,exports\Tram_Analyz_preset_0.xml
+0.42,0,dvere k vytahu,2,1,2,1,[],40,active,False,False,[],0,exports\Studio54_preset_0.xml
+0.42,0,Asteta Main,2,1,2,40,[],120,active,False,False,"[""4.13""]",1,exports\Tram_Analyz_preset_0.xml
+0.51,0,buzek,2,1,2,1,[],40,active,False,False,[],0,exports\Studio54_preset_0.xml
+0.55,0,Zebrik,2,1,2,1,"[""7 Robin Spiider Mode 3""]",22,active,False,False,[],0,exports\Studio54_preset_0.xml
+0.55,0,Kalibrace kostky,2,1,2,6,"[""7 Robin Spiider Mode 3""]",102,active,False,False,[],0,exports\Tram_Analyz_preset_0.xml
+0.65,0,Hnizdo,2,1,2,1,"[""7 Robin Spiider Mode 3""]",17,active,False,False,[],0,exports\Tram_Analyz_preset_0.xml
+0.10,0,VildaZjeveniZed,1,1,1,1,"[""7 Robin Spiider Mode 3""]",17,single_cue,False,True,[],0,exports\Tram_Analyz_preset_0.xml
+0.14,0,Zeme pruvany,1,1,1,2,"[""7 Robin Spiider Mode 3""]",34,single_cue,False,True,[],0,exports\Tram_Analyz_preset_0.xml
+0.19,0,Zeme Q6,1,1,1,2,"[""7 Robin Spiider Mode 3""]",34,single_cue,False,True,[],0,exports\Tram_Analyz_preset_0.xml
+0.21,0,350 nad lidi,1,1,1,12,"[""12 Robin LEDBeam 350 Mode 1"", ""7 Robin Spiider Mode 3""]",168,single_cue,False,True,[],0,exports\Studio54_preset_0.xml
+0.21,0,Soud 2,1,1,1,4,"[""12 Robin LEDBeam 350 Mode 1"", ""7 Robin Spiider Mode 3""]",68,single_cue,False,True,[],0,exports\Tram_Analyz_preset_0.xml
+0.22,0,350 doprava,1,1,1,12,"[""12 Robin LEDBeam 350 Mode 1"", ""7 Robin Spiider Mode 3""]",168,single_cue,False,True,[],0,exports\Studio54_preset_0.xml
+0.22,0,Vrch Labus,1,1,1,2,"[""12 Robin LEDBeam 350 Mode 1"", ""7 Robin Spiider Mode 3""]",34,single_cue,False,True,[],0,exports\Tram_Analyz_preset_0.xml
+0.25,0,beam,1,1,1,8,"[""7 Robin Spiider Mode 3""]",344,single_cue,False,True,[],0,exports\Studio54_preset_0.xml
+0.25,0,Zeme Usinani Q19,1,1,1,2,"[""7 Robin Spiider Mode 3""]",34,single_cue,False,True,[],0,exports\Tram_Analyz_preset_0.xml
+0.27,0,strobo,1,1,1,33,"[""7 Robin Spiider Mode 3""]",109,single_cue,False,True,[],0,exports\Studio54_preset_0.xml
+0.27,0,Svicka kontra,1,1,1,2,"[""7 Robin Spiider Mode 3""]",34,single_cue,False,True,[],0,exports\Tram_Analyz_preset_0.xml
+0.28,0,strobo,1,1,1,33,[],80,single_cue,False,True,[],0,exports\Studio54_preset_0.xml
+0.28,0,BertStartSolo,1,1,1,2,[],34,single_cue,False,True,[],0,exports\Tram_Analyz_preset_0.xml
+0.32,0,Spiddery gula,1,1,1,8,"[""7 Robin Spiider Mode 3""]",200,single_cue,False,True,[],0,exports\Studio54_preset_0.xml
+0.32,0,Bert sokl,1,1,1,1,"[""7 Robin Spiider Mode 3""]",17,single_cue,False,True,[],0,exports\Tram_Analyz_preset_0.xml
+0.33,0,vorez,1,1,1,2,[],80,single_cue,False,True,[],0,exports\Studio54_preset_0.xml
+0.33,0,Front-UZnizono,1,1,1,4,[],68,single_cue,False,True,[],0,exports\Tram_Analyz_preset_0.xml
+0.37,0,byk,1,1,1,4,[],100,single_cue,False,True,[],0,exports\Studio54_preset_0.xml
+0.37,0,Front Velky,1,1,1,4,[],68,single_cue,False,True,[],0,exports\Tram_Analyz_preset_0.xml
+0.43,0,klavir,1,1,1,1,"[""7 Robin Spiider Mode 3""]",40,single_cue,False,True,[],0,exports\Studio54_preset_0.xml
+0.43,0,pravej roh zem,1,1,1,2,"[""7 Robin Spiider Mode 3""]",34,single_cue,False,True,[],0,exports\Tram_Analyz_preset_0.xml
+0.44,0,stred zacatek,1,1,1,4,"[""7 Robin Spiider Mode 3""]",100,single_cue,False,True,[],0,exports\Studio54_preset_0.xml
+0.44,0,Levy sokl,1,1,1,1,"[""7 Robin Spiider Mode 3""]",17,single_cue,False,True,[],0,exports\Tram_Analyz_preset_0.xml
+0.47,0,Kluci stred koule,1,1,1,2,[],80,single_cue,False,True,[],0,exports\Studio54_preset_0.xml
+0.52,0,Zacatek lidi,1,1,1,38,"[""12 Robin LEDBeam 350 Mode 1""]",267,single_cue,False,True,[],0,exports\Studio54_preset_0.xml
+0.54,0,Spii start na blesky,1,1,1,6,"[""7 Robin Spiider Mode 3""]",150,single_cue,False,True,[],0,exports\Studio54_preset_0.xml
+0.54,0,Kalibrace - stredy,1,1,1,4,"[""7 Robin Spiider Mode 3""]",68,single_cue,False,True,[],0,exports\Tram_Analyz_preset_0.xml
+0.62,0,tetra do zad,1,1,1,25,[],132,single_cue,False,True,[],0,exports\Studio54_preset_0.xml
+0.63,0,spot kejs,1,1,1,1,[],9,single_cue,False,True,[],0,exports\Studio54_preset_0.xml
+0.68,0,Preset 0.68,1,1,1,12,"[""12 Robin LEDBeam 350 Mode 1"", ""7 Robin Spiider Mode 3""]",168,single_cue,False,True,[],0,exports\Studio54_preset_0.xml
+0.68,0,Zed Wilds,1,1,1,1,"[""12 Robin LEDBeam 350 Mode 1"", ""7 Robin Spiider Mode 3""]",17,single_cue,False,True,[],0,exports\Tram_Analyz_preset_0.xml
+0.7,0,BertZjeveni,1,1,1,2,[],34,single_cue,False,True,[],0,exports\Tram_Analyz_preset_0.xml
+0.73,0,Pravy schody 2,1,1,1,1,"[""7 Robin Spiider Mode 3""]",17,single_cue,False,True,[],0,exports\Tram_Analyz_preset_0.xml
+0.74,0,kruh stred,1,1,1,1,[],40,single_cue,False,True,[],0,exports\Studio54_preset_0.xml
+0.75,0,goba sex,1,1,1,6,[],252,single_cue,False,True,[],0,exports\Studio54_preset_0.xml
+0.75,0,bert solo,1,1,1,2,[],34,single_cue,False,True,[],0,exports\Tram_Analyz_preset_0.xml
+0.77,0,strobo,1,1,1,3,[],6,single_cue,False,True,[],0,exports\Studio54_preset_0.xml
+0.78,0,bejk,1,1,1,1,[],40,single_cue,False,True,[],0,exports\Studio54_preset_0.xml
+0.78,0,Bert zjeveni,1,1,1,24,[],130,single_cue,False,True,[],0,exports\Tram_Analyz_preset_0.xml
+0.8,0,Usinani,1,1,1,1,"[""7 Robin Spiider Mode 3""]",14,single_cue,False,True,[],0,exports\Tram_Analyz_preset_0.xml
+0.81,0,zaverecna cesta,1,1,1,4,[],160,single_cue,False,True,[],0,exports\Studio54_preset_0.xml
+0.81,0,Svicka_Ksicht,1,1,1,2,[],34,single_cue,False,True,[],0,exports\Tram_Analyz_preset_0.xml
+0.83,0,Natalka spot,1,1,1,1,[],40,single_cue,False,True,[],0,exports\Studio54_preset_0.xml
+0.88,0,bejk spiider nahore,1,1,1,2,[],50,single_cue,False,True,[],0,exports\Studio54_preset_0.xml
+0.92,0,mikistrip zaver,1,1,1,1,[],43,single_cue,False,True,[],0,exports\Studio54_preset_0.xml
+0.93,0,zebrik zaver,1,1,1,1,[],44,single_cue,False,True,[],0,exports\Studio54_preset_0.xml
+0.95,0,Preset 0.95,1,1,1,6,[],240,single_cue,False,True,[],0,exports\Studio54_preset_0.xml
+4.1,4,Light orange,1,1,1,40,[],120,single_cue,False,True,[],0,exports\Tram_Analyz_preset_4.xml
+4.11,4,Preset 4.11,1,1,1,40,[],120,single_cue,False,True,[],0,exports\Tram_Analyz_preset_4.xml
+4.12,4,Light lavender,1,1,1,40,[],120,single_cue,False,True,[],0,exports\Tram_Analyz_preset_4.xml
+4.20,4,Light orange,1,1,1,10,"[""7 Robin Spiider Mode 3""]",70,single_cue,False,True,[],0,exports\Tram_Analyz_preset_4.xml
+0.11,0,Eff Front,0,0,0,5,[],44,unused,True,False,[],0,exports\Tram_Analyz_preset_0.xml
+0.13,0,q80-flo,0,0,0,2,[],34,unused,True,False,[],0,exports\Tram_Analyz_preset_0.xml
+0.24,0,Prava strana,0,0,0,2,[],34,unused,True,False,[],0,exports\Tram_Analyz_preset_0.xml
+0.29,0,Preset 0.29,0,0,0,17,[],7,unused,True,False,[],0,exports\Studio54_preset_0.xml
+0.3,0,Schody,0,0,0,2,"[""7 Robin Spiider Mode 3""]",4,unused,True,False,[],0,exports\Tram_Analyz_preset_0.xml
+0.35,0,spii stred,0,0,0,8,[],200,unused,True,False,[],0,exports\Studio54_preset_0.xml
+0.38,0,animacnigobo,0,0,0,8,[],320,unused,True,False,[],0,exports\Studio54_preset_0.xml
+0.39,0,gobo,0,0,0,8,[],145,unused,True,False,[],0,exports\Studio54_preset_0.xml
+0.40,0,tetra vstup,0,0,0,25,[],132,unused,True,False,[],0,exports\Studio54_preset_0.xml
+0.46,0,spot fotka,0,0,0,1,[],40,unused,True,False,[],0,exports\Studio54_preset_0.xml
+0.48,0,lidi,0,0,0,8,[],88,unused,True,False,[],0,exports\Studio54_preset_0.xml
+0.53,0,Astery Start,0,0,0,9,"[""16 Helios Tube 1: RGB - 1 Pixel - Strobe Off"", ""7 Robin Spiider Mode 3""]",33,unused,True,False,[],0,exports\Studio54_preset_0.xml
+0.53,0,Kalibrace-stredni zadni kostka,0,0,0,6,"[""16 Helios Tube 1: RGB - 1 Pixel - Strobe Off"", ""7 Robin Spiider Mode 3""]",102,unused,True,False,[],0,exports\Tram_Analyz_preset_0.xml
+0.59,0,Preset 0.59,0,0,0,25,[],465,unused,True,False,[],0,exports\Studio54_preset_0.xml
+0.69,0,Preset 0.69,0,0,0,25,[],24,unused,True,False,[],0,exports\Studio54_preset_0.xml
+0.71,0,Labus vrch,0,0,0,2,"[""7 Robin Spiider Mode 3""]",34,unused,True,False,[],0,exports\Tram_Analyz_preset_0.xml
+0.79,0,bejk nahore,0,0,0,1,[],40,unused,True,False,[],0,exports\Studio54_preset_0.xml
+0.80,0,fial do halue,0,0,0,3,[],120,unused,True,False,[],0,exports\Studio54_preset_0.xml
+0.89,0,bejk nahore350,0,0,0,4,"[""12 Robin LEDBeam 350 Mode 1""]",76,unused,True,False,[],0,exports\Studio54_preset_0.xml
+0.9,0,Preset 0.9,0,0,0,26,[],76,unused,True,False,[],0,exports\Tram_Analyz_preset_0.xml
+2.1,2,Preset 2.1,0,0,0,6,[],18,unused,True,False,[],0,exports\Studio54_preset_2.xml
+2.1,2,Preset 2.1,0,0,0,2,[],4,unused,True,False,[],0,exports\Tram_Analyz_preset_2.xml
+2.2,2,Preset 2.2,0,0,0,6,[],12,unused,True,False,[],0,exports\Studio54_preset_2.xml
+2.31,2,White,0,0,0,0,[],3,unused,True,False,[],0,exports\Tram_Analyz_preset_2.xml
+2.32,2,Red,0,0,0,0,[],3,unused,True,False,[],0,exports\Tram_Analyz_preset_2.xml
+2.33,2,Orange,0,0,0,0,[],3,unused,True,False,[],0,exports\Tram_Analyz_preset_2.xml
+2.34,2,Yellow,0,0,0,0,[],3,unused,True,False,[],0,exports\Tram_Analyz_preset_2.xml
+2.35,2,Fern Green,0,0,0,0,[],3,unused,True,False,[],0,exports\Tram_Analyz_preset_2.xml
+2.36,2,Green,0,0,0,0,[],3,unused,True,False,[],0,exports\Tram_Analyz_preset_2.xml
+2.37,2,Sea Green,0,0,0,0,[],3,unused,True,False,[],0,exports\Tram_Analyz_preset_2.xml
+2.38,2,Cyan,0,0,0,0,[],3,unused,True,False,[],0,exports\Tram_Analyz_preset_2.xml
+2.39,2,Lavender,0,0,0,0,[],3,unused,True,False,[],0,exports\Tram_Analyz_preset_2.xml
+2.40,2,Blue,0,0,0,0,[],3,unused,True,False,[],0,exports\Tram_Analyz_preset_2.xml
+2.41,2,Violet,0,0,0,0,[],3,unused,True,False,[],0,exports\Tram_Analyz_preset_2.xml
+2.42,2,Magenta,0,0,0,0,[],3,unused,True,False,[],0,exports\Tram_Analyz_preset_2.xml
+2.43,2,Pink,0,0,0,0,[],3,unused,True,False,[],0,exports\Tram_Analyz_preset_2.xml
+4.13,4,Light orange,0,0,0,40,[],120,unused,True,False,"[""0.42""]",1,exports\Tram_Analyz_preset_4.xml
+4.15,4,green,0,0,0,10,"[""7 Robin Spiider Mode 3""]",52,unused,True,False,[],0,exports\Tram_Analyz_preset_4.xml
+4.16,4,Zlata,0,0,0,0,[],3,unused,True,False,[],0,exports\Tram_Analyz_preset_4.xml
+4.18,4,fern green,0,0,0,7,[],15,unused,True,False,[],0,exports\Tram_Analyz_preset_4.xml
+4.2,4,Light blue,0,0,0,10,"[""7 Robin Spiider Mode 3""]",70,unused,True,False,[],0,exports\Tram_Analyz_preset_4.xml
+4.21,4,Preset 4.21,0,0,0,10,"[""7 Robin Spiider Mode 3""]",64,unused,True,False,[],0,exports\Tram_Analyz_preset_4.xml
+4.23,4,Novy toon,0,0,0,2,"[""7 Robin Spiider Mode 3""]",8,unused,True,False,[],0,exports\Tram_Analyz_preset_4.xml
+4.3,4,orange,0,0,0,9,"[""7 Robin Spiider Mode 3""]",63,unused,True,False,[],0,exports\Tram_Analyz_preset_4.xml

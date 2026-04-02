@@ -1,0 +1,38 @@
+[
+  {
+    "fixture_type": "Robe LEDWash 600",
+    "modes": [
+      "Mode 1"
+    ],
+    "fixture_ids": [
+      101,
+      102
+    ],
+    "channel_ids": [],
+    "patch_target_keys": [
+      "fixture:101",
+      "fixture:102"
+    ],
+    "target_types": [
+      "fixture"
+    ],
+    "count": 2
+  },
+  {
+    "fixture_type": "Martin MAC Viper",
+    "modes": [
+      "Extended"
+    ],
+    "fixture_ids": [
+      103
+    ],
+    "channel_ids": [],
+    "patch_target_keys": [
+      "fixture:103"
+    ],
+    "target_types": [
+      "fixture"
+    ],
+    "count": 1
+  }
+]

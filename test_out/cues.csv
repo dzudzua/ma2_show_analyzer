@@ -1,0 +1,3 @@
+id,sequence_number,cue_number,name,fade,delay,trigger,command,part,is_main_cue_list,fixture_ids,references,value_count,source_file
+cue:1:1:demo_main_sequences.xml:1,1,1,Blackout,0,0,go,Go Sequence 2 Cue 1,,True,101 102 103,preset:1.5 | preset:2.7 | sequence:2,6,test_exports\demo_main_sequences.xml
+cue:1:2:demo_main_sequences.xml:2,1,2,Build,2,0.5,follow,,,True,101 102 103,group:3 | effect:12,5,test_exports\demo_main_sequences.xml

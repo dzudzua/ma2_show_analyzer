@@ -1,0 +1,11 @@
+{
+  "sequence_sources": [],
+  "preset_sources": [],
+  "group_sources": [],
+  "effect_sources": [],
+  "patch_sources": [
+    "exports\\CH_F_channel_patch.xml",
+    "exports\\CH_F_fixture_patch.xml"
+  ],
+  "generic_sources": []
+}

@@ -1,0 +1,440 @@
+Metadata-Version: 2.4
+Name: ma2showanalyzer
+Version: 1.0.0
+Summary: grandMA2 XML show analyzer
+Author: OpenAI
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# grandMA2 Show Analyzer
+
+Kompletní offline systém pro analýzu **grandMA2 show** z XML exportů.
+
+Umí:
+- načíst XML exporty `Sequence`, `Cue`, `Preset`, `Group`, `Effect` a další pool objekty,
+- rozlišovat **hard values** vs **preset references**,
+- hledat reference na **presety, efekty, groups, sequences, cues**,
+- vyhodnocovat **fade / delay / trigger**,
+- vytvářet vazby mezi objekty show,
+- spočítat využití fixture ID v show,
+- vygenerovat **CSV / JSON / HTML dashboard**.
+
+Navrženo je to tak, aby systém fungoval i nad rozdílnými variantami XML exportů z různých verzí grandMA2. Parser proto používá kombinaci:
+1. schema-aware heuristik pro Sequence / Cue / Preset / Group / Effect,
+2. obecného rekurzivního průchodu XML,
+3. regex analýzy textů a atributů,
+4. vztahového grafu mezi objekty.
+
+---
+
+## Architektura
+
+```text
+ma2_show_analyzer/
+├─ lua/
+│  └─ export_show_bundle.lua        # grandMA2 plugin skript pro hromadný export XML
+├─ src/
+│  └─ ma2showanalyzer/
+│     ├─ __init__.py
+│     ├─ __main__.py                # CLI vstup
+│     ├─ cli.py
+│     ├─ models.py                  # datový model
+│     ├─ parser.py                  # XML parser + heuristiky
+│     ├─ analyzer.py                # vazby, usage, reference graph
+│     ├─ reporters.py               # CSV/JSON/HTML výstupy
+│     └─ utils.py                   # pomocné funkce
+├─ templates/
+│  └─ dashboard.html.j2             # HTML dashboard šablona
+└─ README.md
+```
+
+---
+
+## Datový model
+
+### 1) ShowFile
+Vrcholová entita obsahující:
+- `sequences`
+- `cues`
+- `presets`
+- `groups`
+- `effects`
+- `generic_objects`
+- `relationships`
+- `fixture_usage`
+
+### 2) Sequence
+- `id`
+- `number`
+- `name`
+- `source_file`
+- `cues[]`
+- `metadata`
+
+### 3) Cue
+- `id`
+- `sequence_number`
+- `cue_number`
+- `name`
+- `fade`
+- `delay`
+- `trigger`
+- `command`
+- `part`
+- `values[]`
+- `references[]`
+- `fixture_ids[]`
+- `metadata`
+
+### 4) Preset
+- `id`
+- `preset_type`
+- `number`
+- `name`
+- `values[]`
+- `references[]`
+- `fixture_ids[]`
+- `metadata`
+
+### 5) Group
+- `id`
+- `number`
+- `name`
+- `fixture_ids[]`
+- `metadata`
+
+### 6) Effect
+- `id`
+- `number`
+- `name`
+- `references[]`
+- `fixture_ids[]`
+- `metadata`
+
+### 7) ValueAtom
+Jednotlivý „atom“ nalezený ve value datech:
+- `attribute`
+- `raw_value`
+- `value_type` = `hard` | `preset_ref` | `effect_ref` | `group_ref` | `unknown`
+- `fixture_id`
+- `reference_target`
+- `flags`
+
+### 8) Relationship
+- `source_type`
+- `source_id`
+- `target_type`
+- `target_id`
+- `relation_type`
+- `evidence`
+
+---
+
+## Tok dat
+
+1. **grandMA2 export plugin** vytvoří sadu XML exportů.
+2. Python parser projde adresář a z každého XML zkusí extrahovat:
+   - typ objektu,
+   - identitu objektu,
+   - timingy,
+   - fixture usage,
+   - references.
+3. Analyzér postaví:
+   - mapu vztahů,
+   - usage tabulky,
+   - agregace pro dashboard.
+4. Reporter vygeneruje:
+   - `summary.json`
+   - CSV tabulky
+   - `dashboard.html`
+
+---
+
+## Lua export plugin pro grandMA2
+
+Soubor: `lua/export_show_bundle.lua`
+
+### Co exportuje
+- Sequences 1 thru 999
+- Groups 1 thru 999
+- Effects 1 thru 999
+- Preset pooly 1 až 14, každé `1 thru 999`
+
+### Poznámka
+grandMA2 bohužel neposkytuje pohodlné a konzistentní API pro „dokonalé procházení“ všech objektů v poolu přes Lua ve všech verzích. Nejstabilnější workflow je použít **hromadný command-line export** přes `Export ... /nc /o`.
+
+Plugin proto exportuje velké rozumné rozsahy. Prázdné sloty parser ignoruje.
+
+### Instalace pluginu do MA2
+1. Otevři **Plugin Pool**.
+2. Vytvoř nový plugin.
+3. Otevři editor.
+4. Vlož obsah souboru `lua/export_show_bundle.lua`.
+5. Ulož.
+6. Spusť plugin.
+
+### Kam se exportují soubory
+Podle MA Lighting se XML exporty ukládají do `importexport` adresáře; na onPC typicky do cesty jako `C:\ProgramData\MA Lighting Technologies\grandMA\gma2_V_x.x\importexport`, případně na USB do `gma2/importexport`. citeturn499322view1turn499322view0
+
+---
+
+## Python použití
+
+### Instalace
+
+```bash
+cd ma2_show_analyzer
+python -m venv .venv
+. .venv/bin/activate   # Windows: .venv\Scripts\activate
+pip install -e .
+```
+
+### Spuštění
+
+```bash
+python -m ma2showanalyzer analyze \
+  --input /cesta/k/exportum \
+  --output /cesta/k/reportum
+```
+
+### Volitelné přepínače
+
+```bash
+python -m ma2showanalyzer analyze \
+  --input ./exports \
+  --output ./report \
+  --recursive \
+  --glob "*.xml"
+```
+
+## Doporuceny workflow pro hlavni cue list
+
+Pouzij plugin `lua/export_show_bundle.lua` a jako `Main Sequence or range` zadej cislo hlavniho cue listu, napr. `1`.
+
+Plugin vyexportuje:
+- `*_main_sequences.xml` - hlavni cue list pro primarni analyzu
+- `*_all_sequences.xml` - vsechny sequence kvuli kontextu show
+- `*_groups.xml`
+- `*_effects.xml`
+- `*_patch.csv` - patch jako transformovane CSV s fixture names, types a adresami
+- `*_preset_0.xml` az `*_preset_14.xml`
+
+Pak spust analyzu:
+
+```powershell
+$env:PYTHONPATH='src'
+python -m ma2showanalyzer analyze --input exports --output out
+```
+
+Nebo pouzij pripraveny wrapper script:
+
+```powershell
+.\run_analysis.ps1
+```
+
+Ve Windows muzes pouzit i `.bat` wrapper:
+
+```bat
+run_analysis.bat
+```
+
+## Lokalni webova verze
+
+Projekt ted umi bezet i jako lokalni web aplikace:
+
+1. spustis server,
+2. v browseru nahrajes XML/CSV exporty nebo ZIP,
+3. server vytvori novy job,
+4. automaticky vygeneruje vsechny HTML/CSV/JSON vystupy,
+5. vysledky otevres pres lokalni web.
+
+### Spusteni web serveru
+
+Jednoducha Windows varianta:
+
+```bat
+run_web_app.bat
+```
+
+Volitelne:
+
+```bat
+run_web_app.bat -Port 8765 -DataDir web_jobs
+```
+
+Nebo primo pres Python:
+
+```bash
+python run_web_app.py --host 127.0.0.1 --port 8765 --open-browser
+```
+
+Nebo pres CLI:
+
+```bash
+python -m ma2showanalyzer serve --host 127.0.0.1 --port 8765 --open-browser
+```
+
+### Co web server podporuje
+
+- upload vice souboru najednou
+- upload ZIP archivu
+- per-job ulozeni uploadu a vygenerovanych reportu
+- odkazy na:
+  - `dashboard.html`
+  - `patch.html`
+  - `cue_list.html`
+  - `warnings.html`
+  - vsechny experimentalni explorery
+
+### Kde se ukladaji joby
+
+Vychozi adresar:
+
+```text
+web_jobs/
+```
+
+Kazdy job ma vlastni podslozky:
+
+```text
+web_jobs/<job_id>/uploads
+web_jobs/<job_id>/out
+web_jobs/<job_id>/meta.json
+```
+
+Po uspesnem dokonceni se automaticky otevre `dashboard.html`.
+
+Wrapper bezi primo pres `python` a nevyzaduje spousteni `.ps1` skriptu.
+
+Volitelne muzes zadat i vlastni cesty:
+
+```powershell
+.\run_analysis.ps1 -InputDir exports -OutputDir out -Recursive
+```
+
+Patch CSV z hlavniho pluginu se nacita automaticky. Parser umi nacist i jine patch CSV, pokud obsahuji sloupce jako:
+- `fixture_id` nebo `fixtureid`
+- `name`
+- `label`
+- `fixture_type` nebo `fixturetype`
+- `mode`
+- `universe`
+- `address`
+- `patch`
+
+Viz ukazkovy soubor:
+- `examples/sample_patch.csv`
+
+Analyzator umi nyni nacist patch metadata i z XML exportu jako:
+- `*_patch_fixtures.xml`
+- `*_fixture_types.xml`
+
+Analyzator automaticky preferuje `*_main_sequences.xml` jako hlavni cue list a z nej vytvori i specialni reporty:
+- `out/main_cue_analysis.csv`
+- `out/main_cue_value_atoms.csv`
+- `out/main_cue_analysis.json`
+- `out/patch_fixtures.csv`
+
+V techto vystupech uvidis po jednotlivych cues:
+- zavislosti na presetech, efektech a groups
+- hard hodnoty
+- timingy, commandy a fixture usage
+
+---
+
+## Vygenerované výstupy
+
+### JSON
+- `summary.json` — kompletní agregovaný výstup
+- `relationships.json` — hrany grafu mezi objekty
+- `fixtures.json` — použití fixture ID
+
+### CSV
+- `sequences.csv`
+- `cues.csv`
+- `presets.csv`
+- `groups.csv`
+- `effects.csv`
+- `fixture_usage.csv`
+- `relationships.csv`
+- `value_atoms.csv`
+
+### HTML
+- `dashboard.html` — statický offline dashboard
+
+---
+
+## Přesný workflow v praxi
+
+### Varianta A — onPC / console export
+1. V MA2 spusť plugin `export_show_bundle.lua`.
+2. Najdi exportní složku `importexport`.
+3. Zkopíruj XML do pracovního adresáře např. `./exports`.
+4. Spusť analyzér.
+5. Otevři `dashboard.html`.
+
+### Varianta B — ruční export bez pluginu
+Můžeš použít i command line přímo:
+
+```text
+Export Sequence 1 Thru 999 "all_sequences" /nc /o
+Export Group 1 Thru 999 "all_groups" /nc /o
+Export Effect 1 Thru 999 "all_effects" /nc /o
+Export Preset 0.1 Thru 0.999 "preset_0_all" /nc /o
+Export Preset 1.1 Thru 1.999 "preset_1_all" /nc /o
+Export Preset 2.1 Thru 2.999 "preset_2_all" /nc /o
+...
+Export Preset 14.1 Thru 14.999 "preset_14_all" /nc /o
+```
+
+To odpovídá syntaxi `Export [Object-list] ["filename"]`, kterou popisuje MA Lighting. citeturn499322view0turn499322view1
+
+---
+
+## Jak systém detekuje vazby
+
+### Preset references
+Hledá se v:
+- XML atributech typu `link`, `ref`, `preset`, `source`, `presetno`,
+- textových hodnotách typu `Preset 4.12`, `4.12`, `PresetType=4, Preset=12`,
+- value blocích cue/preset XML.
+
+### Effect references
+Hledá se v:
+- atributech a textech obsahujících `Effect`, `Effect 12`, `Effect=12`.
+
+### Group references
+Hledá se v:
+- command textech,
+- atributech a value blocích.
+
+### Fixture usage
+Kombinuje:
+- fixture IDs nalezená přímo ve value blocích,
+- fixture IDs v groups,
+- fixture IDs v cue/preset/effect odkazech.
+
+### Hard values
+Value atom je označen jako `hard`, když:
+- obsahuje numerickou / textovou hodnotu atributu,
+- a zároveň neobsahuje vazbu na preset/effect/group reference.
+
+---
+
+## Limitace
+
+1. grandMA2 XML není jednotné API; některé verze a object typy exportují jinou hloubku / jiné názvy atributů.
+2. Některé reference jsou v XML implicitní nebo uložené netriviálně; parser je proto heuristický.
+3. Pokud konkrétní show používá velmi atypický export, je možné doplnit další patterny v `parser.py`.
+
+Přesto je systém navržen tak, aby byl **prakticky použitelný hned** a šel dál rozvíjet nad reálnými exporty.
+
+---
+
+## Rozšíření, která můžeš přidat později
+- import fixture patch XML a mapování fixture types / attributes
+- diff dvou show exportů
+- sledování orphan presets a dead groups
+- heatmap fixture usage per sequence
+- graphviz export vazeb
+- live watcher složky s auto-refresh reportu

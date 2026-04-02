@@ -1,0 +1,2 @@
+id,number,name,is_main_cue_list,cue_count,source_file
+sequence:1:demo_main_sequences.xml:1,1,Intro,True,2,test_exports_xmlpatch\demo_main_sequences.xml

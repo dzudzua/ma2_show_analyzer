@@ -1,0 +1,19 @@
+{
+  "sequence_sources": [
+    "C:\\Users\\lukas\\Downloads\\ma2_show_analyzer\\ma2_show_analyzer\\web_jobs\\20260326-154933-9fbac438\\uploads\\Tram_Analyz_all_sequences.xml",
+    "C:\\Users\\lukas\\Downloads\\ma2_show_analyzer\\ma2_show_analyzer\\web_jobs\\20260326-154933-9fbac438\\uploads\\Tram_Analyz_main_sequences.xml"
+  ],
+  "preset_sources": [
+    "C:\\Users\\lukas\\Downloads\\ma2_show_analyzer\\ma2_show_analyzer\\web_jobs\\20260326-154933-9fbac438\\uploads\\Tram_Analyz_preset_0.xml",
+    "C:\\Users\\lukas\\Downloads\\ma2_show_analyzer\\ma2_show_analyzer\\web_jobs\\20260326-154933-9fbac438\\uploads\\Tram_Analyz_preset_2.xml",
+    "C:\\Users\\lukas\\Downloads\\ma2_show_analyzer\\ma2_show_analyzer\\web_jobs\\20260326-154933-9fbac438\\uploads\\Tram_Analyz_preset_4.xml"
+  ],
+  "group_sources": [
+    "C:\\Users\\lukas\\Downloads\\ma2_show_analyzer\\ma2_show_analyzer\\web_jobs\\20260326-154933-9fbac438\\uploads\\Tram_Analyz_groups.xml"
+  ],
+  "effect_sources": [],
+  "patch_sources": [
+    "C:\\Users\\lukas\\Downloads\\ma2_show_analyzer\\ma2_show_analyzer\\web_jobs\\20260326-154933-9fbac438\\uploads\\Tram_Analyz_patch.xml"
+  ],
+  "generic_sources": []
+}

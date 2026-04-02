@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>grandMA2 Sequence Content Inspector</title>
+  <link rel="stylesheet" href="app_shell.css">
+  <link rel="stylesheet" href="sequence_inspector.css">
+</head>
+<body>
+<header class="page-header">
+  <div class="header-brand">
+    <img src="logo_graindma.png" alt="grandMA2 Show Analyzer logo">
+    <div class="header-copy">
+      <div class="window-kicker">Sequence Content</div>
+      <h1>grandMA2 Sequence Content Inspector</h1>
+      <div class="muted">Jedna sequence, technicky detailni pohled na cue list se stejnou pracovni logikou jako Sequence Content v grandMA2.</div>
+    </div>
+  </div>
+
+  <div class="topbar">
+    <div class="nav-shell">
+      <div class="category-nav">
+        <a class="nav-pill" href="dashboard.html">Prehled show</a>
+        <a class="nav-pill active" href="cue_list.html">Cue a sekvence</a>
+        <a class="nav-pill" href="patch.html">Patch a fixture</a>
+        <a class="nav-pill" href="warnings.html">Rizika a varovani</a>
+        <a class="nav-pill" href="explorer.html">Vztahy a grafy</a>
+      </div>
+      <div class="page-nav">
+        <a class="nav-pill" href="cue_list.html">Cue list</a>
+        <a class="nav-pill" href="sequence_content.html">Sequence content</a>
+        <a class="nav-pill active" href="sequence_inspector.html">Sequence inspector</a>
+        <a class="nav-pill" href="cue_quality.html">Cue quality</a>
+        <a class="nav-pill" href="preset_logic_breaks.html">Preset logic breaks</a>
+        <a class="nav-pill" href="missing_preset_opportunities.html">Missing preset opportunities</a>
+        <button id="printBtn" type="button">Export do PDF</button>
+      </div>
+    </div>
+    <div class="header-actions">
+      <div class="window-badge">MA2 style analysis view</div>
+    </div>
+  </div>
+</header>
+
+<main class="page-wrap">
+  <section id="loadingState" class="panel loading-panel">
+    Nacitam sequence content...
+  </section>
+
+  <section id="appShell" class="app-shell" hidden>
+    <aside class="sidebar">
+      <section class="panel">
+        <div class="panel-label">Sequence</div>
+        <select id="sequenceSelect" aria-label="Vyber sekvenci"></select>
+        <div id="sequenceHeadline" class="sequence-headline"></div>
+        <div id="sequenceMeta" class="stack-sm"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-label">Toolbar</div>
+        <div class="toolbar-stack">
+          <input id="searchInput" type="search" placeholder="Search cue, command, warnings">
+          <select id="triggerSelect" aria-label="Filter trigger type"></select>
+          <div class="check-grid">
+            <label class="check-row"><input id="onlyHard" type="checkbox"> Only hard values</label>
+            <label class="check-row"><input id="onlyPreset" type="checkbox"> Only preset refs</label>
+            <label class="check-row"><input id="onlyEffects" type="checkbox"> Only effect refs</label>
+            <label class="check-row"><input id="onlyWarnings" type="checkbox"> Only warnings</label>
+            <label class="check-row"><input id="onlyFade" type="checkbox"> Fade &gt; 0</label>
+            <label class="check-row"><input id="onlyDelay" type="checkbox"> Delay &gt; 0</label>
+          </div>
+          <button id="resetFilters" class="ghost-button" type="button">Reset filters</button>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-label">Columns</div>
+        <div id="columnVisibility" class="column-list"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-label">Selected Cue</div>
+        <div id="cueNavigator" class="cue-nav stack-sm"></div>
+      </section>
+    </aside>
+
+    <section class="workspace">
+      <section class="panel stat-panel">
+        <div id="stats" class="stats-grid"></div>
+      </section>
+
+      <section class="panel table-panel">
+        <div class="panel-toolbar">
+          <div>
+            <div class="panel-title">Sequence Cue Table</div>
+            <div id="resultMeta" class="muted">Pripravuji data...</div>
+          </div>
+          <div id="activeFilterSummary" class="filter-summary"></div>
+        </div>
+
+        <div id="emptySequenceState" class="table-state" hidden>Vybrana sequence nema zadne cues.</div>
+        <div id="noResultsState" class="table-state" hidden>Aktivni filtry nenasly zadny odpovidajici cue.</div>
+
+        <div class="table-wrap" id="tableWrap">
+          <table id="cueTable" class="cue-table" aria-label="Sequence content inspector table">
+            <thead id="tableHead"></thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+
+    <aside class="detail-pane">
+      <section class="panel detail-panel">
+        <div class="detail-header">
+          <div>
+            <div class="panel-label">Cue Detail</div>
+            <div id="detailTitle" class="detail-title">No cue selected</div>
+          </div>
+          <div id="detailBadges" class="badge-row"></div>
+        </div>
+        <div id="detailContent" class="detail-content"></div>
+      </section>
+    </aside>
+  </section>
+</main>
+
+<script id="sequenceInspectorData" type="application/json">$DATA_JSON</script>
+<script src="table_panzoom.js"></script>
+<script type="module" src="sequence_inspector.js"></script>
+</body>
+</html>

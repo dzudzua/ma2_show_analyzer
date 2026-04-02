@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>grandMA2 Preset Logic Breaks</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #111827; color: #e5e7eb; }
+    header { padding: 14px 20px; background: #0f172a; position: sticky; top: 0; z-index: 10; border-bottom: 1px solid #334155; }
+    .header-brand { display:flex; gap:12px; align-items:center; margin-bottom:10px; }
+    .header-brand img { width:min(170px, 28vw); max-width:100%; height:auto; object-fit:contain; box-shadow:0 6px 18px rgba(0,0,0,.18); }
+    .wrap { padding: 24px; }
+    .card { background: #1f2937; border-radius: 16px; padding: 16px; box-shadow: 0 4px 20px rgba(0,0,0,.25); margin-bottom: 20px; }
+    .muted { color: #94a3b8; font-size: 12px; }
+    .topbar { display:flex; justify-content:space-between; align-items:flex-start; gap:10px; flex-wrap:wrap; }
+    .nav-shell { display:grid; gap:8px; min-width:min(640px, 100%); }
+    .category-nav, .page-nav { display:flex; gap:10px; flex-wrap:wrap; }
+    .nav-pill, .page-nav button { padding: 8px 12px; border-radius: 999px; border: 1px solid #334155; background: #172033; color: #e5e7eb; text-decoration: none; cursor: pointer; font-size: 13px; }
+    .nav-pill.active { background: rgba(56,189,248,.14); border-color: rgba(56,189,248,.45); color:#e0f2fe; }
+    .layout { display:grid; grid-template-columns: 320px 1fr; gap: 20px; }
+    @media (max-width: 1000px) { .layout { grid-template-columns: 1fr; } }
+    input, select { width: 100%; padding: 10px; border-radius: 10px; border: 1px solid #334155; background: #0f172a; color: #e5e7eb; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { text-align: left; border-bottom: 1px solid #334155; padding: 8px; vertical-align: top; }
+    th { position: sticky; top: 0; background: #172033; z-index: 1; }
+    .table-wrap { overflow:auto; max-height: 72vh; border:1px solid #334155; border-radius:12px; }
+    .stats { display:grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap:12px; }
+    .stat { background:#172033; border-radius:12px; padding:12px; }
+    .pill { display:inline-block; padding:2px 8px; border-radius:999px; font-size:12px; }
+    .pill-high { background:#7f1d1d; color:#fecaca; font-weight:700; }
+    .pill-medium { background:#78350f; color:#fde68a; font-weight:700; }
+    .pill-low { background:#1e3a8a; color:#bfdbfe; font-weight:700; }
+    .selected-row td { background: rgba(56,189,248,.12); }
+    .detail-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:12px; }
+    .detail-box { background:#172033; border-radius:12px; padding:12px; }
+    .pre { white-space: pre-wrap; word-break: break-word; }
+  </style>
+  <link rel="stylesheet" href="app_shell.css">
+</head>
+<body>
+<header>
+  <div class="header-brand">
+    <img src="logo_graindma.png" alt="grandMA2 Show Analyzer logo">
+    <div>
+      <h1 style="margin:0 0 8px;">grandMA2 Preset Logic Breaks</h1>
+      <div class="muted">První verze hledání bloků, kde se presetová logika rozpadla lokálními hard overrides.</div>
+    </div>
+  </div>
+  <div class="topbar">
+    <div class="nav-shell">
+      <div class="category-nav">
+        <a class="nav-pill" href="dashboard.html">Přehled show</a>
+        <a class="nav-pill active" href="cue_list.html">Cue a sekvence</a>
+        <a class="nav-pill" href="patch.html">Patch a fixture</a>
+        <a class="nav-pill" href="warnings.html">Rizika a varování</a>
+        <a class="nav-pill" href="explorer.html">Vztahy a grafy</a>
+      </div>
+      <div class="page-nav">
+        <a class="nav-pill" href="cue_list.html">Cue list</a>
+        <a class="nav-pill" href="sequence_content.html">Sequence content</a>
+        <a class="nav-pill" href="sequence_inspector.html">Sequence inspector</a>
+        <a class="nav-pill" href="cue_quality.html">Cue quality</a>
+        <a class="nav-pill active" href="preset_logic_breaks.html">Preset logic breaks</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="card">
+    <div class="stats" id="stats"></div>
+  </section>
+
+  <section class="layout">
+    <aside class="card">
+      <div style="display:grid; gap:12px;">
+        <div>
+          <label class="muted" for="searchInput">Hledat</label>
+          <input id="searchInput" type="search" placeholder="Cue, preset, fixture type, family">
+        </div>
+        <div>
+          <label class="muted" for="severityFilter">Severity</label>
+          <select id="severityFilter">
+            <option value="">Vše</option>
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+          </select>
+        </div>
+        <div>
+          <label class="muted" for="kindFilter">Typ nálezu</label>
+          <select id="kindFilter">
+            <option value="">Vše</option>
+            <option value="broken_preset_block">Broken preset block</option>
+            <option value="local_hard_override">Local hard override</option>
+            <option value="fragmented_preset_block">Fragmented preset block</option>
+            <option value="repeated_suspicious_override">Repeated suspicious override</option>
+          </select>
+        </div>
+        <div>
+          <label class="muted" for="sequenceFilter">Sequence</label>
+          <select id="sequenceFilter"><option value="">Vše</option></select>
+        </div>
+      </div>
+    </aside>
+
+    <section>
+      <div class="card">
+        <div id="resultMeta" class="muted">Načítám data...</div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Severity</th>
+                <th>Typ</th>
+                <th>Cue</th>
+                <th>Blok</th>
+                <th>Dominantní preset</th>
+                <th>Outliers</th>
+                <th>Confidence</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 style="margin-top:0;">Detail nálezu</h3>
+        <div id="detail" class="detail-grid"></div>
+      </div>
+    </section>
+  </section>
+</main>
+
+<script>
+const AUDIT = $AUDIT_JSON || {};
+const rows = Array.isArray(AUDIT.preset_logic_breaks) ? AUDIT.preset_logic_breaks.slice() : [];
+const summary = AUDIT.preset_logic_break_summary || {};
+
+const statsNode = document.getElementById('stats');
+const tableBody = document.getElementById('tableBody');
+const detailNode = document.getElementById('detail');
+const resultMeta = document.getElementById('resultMeta');
+const searchInput = document.getElementById('searchInput');
+const severityFilter = document.getElementById('severityFilter');
+const kindFilter = document.getElementById('kindFilter');
+const sequenceFilter = document.getElementById('sequenceFilter');
+
+function pill(value) {
+  const cls = value === 'high' ? 'pill-high' : value === 'medium' ? 'pill-medium' : 'pill-low';
+  return `<span class="pill ${cls}">${value || '-'}</span>`;
+}
+
+function renderStats() {
+  const items = [
+    ['Total', summary.total || rows.length],
+    ['Broken', summary.broken_preset_block || 0],
+    ['Local', summary.local_hard_override || 0],
+    ['Fragmented', summary.fragmented_preset_block || 0],
+    ['Repeated', summary.repeated_suspicious_override || 0],
+  ];
+  statsNode.innerHTML = items.map(([label, value]) => `<div class="stat"><div class="muted">${label}</div><div style="font-size:24px;font-weight:700;">${value}</div></div>`).join('');
+}
+
+function fillSequenceFilter() {
+  const values = [...new Set(rows.map(row => String(row.sequence_number || '')).filter(Boolean))].sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
+  sequenceFilter.innerHTML = '<option value="">Vše</option>' + values.map(v => `<option value="${v}">${v}</option>`).join('');
+}
+
+function filteredRows() {
+  const q = (searchInput.value || '').trim().toLowerCase();
+  return rows.filter(row => {
+    if (severityFilter.value && row.severity !== severityFilter.value) return false;
+    if (kindFilter.value && row.kind !== kindFilter.value) return false;
+    if (sequenceFilter.value && String(row.sequence_number || '') !== sequenceFilter.value) return false;
+    if (!q) return true;
+    const haystack = [
+      row.sequence_number, row.cue_number, row.cue_name, row.kind, row.fixture_type,
+      row.attribute_family, row.dominant_preset_number, row.dominant_preset_name,
+      row.explanation, row.recommendation
+    ].join(' ').toLowerCase();
+    return haystack.includes(q);
+  });
+}
+
+function renderDetail(row) {
+  if (!row) {
+    detailNode.innerHTML = '<div class="detail-box muted">Vyberte nález v tabulce.</div>';
+    return;
+  }
+  detailNode.innerHTML = `
+    <div class="detail-box"><div class="muted">Cue</div><div>${row.sequence_number || '-'} / ${row.cue_number || '-'}</div><div class="muted">${row.cue_name || ''}</div></div>
+    <div class="detail-box"><div class="muted">Blok</div><div>${row.fixture_type || '-'}</div><div class="muted">${row.attribute_family || '-'}</div></div>
+    <div class="detail-box"><div class="muted">Dominantní preset</div><div>${row.dominant_preset_number || '-'}</div><div class="muted">${row.dominant_preset_name || ''}</div></div>
+    <div class="detail-box"><div class="muted">Shoda</div><div>match ratio: ${row.match_ratio ?? '-'}</div><div class="muted">coverage: ${row.attribute_coverage_ratio ?? '-'}</div></div>
+    <div class="detail-box"><div class="muted">Fixtures</div><div>matching: ${(row.fixture_ids_matching || []).join(', ') || '-'}</div><div class="muted">outliers: ${(row.fixture_ids_outliers || []).join(', ') || '-'}</div></div>
+    <div class="detail-box"><div class="muted">Confidence</div><div>${row.confidence ?? '-'}</div><div class="muted">severity: ${row.severity || '-'}</div></div>
+    <div class="detail-box" style="grid-column:1 / -1;"><div class="muted">Vysvětlení</div><div class="pre">${row.explanation || '-'}</div></div>
+    <div class="detail-box" style="grid-column:1 / -1;"><div class="muted">Doporučená akce</div><div class="pre">${row.recommendation || '-'}</div></div>
+    <div class="detail-box" style="grid-column:1 / -1;"><div class="muted">Outlier detail</div><div class="pre">${JSON.stringify(row.outlier_details || [], null, 2)}</div></div>
+  `;
+}
+
+function renderTable() {
+  const visible = filteredRows();
+  resultMeta.textContent = `Zobrazeno ${visible.length} z ${rows.length} nálezů`;
+  if (!visible.length) {
+    tableBody.innerHTML = '<tr><td colspan="7" class="muted">Žádné odpovídající nálezy.</td></tr>';
+    renderDetail(null);
+    return;
+  }
+  tableBody.innerHTML = '';
+  visible.forEach((row, index) => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td>${pill(row.severity)}</td>
+      <td>${row.kind || '-'}</td>
+      <td>${row.sequence_number || '-'} / ${row.cue_number || '-'}<div class="muted">${row.cue_name || ''}</div></td>
+      <td>${row.fixture_type || '-'}<div class="muted">${row.attribute_family || ''}</div></td>
+      <td>${row.dominant_preset_number || '-'}<div class="muted">${row.dominant_preset_name || ''}</div></td>
+      <td>${(row.fixture_ids_outliers || []).join(', ') || '-'}</td>
+      <td>${row.confidence ?? '-'}</td>
+    `;
+    tr.addEventListener('click', () => {
+      [...tableBody.querySelectorAll('tr')].forEach(node => node.classList.remove('selected-row'));
+      tr.classList.add('selected-row');
+      renderDetail(row);
+    });
+    tableBody.appendChild(tr);
+    if (index === 0) {
+      tr.classList.add('selected-row');
+      renderDetail(row);
+    }
+  });
+}
+
+[searchInput, severityFilter, kindFilter, sequenceFilter].forEach(node => node.addEventListener('input', renderTable));
+[severityFilter, kindFilter, sequenceFilter].forEach(node => node.addEventListener('change', renderTable));
+
+renderStats();
+fillSequenceFilter();
+renderTable();
+</script>
+</body>
+</html>

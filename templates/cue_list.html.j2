@@ -1,0 +1,661 @@
+﻿<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>grandMA2 Cue List Overview</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #111827; color: #e5e7eb; }
+    header { padding: 14px 20px; background: #0f172a; position: sticky; top: 0; z-index: 10; border-bottom: 1px solid #334155; }
+    .header-brand { display:flex; gap:12px; align-items:center; margin-bottom:10px; }
+    .header-brand img { width:min(170px, 28vw); max-width:100%; height:auto; object-fit:contain; border-radius:0; padding:0; background:none; border:none; box-shadow:0 6px 18px rgba(0,0,0,.18); }
+    .header-copy { min-width:0; }
+    .wrap { padding: 24px; }
+    .card { background: #1f2937; border-radius: 16px; padding: 16px; box-shadow: 0 4px 20px rgba(0,0,0,.25); margin-bottom: 20px; }
+    .muted { color: #94a3b8; font-size: 12px; }
+    .topbar { display:flex; justify-content:space-between; align-items:flex-start; gap:10px; flex-wrap:wrap; }
+    .nav-shell { display:grid; gap:8px; min-width:min(640px, 100%); }
+    .category-nav, .page-nav { display:flex; gap:10px; flex-wrap:wrap; }
+    .nav-pill, .page-nav button { padding: 8px 12px; border-radius: 999px; border: 1px solid #334155; background: #172033; color: #e5e7eb; text-decoration: none; cursor: pointer; font-size: 13px; }
+    .nav-pill.active { background: rgba(56,189,248,.14); border-color: rgba(56,189,248,.45); color:#e0f2fe; }
+    .nav-pill:hover, .page-nav button:hover { background: #22304b; }
+    input, select { width: 100%; padding: 10px; border-radius: 10px; border: 1px solid #334155; background: #0f172a; color: #e5e7eb; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { text-align: left; border-bottom: 1px solid #334155; padding: 8px; vertical-align: top; }
+    th { position: sticky; top: 0; background: #172033; z-index: 1; }
+    th.sortable { cursor: pointer; user-select: none; white-space: nowrap; }
+    th.sortable:hover { background: #22304b; }
+    .sort-label { display:inline-flex; align-items:center; gap:4px; }
+    .sort-arrow { display:inline-block; min-width: 10px; color:#cbd5e1; }
+    th.draggable-col { cursor: grab; }
+    th.drag-over { outline: 2px solid rgba(56,189,248,.65); outline-offset: -2px; background: #22304b; }
+    .layout { display:grid; grid-template-columns: 320px 1fr; gap: 20px; }
+    @media (max-width: 1000px) { .layout { grid-template-columns: 1fr; } }
+    .checklist { display:grid; gap:8px; }
+    .checkline { display:flex; align-items:center; gap:8px; }
+    .checkline input[type="checkbox"] { width:auto; }
+    .stats { display:grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap:12px; margin-top:16px; }
+    .stat { background:#172033; border-radius:12px; padding:12px; }
+    .table-wrap { overflow:auto; max-height: 74vh; border:1px solid #334155; border-radius:12px; }
+    .selected-row td { background: rgba(56,189,248,.08); }
+    .warning-row-high td { background: rgba(127,29,29,.18); }
+    .warning-row-medium td { background: rgba(120,53,15,.16); }
+    .warning-row-low td { background: rgba(30,58,138,.12); }
+    .selected-row.warning-row-high td,
+    .selected-row.warning-row-medium td,
+    .selected-row.warning-row-low td { background: rgba(56,189,248,.18); }
+    .detail-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:12px; }
+    .detail-box { background:#172033; border-radius:12px; padding:12px; }
+    .detail-table { width:100%; border-collapse: collapse; }
+    .detail-table td { padding: 6px 8px; border-bottom: 1px solid #334155; vertical-align: top; }
+    .detail-table td:first-child { width: 32%; color:#94a3b8; }
+    .pill { display:inline-block; padding:2px 8px; background:#334155; border-radius:999px; font-size:12px; }
+    .pill-high { background:#7f1d1d; color:#fecaca; font-weight:700; }
+    .pill-medium { background:#78350f; color:#fde68a; font-weight:700; }
+    .pill-low { background:#1e3a8a; color:#bfdbfe; font-weight:700; }
+    .pre { white-space: pre-wrap; word-break: break-word; }
+    @media print {
+      body { background: #fff; color: #000; }
+      header, .controls-print-hide { display: none !important; }
+      .wrap { padding: 0; }
+      .card { box-shadow: none; border: 1px solid #ccc; background: #fff; color: #000; }
+      th, td { border-bottom: 1px solid #ccc; color: #000; }
+      th { background: #f1f5f9; }
+      .layout { display:block; }
+      .table-wrap { max-height: none; overflow: visible; border: none; }
+    }
+  </style>
+  <link rel="stylesheet" href="app_shell.css">
+</head>
+<body>
+<header>
+  <div class="header-brand">
+    <img src="logo_graindma.png" alt="grandMA2 Show Analyzer logo">
+    <div class="header-copy">
+      <h1 style="margin:0 0 8px;">grandMA2 Cue List Overview</h1>
+      <div class="muted">Samostatny pohled na cues se sloupci, filtrovani a PDF exportem.</div>
+    </div>
+  </div>
+  <div class="topbar">
+    <div class="nav-shell">
+      <div class="category-nav">
+        <a class="nav-pill" href="dashboard.html">Přehled show</a>
+        <a class="nav-pill active" href="cue_list.html">Cue a sekvence</a>
+        <a class="nav-pill" href="patch.html">Patch a fixture</a>
+        <a class="nav-pill" href="warnings.html">Rizika a varování</a>
+        <a class="nav-pill" href="explorer.html">Vztahy a grafy</a>
+      </div>
+      <div class="page-nav">
+        <a class="nav-pill active" href="cue_list.html">Cue list</a>
+        <a class="nav-pill" href="sequence_content.html">Sequence content</a>
+        <a class="nav-pill" href="sequence_inspector.html">Sequence inspector</a>
+        <a class="nav-pill" href="cue_quality.html">Cue quality</a>
+        <a class="nav-pill" href="preset_logic_breaks.html">Preset logic breaks</a>
+        <a class="nav-pill" href="missing_preset_opportunities.html">Missing preset opportunities</a>
+        <a class="nav-pill" href="patch.html">Patch</a>
+        <a class="nav-pill" href="warnings.html">Warnings</a>
+        <button id="printBtn" type="button">Export do PDF</button>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="wrap">
+  <div class="stats controls-print-hide">
+    <div class="stat"><div class="muted">Cue rows</div><div id="cueCount" style="font-size:24px; font-weight:700;">0</div></div>
+    <div class="stat"><div class="muted">Visible rows</div><div id="visibleCount" style="font-size:24px; font-weight:700;">0</div></div>
+    <div class="stat"><div class="muted">Selected rows</div><div id="selectedCount" style="font-size:24px; font-weight:700;">0</div></div>
+    <div class="stat"><div class="muted">Visible columns</div><div id="visibleColumnsCount" style="font-size:24px; font-weight:700;">0</div></div>
+  </div>
+
+  <div class="layout" style="margin-top:20px;">
+    <div class="controls-print-hide">
+      <div class="card">
+        <h2 style="margin-top:0;">Filtr</h2>
+        <input id="cueFilter" placeholder="Filtrovat podle sequence, cue, nazvu, triggeru nebo source">
+        <div class="checkline" style="margin-top:12px;">
+          <input id="selectedOnlyToggle" type="checkbox">
+          <label for="selectedOnlyToggle">Zobrazit jen vybrane radky</label>
+        </div>
+        <div class="checkline" style="margin-top:12px;">
+          <input id="mainOnlyToggle" type="checkbox">
+          <label for="mainOnlyToggle">Jen hlavni cue list</label>
+        </div>
+        <div class="checkline" style="margin-top:12px;">
+          <input id="warningsOnlyToggle" type="checkbox">
+          <label for="warningsOnlyToggle">Show only warnings</label>
+        </div>
+      </div>
+      <div class="card">
+        <h2 style="margin-top:0;">Sloupce</h2>
+        <div id="columnControls" class="checklist"></div>
+      </div>
+      <div class="card">
+        <h2 style="margin-top:0;">Radky</h2>
+        <div class="checkline">
+          <input id="selectAllVisibleRows" type="checkbox">
+          <label for="selectAllVisibleRows">Vybrat vsechny viditelne</label>
+        </div>
+        <div class="muted" style="margin-top:8px;">Vyber radky pro soustredeny pohled a PDF export.</div>
+      </div>
+    </div>
+
+    <div>
+      <div class="card">
+        <h2 style="margin-top:0;">Cue Table</h2>
+        <div class="table-wrap">
+          <table id="cueTable">
+            <thead>
+              <tr id="cueHeadRow"></tr>
+            </thead>
+            <tbody id="cueBody"></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card controls-print-hide">
+        <h2 style="margin-top:0;">Cue Detail</h2>
+        <div id="cueDetail"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="table_panzoom.js"></script>
+<script>
+const DATA = $DATA_JSON;
+const WARNINGS = DATA.warnings || [];
+const WARNING_INDEX_BY_FIXTURE = {};
+WARNINGS.forEach(warning => {
+  if (warning.fixture_id === undefined || warning.fixture_id === null) return;
+  const key = String(warning.fixture_id);
+  if (!WARNING_INDEX_BY_FIXTURE[key]) WARNING_INDEX_BY_FIXTURE[key] = [];
+  WARNING_INDEX_BY_FIXTURE[key].push(warning);
+});
+
+function severityRank(severity) {
+  if (severity === 'high') return 3;
+  if (severity === 'medium') return 2;
+  if (severity === 'low') return 1;
+  return 0;
+}
+
+function dominantSeverity(warnings) {
+  let best = '';
+  let bestRank = 0;
+  (warnings || []).forEach(warning => {
+    const severity = String(warning.severity || '').toLowerCase();
+    const rank = severityRank(severity);
+    if (rank > bestRank) {
+      bestRank = rank;
+      best = severity;
+    }
+  });
+  return best;
+}
+
+function warningBadgeHtml(warnings) {
+  if (!(warnings || []).length) return '';
+  const severity = dominantSeverity(warnings) || 'low';
+  return `<span class="pill pill-${severity}">${severity.toUpperCase()} ${warnings.length}</span>`;
+}
+
+function uniqueFixtureCount(cue) {
+  return new Set((cue.fixture_ids || []).map(value => String(value))).size;
+}
+
+function metaValue(meta, keys) {
+  const safeMeta = meta || {};
+  for (const key of keys) {
+    if (safeMeta[key] !== undefined && safeMeta[key] !== null && safeMeta[key] !== '') {
+      return safeMeta[key];
+    }
+  }
+  return null;
+}
+
+function toNumber(value) {
+  if (value === null || value === undefined || value === '') return null;
+  const parsed = Number(String(value).replace(',', '.'));
+  return Number.isFinite(parsed) ? parsed : null;
+}
+
+function formatNumber(value) {
+  const numericValue = toNumber(value);
+  if (numericValue === null) return '';
+  return Number.isInteger(numericValue) ? String(numericValue) : numericValue.toFixed(2).replace(/\.00$/, '');
+}
+
+function formatTriggerTime(value, trigger) {
+  const numericValue = toNumber(value);
+  if (numericValue === null) return '';
+  const triggerMode = String(trigger || '').toLowerCase();
+  const shouldUseClockStyle = triggerMode === 'timecode' || triggerMode === 'time';
+
+  const totalHundredths = Math.round(numericValue * 100);
+  const hours = Math.floor(totalHundredths / 360000);
+  const minutes = Math.floor((totalHundredths % 360000) / 6000);
+  const seconds = (totalHundredths % 6000) / 100;
+  const secondText = seconds.toFixed(2);
+
+  if (!shouldUseClockStyle) {
+    return numericValue.toFixed(2).replace(/\.00$/, '');
+  }
+  if (hours > 0) return `${hours}h${minutes}m${secondText}`;
+  if (minutes > 0) return `${minutes}m${secondText}`;
+  return secondText;
+}
+
+function hasDisplayValue(value) {
+  return value !== '' && value !== null && value !== undefined;
+}
+
+function cueRows() {
+  const rows = [];
+  for (const sequence of (DATA.sequences || [])) {
+    for (const cue of (sequence.cues || [])) {
+      const values = cue.values || [];
+      const meta = cue.metadata || {};
+      const hardCount = values.filter(atom => atom.value_type === 'hard').length;
+      const presetRefCount = values.filter(atom => atom.value_type === 'preset_ref').length;
+      const groupRefCount = values.filter(atom => atom.value_type === 'group_ref').length;
+      const effectRefCount = values.filter(atom => atom.value_type === 'effect_ref').length;
+      const fixtureWarningMap = new Map();
+      (cue.fixture_ids || []).forEach(fixtureId => {
+        const warnings = WARNING_INDEX_BY_FIXTURE[String(fixtureId)] || [];
+        warnings.forEach(warning => {
+          fixtureWarningMap.set(`${warning.kind}:${warning.fixture_id}:${warning.details || ''}`, warning);
+        });
+      });
+      const cueWarnings = [...fixtureWarningMap.values()];
+      rows.push({
+        row_id: cue.id,
+        sequence_number: sequence.number || '',
+        sequence_name: sequence.name || '',
+        cue_number: cue.cue_number || '',
+        cue_name: cue.name || '',
+        main: cue.is_main_cue_list ? 'yes' : '',
+        fade: cue.fade || '',
+        delay: cue.delay || '',
+        down_delay: cue.down_delay || '',
+        trigger: cue.trigger || '',
+        trigger_time: formatTriggerTime(cue.trigger_time || metaValue(meta, [
+          'trigger.dataf',
+          'cuepart.triggertime',
+          'triggertime',
+          'cue.triggertime',
+          'cuepart.triggertimeinseconds',
+        ]), cue.trigger || ''),
+        info: String(metaValue(meta, [
+          'cuepart.info',
+          'cue.info',
+          'info',
+          'cuepart.note',
+          'note',
+        ]) || ''),
+        command: cue.command || '',
+        part: cue.part || '',
+        fixture_count: uniqueFixtureCount(cue),
+        value_count: values.length,
+        hard_count: hardCount,
+        preset_ref_count: presetRefCount,
+        group_ref_count: groupRefCount,
+        effect_ref_count: effectRefCount,
+        reference_count: (cue.references || []).length,
+        fixture_ids: (cue.fixture_ids || []).join(' '),
+        references: (cue.references || []).join(' | '),
+        warnings: cueWarnings,
+        warning_count: cueWarnings.length,
+        warning_severity: dominantSeverity(cueWarnings),
+        warnings_text: cueWarnings.map(warning => `[${String(warning.severity || 'low').toUpperCase()}] Fixture ${warning.fixture_id || '?'} | ${warning.kind || 'warning'} | ${warning.details || ''}`).join('\n'),
+        source_file: cue.source_file || '',
+        metadata: cue.metadata ? JSON.stringify(cue.metadata, null, 2) : '',
+        metadata_obj: meta,
+      });
+    }
+  }
+  return rows;
+}
+
+const CUE_ROWS = cueRows();
+const selectedRows = new Set();
+let focusedRowId = CUE_ROWS[0]?.row_id || null;
+let sortKey = 'cue_number';
+let sortDirection = 'asc';
+const FIXED_COLUMN_KEYS = new Set(['selected']);
+let draggedHeaderKey = null;
+
+const CUE_COLUMNS = [
+  { key: 'selected', label: 'Sel', isSelection: true, visible: true },
+  { key: 'sequence_number', label: 'Seq', visible: true },
+  { key: 'sequence_name', label: 'Sequence Name', visible: true },
+  { key: 'cue_number', label: 'Cue', visible: true },
+  { key: 'cue_name', label: 'Cue Name', visible: true },
+  { key: 'main', label: 'Main', visible: true },
+  { key: 'trigger', label: 'Trigger', visible: true },
+  { key: 'trigger_time', label: 'Trigger Time', visible: true },
+  { key: 'fade', label: 'Fade', visible: true },
+  { key: 'delay', label: 'Delay', visible: true },
+  { key: 'down_delay', label: 'Down Delay', visible: false },
+  { key: 'info', label: 'Info', visible: true },
+  { key: 'command', label: 'Command', visible: false },
+  { key: 'part', label: 'Part', visible: false },
+  { key: 'fixture_count', label: 'Fixtures', visible: true },
+  { key: 'warning_count', label: 'Warnings', visible: true },
+  { key: 'value_count', label: 'Values', visible: true },
+  { key: 'hard_count', label: 'Hard', visible: true },
+  { key: 'preset_ref_count', label: 'Preset Refs', visible: true },
+  { key: 'group_ref_count', label: 'Group Refs', visible: false },
+  { key: 'effect_ref_count', label: 'Effect Refs', visible: false },
+  { key: 'reference_count', label: 'Refs', visible: false },
+  { key: 'fixture_ids', label: 'Fixture IDs', visible: false },
+  { key: 'references', label: 'References', visible: false },
+  { key: 'source_file', label: 'Source', visible: false },
+  { key: 'metadata', label: 'Metadata', visible: false },
+];
+
+function visibleColumns() {
+  return CUE_COLUMNS.filter(column => column.visible);
+}
+
+function renderColumnControls() {
+  const root = document.getElementById('columnControls');
+  root.innerHTML = '';
+  CUE_COLUMNS.forEach(column => {
+    const line = document.createElement('label');
+    line.className = 'checkline';
+    const input = document.createElement('input');
+    input.type = 'checkbox';
+    input.checked = column.visible;
+    input.addEventListener('change', () => {
+      column.visible = input.checked;
+      renderCueTable();
+    });
+    line.appendChild(input);
+    const text = document.createElement('span');
+    text.textContent = column.label;
+    line.appendChild(text);
+    root.appendChild(line);
+  });
+}
+
+function moveColumnBefore(sourceKey, targetKey) {
+  if (!sourceKey || !targetKey || sourceKey === targetKey) return;
+  if (FIXED_COLUMN_KEYS.has(sourceKey) || FIXED_COLUMN_KEYS.has(targetKey)) return;
+  const sourceIndex = CUE_COLUMNS.findIndex(column => column.key === sourceKey);
+  const targetIndex = CUE_COLUMNS.findIndex(column => column.key === targetKey);
+  if (sourceIndex < 0 || targetIndex < 0) return;
+  const [movedColumn] = CUE_COLUMNS.splice(sourceIndex, 1);
+  const nextTargetIndex = CUE_COLUMNS.findIndex(column => column.key === targetKey);
+  CUE_COLUMNS.splice(nextTargetIndex, 0, movedColumn);
+  renderColumnControls();
+  renderCueTable();
+}
+
+function rowMatchesFilter(row, filter) {
+  return `${row.sequence_number} ${row.sequence_name} ${row.cue_number} ${row.cue_name} ${row.main} ${row.trigger} ${row.trigger_time} ${row.fade} ${row.delay} ${row.down_delay} ${row.info} ${row.command} ${row.part} ${row.fixture_ids} ${row.references} ${row.warning_count} ${row.warnings_text} ${row.source_file} ${row.metadata}`.toLowerCase().includes(filter);
+}
+
+function sortableValue(row, key) {
+  const value = row?.[key];
+  if (value === undefined || value === null) return '';
+  return String(value).trim();
+}
+
+function compareRows(left, right) {
+  const a = sortableValue(left, sortKey);
+  const b = sortableValue(right, sortKey);
+  const aNum = Number(a);
+  const bNum = Number(b);
+  const aIsNum = a !== '' && Number.isFinite(aNum);
+  const bIsNum = b !== '' && Number.isFinite(bNum);
+  if (aIsNum && bIsNum) {
+    if (aNum < bNum) return -1;
+    if (aNum > bNum) return 1;
+    return 0;
+  }
+  return a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' });
+}
+
+function currentRows() {
+  const filter = document.getElementById('cueFilter').value.toLowerCase().trim();
+  const selectedOnly = document.getElementById('selectedOnlyToggle').checked;
+  const mainOnly = document.getElementById('mainOnlyToggle').checked;
+  const warningsOnly = document.getElementById('warningsOnlyToggle').checked;
+  const direction = sortDirection === 'desc' ? -1 : 1;
+  return CUE_ROWS.filter(row => {
+    if (selectedOnly && !selectedRows.has(row.row_id)) return false;
+    if (mainOnly && row.main !== 'yes') return false;
+    if (warningsOnly && !(row.warning_count > 0)) return false;
+    if (!filter) return true;
+    return rowMatchesFilter(row, filter);
+  }).slice().sort((left, right) => compareRows(left, right) * direction);
+}
+
+function updateStats(rows) {
+  document.getElementById('cueCount').textContent = String(CUE_ROWS.length);
+  document.getElementById('visibleCount').textContent = String(rows.length);
+  document.getElementById('selectedCount').textContent = String(selectedRows.size);
+  document.getElementById('visibleColumnsCount').textContent = String(visibleColumns().length);
+}
+
+function syncSortIndicators() {
+  document.querySelectorAll('th[data-column-key]').forEach((cell) => {
+    const columnKey = cell.dataset.columnKey || '';
+    const arrow = cell.querySelector('.sort-arrow');
+    if (!arrow) return;
+    arrow.textContent = sortKey === columnKey ? (sortDirection === 'asc' ? '↑' : '↓') : '';
+    cell.dataset.sortDirection = sortKey === columnKey ? sortDirection : '';
+  });
+}
+
+function renderCueDetail() {
+  const root = document.getElementById('cueDetail');
+  const row = CUE_ROWS.find(item => item.row_id === focusedRowId) || CUE_ROWS[0];
+  if (!row) {
+    root.innerHTML = '<div class="muted">Cue data zatim nejsou k dispozici.</div>';
+    return;
+  }
+  focusedRowId = row.row_id;
+
+  const basics = [
+    ['Sequence', `${row.sequence_number} ${row.sequence_name}`.trim()],
+    ['Cue', row.cue_number],
+    ['Cue Name', row.cue_name],
+    ['Main Cue List', row.main],
+    ['Trigger', row.trigger],
+    ['Trigger Time', row.trigger_time],
+    ['Fade', row.fade],
+    ['Delay', row.delay],
+    ['Down Delay', row.down_delay],
+    ['Info', row.info],
+    ['Command', row.command],
+    ['Part', row.part],
+    ['Source File', row.source_file],
+  ].filter(([, value]) => String(value ?? '').trim() !== '');
+
+  const counters = [
+    ['Fixtures', row.fixture_count],
+    ['Warnings', row.warning_count],
+    ['Values', row.value_count],
+    ['Hard', row.hard_count],
+    ['Preset Refs', row.preset_ref_count],
+    ['Group Refs', row.group_ref_count],
+    ['Effect Refs', row.effect_ref_count],
+    ['References', row.reference_count],
+  ];
+
+  root.innerHTML = `
+    <div class="detail-grid">
+      <div class="detail-box">
+        <div class="muted">Cue</div>
+        <div style="font-size:20px; font-weight:700;">${row.cue_number || '-'}</div>
+        <div style="margin-top:8px;">${row.cue_name || 'Bez nazvu'}</div>
+      </div>
+      <div class="detail-box">
+        <div class="muted">Sequence</div>
+        <div style="font-size:20px; font-weight:700;">${row.sequence_number || '-'}</div>
+        <div style="margin-top:8px;">${row.sequence_name || '-'}</div>
+      </div>
+      <div class="detail-box">
+        <div class="muted">Values / Refs</div>
+        <div style="font-size:20px; font-weight:700;">${row.value_count}</div>
+        <div style="margin-top:8px;">Hard ${row.hard_count} | Preset ${row.preset_ref_count}</div>
+      </div>
+    </div>
+    <div class="card" style="margin-top:16px; margin-bottom:16px;">
+      <h3 style="margin-top:0;">Zakladni cue pole</h3>
+      <table class="detail-table"><tbody>
+        ${basics.map(([key, value]) => `<tr><td>${key}</td><td>${String(value)}</td></tr>`).join('')}
+      </tbody></table>
+    </div>
+    <div class="card" style="margin-top:0; margin-bottom:16px;">
+      <h3 style="margin-top:0;">Souhrn</h3>
+      <table class="detail-table"><tbody>
+        ${counters.map(([key, value]) => `<tr><td>${key}</td><td>${String(value)}</td></tr>`).join('')}
+      </tbody></table>
+    </div>
+    <div class="card" style="margin-top:0; margin-bottom:16px;">
+      <h3 style="margin-top:0;">Fixture IDs</h3>
+      <div class="pre">${row.fixture_ids || '-'}</div>
+    </div>
+    <div class="card" style="margin-top:0; margin-bottom:16px;">
+      <h3 style="margin-top:0;">Warnings</h3>
+      <div class="pre">${row.warnings_text || 'No warnings for fixtures touched by this cue.'}</div>
+    </div>
+    <div class="card" style="margin-top:0; margin-bottom:0;">
+      <h3 style="margin-top:0;">References</h3>
+      <div class="pre">${row.references || '-'}</div>
+    </div>
+  `;
+}
+
+function toggleSort(columnKey) {
+  if (sortKey === columnKey) {
+    sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
+  } else {
+    sortKey = columnKey;
+    sortDirection = 'asc';
+  }
+  renderCueTable();
+}
+
+function renderCueTable() {
+  const rows = currentRows();
+  const columns = visibleColumns();
+  const head = document.getElementById('cueHeadRow');
+  const body = document.getElementById('cueBody');
+  head.innerHTML = '';
+  body.innerHTML = '';
+
+  columns.forEach(column => {
+      const th = document.createElement('th');
+      if (!column.isSelection) {
+        th.className = 'sortable';
+        th.dataset.columnKey = column.key;
+        th.dataset.sortDirection = sortKey === column.key ? sortDirection : '';
+        th.addEventListener('click', () => toggleSort(column.key));
+        th.draggable = true;
+        th.classList.add('draggable-col');
+        th.addEventListener('dragstart', event => {
+          draggedHeaderKey = column.key;
+          event.dataTransfer.effectAllowed = 'move';
+          event.dataTransfer.setData('text/plain', column.key);
+        });
+        th.addEventListener('dragover', event => {
+          if (!draggedHeaderKey || draggedHeaderKey === column.key) return;
+          event.preventDefault();
+          th.classList.add('drag-over');
+          event.dataTransfer.dropEffect = 'move';
+        });
+        th.addEventListener('dragleave', () => {
+          th.classList.remove('drag-over');
+        });
+        th.addEventListener('drop', event => {
+          if (!draggedHeaderKey || draggedHeaderKey === column.key) return;
+          event.preventDefault();
+          moveColumnBefore(draggedHeaderKey, column.key);
+        });
+        th.addEventListener('dragend', () => {
+          draggedHeaderKey = null;
+          head.querySelectorAll('th').forEach(node => node.classList.remove('drag-over'));
+        });
+      }
+      if (column.isSelection) {
+        th.textContent = column.label;
+      } else {
+        th.dataset.columnKey = column.key;
+        th.dataset.sortDirection = '';
+        const label = document.createElement('span');
+        label.className = 'sort-label';
+        const text = document.createElement('span');
+        text.textContent = column.label;
+        const arrow = document.createElement('span');
+        arrow.className = 'sort-arrow';
+        arrow.textContent = sortKey === column.key ? (sortDirection === 'asc' ? '↑' : '↓') : '';
+        label.appendChild(text);
+        label.appendChild(arrow);
+        th.appendChild(label);
+      }
+      head.appendChild(th);
+    });
+
+  rows.forEach(row => {
+    const tr = document.createElement('tr');
+    const classes = [];
+    if (row.warning_severity) classes.push(`warning-row-${row.warning_severity}`);
+    if (selectedRows.has(row.row_id) || row.row_id === focusedRowId) classes.push('selected-row');
+    if (classes.length) tr.className = classes.join(' ');
+    tr.addEventListener('click', event => {
+      if (event.target.tagName !== 'INPUT') {
+        focusedRowId = row.row_id;
+        renderCueTable();
+      }
+    });
+    columns.forEach(column => {
+      const td = document.createElement('td');
+      if (column.isSelection) {
+        const input = document.createElement('input');
+        input.type = 'checkbox';
+        input.checked = selectedRows.has(row.row_id);
+        input.addEventListener('change', () => {
+          if (input.checked) selectedRows.add(row.row_id);
+          else selectedRows.delete(row.row_id);
+          renderCueTable();
+        });
+        td.appendChild(input);
+      } else if (column.key === 'warning_count') {
+        td.innerHTML = row.warning_count ? warningBadgeHtml(row.warnings) : '';
+      } else {
+        td.textContent = hasDisplayValue(row[column.key]) ? String(row[column.key]) : '';
+      }
+      tr.appendChild(td);
+    });
+    body.appendChild(tr);
+  });
+
+  const allVisibleSelected = rows.length > 0 && rows.every(row => selectedRows.has(row.row_id));
+  document.getElementById('selectAllVisibleRows').checked = allVisibleSelected;
+  updateStats(rows);
+  renderCueDetail();
+  if (typeof window.refreshPanzoomTableHeaders === 'function') {
+    window.refreshPanzoomTableHeaders();
+  }
+  syncSortIndicators();
+}
+
+document.getElementById('cueFilter').addEventListener('input', renderCueTable);
+document.getElementById('selectedOnlyToggle').addEventListener('change', renderCueTable);
+document.getElementById('mainOnlyToggle').addEventListener('change', renderCueTable);
+document.getElementById('warningsOnlyToggle').addEventListener('change', renderCueTable);
+document.getElementById('selectAllVisibleRows').addEventListener('change', event => {
+  const rows = currentRows();
+  if (event.target.checked) rows.forEach(row => selectedRows.add(row.row_id));
+  else rows.forEach(row => selectedRows.delete(row.row_id));
+  renderCueTable();
+});
+document.getElementById('printBtn').addEventListener('click', () => window.print());
+
+renderColumnControls();
+renderCueTable();
+</script>
+</body>
+</html>
+

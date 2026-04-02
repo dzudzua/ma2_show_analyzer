@@ -1,0 +1,7 @@
+sequence_number,cue_number,cue_name,fixture_id,fixture_name,fixture_type,fixture_patch,control_mode,hard_attribute_count,hard_attributes,preset_ref_count,preset_refs,preset_types
+1,1,Blackout,101,Front Left Wash,Robe LEDWash 600,1.1,mixed,1,"[""Dimmer""]",1,"[""1.5""]","[""1""]"
+1,1,Blackout,102,Front Center Wash,Robe LEDWash 600,1.17,mixed,1,"[""Dimmer""]",1,"[""1.5""]","[""1""]"
+1,1,Blackout,103,DS Center Spot,Martin MAC Viper,1.33,mixed,1,"[""Position""]",1,"[""2.7""]","[""2""]"
+1,2,Build,101,Front Left Wash,Robe LEDWash 600,1.1,hard_only,1,"[""Dimmer""]",0,[],[]
+1,2,Build,102,Front Center Wash,Robe LEDWash 600,1.17,hard_only,1,"[""Effect""]",0,[],[]
+1,2,Build,103,DS Center Spot,Martin MAC Viper,1.33,hard_only,1,"[""GroupRef""]",0,[],[]

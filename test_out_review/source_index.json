@@ -1,0 +1,18 @@
+{
+  "sequence_sources": [
+    "test_exports\\demo_main_sequences.xml"
+  ],
+  "preset_sources": [
+    "test_exports\\demo_preset_1.xml"
+  ],
+  "group_sources": [
+    "test_exports\\demo_groups.xml"
+  ],
+  "effect_sources": [
+    "test_exports\\demo_effects.xml"
+  ],
+  "patch_sources": [
+    "test_exports\\demo_patch.csv"
+  ],
+  "generic_sources": []
+}

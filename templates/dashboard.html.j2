@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>grandMA2 Show Analyzer Dashboard</title>
+  <style>
+    :root { --bg:#08111d; --panel:#162033; --panel2:#1f2937; --border:#334155; --text:#e5e7eb; --muted:#94a3b8; --accent:#38bdf8; }
+    body { font-family: Arial, sans-serif; margin: 0; color: var(--text); background: radial-gradient(circle at top left, rgba(56,189,248,.12), transparent 24%), linear-gradient(180deg, #08111d 0%, var(--bg) 100%); }
+    header { position: sticky; top: 0; z-index: 10; padding: 14px 20px; background: rgba(8,17,29,.94); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(148,163,184,.14); }
+    .header-brand { display:flex; gap:12px; align-items:center; margin-bottom:10px; }
+    .header-brand img { width:min(170px, 28vw); max-width:100%; height:auto; object-fit:contain; box-shadow:0 6px 18px rgba(0,0,0,.18); }
+    .muted { color: var(--muted); font-size: 12px; line-height: 1.5; }
+    .topbar { display:flex; justify-content:space-between; gap:10px; align-items:flex-start; flex-wrap:wrap; }
+    .nav-shell { display:grid; gap:8px; min-width:min(640px, 100%); }
+    .category-nav, .page-nav, .link-list { display:flex; gap:10px; flex-wrap:wrap; }
+    .nav-pill, .link-list a { display:inline-flex; align-items:center; padding:8px 12px; border-radius:999px; border:1px solid var(--border); background:#172033; color:var(--text); text-decoration:none; font-size:12px; }
+    .nav-pill.active { background: rgba(56,189,248,.14); border-color: rgba(56,189,248,.45); color:#e0f2fe; }
+    .nav-pill:hover, .link-list a:hover { background:#22304b; }
+    .wrap { padding:24px; display:grid; gap:24px; }
+    .hero, .insight-grid, .category-grid { display:grid; gap:16px; }
+    .hero { grid-template-columns: minmax(320px, 1.15fr) minmax(280px, .85fr); }
+    .insight-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+    .category-grid { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    @media (max-width: 980px) { .hero { grid-template-columns: 1fr; } }
+    .card { background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,0)), var(--panel2); border:1px solid rgba(148,163,184,.10); border-radius:18px; padding:18px; box-shadow: 0 12px 32px rgba(0,0,0,.20); }
+    .hero-card { background: radial-gradient(circle at top right, rgba(56,189,248,.10), transparent 26%), linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,0)), var(--panel); }
+    .hero-title { font-size:30px; line-height:1.15; margin:0 0 12px; }
+    .hero-copy { color:#cbd5e1; line-height:1.6; max-width:66ch; }
+    .section-head { display:flex; justify-content:space-between; gap:16px; align-items:flex-end; flex-wrap:wrap; margin-bottom:14px; }
+    .section-head h2, .category-card h3 { margin:0; }
+    .stats { display:grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap:12px; }
+    .stat { background:#111b2e; border:1px solid rgba(148,163,184,.10); border-radius:14px; padding:14px; }
+    .stat-value { font-size:28px; font-weight:700; margin-top:6px; }
+    .category-card, .list-item, .workflow-step { background:#111b2e; border:1px solid rgba(148,163,184,.10); border-radius:14px; padding:14px; }
+    .category-card { display:grid; gap:12px; }
+    .list, .workflow { display:grid; gap:10px; }
+    .list-item strong { display:block; margin-bottom:4px; }
+    .pill { display:inline-block; padding:2px 8px; border-radius:999px; font-size:12px; font-weight:700; margin-right:6px; }
+    .pill-high { background:#7f1d1d; color:#fecaca; }
+    .pill-medium { background:#78350f; color:#fde68a; }
+    .pill-low { background:#1e3a8a; color:#bfdbfe; }
+    .workflow-step { display:grid; grid-template-columns: 34px 1fr; gap:12px; align-items:flex-start; }
+    .step-no { width:34px; height:34px; border-radius:50%; display:flex; align-items:center; justify-content:center; background:rgba(56,189,248,.14); color:#e0f2fe; font-weight:700; }
+    .empty { color: var(--muted); }
+  </style>
+  <link rel="stylesheet" href="app_shell.css">
+</head>
+<body>
+<header>
+  <div class="header-brand">
+    <img src="logo_graindma.png" alt="grandMA2 Show Analyzer logo">
+    <div>
+      <h1 style="margin:0 0 8px;">grandMA2 Show Analyzer</h1>
+      <div class="muted">Dashboard jako skutečný rozcestník do specializovaných analytických stránek.</div>
+    </div>
+  </div>
+  <div class="topbar">
+    <div class="nav-shell">
+      <div class="category-nav">
+        <a class="nav-pill active" href="dashboard.html">Přehled show</a>
+        <a class="nav-pill" href="cue_list.html">Cue a sekvence</a>
+        <a class="nav-pill" href="patch.html">Patch a fixture</a>
+        <a class="nav-pill" href="warnings.html">Rizika a varování</a>
+        <a class="nav-pill" href="explorer.html">Vztahy a grafy</a>
+      </div>
+      <div class="page-nav">
+        <a class="nav-pill" href="cue_quality.html">Nejrizikovější cue</a>
+        <a class="nav-pill" href="sequence_content.html">Obsah sekvencí</a>
+        <a class="nav-pill" href="sequence_inspector.html">Sequence inspector</a>
+        <a class="nav-pill" href="preset_logic_breaks.html">Preset logic breaks</a>
+        <a class="nav-pill" href="missing_preset_opportunities.html">Missing preset opportunities</a>
+        <a class="nav-pill" href="topology_graphs.html">Topology Graphs</a>
+        <a class="nav-pill" href="explorer_d3.html">D3</a>
+        <a class="nav-pill" href="explorer_radial.html">Radial</a>
+        <a class="nav-pill" href="explorer_sankey.html">Sankey</a>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="wrap">
+  <section class="hero">
+    <div class="card hero-card">
+      <div class="muted" style="margin-bottom:10px;">Vstupní bod pro práci se show</div>
+      <h2 class="hero-title">Nejdřív rychle pochopit stav show, potom jít do správné analytické stránky.</h2>
+      <div class="hero-copy">
+        Dashboard už neslouží jako skladiště všech tabulek. Je to executive summary:
+        ukazuje rozsah show, největší rizika, nejhorší bloky cue a strukturu webu rozdělenou do 5 pracovních kategorií.
+      </div>
+      <div class="link-list" style="margin-top:18px;">
+        <a href="cue_quality.html">Cleanup priority</a>
+        <a href="cue_list.html">Cue browser</a>
+        <a href="sequence_inspector.html">Sequence inspector</a>
+        <a href="preset_logic_breaks.html">Preset logic breaks</a>
+        <a href="missing_preset_opportunities.html">Missing preset opportunities</a>
+        <a href="topology_graphs.html">Topology Graphs</a>
+        <a href="patch.html">Patch audit</a>
+        <a href="warnings.html">Validace</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="section-head">
+        <h2>Rozsah show</h2>
+        <div class="muted">Základní orientace</div>
+      </div>
+      <div id="stats" class="stats"></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="section-head">
+      <h2>Pracovní sekce webu</h2>
+      <div class="muted">5 hlavních kategorií podle typu úkolu</div>
+    </div>
+    <div class="category-grid">
+      <div class="category-card"><div><h3>Přehled show</h3><div class="muted">Rychlý vstup, priority a workflow.</div></div><div class="link-list"><a href="dashboard.html">Dashboard</a></div></div>
+      <div class="category-card"><div><h3>Cue a sekvence</h3><div class="muted">Dramaturgie, cue obsah, konzistence a cleanup sekvencí.</div></div><div class="link-list"><a href="cue_list.html">Cue list</a><a href="sequence_content.html">Sequence content</a><a href="sequence_inspector.html">Sequence inspector</a><a href="cue_quality.html">Cue quality</a><a href="preset_logic_breaks.html">Preset logic breaks</a><a href="missing_preset_opportunities.html">Missing preset opportunities</a></div></div>
+      <div class="category-card"><div><h3>Patch a fixture</h3><div class="muted">Patch audit, fixture metadata a coverage použití.</div></div><div class="link-list"><a href="patch.html">Patch overview</a></div></div>
+      <div class="category-card"><div><h3>Rizika a varování</h3><div class="muted">Validace show modelu a hotspoty k zásahu.</div></div><div class="link-list"><a href="warnings.html">Warnings</a><a href="cue_quality.html">Rizikové cue</a></div></div>
+      <div class="category-card"><div><h3>Vztahy a grafy</h3><div class="muted">Pokročilá investigace vazeb mezi cue, presetem a fixture.</div></div><div class="link-list"><a href="topology_graphs.html">Topology Graphs</a><a href="explorer.html">Matrix</a><a href="explorer_d3.html">D3</a><a href="explorer_radial.html">Radial</a><a href="explorer_sankey.html">Sankey</a></div></div>
+    </div>
+  </section>
+
+  <section class="insight-grid">
+    <div class="card"><div class="section-head"><h2>Nejrizikovější cue</h2><a class="nav-pill" href="cue_quality.html">Celý seznam</a></div><div id="topRiskCues" class="list"></div></div>
+    <div class="card"><div class="section-head"><h2>Nejhorší bloky</h2><a class="nav-pill" href="cue_quality.html">Cleanup bloky</a></div><div id="worstBlocks" class="list"></div></div>
+    <div class="card"><div class="section-head"><h2>Top varování</h2><a class="nav-pill" href="warnings.html">Warning detail</a></div><div id="topWarnings" class="list"></div></div>
+    <div class="card"><div class="section-head"><h2>Největší sekvence</h2><a class="nav-pill" href="cue_list.html">Cue browser</a></div><div id="topSequences" class="list"></div></div>
+  </section>
+
+  <section class="card">
+    <div class="section-head">
+      <h2>Doporučený workflow</h2>
+      <div class="muted">Jak s webem pracovat od vstupu po detailní audit</div>
+    </div>
+    <div class="workflow">
+      <div class="workflow-step"><div class="step-no">1</div><div><strong>Začněte dashboardem.</strong><div class="muted">Zjistíte rozsah show, warningy a první priority cleanupu.</div></div></div>
+      <div class="workflow-step"><div class="step-no">2</div><div><strong>Pro dramaturgii a programování jděte do Cue a sekvence.</strong><div class="muted">`Cue list` pro browser, `Sequence content` pro skutečný obsah cue a `Cue quality` pro cleanup priority.</div></div></div>
+      <div class="workflow-step"><div class="step-no">3</div><div><strong>Pro patchovací otázky jděte do Patch a fixture.</strong><div class="muted">Tady řešíte patch, metadata zařízení a coverage fixture.</div></div></div>
+      <div class="workflow-step"><div class="step-no">4</div><div><strong>Pro audit používejte Rizika a varování.</strong><div class="muted">`Warnings` validuje show model, `Cue quality` ukazuje programátorsky problematická místa.</div></div></div>
+      <div class="workflow-step"><div class="step-no">5</div><div><strong>Explorery používejte jako pokročilou diagnostiku.</strong><div class="muted">Jsou skvělé na investigaci vazeb, ale nemají být první obrazovka.</div></div></div>
+    </div>
+  </section>
+</div>
+<script src="table_panzoom.js"></script>
+<script>
+const DATA = $DATA_JSON;
+const STATS = $STATS_JSON;
+const AUDIT = $AUDIT_JSON;
+
+function metric(label, value, helper = '') {
+  return `<div class="stat"><div class="muted">${label}</div><div class="stat-value">${value}</div>${helper ? `<div class="muted">${helper}</div>` : ''}</div>`;
+}
+function pillForSeverity(severity) {
+  const sev = String(severity || 'low').toLowerCase();
+  return `<span class="pill pill-${sev}">${sev.toUpperCase()}</span>`;
+}
+function renderList(rootId, rows, formatter, emptyText) {
+  const root = document.getElementById(rootId);
+  root.innerHTML = rows.length ? rows.map(formatter).join('') : `<div class="empty">${emptyText}</div>`;
+}
+
+document.getElementById('stats').innerHTML = [
+  metric('Sekvence', STATS.sequence_count || 0, `Hlavní cue listy: ${STATS.main_sequence_count || 0}`),
+  metric('Cue', STATS.cue_count || 0),
+  metric('Patch fixture', STATS.patch_fixture_count || 0),
+  metric('Presety', STATS.preset_count || 0),
+  metric('Vztahy', STATS.relationship_count || 0, `Nevyřešené: ${STATS.unresolved_relationship_count || 0}`),
+  metric('Hard value atomy', STATS.hard_value_atoms || 0),
+].join('');
+
+renderList('topRiskCues', [...(AUDIT.cue_quality || [])].sort((a, b) => Number(b.quality_risk_score || 0) - Number(a.quality_risk_score || 0)).slice(0, 5), row => `<div class="list-item"><strong>${pillForSeverity(row.severity)} Seq ${row.sequence_number || '-'} / Cue ${row.cue_number || '-'} ${row.cue_name || ''}</strong><div class="muted">Skóre ${row.quality_risk_score || 0} | hard ${row.hard_value_count || 0} | presets ${row.preset_ref_count || 0} | mixed fixtures ${row.mixed_fixture_count || 0}</div><div>${row.reasons_text || 'Bez detailního komentáře.'}</div></div>`, 'Audit cue quality zatím není dostupný.');
+renderList('worstBlocks', [...(AUDIT.worst_blocks || [])].slice(0, 5), row => `<div class="list-item"><strong>Sekvence ${row.sequence_number || '-'} | cue ${row.cue_range || '-'}</strong><div class="muted">Průměrné skóre ${row.average_score || 0} | nejhorší cue ${row.worst_cue_score || 0}</div><div>${row.summary || 'Bez doplňujícího shrnutí.'}</div></div>`, 'Blokové hodnocení zatím není dostupné.');
+renderList('topWarnings', [...(DATA.warnings || [])].sort((a, b) => ({ high: 3, medium: 2, low: 1 }[String(b.severity || '').toLowerCase()] || 0) - ({ high: 3, medium: 2, low: 1 }[String(a.severity || '').toLowerCase()] || 0)).slice(0, 5), row => `<div class="list-item"><strong>${pillForSeverity(row.severity)} ${row.kind || 'warning'}</strong><div class="muted">Fixture ${row.fixture_id ?? '-'} | ${row.subject || 'Bez subjectu'}</div><div>${row.details || 'Bez detailu.'}</div></div>`, 'Žádná warning data nejsou k dispozici.');
+renderList('topSequences', [...(DATA.sequences || [])].map(sequence => ({ number: sequence.number || '', name: sequence.name || '', cueCount: (sequence.cues || []).length, isMain: !!sequence.is_main_cue_list })).sort((a, b) => b.cueCount - a.cueCount).slice(0, 5), row => `<div class="list-item"><strong><a href="sequence_inspector.html?sequence=${encodeURIComponent(row.number || '')}" style="color:#e5e7eb; text-decoration:none;">Sekvence ${row.number || '-'} ${row.name || ''}</a></strong><div class="muted">${row.cueCount} cue${row.isMain ? ' | hlavní cue list' : ''}</div><div>${row.isMain ? 'Patří do hlavního cue listu a je vhodná jako první místo pro dramaturgický audit.' : 'Vedlejší nebo pomocná sekvence vhodná pro kontext show a investigaci vazeb.'}</div></div>`, 'Sekvence nejsou k dispozici.');
+</script>
+</body>
+</html>

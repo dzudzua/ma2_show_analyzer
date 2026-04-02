@@ -1,0 +1,4 @@
+fixture_id,fixture_name,fixture_type,fixture_patch,sequence_count,cue_count,preset_count,group_count,effect_count,hard_value_atoms,preset_ref_atoms,group_ref_atoms,effect_ref_atoms,preset_types_available,top_attributes,attribute_frequency,feature_group_frequency,orphan_patch,is_sparse,control_mode
+101,Front Left Wash,Robe LEDWash 600,1.1,1,2,1,1,0,3,0,0,0,"[""1""]","[""Dimmer""]","{""Dimmer"": 3}","{""Dimmer"": 3}",False,False,hard_only
+102,Front Center Wash,Robe LEDWash 600,1.17,1,2,1,1,1,1,1,0,1,"[""1""]","[""Color"", ""Dimmer"", ""Effect""]","{""Color"": 1, ""Dimmer"": 1, ""Effect"": 1}","{""Color"": 1, ""Dimmer"": 1, ""Other"": 1}",False,False,preset_only
+103,DS Center Spot,Martin MAC Viper,1.33,1,2,1,1,0,1,1,1,0,"[""2""]","[""Position"", ""GroupRef""]","{""Position"": 2, ""GroupRef"": 1}","{""Position"": 2, ""Other"": 1}",False,False,preset_only

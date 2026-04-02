@@ -1,0 +1,515 @@
+{
+  "sequences": [
+    {
+      "id": "sequence:1:demo_main_sequences.xml:1",
+      "number": "1",
+      "name": "Intro",
+      "source_file": "test_exports\\demo_main_sequences.xml",
+      "cues": [
+        {
+          "id": "cue:1:1:demo_main_sequences.xml:1",
+          "sequence_number": "1",
+          "cue_number": "1",
+          "name": "Blackout",
+          "fade": "0",
+          "delay": "0",
+          "trigger": "go",
+          "command": "Go Sequence 2 Cue 1",
+          "part": null,
+          "fixture_ids": [
+            101,
+            102,
+            103
+          ],
+          "references": [
+            "preset:1.5",
+            "preset:2.7",
+            "sequence:2"
+          ],
+          "values": [
+            {
+              "attribute": "fade",
+              "raw_value": "0",
+              "value_type": "hard",
+              "fixture_id": null,
+              "reference_target": null,
+              "flags": [
+                "timing"
+              ],
+              "source_path": "Cue"
+            },
+            {
+              "attribute": "delay",
+              "raw_value": "0",
+              "value_type": "hard",
+              "fixture_id": null,
+              "reference_target": null,
+              "flags": [
+                "timing"
+              ],
+              "source_path": "Cue"
+            },
+            {
+              "attribute": "Dimmer",
+              "raw_value": "0",
+              "value_type": "hard",
+              "fixture_id": 101,
+              "reference_target": null,
+              "flags": [],
+              "source_path": "Cue/Value"
+            },
+            {
+              "attribute": "Dimmer",
+              "raw_value": "Preset 1.5",
+              "value_type": "preset_ref",
+              "fixture_id": 102,
+              "reference_target": "preset:1.5",
+              "flags": [],
+              "source_path": "Cue/Value"
+            },
+            {
+              "attribute": "Position",
+              "raw_value": "Preset 2.7",
+              "value_type": "preset_ref",
+              "fixture_id": 103,
+              "reference_target": "preset:2.7",
+              "flags": [],
+              "source_path": "Cue/Value"
+            },
+            {
+              "attribute": "text",
+              "raw_value": "Go Sequence 2 Cue 1",
+              "value_type": "hard",
+              "fixture_id": null,
+              "reference_target": null,
+              "flags": [],
+              "source_path": "Cue/Command"
+            }
+          ],
+          "metadata": {
+            "number": "1",
+            "name": "Blackout",
+            "fade": "0",
+            "delay": "0",
+            "trigger": "go",
+            "value.fixtureid": [
+              "101",
+              "102",
+              "103"
+            ],
+            "value.attribute": [
+              "Dimmer",
+              "Position"
+            ],
+            "value.value": [
+              "0",
+              "Preset 1.5",
+              "Preset 2.7"
+            ],
+            "command": "Go Sequence 2 Cue 1"
+          },
+          "source_file": "test_exports\\demo_main_sequences.xml",
+          "is_main_cue_list": true
+        },
+        {
+          "id": "cue:1:2:demo_main_sequences.xml:2",
+          "sequence_number": "1",
+          "cue_number": "2",
+          "name": "Build",
+          "fade": "2",
+          "delay": "0.5",
+          "trigger": "follow",
+          "command": null,
+          "part": null,
+          "fixture_ids": [
+            101,
+            102,
+            103
+          ],
+          "references": [
+            "group:3",
+            "effect:12"
+          ],
+          "values": [
+            {
+              "attribute": "fade",
+              "raw_value": "2",
+              "value_type": "hard",
+              "fixture_id": null,
+              "reference_target": null,
+              "flags": [
+                "timing"
+              ],
+              "source_path": "Cue"
+            },
+            {
+              "attribute": "delay",
+              "raw_value": "0.5",
+              "value_type": "hard",
+              "fixture_id": null,
+              "reference_target": null,
+              "flags": [
+                "timing"
+              ],
+              "source_path": "Cue"
+            },
+            {
+              "attribute": "Dimmer",
+              "raw_value": "100",
+              "value_type": "hard",
+              "fixture_id": 101,
+              "reference_target": null,
+              "flags": [],
+              "source_path": "Cue/Value"
+            },
+            {
+              "attribute": "Effect",
+              "raw_value": "Effect 12",
+              "value_type": "effect_ref",
+              "fixture_id": 102,
+              "reference_target": "effect:12",
+              "flags": [],
+              "source_path": "Cue/Value"
+            },
+            {
+              "attribute": "GroupRef",
+              "raw_value": "Group 3",
+              "value_type": "group_ref",
+              "fixture_id": 103,
+              "reference_target": "group:3",
+              "flags": [],
+              "source_path": "Cue/Value"
+            }
+          ],
+          "metadata": {
+            "number": "2",
+            "name": "Build",
+            "fade": "2",
+            "delay": "0.5",
+            "trigger": "follow",
+            "value.fixtureid": [
+              "101",
+              "102",
+              "103"
+            ],
+            "value.attribute": [
+              "Dimmer",
+              "Effect",
+              "GroupRef"
+            ],
+            "value.value": [
+              "100",
+              "Effect 12",
+              "Group 3"
+            ]
+          },
+          "source_file": "test_exports\\demo_main_sequences.xml",
+          "is_main_cue_list": true
+        }
+      ],
+      "metadata": {
+        "number": "1",
+        "name": "Intro",
+        "cue.number": [
+          "1",
+          "2"
+        ],
+        "cue.name": [
+          "Blackout",
+          "Build"
+        ],
+        "cue.fade": [
+          "0",
+          "2"
+        ],
+        "cue.delay": [
+          "0",
+          "0.5"
+        ],
+        "cue.trigger": [
+          "go",
+          "follow"
+        ]
+      },
+      "is_main_cue_list": true
+    }
+  ],
+  "presets": [
+    {
+      "id": "preset:1.5:demo_preset_1.xml:1",
+      "preset_type": "1",
+      "number": "1.5",
+      "name": "Warm Front",
+      "fixture_ids": [
+        101,
+        102
+      ],
+      "references": [],
+      "values": [
+        {
+          "attribute": "Dimmer",
+          "raw_value": "100",
+          "value_type": "hard",
+          "fixture_id": 101,
+          "reference_target": null,
+          "flags": [],
+          "source_path": "Preset/Value"
+        },
+        {
+          "attribute": "Color",
+          "raw_value": "255",
+          "value_type": "hard",
+          "fixture_id": 102,
+          "reference_target": null,
+          "flags": [],
+          "source_path": "Preset/Value"
+        }
+      ],
+      "metadata": {
+        "number": "1.5",
+        "name": "Warm Front",
+        "value.fixtureid": [
+          "101",
+          "102"
+        ],
+        "value.attribute": [
+          "Dimmer",
+          "Color"
+        ],
+        "value.value": [
+          "100",
+          "255"
+        ]
+      },
+      "source_file": "test_exports\\demo_preset_1.xml"
+    },
+    {
+      "id": "preset:2.7:demo_preset_1.xml:2",
+      "preset_type": "2",
+      "number": "2.7",
+      "name": "DS Center",
+      "fixture_ids": [
+        103
+      ],
+      "references": [],
+      "values": [
+        {
+          "attribute": "Position",
+          "raw_value": "45",
+          "value_type": "hard",
+          "fixture_id": 103,
+          "reference_target": null,
+          "flags": [],
+          "source_path": "Preset/Value"
+        }
+      ],
+      "metadata": {
+        "number": "2.7",
+        "name": "DS Center",
+        "value.fixtureid": "103",
+        "value.attribute": "Position",
+        "value.value": "45"
+      },
+      "source_file": "test_exports\\demo_preset_1.xml"
+    }
+  ],
+  "groups": [
+    {
+      "id": "group:3:demo_groups.xml:1",
+      "number": "3",
+      "name": "Washes",
+      "fixture_ids": [
+        101,
+        102,
+        103
+      ],
+      "metadata": {
+        "number": "3",
+        "name": "Washes",
+        "fixture.fixtureid": [
+          "101",
+          "102",
+          "103"
+        ]
+      },
+      "source_file": "test_exports\\demo_groups.xml"
+    }
+  ],
+  "effects": [
+    {
+      "id": "effect:12:demo_effects.xml:1",
+      "number": "12",
+      "name": "Circle FX",
+      "fixture_ids": [
+        102
+      ],
+      "references": [],
+      "metadata": {
+        "number": "12",
+        "name": "Circle FX",
+        "apply.fixtureid": "102"
+      },
+      "source_file": "test_exports\\demo_effects.xml"
+    }
+  ],
+  "generic_objects": [],
+  "relationships": [
+    {
+      "source_type": "cue",
+      "source_id": "cue:1:1:demo_main_sequences.xml:1",
+      "target_type": "preset",
+      "target_id": "1.5",
+      "relation_type": "reference",
+      "evidence": "preset:1.5"
+    },
+    {
+      "source_type": "cue",
+      "source_id": "cue:1:1:demo_main_sequences.xml:1",
+      "target_type": "preset",
+      "target_id": "2.7",
+      "relation_type": "reference",
+      "evidence": "preset:2.7"
+    },
+    {
+      "source_type": "cue",
+      "source_id": "cue:1:1:demo_main_sequences.xml:1",
+      "target_type": "sequence",
+      "target_id": "2",
+      "relation_type": "reference_unresolved",
+      "evidence": "sequence:2"
+    },
+    {
+      "source_type": "cue",
+      "source_id": "cue:1:1:demo_main_sequences.xml:1",
+      "target_type": "preset",
+      "target_id": "1.5",
+      "relation_type": "value_reference",
+      "evidence": "atom:Dimmer=Preset 1.5"
+    },
+    {
+      "source_type": "cue",
+      "source_id": "cue:1:1:demo_main_sequences.xml:1",
+      "target_type": "preset",
+      "target_id": "2.7",
+      "relation_type": "value_reference",
+      "evidence": "atom:Position=Preset 2.7"
+    },
+    {
+      "source_type": "cue",
+      "source_id": "cue:1:2:demo_main_sequences.xml:2",
+      "target_type": "group",
+      "target_id": "3",
+      "relation_type": "reference",
+      "evidence": "group:3"
+    },
+    {
+      "source_type": "cue",
+      "source_id": "cue:1:2:demo_main_sequences.xml:2",
+      "target_type": "effect",
+      "target_id": "12",
+      "relation_type": "reference",
+      "evidence": "effect:12"
+    },
+    {
+      "source_type": "cue",
+      "source_id": "cue:1:2:demo_main_sequences.xml:2",
+      "target_type": "effect",
+      "target_id": "12",
+      "relation_type": "value_reference",
+      "evidence": "atom:Effect=Effect 12"
+    },
+    {
+      "source_type": "cue",
+      "source_id": "cue:1:2:demo_main_sequences.xml:2",
+      "target_type": "group",
+      "target_id": "3",
+      "relation_type": "value_reference",
+      "evidence": "atom:GroupRef=Group 3"
+    }
+  ],
+  "fixture_usage": {
+    "101": {
+      "sequence_count": 1,
+      "cue_count": 2,
+      "preset_count": 1,
+      "group_count": 1,
+      "effect_count": 0,
+      "sequences": [
+        "sequence:1:demo_main_sequences.xml:1"
+      ],
+      "cues": [
+        "cue:1:1:demo_main_sequences.xml:1",
+        "cue:1:2:demo_main_sequences.xml:2"
+      ],
+      "presets": [
+        "preset:1.5:demo_preset_1.xml:1"
+      ],
+      "groups": [
+        "group:3:demo_groups.xml:1"
+      ],
+      "effects": [],
+      "hard_value_atoms": 3,
+      "preset_ref_atoms": 0,
+      "effect_ref_atoms": 0,
+      "group_ref_atoms": 0,
+      "fixture_id": 101
+    },
+    "102": {
+      "sequence_count": 1,
+      "cue_count": 2,
+      "preset_count": 1,
+      "group_count": 1,
+      "effect_count": 1,
+      "sequences": [
+        "sequence:1:demo_main_sequences.xml:1"
+      ],
+      "cues": [
+        "cue:1:1:demo_main_sequences.xml:1",
+        "cue:1:2:demo_main_sequences.xml:2"
+      ],
+      "presets": [
+        "preset:1.5:demo_preset_1.xml:1"
+      ],
+      "groups": [
+        "group:3:demo_groups.xml:1"
+      ],
+      "effects": [
+        "effect:12:demo_effects.xml:1"
+      ],
+      "hard_value_atoms": 1,
+      "preset_ref_atoms": 1,
+      "effect_ref_atoms": 1,
+      "group_ref_atoms": 0,
+      "fixture_id": 102
+    },
+    "103": {
+      "sequence_count": 1,
+      "cue_count": 2,
+      "preset_count": 1,
+      "group_count": 1,
+      "effect_count": 0,
+      "sequences": [
+        "sequence:1:demo_main_sequences.xml:1"
+      ],
+      "cues": [
+        "cue:1:1:demo_main_sequences.xml:1",
+        "cue:1:2:demo_main_sequences.xml:2"
+      ],
+      "presets": [
+        "preset:2.7:demo_preset_1.xml:2"
+      ],
+      "groups": [
+        "group:3:demo_groups.xml:1"
+      ],
+      "effects": [],
+      "hard_value_atoms": 1,
+      "preset_ref_atoms": 1,
+      "effect_ref_atoms": 0,
+      "group_ref_atoms": 1,
+      "fixture_id": 103
+    }
+  },
+  "main_sequence_numbers": [
+    "1"
+  ]
+}

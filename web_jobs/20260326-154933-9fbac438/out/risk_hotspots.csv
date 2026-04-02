@@ -1,0 +1,156 @@
+category,subject,risk_score,details
+cue,Seq 2 Cue 25 Vilda odchazi,10,many hard values (72); touches many feature groups (6); mixed hard and preset control; depends on several presets (5)
+cue,Seq 2 Cue 85 Dekovacka,10,many hard values (146); touches many feature groups (6); mixed hard and preset control; depends on several presets (7)
+cue,Seq 2 Cue 11 J. SOLO - 2:47,9,many hard values (48); touches many feature groups (6); mixed hard and preset control
+cue,Seq 2 Cue 18 Rackove rostazeny nohy 5:05,9,many hard values (77); touches many feature groups (6); mixed hard and preset control
+cue,Seq 2 Cue 20 Solo Zacatek Bert,9,many hard values (34); touches many feature groups (6); mixed hard and preset control
+cue,Seq 2 Cue 30.5 Soud - zelena- - bici hudba,9,many hard values (46); touches many feature groups (6); mixed hard and preset control
+cue,Seq 2 Cue 31 Soud - proces-Na-schody,9,many hard values (49); touches many feature groups (6); mixed hard and preset control
+cue,Seq 2 Cue 32 Po procesu - s hudbou,9,many hard values (41); touches many feature groups (6); mixed hard and preset control
+cue,Seq 2 Cue 36 Jen prava strana - Wilda na schodech,9,many hard values (34); touches many feature groups (6); mixed hard and preset control
+cue,Seq 2 Cue 46 Velkej ptak,9,many hard values (51); touches many feature groups (6); mixed hard and preset control
+cue,Seq 2 Cue 53 Zacatek trio EFF 16,9,many hard values (67); touches many feature groups (6); mixed hard and preset control
+cue,Seq 2 Cue 55 Groteska boj o zradlo - Velikeho racka,9,many hard values (197); touches many feature groups (6); mixed hard and preset control
+cue,Seq 2 Cue 78 Svicka,9,many hard values (47); touches many feature groups (6); mixed hard and preset control
+cue,Seq 2 Cue 80 Flo konec sola stred,9,many hard values (55); touches many feature groups (6); mixed hard and preset control
+cue,Seq 2 Cue 86 lidi,9,many hard values (265); touches many feature groups (6); mixed hard and preset control
+cue,Seq 2 Cue 38 Vkladaji astery POZA se k lidem-zastavi se,8,elevated hard values (27); touches many feature groups (6); mixed hard and preset control; depends on several presets (5)
+cue,Seq 2 Cue 0 Cue Zero,7,many hard values (344); touches many feature groups (6)
+cue,Seq 2 Cue 14 Groteska W. hodi zradlo,7,elevated hard values (26); touches many feature groups (6); mixed hard and preset control
+cue,Seq 2 Cue 16 Boj o zradlo - Na Housle 2:12,7,elevated hard values (22); touches many feature groups (6); mixed hard and preset control
+cue,Seq 2 Cue 21 cela plocha,7,elevated hard values (23); touches many feature groups (6); mixed hard and preset control
+cue,Seq 2 Cue 24 Jonatanuv PAD,7,many hard values (49); touches multiple feature groups (4); mixed hard and preset control
+cue,Seq 2 Cue 26 Jonathan svicka,7,elevated hard values (18); touches many feature groups (6); mixed hard and preset control
+cue,Seq 2 Cue 3 Prichod tanecniku,7,elevated hard values (21); touches many feature groups (6); mixed hard and preset control
+cue,Seq 2 Cue 33 Vilda Domluvi,7,elevated hard values (27); touches many feature groups (6); mixed hard and preset control
+cue,Seq 2 Cue 35 zustava sam LET- GESTO,7,elevated hard values (18); touches many feature groups (6); mixed hard and preset control
+cue,Seq 2 Cue 4 Hudba,7,elevated hard values (17); touches many feature groups (6); mixed hard and preset control
+cue,Seq 2 Cue 44 Duet - velky nebe -HNED,7,elevated hard values (24); touches many feature groups (6); mixed hard and preset control
+cue,Seq 2 Cue 51 Astery davaji na stativy,7,elevated hard values (16); touches many feature groups (6); mixed hard and preset control
+cue,Seq 2 Cue 52 dialog,7,many hard values (44); touches multiple feature groups (4); mixed hard and preset control
+cue,Seq 2 Cue 54 TRIO do prostoru,7,many hard values (65); touches multiple feature groups (4); mixed hard and preset control
+cue,Seq 2 Cue 76 J+F duet - S hudbou,7,many hard values (124); touches many feature groups (6)
+cue,Seq 2 Cue 82 Bez aster- odejde W. - Stahnout Lampicky orchestr,7,many hard values (46); touches multiple feature groups (4); mixed hard and preset control
+cue,Seq 2 Cue 9 Racek astery 2:32,7,many hard values (62); touches multiple feature groups (3); mixed hard and preset control
+cue,Seq 2 Cue 10 Klek zjeveni,5,touches many feature groups (6); mixed hard and preset control
+cue,Seq 2 Cue 13 Vilda mluvi,5,touches many feature groups (6); mixed hard and preset control
+cue,Seq 2 Cue 15 Bert na sokl,5,touches many feature groups (6); mixed hard and preset control
+cue,Seq 2 Cue 17 Rackove ve stredu unizono 3:36,5,touches many feature groups (6); mixed hard and preset control
+cue,Seq 2 Cue 19 Usinani 6:24,5,touches many feature groups (6); mixed hard and preset control
+cue,Seq 2 Cue 2 lidi,5,touches many feature groups (6); mixed hard and preset control
+cue,Seq 2 Cue 21.5 Zpatky stred,5,touches many feature groups (6); mixed hard and preset control
+cue,Seq 2 Cue 22 Vilda,5,touches many feature groups (6); mixed hard and preset control
+cue,Seq 2 Cue 27 Jonatan - ze svicky dopredu,5,touches many feature groups (6); mixed hard and preset control
+cue,Seq 2 Cue 34 Jon.Zustava sam,5,touches many feature groups (6); mixed hard and preset control
+cue,Seq 2 Cue 56 Vrsek J,5,touches many feature groups (6); mixed hard and preset control
+cue,Seq 2 Cue 59 Patrik zavola ptaky Florian sokl.,5,touches many feature groups (6); mixed hard and preset control
+cue,Seq 2 Cue 6 Jonatan odchazi z hejna - 1:26,5,touches many feature groups (6); mixed hard and preset control
+cue,Seq 2 Cue 7 Jirka ze schodu u soklu - 1:50,5,many hard values (36); touches multiple feature groups (4)
+cue,Seq 2 Cue 77 J+F Duet 2,5,many hard values (46); touches multiple feature groups (4)
+cue,Seq 1 Cue 1 Cue 1,4,many hard values (40)
+cue,Seq 4 Cue 1 Cue 1,4,many hard values (48)
+cue,Seq 5 Cue 1 Cue 1,4,many hard values (64)
+preset,Preset 4.10 orange,3,critical dependency: used by 18 cues in 1 sequences
+cue,Seq 2 Cue 29 Skupina posmesky,3,elevated hard values (18); touches multiple feature groups (3)
+cue,Seq 2 Cue 37 Jdou tunelem skoro hned driv,3,touches multiple feature groups (4); mixed hard and preset control
+cue,Seq 2 Cue 39 Trio - Holky tahnou Jona,3,touches multiple feature groups (3); mixed hard and preset control
+cue,Seq 2 Cue 46.6 Labus u astery,3,touches multiple feature groups (3); mixed hard and preset control
+cue,Seq 2 Cue 50 L+W jdou na stred,3,touches multiple feature groups (4); mixed hard and preset control
+cue,Seq 2 Cue 8 Astera Jirka u stolu,3,touches multiple feature groups (3); mixed hard and preset control
+fixture,Fixture 1 HelDGB8S 1,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 10 HelDGB8S 10,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 101 RSpiide3 1,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 102 RSpiide3 2,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 103 RSpiide3 3,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 104 RSpiide3 4,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 105 RSpiide3 5,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 106 RSpiide3 6,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 107 RSpiide3 7,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 108 RSpiide3 8,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 11 HelDGB8S 11,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 12 HelDGB8S 12,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 13 HelDGB8S 13,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 14 HelDGB8S 14,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 15 HelDGB8S 15,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 16 HelDGB8S 16,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 17 HelDGB8S 17,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 18 HelDGB8S 18,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 19 HelDGB8S 19,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 2 HelDGB8S 2,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 20 HelDGB8S 20,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 201 SPIDER 33 1,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 202 SPIDER 33 2,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 21 HelDGB8S 21,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 22 HelDGB8S 22,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 23 HelDGB8S 23,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 24 HelDGB8S 24,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 25 HelDGB8S 25,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 26 HelDGB8S 26,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 27 HelDGB8S 27,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 28 HelDGB8S 28,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 29 HelDGB8S 29,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 3 HelDGB8S 3,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 30 HelDGB8S 30,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 31 HelDGB8S 31,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 32 HelDGB8S 32,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 33 HelDGB8S 33,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 34 HelDGB8S 34,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 35 HelDGB8S 35,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 36 HelDGB8S 36,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 37 HelDGB8S 37,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 38 HelDGB8S 38,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 39 HelDGB8S 39,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 4 HelDGB8S 4,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 40 HelDGB8S 40,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 5 HelDGB8S 5,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 6 HelDGB8S 6,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 7 HelDGB8S 7,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 8 HelDGB8S 8,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 9 HelDGB8S 9,2,fixture receives both hard values and preset-driven control
+cue,Seq 2 Cue 40 Prichazi dalsi s asterama,2,mixed hard and preset control
+cue,Seq 2 Cue 41 Jdou k nemu do rohu - Pouze astery,2,elevated hard values (29)
+cue,Seq 2 Cue 49 Astery min,2,elevated hard values (15)
+cue,Seq 2 Cue 57 Patrik ON,2,mixed hard and preset control
+cue,Seq 2 Cue 60 Patrik ON,2,mixed hard and preset control
+cue,Seq 2 Cue 62 Klara ON,2,mixed hard and preset control
+cue,Seq 2 Cue 63 Adri,2,mixed hard and preset control
+cue,Seq 2 Cue 64 Nat,2,mixed hard and preset control
+cue,Seq 2 Cue 85.5 Muzikangti pryc jdou dolu,2,elevated hard values (21)
+preset,Preset 0.11 Eff Front,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.13 q80-flo,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.24 Prava strana,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.3 Schody,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.34 Pruvany rackove,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.42 Asteta Main,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.53 Kalibrace-stredni zadni kostka,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.54 Kalibrace - stredy,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.55 Kalibrace kostky,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.56 Preset 0.56,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.71 Labus vrch,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.75 bert solo,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.78 Bert zjeveni,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.9 Preset 0.9,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 2.1 Preset 2.1,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 2.31 White,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 2.32 Red,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 2.33 Orange,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 2.34 Yellow,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 2.35 Fern Green,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 2.36 Green,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 2.37 Sea Green,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 2.38 Cyan,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 2.39 Lavender,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 2.40 Blue,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 2.41 Violet,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 2.42 Magenta,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 2.43 Pink,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 4.13 Light orange,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 4.15 green,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 4.16 Zlata,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 4.18 fern green,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 4.2 Light blue,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 4.21 Preset 4.21,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 4.23 Novy toon,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 4.3 orange,1,dead preset: loaded in pool but not referenced by any cue
+cue,Seq 2 Cue 23 Vilda Dopredu MANUAL CROSS,1,touches multiple feature groups (3)
+cue,Seq 2 Cue 28 Hnizdo s ptakama- s rackama zvuk,1,touches multiple feature groups (3)

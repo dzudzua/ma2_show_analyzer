@@ -1,0 +1,5 @@
+id,number,name,fixture_ids,fixture_details,fixture_count,source_file
+group:0:patch666_groups.xml:1,0,SPIDER 33,,,0,exports\patch666_groups.xml
+group:1:patch666_groups.xml:2,1,Sp30012,,,0,exports\patch666_groups.xml
+group:2:patch666_groups.xml:3,2,STRIP,,,0,exports\patch666_groups.xml
+group:3:patch666_groups.xml:4,3,BULB,,,0,exports\patch666_groups.xml

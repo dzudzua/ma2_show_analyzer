@@ -1,0 +1,53 @@
+kind,severity,subject,details,fixture_id,preset_id,preset_number
+fixture_used_without_patch_data,high,fixture:1001,Fixture 1001,1001,,
+fixture_used_without_type,medium,fixture:1001,Fixture 1001,1001,,
+fixture_used_without_patch_data,high,fixture:1002,Fixture 1002,1002,,
+fixture_used_without_type,medium,fixture:1002,Fixture 1002,1002,,
+fixture_used_without_patch_data,high,fixture:1003,Fixture 1003,1003,,
+fixture_used_without_type,medium,fixture:1003,Fixture 1003,1003,,
+fixture_used_without_patch_data,high,fixture:1004,Fixture 1004,1004,,
+fixture_used_without_type,medium,fixture:1004,Fixture 1004,1004,,
+fixture_used_without_patch_data,high,fixture:1005,Fixture 1005,1005,,
+fixture_used_without_type,medium,fixture:1005,Fixture 1005,1005,,
+fixture_used_without_patch_data,high,fixture:1006,Fixture 1006,1006,,
+fixture_used_without_type,medium,fixture:1006,Fixture 1006,1006,,
+fixture_used_without_patch_data,high,fixture:1007,Fixture 1007,1007,,
+fixture_used_without_type,medium,fixture:1007,Fixture 1007,1007,,
+fixture_used_without_patch_data,high,fixture:1008,Fixture 1008,1008,,
+fixture_used_without_type,medium,fixture:1008,Fixture 1008,1008,,
+unused_preset,low,preset:0.3,Schody,,preset:0.3:Tram_Analyz_preset_0.xml:2,0.3
+unused_preset,low,preset:0.9,Preset 0.9,,preset:0.9:Tram_Analyz_preset_0.xml:8,0.9
+unused_preset,low,preset:0.11,Eff Front,,preset:0.11:Tram_Analyz_preset_0.xml:10,0.11
+unused_preset,low,preset:0.13,q80-flo,,preset:0.13:Tram_Analyz_preset_0.xml:12,0.13
+unused_preset,low,preset:0.24,Prava strana,,preset:0.24:Tram_Analyz_preset_0.xml:23,0.24
+unused_preset,low,preset:0.34,Pruvany rackove,,preset:0.34:Tram_Analyz_preset_0.xml:31,0.34
+unused_preset,low,preset:0.42,Asteta Main,,preset:0.42:Tram_Analyz_preset_0.xml:34,0.42
+unused_preset,low,preset:0.53,Kalibrace-stredni zadni kostka,,preset:0.53:Tram_Analyz_preset_0.xml:39,0.53
+unused_preset,low,preset:0.54,Kalibrace - stredy,,preset:0.54:Tram_Analyz_preset_0.xml:40,0.54
+unused_preset,low,preset:0.55,Kalibrace kostky,,preset:0.55:Tram_Analyz_preset_0.xml:41,0.55
+unused_preset,low,preset:0.56,Preset 0.56,,preset:0.56:Tram_Analyz_preset_0.xml:42,0.56
+unused_preset,low,preset:0.71,Labus vrch,,preset:0.71:Tram_Analyz_preset_0.xml:50,0.71
+unused_preset,low,preset:0.75,bert solo,,preset:0.75:Tram_Analyz_preset_0.xml:53,0.75
+unused_preset,low,preset:0.78,Bert zjeveni,,preset:0.78:Tram_Analyz_preset_0.xml:55,0.78
+unused_preset,low,preset:2.1,Preset 2.1,,preset:2.1:Tram_Analyz_preset_2.xml:1,2.1
+unused_preset,low,preset:2.31,White,,preset:2.31:Tram_Analyz_preset_2.xml:2,2.31
+unused_preset,low,preset:2.32,Red,,preset:2.32:Tram_Analyz_preset_2.xml:3,2.32
+unused_preset,low,preset:2.33,Orange,,preset:2.33:Tram_Analyz_preset_2.xml:4,2.33
+unused_preset,low,preset:2.34,Yellow,,preset:2.34:Tram_Analyz_preset_2.xml:5,2.34
+unused_preset,low,preset:2.35,Fern Green,,preset:2.35:Tram_Analyz_preset_2.xml:6,2.35
+unused_preset,low,preset:2.36,Green,,preset:2.36:Tram_Analyz_preset_2.xml:7,2.36
+unused_preset,low,preset:2.37,Sea Green,,preset:2.37:Tram_Analyz_preset_2.xml:8,2.37
+unused_preset,low,preset:2.38,Cyan,,preset:2.38:Tram_Analyz_preset_2.xml:9,2.38
+unused_preset,low,preset:2.39,Lavender,,preset:2.39:Tram_Analyz_preset_2.xml:10,2.39
+unused_preset,low,preset:2.40,Blue,,preset:2.40:Tram_Analyz_preset_2.xml:11,2.40
+unused_preset,low,preset:2.41,Violet,,preset:2.41:Tram_Analyz_preset_2.xml:12,2.41
+unused_preset,low,preset:2.42,Magenta,,preset:2.42:Tram_Analyz_preset_2.xml:13,2.42
+unused_preset,low,preset:2.43,Pink,,preset:2.43:Tram_Analyz_preset_2.xml:14,2.43
+unused_preset,low,preset:4.2,Light blue,,preset:4.2:Tram_Analyz_preset_4.xml:2,4.2
+unused_preset,low,preset:4.3,orange,,preset:4.3:Tram_Analyz_preset_4.xml:3,4.3
+unused_preset,low,preset:4.13,Light orange,,preset:4.13:Tram_Analyz_preset_4.xml:7,4.13
+unused_preset,low,preset:4.15,green,,preset:4.15:Tram_Analyz_preset_4.xml:8,4.15
+unused_preset,low,preset:4.16,Zlata,,preset:4.16:Tram_Analyz_preset_4.xml:9,4.16
+unused_preset,low,preset:4.18,fern green,,preset:4.18:Tram_Analyz_preset_4.xml:10,4.18
+unused_preset,low,preset:4.21,Preset 4.21,,preset:4.21:Tram_Analyz_preset_4.xml:12,4.21
+unused_preset,low,preset:4.23,Novy toon,,preset:4.23:Tram_Analyz_preset_4.xml:13,4.23

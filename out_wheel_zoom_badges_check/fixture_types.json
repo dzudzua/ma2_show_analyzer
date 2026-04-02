@@ -1,0 +1,155 @@
+[
+  {
+    "fixture_type": "6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off",
+    "modes": [
+      "6"
+    ],
+    "fixture_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "count": 40
+  },
+  {
+    "fixture_type": "12 Robin LEDBeam 350 Mode 1",
+    "modes": [
+      "12"
+    ],
+    "fixture_ids": [
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52
+    ],
+    "count": 12
+  },
+  {
+    "fixture_type": "14 Hotbox RGBW 8 channel",
+    "modes": [
+      "14"
+    ],
+    "fixture_ids": [
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67
+    ],
+    "count": 7
+  },
+  {
+    "fixture_type": "16 Helios Tube 1: RGB - 1 Pixel - Strobe Off",
+    "modes": [
+      "16"
+    ],
+    "fixture_ids": [
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78
+    ],
+    "count": 8
+  },
+  {
+    "fixture_type": "7 Robin Spiider Mode 3",
+    "modes": [
+      "7"
+    ],
+    "fixture_ids": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      201,
+      202
+    ],
+    "count": 10
+  },
+  {
+    "fixture_type": "10 Robin WTF Mode 4-Pixel mode",
+    "modes": [
+      "10"
+    ],
+    "fixture_ids": [
+      111,
+      112
+    ],
+    "count": 2
+  },
+  {
+    "fixture_type": "13 Robin T1 Profile FS Mode 3 - RGBAL",
+    "modes": [
+      "13"
+    ],
+    "fixture_ids": [
+      666
+    ],
+    "count": 1
+  },
+  {
+    "fixture_type": "17 Arcsource 12 RGB 00",
+    "modes": [
+      "17"
+    ],
+    "fixture_ids": [
+      667
+    ],
+    "count": 1
+  }
+]

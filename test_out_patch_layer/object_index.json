@@ -1,0 +1,52 @@
+{
+  "sequence_numbers": [],
+  "preset_numbers": [],
+  "group_numbers": [],
+  "effect_numbers": [],
+  "fixture_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "channel_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "patch_target_keys": [
+    "channel:1",
+    "channel:10",
+    "channel:11",
+    "channel:12",
+    "channel:2",
+    "channel:3",
+    "channel:4",
+    "channel:5",
+    "channel:6",
+    "channel:7",
+    "channel:8",
+    "channel:9",
+    "fixture:1",
+    "fixture:2",
+    "fixture:3",
+    "fixture:4",
+    "fixture:5",
+    "fixture:6",
+    "fixture:7",
+    "fixture:8"
+  ]
+}

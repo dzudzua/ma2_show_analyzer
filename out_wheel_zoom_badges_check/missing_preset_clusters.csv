@@ -1,0 +1,5 @@
+cluster_id,fixture_type,attribute_family,fixture_ids,attributes,occurrence_count,match_strength,kind_seed,fragmented,cue_range,existing_preset_number,existing_preset_score
+Dimmer|Unknown|1,Unknown,Dimmer,"[1, 2, 3, 5, 6, 7]","[""DIM"", ""DIM2""]",13,1.0,exact,False,"10.39, 10.41, 10.43, 10.45, 10.47, 10.49, 10.51, 10.53, 10.55, 10.57 ...",0.32,0.262
+Color|12 Robin LEDBeam 350 Mode 1|2,12 Robin LEDBeam 350 Mode 1,Color,"[41, 42, 47, 48]","[""COLORRGB1"", ""COLORRGB2"", ""COLORRGB3"", ""COLORRGB5""]",12,1.0,exact,False,"10.40, 10.42, 10.44, 10.46, 10.48, 10.50, 10.52, 10.54, 10.56, 10.58 ...",0.58,0.279
+Color|Unknown|3,Unknown,Color,"[1, 2, 3, 4, 5, 6, 7, 8]","[""COLORRGB1"", ""COLORRGB2"", ""COLORRGB3"", ""COLORRGB31"", ""COLORRGB32"", ""COLORRGB33"", ""COLORRGB35"", ""COLORRGB5""]",4,0.879,near,True,"1.1, 10.27, 10.80, 10.98",0.32,1.0
+Color|14 Hotbox RGBW 8 channel|4,14 Hotbox RGBW 8 channel,Color,"[61, 62, 63, 64]","[""COLORRGB1"", ""COLORRGB2"", ""COLORRGB3"", ""COLORRGB5""]",3,1.0,exact,False,"10.1, 10.36, 10.36.5",,

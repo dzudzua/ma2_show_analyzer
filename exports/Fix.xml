@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="styles/fixture+layer+layers@csv.xsl"?>
+<MA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.malighting.de/grandma2/xml/MA" xsi:schemaLocation="http://schemas.malighting.de/grandma2/xml/MA http://schemas.malighting.de/grandma2/xml/3.9.61/MA.xsd" major_vers="3" minor_vers="9" stream_vers="61">
+	<Info datetime="2026-03-30T08:32:50" showfile="new show 2026-03-30t08-30-44" />
+	<Layer index="1" name="Fix">
+		<Fixture index="0" name="RSpiide3 1" fixture_id="1">
+			<FixtureType name="3 Robin Spiider Mode 3">
+				<No>3</No>
+			</FixtureType>
+			<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+				<Patch>
+					<Address>1</Address>
+				</Patch>
+				<AbsolutePosition>
+					<Location x="0" y="0" z="0" />
+					<Rotation x="0" y="-0" z="0" />
+					<Scaling x="1" y="1" z="1" />
+				</AbsolutePosition>
+				<Channel index="0" />
+				<Channel index="1" />
+				<Channel index="2" />
+				<Channel index="3" />
+				<Channel index="4" />
+				<Channel index="5" />
+				<Channel index="6" />
+				<Channel index="7" />
+				<Channel index="8" />
+				<Channel index="9" />
+				<Channel index="10" />
+				<Channel index="11" />
+				<Channel index="12" />
+				<Channel index="13" />
+				<Channel index="14" />
+				<Channel index="15" />
+				<Channel index="16" />
+				<Channel index="17" />
+				<Channel index="18" />
+				<Channel index="19" />
+				<Channel index="20" />
+				<Channel index="21" />
+				<Channel index="22" />
+				<Channel index="23" />
+				<Channel index="24" />
+			</SubFixture>
+		</Fixture>
+		<Fixture index="1" name="RSpiide3 2" fixture_id="2">
+			<FixtureType name="3 Robin Spiider Mode 3">
+				<No>3</No>
+			</FixtureType>
+			<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+				<Patch>
+					<Address>34</Address>
+				</Patch>
+				<AbsolutePosition>
+					<Location x="0" y="0" z="0" />
+					<Rotation x="0" y="-0" z="0" />
+					<Scaling x="1" y="1" z="1" />
+				</AbsolutePosition>
+				<Channel index="0" />
+				<Channel index="1" />
+				<Channel index="2" />
+				<Channel index="3" />
+				<Channel index="4" />
+				<Channel index="5" />
+				<Channel index="6" />
+				<Channel index="7" />
+				<Channel index="8" />
+				<Channel index="9" />
+				<Channel index="10" />
+				<Channel index="11" />
+				<Channel index="12" />
+				<Channel index="13" />
+				<Channel index="14" />
+				<Channel index="15" />
+				<Channel index="16" />
+				<Channel index="17" />
+				<Channel index="18" />
+				<Channel index="19" />
+				<Channel index="20" />
+				<Channel index="21" />
+				<Channel index="22" />
+				<Channel index="23" />
+				<Channel index="24" />
+			</SubFixture>
+		</Fixture>
+		<Fixture index="2" name="RSpiide3 3" fixture_id="3">
+			<FixtureType name="3 Robin Spiider Mode 3">
+				<No>3</No>
+			</FixtureType>
+			<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+				<Patch>
+					<Address>67</Address>
+				</Patch>
+				<AbsolutePosition>
+					<Location x="0" y="0" z="0" />
+					<Rotation x="0" y="-0" z="0" />
+					<Scaling x="1" y="1" z="1" />
+				</AbsolutePosition>
+				<Channel index="0" />
+				<Channel index="1" />
+				<Channel index="2" />
+				<Channel index="3" />
+				<Channel index="4" />
+				<Channel index="5" />
+				<Channel index="6" />
+				<Channel index="7" />
+				<Channel index="8" />
+				<Channel index="9" />
+				<Channel index="10" />
+				<Channel index="11" />
+				<Channel index="12" />
+				<Channel index="13" />
+				<Channel index="14" />
+				<Channel index="15" />
+				<Channel index="16" />
+				<Channel index="17" />
+				<Channel index="18" />
+				<Channel index="19" />
+				<Channel index="20" />
+				<Channel index="21" />
+				<Channel index="22" />
+				<Channel index="23" />
+				<Channel index="24" />
+			</SubFixture>
+		</Fixture>
+		<Fixture index="3" name="RSpiide3 4" fixture_id="4">
+			<FixtureType name="3 Robin Spiider Mode 3">
+				<No>3</No>
+			</FixtureType>
+			<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+				<Patch>
+					<Address>100</Address>
+				</Patch>
+				<AbsolutePosition>
+					<Location x="0" y="0" z="0" />
+					<Rotation x="0" y="-0" z="0" />
+					<Scaling x="1" y="1" z="1" />
+				</AbsolutePosition>
+				<Channel index="0" />
+				<Channel index="1" />
+				<Channel index="2" />
+				<Channel index="3" />
+				<Channel index="4" />
+				<Channel index="5" />
+				<Channel index="6" />
+				<Channel index="7" />
+				<Channel index="8" />
+				<Channel index="9" />
+				<Channel index="10" />
+				<Channel index="11" />
+				<Channel index="12" />
+				<Channel index="13" />
+				<Channel index="14" />
+				<Channel index="15" />
+				<Channel index="16" />
+				<Channel index="17" />
+				<Channel index="18" />
+				<Channel index="19" />
+				<Channel index="20" />
+				<Channel index="21" />
+				<Channel index="22" />
+				<Channel index="23" />
+				<Channel index="24" />
+			</SubFixture>
+		</Fixture>
+		<Fixture index="4" name="RSpiide3 5" fixture_id="5">
+			<FixtureType name="3 Robin Spiider Mode 3">
+				<No>3</No>
+			</FixtureType>
+			<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+				<Patch>
+					<Address>133</Address>
+				</Patch>
+				<AbsolutePosition>
+					<Location x="0" y="0" z="0" />
+					<Rotation x="0" y="-0" z="0" />
+					<Scaling x="1" y="1" z="1" />
+				</AbsolutePosition>
+				<Channel index="0" />
+				<Channel index="1" />
+				<Channel index="2" />
+				<Channel index="3" />
+				<Channel index="4" />
+				<Channel index="5" />
+				<Channel index="6" />
+				<Channel index="7" />
+				<Channel index="8" />
+				<Channel index="9" />
+				<Channel index="10" />
+				<Channel index="11" />
+				<Channel index="12" />
+				<Channel index="13" />
+				<Channel index="14" />
+				<Channel index="15" />
+				<Channel index="16" />
+				<Channel index="17" />
+				<Channel index="18" />
+				<Channel index="19" />
+				<Channel index="20" />
+				<Channel index="21" />
+				<Channel index="22" />
+				<Channel index="23" />
+				<Channel index="24" />
+			</SubFixture>
+		</Fixture>
+		<Fixture index="5" name="RSpiide3 6" fixture_id="6">
+			<FixtureType name="3 Robin Spiider Mode 3">
+				<No>3</No>
+			</FixtureType>
+			<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+				<Patch>
+					<Address>166</Address>
+				</Patch>
+				<AbsolutePosition>
+					<Location x="0" y="0" z="0" />
+					<Rotation x="0" y="-0" z="0" />
+					<Scaling x="1" y="1" z="1" />
+				</AbsolutePosition>
+				<Channel index="0" />
+				<Channel index="1" />
+				<Channel index="2" />
+				<Channel index="3" />
+				<Channel index="4" />
+				<Channel index="5" />
+				<Channel index="6" />
+				<Channel index="7" />
+				<Channel index="8" />
+				<Channel index="9" />
+				<Channel index="10" />
+				<Channel index="11" />
+				<Channel index="12" />
+				<Channel index="13" />
+				<Channel index="14" />
+				<Channel index="15" />
+				<Channel index="16" />
+				<Channel index="17" />
+				<Channel index="18" />
+				<Channel index="19" />
+				<Channel index="20" />
+				<Channel index="21" />
+				<Channel index="22" />
+				<Channel index="23" />
+				<Channel index="24" />
+			</SubFixture>
+		</Fixture>
+		<Fixture index="6" name="RSpiide3 7" fixture_id="7">
+			<FixtureType name="3 Robin Spiider Mode 3">
+				<No>3</No>
+			</FixtureType>
+			<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+				<Patch>
+					<Address>199</Address>
+				</Patch>
+				<AbsolutePosition>
+					<Location x="0" y="0" z="0" />
+					<Rotation x="0" y="-0" z="0" />
+					<Scaling x="1" y="1" z="1" />
+				</AbsolutePosition>
+				<Channel index="0" />
+				<Channel index="1" />
+				<Channel index="2" />
+				<Channel index="3" />
+				<Channel index="4" />
+				<Channel index="5" />
+				<Channel index="6" />
+				<Channel index="7" />
+				<Channel index="8" />
+				<Channel index="9" />
+				<Channel index="10" />
+				<Channel index="11" />
+				<Channel index="12" />
+				<Channel index="13" />
+				<Channel index="14" />
+				<Channel index="15" />
+				<Channel index="16" />
+				<Channel index="17" />
+				<Channel index="18" />
+				<Channel index="19" />
+				<Channel index="20" />
+				<Channel index="21" />
+				<Channel index="22" />
+				<Channel index="23" />
+				<Channel index="24" />
+			</SubFixture>
+		</Fixture>
+		<Fixture index="7" name="RSpiide3 8" fixture_id="8">
+			<FixtureType name="3 Robin Spiider Mode 3">
+				<No>3</No>
+			</FixtureType>
+			<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+				<Patch>
+					<Address>232</Address>
+				</Patch>
+				<AbsolutePosition>
+					<Location x="0" y="0" z="0" />
+					<Rotation x="0" y="-0" z="0" />
+					<Scaling x="1" y="1" z="1" />
+				</AbsolutePosition>
+				<Channel index="0" />
+				<Channel index="1" />
+				<Channel index="2" />
+				<Channel index="3" />
+				<Channel index="4" />
+				<Channel index="5" />
+				<Channel index="6" />
+				<Channel index="7" />
+				<Channel index="8" />
+				<Channel index="9" />
+				<Channel index="10" />
+				<Channel index="11" />
+				<Channel index="12" />
+				<Channel index="13" />
+				<Channel index="14" />
+				<Channel index="15" />
+				<Channel index="16" />
+				<Channel index="17" />
+				<Channel index="18" />
+				<Channel index="19" />
+				<Channel index="20" />
+				<Channel index="21" />
+				<Channel index="22" />
+				<Channel index="23" />
+				<Channel index="24" />
+			</SubFixture>
+		</Fixture>
+	</Layer>
+</MA>

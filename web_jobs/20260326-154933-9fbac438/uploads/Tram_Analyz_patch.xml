@@ -1,0 +1,5436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="styles/fixture+layer+layers@csv.xsl"?>
+<?xml-stylesheet type="text/xsl" href="styles/fixture+layer+layers@html@default.xsl" alternate="yes"?>
+<MA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.malighting.de/grandma2/xml/MA" xsi:schemaLocation="http://schemas.malighting.de/grandma2/xml/MA http://schemas.malighting.de/grandma2/xml/3.9.60/MA.xsd" major_vers="3" minor_vers="9" stream_vers="60">
+	<Info datetime="2026-03-25T20:34:13" showfile="racek_brezen26_analyzer" />
+	<Fixture index="0" name="HelDGB8S 1" fixture_id="1">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="0.581" y="1.229" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>1</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0.371" y="1.229" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>4</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0.431" y="1.229" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>7</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0.491" y="1.229" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>10</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0.551" y="1.229" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>13</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0.611" y="1.229" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>16</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0.671" y="1.229" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>19</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0.731" y="1.229" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>22</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0.791" y="1.229" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="1" name="HelDGB8S 2" fixture_id="2">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="1" y="0.775" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>25</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0.79" y="0.775" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>28</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0.85" y="0.775" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>31</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0.91" y="0.775" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>34</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0.97" y="0.775" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>37</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="1.03" y="0.775" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>40</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="1.09" y="0.775" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>43</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="1.15" y="0.775" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>46</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="1.21" y="0.775" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="2" name="HelDGB8S 3" fixture_id="3">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="1.547" y="0.938" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>49</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="1.337" y="0.938" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>52</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="1.397" y="0.938" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>55</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="1.457" y="0.938" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>58</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="1.517" y="0.938" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>61</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="1.577" y="0.938" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>64</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="1.637" y="0.938" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>67</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="1.697" y="0.938" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>70</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="1.757" y="0.938" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="3" name="HelDGB8S 4" fixture_id="4">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="3" y="0" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>73</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="2.79" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>76</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="2.85" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>79</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="2.91" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>82</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="2.97" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>85</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="3.03" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>88</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="3.09" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>91</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="3.15" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>94</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="3.21" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="4" name="HelDGB8S 5" fixture_id="5">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="4" y="0" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>97</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="3.79" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>100</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="3.85" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>103</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="3.91" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>106</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="3.97" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>109</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="4.03" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>112</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="4.09" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>115</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="4.15" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>118</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="4.21" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="5" name="HelDGB8S 6" fixture_id="6">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="5" y="0" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>121</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="4.79" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>124</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="4.85" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>127</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="4.91" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>130</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="4.97" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>133</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="5.03" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>136</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="5.09" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>139</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="5.15" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>142</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="5.21" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="6" name="HelDGB8S 7" fixture_id="7">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="6" y="0" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>145</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="5.79" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>148</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="5.85" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>151</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="5.91" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>154</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="5.97" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>157</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="6.03" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>160</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="6.09" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>163</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="6.15" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>166</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="6.21" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="7" name="HelDGB8S 8" fixture_id="8">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="7" y="0" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>169</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="6.79" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>172</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="6.85" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>175</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="6.91" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>178</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="6.97" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>181</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="7.03" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>184</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="7.09" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>187</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="7.15" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>190</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="7.21" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="8" name="HelDGB8S 9" fixture_id="9">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="8" y="0" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>193</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="7.79" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>196</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="7.85" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>199</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="7.91" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>202</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="7.97" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>205</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="8.03" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>208</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="8.09" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>211</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="8.15" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>214</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="8.21" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="9" name="HelDGB8S 10" fixture_id="10">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="9" y="0" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>217</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="8.79" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>220</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="8.85" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>223</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="8.91" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>226</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="8.97" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>229</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="9.03" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>232</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="9.09" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>235</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="9.15" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>238</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="9.21" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="10" name="HelDGB8S 11" fixture_id="11">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="0" y="-1" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>241</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="-0.21" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>244</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="-0.15" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>247</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="-0.09" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>250</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="-0.03" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>253</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0.03" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>256</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0.09" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>259</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0.15" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>262</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0.21" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="11" name="HelDGB8S 12" fixture_id="12">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="1" y="-1" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>265</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0.79" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>268</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0.85" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>271</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0.91" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>274</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0.97" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>277</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="1.03" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>280</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="1.09" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>283</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="1.15" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>286</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="1.21" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="12" name="HelDGB8S 13" fixture_id="13">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="2" y="-1" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>289</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="1.79" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>292</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="1.85" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>295</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="1.91" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>298</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="1.97" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>301</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="2.03" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>304</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="2.09" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>307</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="2.15" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>310</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="2.21" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="13" name="HelDGB8S 14" fixture_id="14">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="3" y="-1" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>313</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="2.79" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>316</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="2.85" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>319</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="2.91" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>322</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="2.97" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>325</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="3.03" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>328</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="3.09" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>331</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="3.15" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>334</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="3.21" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="14" name="HelDGB8S 15" fixture_id="15">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="4" y="-1" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>337</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="3.79" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>340</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="3.85" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>343</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="3.91" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>346</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="3.97" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>349</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="4.03" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>352</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="4.09" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>355</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="4.15" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>358</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="4.21" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="15" name="HelDGB8S 16" fixture_id="16">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="5" y="-1" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>361</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="4.79" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>364</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="4.85" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>367</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="4.91" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>370</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="4.97" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>373</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="5.03" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>376</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="5.09" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>379</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="5.15" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>382</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="5.21" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="16" name="HelDGB8S 17" fixture_id="17">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="6" y="-1" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>385</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="5.79" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>388</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="5.85" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>391</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="5.91" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>394</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="5.97" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>397</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="6.03" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>400</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="6.09" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>403</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="6.15" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>406</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="6.21" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="17" name="HelDGB8S 18" fixture_id="18">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="7" y="-1" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>409</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="6.79" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>412</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="6.85" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>415</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="6.91" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>418</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="6.97" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>421</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="7.03" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>424</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="7.09" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>427</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="7.15" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>430</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="7.21" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="18" name="HelDGB8S 19" fixture_id="19">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="8" y="-1" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>433</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="7.79" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>436</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="7.85" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>439</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="7.91" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>442</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="7.97" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>445</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="8.03" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>448</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="8.09" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>451</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="8.15" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>454</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="8.21" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="19" name="HelDGB8S 20" fixture_id="20">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="9" y="-1" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>457</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="8.79" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>460</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="8.85" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>463</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="8.91" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>466</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="8.97" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>469</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="9.03" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>472</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="9.09" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>475</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="9.15" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>478</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="9.21" y="-1" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="20" name="HelDGB8S 21" fixture_id="21">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="0" y="-2" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>513</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="-0.21" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>516</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="-0.15" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>519</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="-0.09" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>522</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="-0.03" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>525</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0.03" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>528</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0.09" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>531</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0.15" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>534</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0.21" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="21" name="HelDGB8S 22" fixture_id="22">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="1" y="-2" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>537</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0.79" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>540</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0.85" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>543</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0.91" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>546</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0.97" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>549</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="1.03" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>552</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="1.09" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>555</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="1.15" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>558</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="1.21" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="22" name="HelDGB8S 23" fixture_id="23">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="2" y="-2" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>561</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="1.79" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>564</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="1.85" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>567</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="1.91" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>570</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="1.97" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>573</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="2.03" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>576</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="2.09" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>579</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="2.15" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>582</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="2.21" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="23" name="HelDGB8S 24" fixture_id="24">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="3" y="-2" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>585</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="2.79" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>588</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="2.85" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>591</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="2.91" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>594</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="2.97" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>597</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="3.03" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>600</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="3.09" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>603</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="3.15" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>606</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="3.21" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="24" name="HelDGB8S 25" fixture_id="25">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="4" y="-2" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>609</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="3.79" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>612</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="3.85" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>615</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="3.91" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>618</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="3.97" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>621</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="4.03" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>624</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="4.09" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>627</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="4.15" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>630</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="4.21" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="25" name="HelDGB8S 26" fixture_id="26">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="5" y="-2" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>633</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="4.79" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>636</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="4.85" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>639</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="4.91" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>642</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="4.97" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>645</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="5.03" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>648</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="5.09" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>651</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="5.15" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>654</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="5.21" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="26" name="HelDGB8S 27" fixture_id="27">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="6" y="-2" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>657</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="5.79" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>660</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="5.85" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>663</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="5.91" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>666</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="5.97" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>669</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="6.03" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>672</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="6.09" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>675</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="6.15" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>678</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="6.21" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="27" name="HelDGB8S 28" fixture_id="28">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="7" y="-2" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>681</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="6.79" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>684</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="6.85" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>687</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="6.91" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>690</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="6.97" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>693</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="7.03" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>696</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="7.09" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>699</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="7.15" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>702</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="7.21" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="28" name="HelDGB8S 29" fixture_id="29">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="8" y="-2" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>705</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="7.79" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>708</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="7.85" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>711</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="7.91" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>714</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="7.97" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>717</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="8.03" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>720</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="8.09" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>723</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="8.15" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>726</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="8.21" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="29" name="HelDGB8S 30" fixture_id="30">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="9" y="-2" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>729</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="8.79" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>732</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="8.85" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>735</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="8.91" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>738</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="8.97" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>741</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="9.03" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>744</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="9.09" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>747</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="9.15" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>750</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="9.21" y="-2" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="30" name="HelDGB8S 31" fixture_id="31">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="0" y="-3" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>753</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="-0.21" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>756</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="-0.15" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>759</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="-0.09" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>762</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="-0.03" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>765</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0.03" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>768</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0.09" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>771</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0.15" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>774</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0.21" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="31" name="HelDGB8S 32" fixture_id="32">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="1" y="-3" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>777</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0.79" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>780</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0.85" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>783</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0.91" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>786</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0.97" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>789</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="1.03" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>792</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="1.09" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>795</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="1.15" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>798</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="1.21" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="32" name="HelDGB8S 33" fixture_id="33">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="2" y="-3" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>801</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="1.79" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>804</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="1.85" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>807</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="1.91" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>810</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="1.97" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>813</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="2.03" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>816</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="2.09" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>819</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="2.15" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>822</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="2.21" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="33" name="HelDGB8S 34" fixture_id="34">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="3" y="-3" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>825</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="2.79" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>828</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="2.85" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>831</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="2.91" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>834</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="2.97" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>837</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="3.03" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>840</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="3.09" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>843</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="3.15" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>846</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="3.21" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="34" name="HelDGB8S 35" fixture_id="35">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="4" y="-3" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>849</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="3.79" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>852</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="3.85" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>855</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="3.91" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>858</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="3.97" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>861</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="4.03" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>864</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="4.09" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>867</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="4.15" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>870</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="4.21" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="35" name="HelDGB8S 36" fixture_id="36">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="5" y="-3" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>873</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="4.79" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>876</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="4.85" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>879</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="4.91" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>882</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="4.97" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>885</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="5.03" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>888</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="5.09" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>891</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="5.15" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>894</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="5.21" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="36" name="HelDGB8S 37" fixture_id="37">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="6" y="-3" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>897</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="5.79" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>900</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="5.85" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>903</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="5.91" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>906</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="5.97" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>909</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="6.03" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>912</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="6.09" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>915</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="6.15" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>918</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="6.21" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="37" name="HelDGB8S 38" fixture_id="38">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="7" y="-3" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>921</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="6.79" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>924</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="6.85" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>927</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="6.91" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>930</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="6.97" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>933</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="7.03" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>936</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="7.09" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>939</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="7.15" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>942</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="7.21" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="38" name="HelDGB8S 39" fixture_id="39">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="8" y="-3" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>945</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="7.79" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>948</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="7.85" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>951</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="7.91" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>954</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="7.97" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>957</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="8.03" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>960</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="8.09" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>963</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="8.15" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>966</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="8.21" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="39" name="HelDGB8S 40" fixture_id="40">
+		<FixtureType name="6 Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off">
+			<No>6</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="9" y="-3" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>969</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="8.79" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>972</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="8.85" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="2" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>975</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="8.91" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="3" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>978</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="8.97" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="4" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>981</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="9.03" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="5" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>984</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="9.09" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="6" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>987</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="9.15" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+		<SubFixture index="7" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>990</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="9.21" y="-3" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="0" name="RSpiide3 1" fixture_id="101">
+		<FixtureType name="7 Robin Spiider Mode 3">
+			<No>7</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="0" y="0" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>1570</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+			<Channel index="4" />
+			<Channel index="5" />
+			<Channel index="6" />
+			<Channel index="7" />
+			<Channel index="8" />
+			<Channel index="9" />
+			<Channel index="10" />
+			<Channel index="11" />
+			<Channel index="12" />
+			<Channel index="13" />
+			<Channel index="14" />
+			<Channel index="15" />
+			<Channel index="16" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>1590</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+			<Channel index="4" />
+			<Channel index="5" />
+			<Channel index="6" />
+			<Channel index="7" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="1" name="RSpiide3 2" fixture_id="102">
+		<FixtureType name="7 Robin Spiider Mode 3">
+			<No>7</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="0" y="0" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>1537</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+			<Channel index="4" />
+			<Channel index="5" />
+			<Channel index="6" />
+			<Channel index="7" />
+			<Channel index="8" />
+			<Channel index="9" />
+			<Channel index="10" />
+			<Channel index="11" />
+			<Channel index="12" />
+			<Channel index="13" />
+			<Channel index="14" />
+			<Channel index="15" />
+			<Channel index="16" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>1557</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+			<Channel index="4" />
+			<Channel index="5" />
+			<Channel index="6" />
+			<Channel index="7" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="2" name="RSpiide3 3" fixture_id="103">
+		<FixtureType name="7 Robin Spiider Mode 3">
+			<No>7</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="0" y="0" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>1603</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+			<Channel index="4" />
+			<Channel index="5" />
+			<Channel index="6" />
+			<Channel index="7" />
+			<Channel index="8" />
+			<Channel index="9" />
+			<Channel index="10" />
+			<Channel index="11" />
+			<Channel index="12" />
+			<Channel index="13" />
+			<Channel index="14" />
+			<Channel index="15" />
+			<Channel index="16" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>1623</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+			<Channel index="4" />
+			<Channel index="5" />
+			<Channel index="6" />
+			<Channel index="7" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="3" name="RSpiide3 4" fixture_id="104">
+		<FixtureType name="7 Robin Spiider Mode 3">
+			<No>7</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="0" y="0" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>1636</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+			<Channel index="4" />
+			<Channel index="5" />
+			<Channel index="6" />
+			<Channel index="7" />
+			<Channel index="8" />
+			<Channel index="9" />
+			<Channel index="10" />
+			<Channel index="11" />
+			<Channel index="12" />
+			<Channel index="13" />
+			<Channel index="14" />
+			<Channel index="15" />
+			<Channel index="16" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>1656</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+			<Channel index="4" />
+			<Channel index="5" />
+			<Channel index="6" />
+			<Channel index="7" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="4" name="RSpiide3 5" fixture_id="105">
+		<FixtureType name="7 Robin Spiider Mode 3">
+			<No>7</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="0" y="0" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>1669</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+			<Channel index="4" />
+			<Channel index="5" />
+			<Channel index="6" />
+			<Channel index="7" />
+			<Channel index="8" />
+			<Channel index="9" />
+			<Channel index="10" />
+			<Channel index="11" />
+			<Channel index="12" />
+			<Channel index="13" />
+			<Channel index="14" />
+			<Channel index="15" />
+			<Channel index="16" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>1689</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+			<Channel index="4" />
+			<Channel index="5" />
+			<Channel index="6" />
+			<Channel index="7" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="5" name="RSpiide3 6" fixture_id="106">
+		<FixtureType name="7 Robin Spiider Mode 3">
+			<No>7</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="0" y="0" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>1702</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+			<Channel index="4" />
+			<Channel index="5" />
+			<Channel index="6" />
+			<Channel index="7" />
+			<Channel index="8" />
+			<Channel index="9" />
+			<Channel index="10" />
+			<Channel index="11" />
+			<Channel index="12" />
+			<Channel index="13" />
+			<Channel index="14" />
+			<Channel index="15" />
+			<Channel index="16" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>1722</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+			<Channel index="4" />
+			<Channel index="5" />
+			<Channel index="6" />
+			<Channel index="7" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="6" name="RSpiide3 7" fixture_id="107">
+		<FixtureType name="7 Robin Spiider Mode 3">
+			<No>7</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="0" y="0" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>1807</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+			<Channel index="4" />
+			<Channel index="5" />
+			<Channel index="6" />
+			<Channel index="7" />
+			<Channel index="8" />
+			<Channel index="9" />
+			<Channel index="10" />
+			<Channel index="11" />
+			<Channel index="12" />
+			<Channel index="13" />
+			<Channel index="14" />
+			<Channel index="15" />
+			<Channel index="16" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>1827</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+			<Channel index="4" />
+			<Channel index="5" />
+			<Channel index="6" />
+			<Channel index="7" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="7" name="RSpiide3 8" fixture_id="108">
+		<FixtureType name="7 Robin Spiider Mode 3">
+			<No>7</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="0" y="0" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>1840</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+			<Channel index="4" />
+			<Channel index="5" />
+			<Channel index="6" />
+			<Channel index="7" />
+			<Channel index="8" />
+			<Channel index="9" />
+			<Channel index="10" />
+			<Channel index="11" />
+			<Channel index="12" />
+			<Channel index="13" />
+			<Channel index="14" />
+			<Channel index="15" />
+			<Channel index="16" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>1860</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+			<Channel index="4" />
+			<Channel index="5" />
+			<Channel index="6" />
+			<Channel index="7" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="8" name="SPIDER 33 1" fixture_id="201">
+		<FixtureType name="7 Robin Spiider Mode 3">
+			<No>7</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="0" y="0" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>1939</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+			<Channel index="4" />
+			<Channel index="5" />
+			<Channel index="6" />
+			<Channel index="7" />
+			<Channel index="8" />
+			<Channel index="9" />
+			<Channel index="10" />
+			<Channel index="11" />
+			<Channel index="12" />
+			<Channel index="13" />
+			<Channel index="14" />
+			<Channel index="15" />
+			<Channel index="16" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>1959</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+			<Channel index="4" />
+			<Channel index="5" />
+			<Channel index="6" />
+			<Channel index="7" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="9" name="SPIDER 33 2" fixture_id="202">
+		<FixtureType name="7 Robin Spiider Mode 3">
+			<No>7</No>
+		</FixtureType>
+		<AbsolutePosition>
+			<Location x="0" y="0" z="0" />
+			<Rotation x="0" y="-0" z="0" />
+			<Scaling x="1" y="1" z="1" />
+		</AbsolutePosition>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>1972</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+			<Channel index="4" />
+			<Channel index="5" />
+			<Channel index="6" />
+			<Channel index="7" />
+			<Channel index="8" />
+			<Channel index="9" />
+			<Channel index="10" />
+			<Channel index="11" />
+			<Channel index="12" />
+			<Channel index="13" />
+			<Channel index="14" />
+			<Channel index="15" />
+			<Channel index="16" />
+		</SubFixture>
+		<SubFixture index="1" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>1992</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+			<Channel index="1" />
+			<Channel index="2" />
+			<Channel index="3" />
+			<Channel index="4" />
+			<Channel index="5" />
+			<Channel index="6" />
+			<Channel index="7" />
+		</SubFixture>
+	</Fixture>
+</MA>

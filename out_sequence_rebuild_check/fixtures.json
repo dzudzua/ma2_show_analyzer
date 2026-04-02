@@ -1,0 +1,98 @@
+[
+  {
+    "fixture_id": 101,
+    "name": "Wash 101",
+    "label": "Front Left Wash",
+    "display_name": "Front Left Wash",
+    "fixture_type": "Robe LEDWash 600",
+    "mode": "Mode 1",
+    "patch": "1.1",
+    "universe": "1",
+    "address": "1",
+    "pos_x": null,
+    "pos_y": null,
+    "pos_z": null,
+    "rot_x": null,
+    "rot_y": null,
+    "rot_z": null,
+    "scale_x": null,
+    "scale_y": null,
+    "scale_z": null,
+    "source_files": [
+      "test_exports_xmlpatch\\demo_patch_fixtures.xml"
+    ],
+    "flags": {
+      "is_patched": true,
+      "is_used_in_cues": true,
+      "is_used_in_presets": true,
+      "has_spatial_data": false,
+      "has_patch_data": true,
+      "has_fixture_type": true,
+      "referenced_in_atoms": true
+    }
+  },
+  {
+    "fixture_id": 102,
+    "name": "Wash 102",
+    "label": "Front Center Wash",
+    "display_name": "Front Center Wash",
+    "fixture_type": "Robe LEDWash 600",
+    "mode": "Mode 1",
+    "patch": "1.17",
+    "universe": "1",
+    "address": "17",
+    "pos_x": null,
+    "pos_y": null,
+    "pos_z": null,
+    "rot_x": null,
+    "rot_y": null,
+    "rot_z": null,
+    "scale_x": null,
+    "scale_y": null,
+    "scale_z": null,
+    "source_files": [
+      "test_exports_xmlpatch\\demo_patch_fixtures.xml"
+    ],
+    "flags": {
+      "is_patched": true,
+      "is_used_in_cues": true,
+      "is_used_in_presets": true,
+      "has_spatial_data": false,
+      "has_patch_data": true,
+      "has_fixture_type": true,
+      "referenced_in_atoms": true
+    }
+  },
+  {
+    "fixture_id": 103,
+    "name": "Spot 103",
+    "label": "DS Center Spot",
+    "display_name": "DS Center Spot",
+    "fixture_type": "Martin MAC Viper",
+    "mode": "Extended",
+    "patch": "1.33",
+    "universe": "1",
+    "address": "33",
+    "pos_x": null,
+    "pos_y": null,
+    "pos_z": null,
+    "rot_x": null,
+    "rot_y": null,
+    "rot_z": null,
+    "scale_x": null,
+    "scale_y": null,
+    "scale_z": null,
+    "source_files": [
+      "test_exports_xmlpatch\\demo_patch_fixtures.xml"
+    ],
+    "flags": {
+      "is_patched": true,
+      "is_used_in_cues": true,
+      "is_used_in_presets": true,
+      "has_spatial_data": false,
+      "has_patch_data": true,
+      "has_fixture_type": true,
+      "referenced_in_atoms": true
+    }
+  }
+]

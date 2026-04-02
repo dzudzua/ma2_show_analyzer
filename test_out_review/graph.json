@@ -1,0 +1,166 @@
+{
+  "nodes": [
+    {
+      "id": "fixture:101",
+      "type": "fixture",
+      "label": "Front Left Wash",
+      "fixture_id": 101,
+      "fixture_type": "Robe LEDWash 600",
+      "patch": "1.1"
+    },
+    {
+      "id": "fixture:102",
+      "type": "fixture",
+      "label": "Front Center Wash",
+      "fixture_id": 102,
+      "fixture_type": "Robe LEDWash 600",
+      "patch": "1.17"
+    },
+    {
+      "id": "fixture:103",
+      "type": "fixture",
+      "label": "DS Center Spot",
+      "fixture_id": 103,
+      "fixture_type": "Martin MAC Viper",
+      "patch": "1.33"
+    },
+    {
+      "id": "preset:1.5",
+      "type": "preset",
+      "label": "Warm Front",
+      "preset_number": "1.5",
+      "preset_type": "1",
+      "preset_xml_index": null
+    },
+    {
+      "id": "preset:2.7",
+      "type": "preset",
+      "label": "DS Center",
+      "preset_number": "2.7",
+      "preset_type": "2",
+      "preset_xml_index": null
+    },
+    {
+      "id": "group:3",
+      "type": "group",
+      "label": "Washes",
+      "group_number": "3"
+    },
+    {
+      "id": "cue:1:1",
+      "type": "cue",
+      "label": "Blackout",
+      "cue_number": "1",
+      "sequence_number": "1",
+      "fade": "0",
+      "delay": "0",
+      "trigger": "go",
+      "trigger_time": null,
+      "is_main": true
+    },
+    {
+      "id": "cue:1:2",
+      "type": "cue",
+      "label": "Build",
+      "cue_number": "2",
+      "sequence_number": "1",
+      "fade": "2",
+      "delay": "0.5",
+      "trigger": "follow",
+      "trigger_time": null,
+      "is_main": true
+    }
+  ],
+  "links": [
+    {
+      "source": "preset:1.5",
+      "target": "fixture:101",
+      "type": "preset_fixture",
+      "weight": 1
+    },
+    {
+      "source": "preset:1.5",
+      "target": "fixture:102",
+      "type": "preset_fixture",
+      "weight": 1
+    },
+    {
+      "source": "preset:2.7",
+      "target": "fixture:103",
+      "type": "preset_fixture",
+      "weight": 1
+    },
+    {
+      "source": "group:3",
+      "target": "fixture:101",
+      "type": "group_fixture",
+      "weight": 1
+    },
+    {
+      "source": "group:3",
+      "target": "fixture:102",
+      "type": "group_fixture",
+      "weight": 1
+    },
+    {
+      "source": "group:3",
+      "target": "fixture:103",
+      "type": "group_fixture",
+      "weight": 1
+    },
+    {
+      "source": "cue:1:1",
+      "target": "preset:1.5",
+      "type": "cue_preset",
+      "weight": 1
+    },
+    {
+      "source": "cue:1:1",
+      "target": "preset:2.7",
+      "type": "cue_preset",
+      "weight": 1
+    },
+    {
+      "source": "cue:1:2",
+      "target": "group:3",
+      "type": "cue_group",
+      "weight": 1
+    }
+  ],
+  "main_cue_ids": [
+    "cue:1:1",
+    "cue:1:2"
+  ],
+  "cue_summaries": [
+    {
+      "id": "cue:1:1",
+      "sequence_number": "1",
+      "cue_number": "1",
+      "name": "Blackout",
+      "fade": "0",
+      "delay": "0",
+      "trigger": "go",
+      "trigger_time": null,
+      "is_main": true,
+      "hard_fixture_count": 0,
+      "hard_value_count": 0,
+      "preset_count": 2,
+      "group_count": 0
+    },
+    {
+      "id": "cue:1:2",
+      "sequence_number": "1",
+      "cue_number": "2",
+      "name": "Build",
+      "fade": "2",
+      "delay": "0.5",
+      "trigger": "follow",
+      "trigger_time": null,
+      "is_main": true,
+      "hard_fixture_count": 0,
+      "hard_value_count": 0,
+      "preset_count": 0,
+      "group_count": 1
+    }
+  ]
+}

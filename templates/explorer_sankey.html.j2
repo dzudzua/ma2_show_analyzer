@@ -1,0 +1,663 @@
+﻿<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>grandMA2 Preset Sankey Explorer</title>
+  <style>
+    :root {
+      --bg: #0b1220;
+      --panel: #131c2f;
+      --panel-edge: #334155;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --preset: #38bdf8;
+      --fixture: #22c55e;
+      --attribute: #f59e0b;
+    }
+    body { font-family: Arial, sans-serif; margin: 0; background: var(--bg); color: var(--text); }
+    header { padding: 14px 20px; background: #0f172a; border-bottom: 1px solid var(--panel-edge); }
+    .header-brand { display:flex; gap:12px; align-items:center; margin-bottom:10px; }
+    .header-brand img { width:min(170px, 28vw); max-width:100%; height:auto; object-fit:contain; border-radius:0; padding:0; background:none; border:none; box-shadow:0 6px 18px rgba(0,0,0,.18); }
+    .header-copy { min-width:0; }
+    .wrap { padding: 24px; }
+    .card { background: var(--panel); border: 1px solid rgba(148,163,184,.12); border-radius: 16px; padding: 16px; box-shadow: 0 4px 20px rgba(0,0,0,.25); margin-bottom: 24px; }
+    .grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 20px; }
+    @media (max-width: 1100px) { .grid { grid-template-columns: 1fr; } }
+    .muted { color: var(--muted); font-size: 12px; }
+    .topbar { display:flex; justify-content:space-between; align-items:flex-start; gap:10px; flex-wrap:wrap; margin-bottom:14px; }
+    .nav-shell { display:grid; gap:8px; min-width:min(640px, 100%); }
+    .category-nav, .page-nav { display:flex; gap:10px; flex-wrap:wrap; }
+    .nav-pill { padding:10px 14px; border-radius:999px; border:1px solid var(--panel-edge); background:#0f172a; color:var(--text); text-decoration:none; font-size:13px; }
+    .nav-pill.active { background: rgba(56,189,248,.14); border-color: rgba(56,189,248,.45); color:#e0f2fe; }
+    .nav-pill:hover { background:#162033; }
+    select, input { width: 100%; padding: 10px; border-radius: 10px; border: 1px solid var(--panel-edge); background: #0f172a; color: var(--text); }
+    .legend { display:flex; gap:12px; flex-wrap:wrap; margin:8px 0 12px; font-size:12px; color:#cbd5e1; }
+    .legend span { display:inline-flex; align-items:center; gap:6px; }
+    .swatch { width:12px; height:12px; display:inline-block; border-radius:3px; }
+    .svg-wrap { overflow:hidden; background:#09111d; border:1px solid var(--panel-edge); border-radius:12px; min-height: 680px; position: relative; }
+    .svg-wrap svg { width:100%; height:680px; display:block; }
+    .pre { white-space: pre-wrap; word-break: break-word; }
+    .pill { display:inline-block; padding: 2px 8px; border-radius: 999px; font-size: 12px; margin-right: 6px; }
+    .pill-preset { background:#082f49; color:#bae6fd; }
+    .pill-fixture { background:#14532d; color:#bbf7d0; }
+    .pill-attribute { background:#78350f; color:#fde68a; }
+    .toolbar { display:flex; gap:10px; flex-wrap:wrap; margin: 10px 0 12px; }
+    .toolbar button { padding: 8px 12px; border-radius: 10px; border: 1px solid var(--panel-edge); background: #0f172a; color: var(--text); cursor: pointer; }
+    .toolbar button:hover { background: #162033; }
+    .hint { color: #cbd5e1; font-size: 12px; margin-top: 8px; }
+  </style>
+  <link rel="stylesheet" href="app_shell.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-sankey@0.12.3/dist/d3-sankey.min.js"></script>
+</head>
+<body>
+<header>
+  <div class="header-brand">
+    <img src="logo_graindma.png" alt="grandMA2 Show Analyzer logo">
+    <div class="header-copy">
+      <h1 style="margin:0 0 8px;">grandMA2 Preset Sankey Explorer</h1>
+      <div class="muted">Samostatna experimentalni stranka: preset se deli na jednotliva svetla a ta na jednotlive atributy.</div>
+    </div>
+  </div>
+</header>
+<div class="wrap">
+  <div class="topbar">
+    <div class="nav-shell">
+      <div class="category-nav">
+        <a class="nav-pill" href="dashboard.html">Přehled show</a>
+        <a class="nav-pill" href="cue_list.html">Cue a sekvence</a>
+        <a class="nav-pill" href="patch.html">Patch a fixture</a>
+        <a class="nav-pill" href="warnings.html">Rizika a varování</a>
+        <a class="nav-pill active" href="explorer.html">Vztahy a grafy</a>
+      </div>
+      <div class="page-nav">
+        <a class="nav-pill" href="explorer.html">Matrix</a>
+        <a class="nav-pill" href="explorer_d3.html">D3</a>
+        <a class="nav-pill" href="explorer_radial.html">Radial</a>
+        <a class="nav-pill active" href="explorer_sankey.html">Sankey</a>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="muted">Vyber preset a zobraz Sankey diagram `Preset -> Fixture -> Attribute`.</div>
+    <div style="margin-top:12px;">
+      <select id="presetSelect"></select>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div id="sankeyStatus" class="muted" style="margin-bottom:10px;"></div>
+      <div class="legend">
+        <span><i class="swatch" style="background:#38bdf8"></i>Preset</span>
+        <span><i class="swatch" style="background:#22c55e"></i>Fixture</span>
+        <span><i class="swatch" style="background:#f59e0b"></i>Attribute</span>
+      </div>
+      <div class="toolbar">
+        <button id="zoomInBtn" type="button">Zoom +</button>
+        <button id="zoomOutBtn" type="button">Zoom -</button>
+        <button id="zoomResetBtn" type="button">Reset</button>
+      </div>
+      <div class="hint">Klik na uzel nebo vazbu zvyrazni sousedstvi. Klik do prazdna resetuje vyber.</div>
+      <div class="svg-wrap">
+        <svg id="sankeySvg" viewBox="0 0 1280 680"></svg>
+      </div>
+    </div>
+    <div class="card">
+      <h2 style="margin-top:0;">Detail</h2>
+      <div id="sankeyDetail" class="pre">Klikni na uzel nebo vazbu.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="muted">Souhrnny Sankey pohled pro vsechny presety najednou: `Preset -> Fixture -> Attribute`.</div>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <div id="allSankeyStatus" class="muted" style="margin-bottom:10px;"></div>
+      <div class="legend">
+        <span><i class="swatch" style="background:#38bdf8"></i>Preset</span>
+        <span><i class="swatch" style="background:#22c55e"></i>Fixture</span>
+        <span><i class="swatch" style="background:#f59e0b"></i>Attribute</span>
+      </div>
+      <div class="toolbar">
+        <button id="allZoomInBtn" type="button">Zoom +</button>
+        <button id="allZoomOutBtn" type="button">Zoom -</button>
+        <button id="allZoomResetBtn" type="button">Reset</button>
+      </div>
+      <div class="hint">Klik na uzel nebo vazbu zvyrazni sousedstvi. Klik do prazdna resetuje vyber.</div>
+      <div class="svg-wrap">
+        <svg id="allSankeySvg" viewBox="0 0 1600 900"></svg>
+      </div>
+    </div>
+    <div class="card">
+      <h2 style="margin-top:0;">Souhrnny Detail</h2>
+      <div id="allSankeyDetail" class="pre">Klikni na uzel nebo vazbu.</div>
+    </div>
+  </div>
+</div>
+<script>
+const DATA = $DATA_JSON;
+const FIXTURE_REGISTRY = DATA.fixture_registry || DATA.patch_fixtures || [];
+const PATCH_INDEX = Object.fromEntries(FIXTURE_REGISTRY.map(patch => [String(patch.fixture_id), patch]));
+const PRESET_INDEX = Object.fromEntries((DATA.presets || []).map(preset => [preset.number, preset]));
+let sankeyZoomApi = null;
+let allSankeyZoomApi = null;
+
+function normalizePresetNumber(presetNumber, presetType) {
+  const number = String(presetNumber || '').trim();
+  const type = String(presetType || '').trim();
+  if (!number) return '';
+  if (number.includes('.')) return number;
+  if (type === '0') return `0.${number}`;
+  return number;
+}
+
+function formatPresetLabel(presetNumber, presetName, presetType) {
+  const number = normalizePresetNumber(presetNumber, presetType);
+  const name = String(presetName || '').trim();
+  if (!number && !name) return 'Preset';
+  if (!number) return name || 'Preset';
+  if (!name || name === `Preset ${number}` || name === number) return number;
+  return `${number} ${name}`.trim();
+}
+
+function attributeFamily(attribute) {
+  const normalized = String(attribute || '').toUpperCase();
+  if (normalized.startsWith('COLOR')) return 'Color';
+  if (normalized.startsWith('PAN') || normalized.startsWith('TILT') || normalized.startsWith('POS')) return 'Position';
+  if (normalized.startsWith('GOBO')) return 'Gobo';
+  if (normalized.startsWith('DIM') || normalized.startsWith('SHUT')) return 'Dimmer';
+  if (normalized.startsWith('ZOOM') || normalized.startsWith('FOCUS') || normalized.startsWith('IRIS') || normalized.startsWith('PRISM') || normalized.startsWith('FROST')) return 'Beam';
+  if (normalized.startsWith('CTRL') || normalized.startsWith('LAMP')) return 'Control';
+  return 'Other';
+}
+
+function attributeProblemTag(attribute) {
+  const normalized = String(attribute || '').toUpperCase();
+  if (!normalized) return '';
+  if (normalized.startsWith('DIM') || normalized.startsWith('SHUT') || normalized.startsWith('STROBE')) return 'D';
+  if (normalized.startsWith('PAN') || normalized.startsWith('TILT') || normalized.startsWith('POS')) return 'PT';
+  if (normalized.startsWith('ZOOM')) return 'Z';
+  if (normalized.startsWith('COLOR') || normalized.startsWith('CTC') || normalized.startsWith('COLORMIX')) return 'C';
+  if (normalized.startsWith('GOBO')) return 'G';
+  if (normalized.startsWith('FOCUS') || normalized.startsWith('IRIS') || normalized.startsWith('PRISM') || normalized.startsWith('FROST')) return 'B';
+  if (normalized.startsWith('CTRL') || normalized.startsWith('LAMP')) return 'CTL';
+  return normalized.slice(0, 2);
+}
+
+function uniqueAttributeTags(attributes) {
+  const tags = [];
+  const seen = new Set();
+  (attributes || []).forEach(attribute => {
+    const tag = attributeProblemTag(attribute);
+    if (!tag || seen.has(tag)) return;
+    seen.add(tag);
+    tags.push(tag);
+  });
+  return tags.slice(0, 4);
+}
+
+function buildPresetSankeyData(preset) {
+  const presetId = `preset:${preset.number}`;
+  const nodes = [];
+  const nodeIndex = new Map();
+  const fixtureCounts = new Map();
+  const attributeCounts = new Map();
+  const attributeValues = new Map();
+
+  function ensureNode(id, name, kind, meta = {}) {
+    if (!nodeIndex.has(id)) {
+      nodeIndex.set(id, nodes.length);
+      nodes.push({ id, name, kind, meta });
+    }
+    return nodeIndex.get(id);
+  }
+
+  ensureNode(
+    presetId,
+    formatPresetLabel(preset.number, preset.name || '', preset.preset_type || ''),
+    'preset',
+    {
+      preset_number: preset.number,
+      preset_type: preset.preset_type,
+      value_count: (preset.values || []).length,
+      attribute_tags: uniqueAttributeTags((preset.values || []).map(atom => atom.attribute).filter(Boolean)),
+    }
+  );
+
+  (preset.values || []).forEach(atom => {
+    if (atom.fixture_id == null) return;
+    const fixtureId = Number(atom.fixture_id);
+    const patch = PATCH_INDEX[String(fixtureId)] || {};
+    const fixtureLabel = `${fixtureId} ${patch.label || patch.name || `Fixture ${fixtureId}`}`.trim();
+    const fixtureNodeId = `fixture:${fixtureId}`;
+    ensureNode(fixtureNodeId, fixtureLabel, 'fixture', {
+      fixture_id: fixtureId,
+      fixture_type: patch.fixture_type || '',
+      fixture_patch: patch.patch || '',
+    });
+    fixtureCounts.set(fixtureNodeId, (fixtureCounts.get(fixtureNodeId) || 0) + 1);
+
+    const attribute = atom.attribute || '(unknown)';
+    const attributeNodeId = `fixture:${fixtureId}:attribute:${attribute}`;
+    ensureNode(attributeNodeId, attribute, 'attribute', {
+      fixture_id: fixtureId,
+      attribute,
+      family: attributeFamily(attribute),
+    });
+    attributeCounts.set(attributeNodeId, (attributeCounts.get(attributeNodeId) || 0) + 1);
+    if (!attributeValues.has(attributeNodeId)) attributeValues.set(attributeNodeId, []);
+    attributeValues.get(attributeNodeId).push(String(atom.raw_value ?? ''));
+  });
+
+  nodes.forEach(node => {
+    if (node.kind === 'attribute') {
+      const values = attributeValues.get(node.id) || [];
+      const uniqueValues = [...new Set(values.filter(Boolean))];
+      node.meta.values = uniqueValues;
+      node.meta.value_preview = uniqueValues.length === 1 ? uniqueValues[0] : `${uniqueValues.length} values`;
+      if (uniqueValues.length === 1) {
+        node.name = `${node.name} = ${uniqueValues[0]}`;
+      }
+    }
+    if (node.kind === 'fixture') {
+      node.meta.attribute_tags = uniqueAttributeTags((preset.values || [])
+        .filter(atom => Number(atom.fixture_id) === Number(node.meta.fixture_id))
+        .map(atom => atom.attribute)
+        .filter(Boolean));
+    }
+    if (node.kind === 'attribute') {
+      node.meta.attribute_tags = uniqueAttributeTags([node.meta.attribute]);
+    }
+  });
+
+  const links = [];
+  for (const [fixtureNodeId, count] of fixtureCounts.entries()) {
+    links.push({ source: presetId, target: fixtureNodeId, value: count, kind: 'preset_fixture' });
+  }
+  for (const [attributeNodeId, count] of attributeCounts.entries()) {
+    const fixtureNodeId = attributeNodeId.split(':attribute:')[0];
+    links.push({
+      source: fixtureNodeId,
+      target: attributeNodeId,
+      value: count,
+      kind: 'fixture_attribute',
+      values: (attributeValues.get(attributeNodeId) || []).filter(Boolean),
+    });
+  }
+
+  return { nodes, links };
+}
+
+function buildAllPresetsSankeyData() {
+  const nodes = [];
+  const nodeIndex = new Map();
+  const linkCounts = new Map();
+  const attributeValueMap = new Map();
+
+  function ensureNode(id, name, kind, meta = {}) {
+    if (!nodeIndex.has(id)) {
+      nodeIndex.set(id, nodes.length);
+      nodes.push({ id, name, kind, meta });
+    }
+  }
+
+  function addLink(source, target, kind, increment = 1) {
+    const key = `${source}|||${target}|||${kind}`;
+    linkCounts.set(key, (linkCounts.get(key) || 0) + increment);
+  }
+
+  (DATA.presets || []).forEach(preset => {
+    const presetNumber = preset.number || '';
+    if (!(preset.values || []).some(atom => atom.fixture_id != null && atom.attribute)) return;
+    const presetId = `preset:${presetNumber}`;
+    ensureNode(presetId, formatPresetLabel(presetNumber, preset.name || '', preset.preset_type || ''), 'preset', {
+      preset_number: presetNumber,
+      preset_type: preset.preset_type || '',
+      value_count: (preset.values || []).length,
+      attribute_tags: uniqueAttributeTags((preset.values || []).map(atom => atom.attribute).filter(Boolean)),
+    });
+
+    (preset.values || []).forEach(atom => {
+      if (atom.fixture_id == null) return;
+      const fixtureId = Number(atom.fixture_id);
+      const patch = PATCH_INDEX[String(fixtureId)] || {};
+      const fixtureNodeId = `fixture:${fixtureId}`;
+      ensureNode(fixtureNodeId, `${fixtureId} ${patch.label || patch.name || `Fixture ${fixtureId}`}`.trim(), 'fixture', {
+        fixture_id: fixtureId,
+        fixture_type: patch.fixture_type || '',
+        fixture_patch: patch.patch || '',
+      });
+      addLink(presetId, fixtureNodeId, 'preset_fixture', 1);
+
+      const attribute = atom.attribute || '(unknown)';
+      const attributeNodeId = `fixture:${fixtureId}:attribute:${attribute}`;
+      ensureNode(attributeNodeId, attribute, 'attribute', {
+        fixture_id: fixtureId,
+        attribute,
+        family: attributeFamily(attribute),
+      });
+      addLink(fixtureNodeId, attributeNodeId, 'fixture_attribute', 1);
+      const valueKey = `${attributeNodeId}|||${presetNumber}`;
+      if (!attributeValueMap.has(valueKey)) attributeValueMap.set(valueKey, []);
+      attributeValueMap.get(valueKey).push(String(atom.raw_value ?? ''));
+    });
+  });
+
+  nodes.forEach(node => {
+    if (node.kind === 'attribute') {
+      const entries = [];
+      for (const [key, values] of attributeValueMap.entries()) {
+        const [attributeNodeId, presetNumber] = key.split('|||');
+        if (attributeNodeId !== node.id) continue;
+        const preset = PRESET_INDEX[presetNumber] || {};
+        const uniqueValues = [...new Set(values.filter(Boolean))];
+        entries.push({
+          preset_number: presetNumber,
+          preset_label: formatPresetLabel(presetNumber, preset.name || '', preset.preset_type || ''),
+          values: uniqueValues,
+        });
+      }
+      node.meta.value_entries = entries.sort((a, b) => a.preset_label.localeCompare(b.preset_label, undefined, { numeric: true }));
+      node.meta.value_preview = entries.length ? `${entries.length} preset values` : '';
+    }
+    if (node.kind === 'preset' && !node.meta.attribute_tags) {
+      node.meta.attribute_tags = uniqueAttributeTags(((PRESET_INDEX[node.meta.preset_number] || {}).values || []).map(atom => atom.attribute).filter(Boolean));
+    }
+    if (node.kind === 'fixture') {
+      const attributes = [];
+      (DATA.presets || []).forEach(preset => {
+        (preset.values || []).forEach(atom => {
+          if (Number(atom.fixture_id) === Number(node.meta.fixture_id) && atom.attribute) attributes.push(atom.attribute);
+        });
+      });
+      node.meta.attribute_tags = uniqueAttributeTags(attributes);
+    }
+    if (node.kind === 'attribute') {
+      node.meta.attribute_tags = uniqueAttributeTags([node.meta.attribute]);
+    }
+  });
+
+  const links = [...linkCounts.entries()].map(([key, value]) => {
+    const [source, target, kind] = key.split('|||');
+    let values = [];
+    if (kind === 'fixture_attribute') {
+      for (const [valueKey, rawValues] of attributeValueMap.entries()) {
+        const [attributeNodeId, presetNumber] = valueKey.split('|||');
+        if (target !== attributeNodeId) continue;
+        const preset = PRESET_INDEX[presetNumber] || {};
+        const uniqueValues = [...new Set(rawValues.filter(Boolean))];
+        values.push(`${formatPresetLabel(presetNumber, preset.name || '', preset.preset_type || '')}: ${uniqueValues.join(', ')}`);
+      }
+      values = values.sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
+    }
+    return { source, target, kind, value, values };
+  });
+
+  return { nodes, links };
+}
+
+function colorForNode(kind) {
+  if (kind === 'preset') return '#38bdf8';
+  if (kind === 'fixture') return '#22c55e';
+  return '#f59e0b';
+}
+
+function renderSankeyInto(options) {
+  const { svgId, statusId, detailId, graphData, titleText, zoomMin = 0.4, zoomMax = 3.5, zoomStep = 1.2 } = options;
+  const statusEl = document.getElementById(statusId);
+  const detailEl = document.getElementById(detailId);
+  const svg = d3.select(`#${svgId}`);
+  svg.selectAll('*').remove();
+
+  if (typeof window.d3 === 'undefined' || typeof window.d3.sankey !== 'function') {
+    statusEl.textContent = 'D3 Sankey library is not available in this browser session.';
+    detailEl.textContent = 'Tento experimentalni soubor potrebuje D3 a d3-sankey skript.';
+    return null;
+  }
+
+  const { nodes, links } = graphData;
+  if (!nodes.length || !links.length) {
+    statusEl.textContent = 'Pro vybrany pohled nejsou dostupna data.';
+    detailEl.textContent = 'Neni co zobrazit.';
+    return null;
+  }
+
+  const viewBox = (svg.attr('viewBox') || '0 0 1280 680').split(/\s+/).map(Number);
+  const width = viewBox[2] || 1280;
+  const height = viewBox[3] || 680;
+  const sankey = d3.sankey()
+    .nodeId(d => d.id)
+    .nodeWidth(18)
+    .nodePadding(20)
+    .extent([[20, 20], [width - 20, height - 20]]);
+
+  const graph = sankey({
+    nodes: nodes.map(d => ({ ...d })),
+    links: links.map(d => ({ ...d })),
+  });
+
+  statusEl.textContent = titleText(graph);
+  detailEl.textContent = 'Klikni na uzel nebo vazbu.';
+
+  const root = svg.append('g');
+  const zoomBehavior = d3.zoom()
+    .scaleExtent([zoomMin, zoomMax])
+    .on('zoom', event => {
+      root.attr('transform', event.transform);
+    });
+  svg.call(zoomBehavior).on('click', event => {
+    if (event.target === svg.node()) {
+      clearSelection();
+    }
+  });
+
+  const link = root.append('g')
+    .attr('fill', 'none')
+    .selectAll('path')
+    .data(graph.links)
+    .join('path')
+    .attr('d', d3.sankeyLinkHorizontal())
+    .attr('stroke', d => d.kind === 'preset_fixture' ? 'rgba(56,189,248,.55)' : 'rgba(245,158,11,.48)')
+    .attr('stroke-width', d => Math.max(1, d.width))
+    .attr('stroke-opacity', 0.95)
+    .style('cursor', 'pointer')
+    .on('click', (_, d) => {
+      selectLink(d);
+      const lines = [
+        '<span class="pill pill-preset">LINK</span>',
+        `${d.source.name} -> ${d.target.name}`,
+        '',
+        `Value atoms: ${d.value}`,
+      ];
+      if (d.values && d.values.length) {
+        lines.push('');
+        lines.push('Values:');
+        d.values.forEach(value => lines.push(`- ${value}`));
+      }
+      detailEl.innerHTML = lines.join('<br>');
+    });
+
+  const node = root.append('g')
+    .selectAll('g')
+    .data(graph.nodes)
+    .join('g')
+    .style('cursor', 'pointer');
+
+  node.append('rect')
+    .attr('x', d => d.x0)
+    .attr('y', d => d.y0)
+    .attr('height', d => Math.max(1, d.y1 - d.y0))
+    .attr('width', d => d.x1 - d.x0)
+    .attr('fill', d => colorForNode(d.kind))
+    .attr('stroke', '#0f172a')
+    .attr('stroke-width', 1.2)
+    .on('click', (_, d) => {
+      selectNode(d);
+      const lines = [];
+      if (d.kind === 'preset') {
+        lines.push('<span class="pill pill-preset">PRESET</span>');
+        lines.push(d.name);
+        lines.push('');
+        const outgoing = graph.links.filter(link => link.source.id === d.id);
+        lines.push(`Value atoms: ${d.meta.value_count || outgoing.reduce((sum, item) => sum + (item.value || 0), 0)}`);
+        lines.push(`Fixtures: ${outgoing.length}`);
+      } else if (d.kind === 'fixture') {
+        lines.push('<span class="pill pill-fixture">FIXTURE</span>');
+        lines.push(d.name);
+        lines.push('');
+        if (d.meta.fixture_type) lines.push(`Type: ${d.meta.fixture_type}`);
+        if (d.meta.fixture_patch) lines.push(`Patch: ${d.meta.fixture_patch}`);
+        const attrs = graph.links.filter(link => link.source.id === d.id).map(link => link.target.name);
+        lines.push(`Attributes: ${attrs.join(', ')}`);
+      } else {
+        lines.push('<span class="pill pill-attribute">ATTRIBUTE</span>');
+        lines.push(d.name);
+        lines.push('');
+        lines.push(`Family: ${d.meta.family || 'Other'}`);
+        lines.push(`Fixture ID: ${d.meta.fixture_id}`);
+        if (d.meta.values && d.meta.values.length) {
+          lines.push('');
+          lines.push('Preset value:');
+          d.meta.values.forEach(value => lines.push(`- ${value}`));
+        } else if (d.meta.value_entries && d.meta.value_entries.length) {
+          lines.push('');
+          lines.push('Preset values:');
+          d.meta.value_entries.forEach(entry => lines.push(`- ${entry.preset_label}: ${entry.values.join(', ')}`));
+        }
+      }
+      detailEl.innerHTML = lines.join('<br>');
+    });
+
+  node.append('text')
+    .attr('x', d => d.x0 < 640 ? d.x1 + 8 : d.x0 - 8)
+    .attr('y', d => (d.y1 + d.y0) / 2)
+    .attr('dy', '0.35em')
+    .attr('text-anchor', d => d.x0 < 640 ? 'start' : 'end')
+    .attr('fill', '#e5e7eb')
+    .style('font-size', '11px')
+    .text(d => d.name);
+
+  node.append('text')
+    .attr('x', d => d.x0 < 640 ? d.x1 + 8 : d.x0 - 8)
+    .attr('y', d => (d.y1 + d.y0) / 2 + 14)
+    .attr('text-anchor', d => d.x0 < 640 ? 'start' : 'end')
+    .attr('fill', '#cbd5e1')
+    .style('font-size', '9px')
+    .style('font-weight', '700')
+    .text(d => ((d.meta?.attribute_tags) || []).join(' '));
+
+  function clearSelection() {
+    node
+      .style('opacity', 1)
+      .select('rect')
+      .attr('stroke', '#0f172a')
+      .attr('stroke-width', 1.2);
+    link
+      .style('opacity', 0.95)
+      .attr('stroke-opacity', 0.95);
+    detailEl.textContent = 'Klikni na uzel nebo vazbu.';
+  }
+
+  function selectNode(selected) {
+    const relatedIds = new Set([selected.id]);
+    graph.links.forEach(item => {
+      if (item.source.id === selected.id || item.target.id === selected.id) {
+        relatedIds.add(item.source.id);
+        relatedIds.add(item.target.id);
+      }
+    });
+    node
+      .style('opacity', d => relatedIds.has(d.id) ? 1 : 0.18)
+      .select('rect')
+      .attr('stroke', d => d.id === selected.id ? '#f8fafc' : '#0f172a')
+      .attr('stroke-width', d => d.id === selected.id ? 2.5 : 1.2);
+    link
+      .style('opacity', d => d.source.id === selected.id || d.target.id === selected.id ? 1 : 0.12)
+      .attr('stroke-opacity', d => d.source.id === selected.id || d.target.id === selected.id ? 1 : 0.12);
+  }
+
+  function selectLink(selected) {
+    const relatedIds = new Set([selected.source.id, selected.target.id]);
+    node
+      .style('opacity', d => relatedIds.has(d.id) ? 1 : 0.18)
+      .select('rect')
+      .attr('stroke', d => relatedIds.has(d.id) ? '#f8fafc' : '#0f172a')
+      .attr('stroke-width', d => relatedIds.has(d.id) ? 2.2 : 1.2);
+    link
+      .style('opacity', d => d === selected ? 1 : 0.12)
+      .attr('stroke-opacity', d => d === selected ? 1 : 0.12);
+  }
+
+  return {
+    zoomIn() { svg.transition().duration(180).call(zoomBehavior.scaleBy, zoomStep); },
+    zoomOut() { svg.transition().duration(180).call(zoomBehavior.scaleBy, 1 / zoomStep); },
+    reset() {
+      clearSelection();
+      svg.transition().duration(220).call(zoomBehavior.transform, d3.zoomIdentity);
+    },
+  };
+}
+
+function renderSankey() {
+  const presetNumber = document.getElementById('presetSelect').value;
+  const preset = PRESET_INDEX[presetNumber];
+  if (!preset) {
+    document.getElementById('sankeyStatus').textContent = 'Preset nebyl nalezen.';
+    document.getElementById('sankeyDetail').textContent = 'Vyber preset.';
+    return;
+  }
+  sankeyZoomApi = renderSankeyInto({
+    svgId: 'sankeySvg',
+    statusId: 'sankeyStatus',
+    detailId: 'sankeyDetail',
+    graphData: buildPresetSankeyData(preset),
+    zoomMax: 7,
+    zoomStep: 1.28,
+    titleText: graph => `Preset ${formatPresetLabel(preset.number, preset.name || '', preset.preset_type || '')} | fixtures=${graph.nodes.filter(node => node.kind === 'fixture').length} | attributes=${graph.nodes.filter(node => node.kind === 'attribute').length} | values=${(preset.values || []).length}`,
+  });
+}
+
+function renderAllPresetsSankey() {
+  allSankeyZoomApi = renderSankeyInto({
+    svgId: 'allSankeySvg',
+    statusId: 'allSankeyStatus',
+    detailId: 'allSankeyDetail',
+    graphData: buildAllPresetsSankeyData(),
+    zoomMin: 0.25,
+    zoomMax: 14,
+    zoomStep: 1.35,
+    titleText: graph => `Vsechny presety | presets=${graph.nodes.filter(node => node.kind === 'preset').length} | fixtures=${graph.nodes.filter(node => node.kind === 'fixture').length} | attributes=${graph.nodes.filter(node => node.kind === 'attribute').length} | links=${graph.links.length}`,
+  });
+}
+
+function init() {
+  const select = document.getElementById('presetSelect');
+  const presets = (DATA.presets || [])
+    .filter(preset => (preset.values || []).some(atom => atom.fixture_id != null && atom.attribute))
+    .sort((a, b) => formatPresetLabel(a.number, a.name || '', a.preset_type || '').localeCompare(formatPresetLabel(b.number, b.name || '', b.preset_type || ''), undefined, { numeric: true }));
+
+  presets.forEach(preset => {
+    const option = document.createElement('option');
+    option.value = preset.number || '';
+    option.textContent = formatPresetLabel(preset.number, preset.name || '', preset.preset_type || '');
+    select.appendChild(option);
+  });
+  select.addEventListener('change', renderSankey);
+  document.getElementById('zoomInBtn').addEventListener('click', () => sankeyZoomApi && sankeyZoomApi.zoomIn());
+  document.getElementById('zoomOutBtn').addEventListener('click', () => sankeyZoomApi && sankeyZoomApi.zoomOut());
+  document.getElementById('zoomResetBtn').addEventListener('click', () => sankeyZoomApi && sankeyZoomApi.reset());
+  document.getElementById('allZoomInBtn').addEventListener('click', () => allSankeyZoomApi && allSankeyZoomApi.zoomIn());
+  document.getElementById('allZoomOutBtn').addEventListener('click', () => allSankeyZoomApi && allSankeyZoomApi.zoomOut());
+  document.getElementById('allZoomResetBtn').addEventListener('click', () => allSankeyZoomApi && allSankeyZoomApi.reset());
+  renderSankey();
+  renderAllPresetsSankey();
+}
+
+init();
+</script>
+</body>
+</html>
+

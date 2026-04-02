@@ -1,0 +1,4 @@
+preset_number,preset_type,preset_xml_index,preset_name,fixture_id,fixture_name,fixture_type,fixture_patch,attribute,raw_value,value_type,reference_target,source_file
+1.5,1,,Warm Front,101,Front Left Wash,Robe LEDWash 600,1.1,Dimmer,100.00,hard,,test_exports_xmlpatch\demo_preset_1.xml
+1.5,1,,Warm Front,102,Front Center Wash,Robe LEDWash 600,1.17,Color,255.00,hard,,test_exports_xmlpatch\demo_preset_1.xml
+2.7,2,,DS Center,103,DS Center Spot,Martin MAC Viper,1.33,Position,45.00,hard,,test_exports_xmlpatch\demo_preset_1.xml

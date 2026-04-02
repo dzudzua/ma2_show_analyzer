@@ -1,0 +1,9 @@
+<Export>
+  <Preset number="1.5" name="Warm Front">
+    <Value fixtureid="101" attribute="Dimmer" value="100" />
+    <Value fixtureid="102" attribute="Color" value="255" />
+  </Preset>
+  <Preset number="2.7" name="DS Center">
+    <Value fixtureid="103" attribute="Position" value="45" />
+  </Preset>
+</Export>

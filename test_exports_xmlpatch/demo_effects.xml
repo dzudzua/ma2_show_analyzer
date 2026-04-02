@@ -1,0 +1,5 @@
+<Export>
+  <Effect number="12" name="Circle FX">
+    <Apply fixtureid="102" />
+  </Effect>
+</Export>

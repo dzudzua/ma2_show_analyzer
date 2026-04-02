@@ -1,0 +1,7 @@
+<Export>
+  <Group number="3" name="Washes">
+    <Fixture fixtureid="101" />
+    <Fixture fixtureid="102" />
+    <Fixture fixtureid="103" />
+  </Group>
+</Export>

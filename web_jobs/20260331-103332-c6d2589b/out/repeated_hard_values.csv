@@ -1,0 +1,231 @@
+fixture_id,fixture_name,fixture_type,fixture_patch,attribute,raw_value,cue_count,sequence_count,cue_list_preview,details
+1,Spiider 1,3 Robin Spiider Mode 3,2.001,COLORRGB31,0.00,25,3,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.40 Flash | 11.42 Flash | 11.44 Flash | 11.46 Flash | 11.48 Flash | 11.50 Flash ...,repeated hard value candidate for preset cleanup
+1,Spiider 1,3 Robin Spiider Mode 3,2.001,COLORRGB32,0.00,25,3,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.40 Flash | 11.42 Flash | 11.44 Flash | 11.46 Flash | 11.48 Flash | 11.50 Flash ...,repeated hard value candidate for preset cleanup
+1,Spiider 1,3 Robin Spiider Mode 3,2.001,COLORRGB33,0.00,25,3,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.40 Flash | 11.42 Flash | 11.44 Flash | 11.46 Flash | 11.48 Flash | 11.50 Flash ...,repeated hard value candidate for preset cleanup
+1,Spiider 1,3 Robin Spiider Mode 3,2.001,COLORRGB35,0.00,25,3,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.40 Flash | 11.42 Flash | 11.44 Flash | 11.46 Flash | 11.48 Flash | 11.50 Flash ...,repeated hard value candidate for preset cleanup
+5,Spiider 5,3 Robin Spiider Mode 3,4.001,COLORRGB31,0.00,25,3,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.40 Flash | 11.42 Flash | 11.44 Flash | 11.46 Flash | 11.48 Flash | 11.50 Flash ...,repeated hard value candidate for preset cleanup
+5,Spiider 5,3 Robin Spiider Mode 3,4.001,COLORRGB32,0.00,25,3,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.40 Flash | 11.42 Flash | 11.44 Flash | 11.46 Flash | 11.48 Flash | 11.50 Flash ...,repeated hard value candidate for preset cleanup
+5,Spiider 5,3 Robin Spiider Mode 3,4.001,COLORRGB33,0.00,25,3,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.40 Flash | 11.42 Flash | 11.44 Flash | 11.46 Flash | 11.48 Flash | 11.50 Flash ...,repeated hard value candidate for preset cleanup
+5,Spiider 5,3 Robin Spiider Mode 3,4.001,COLORRGB35,0.00,25,3,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.40 Flash | 11.42 Flash | 11.44 Flash | 11.46 Flash | 11.48 Flash | 11.50 Flash ...,repeated hard value candidate for preset cleanup
+41,RLB350M1 1,12 Robin LEDBeam 350 Mode 1,13.001,COLORRGB5,100.00,16,2,11.6 platforma dole | 11.40 Flash | 11.42 Flash | 11.44 Flash | 11.46 Flash | 11.48 Flash | 11.50 Flash | 11.52 Flash ...,repeated hard value candidate for preset cleanup
+42,RLB350M1 2,12 Robin LEDBeam 350 Mode 1,13.023,COLORRGB5,100.00,16,2,11.6 platforma dole | 11.40 Flash | 11.42 Flash | 11.44 Flash | 11.46 Flash | 11.48 Flash | 11.50 Flash | 11.52 Flash ...,repeated hard value candidate for preset cleanup
+47,RLB350M1 7,12 Robin LEDBeam 350 Mode 1,5.001,COLORRGB5,100.00,16,2,11.6 platforma dole | 11.40 Flash | 11.42 Flash | 11.44 Flash | 11.46 Flash | 11.48 Flash | 11.50 Flash | 11.52 Flash ...,repeated hard value candidate for preset cleanup
+48,RLB350M1 8,12 Robin LEDBeam 350 Mode 1,5.023,COLORRGB5,100.00,16,2,11.6 platforma dole | 11.40 Flash | 11.42 Flash | 11.44 Flash | 11.46 Flash | 11.48 Flash | 11.50 Flash | 11.52 Flash ...,repeated hard value candidate for preset cleanup
+1,Spiider 1,3 Robin Spiider Mode 3,2.001,COLORRGB5,100.00,15,2,11.40 Flash | 11.42 Flash | 11.44 Flash | 11.46 Flash | 11.48 Flash | 11.50 Flash | 11.52 Flash | 11.54 Flash ...,repeated hard value candidate for preset cleanup
+5,Spiider 5,3 Robin Spiider Mode 3,4.001,COLORRGB5,100.00,15,2,11.40 Flash | 11.42 Flash | 11.44 Flash | 11.46 Flash | 11.48 Flash | 11.50 Flash | 11.52 Flash | 11.54 Flash ...,repeated hard value candidate for preset cleanup
+4,Spiider 4,3 Robin Spiider Mode 3,2.100,COLORRGB31,0.00,13,3,2.1 Cue 1 | 9.1 Cue 1 | 11.27 beegees 6:37.6 | 11.65 final flash | 11.76 ondra hodi koukain novy track MIDI | 11.79 chuze STYCH od garaze velky | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.81 disko gula dolu ...,repeated hard value candidate for preset cleanup
+4,Spiider 4,3 Robin Spiider Mode 3,2.100,COLORRGB32,0.00,13,3,2.1 Cue 1 | 9.1 Cue 1 | 11.27 beegees 6:37.6 | 11.65 final flash | 11.76 ondra hodi koukain novy track MIDI | 11.79 chuze STYCH od garaze velky | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.81 disko gula dolu ...,repeated hard value candidate for preset cleanup
+4,Spiider 4,3 Robin Spiider Mode 3,2.100,COLORRGB33,0.00,13,3,2.1 Cue 1 | 9.1 Cue 1 | 11.27 beegees 6:37.6 | 11.65 final flash | 11.76 ondra hodi koukain novy track MIDI | 11.79 chuze STYCH od garaze velky | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.81 disko gula dolu ...,repeated hard value candidate for preset cleanup
+4,Spiider 4,3 Robin Spiider Mode 3,2.100,COLORRGB35,0.00,13,3,2.1 Cue 1 | 9.1 Cue 1 | 11.27 beegees 6:37.6 | 11.65 final flash | 11.76 ondra hodi koukain novy track MIDI | 11.79 chuze STYCH od garaze velky | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.81 disko gula dolu ...,repeated hard value candidate for preset cleanup
+1,Spiider 1,3 Robin Spiider Mode 3,2.001,COLORRGB1,99.40,12,1,11.40 Flash | 11.42 Flash | 11.44 Flash | 11.46 Flash | 11.48 Flash | 11.50 Flash | 11.52 Flash | 11.54 Flash ...,repeated hard value candidate for preset cleanup
+1,Spiider 1,3 Robin Spiider Mode 3,2.001,COLORRGB2,99.40,12,1,11.40 Flash | 11.42 Flash | 11.44 Flash | 11.46 Flash | 11.48 Flash | 11.50 Flash | 11.52 Flash | 11.54 Flash ...,repeated hard value candidate for preset cleanup
+1,Spiider 1,3 Robin Spiider Mode 3,2.001,COLORRGB3,99.40,12,1,11.40 Flash | 11.42 Flash | 11.44 Flash | 11.46 Flash | 11.48 Flash | 11.50 Flash | 11.52 Flash | 11.54 Flash ...,repeated hard value candidate for preset cleanup
+2,Spiider 2,3 Robin Spiider Mode 3,2.034,COLORRGB31,0.00,12,2,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.65 final flash | 11.76 ondra hodi koukain novy track MIDI | 11.79 chuze STYCH od garaze velky | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.81 disko gula dolu | 11.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+2,Spiider 2,3 Robin Spiider Mode 3,2.034,COLORRGB32,0.00,12,2,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.65 final flash | 11.76 ondra hodi koukain novy track MIDI | 11.79 chuze STYCH od garaze velky | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.81 disko gula dolu | 11.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+2,Spiider 2,3 Robin Spiider Mode 3,2.034,COLORRGB33,0.00,12,2,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.65 final flash | 11.76 ondra hodi koukain novy track MIDI | 11.79 chuze STYCH od garaze velky | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.81 disko gula dolu | 11.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+2,Spiider 2,3 Robin Spiider Mode 3,2.034,COLORRGB35,0.00,12,2,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.65 final flash | 11.76 ondra hodi koukain novy track MIDI | 11.79 chuze STYCH od garaze velky | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.81 disko gula dolu | 11.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+3,Spiider 3,3 Robin Spiider Mode 3,2.067,COLORRGB31,0.00,12,2,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.65 final flash | 11.76 ondra hodi koukain novy track MIDI | 11.79 chuze STYCH od garaze velky | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.81 disko gula dolu | 11.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+3,Spiider 3,3 Robin Spiider Mode 3,2.067,COLORRGB32,0.00,12,2,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.65 final flash | 11.76 ondra hodi koukain novy track MIDI | 11.79 chuze STYCH od garaze velky | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.81 disko gula dolu | 11.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+3,Spiider 3,3 Robin Spiider Mode 3,2.067,COLORRGB33,0.00,12,2,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.65 final flash | 11.76 ondra hodi koukain novy track MIDI | 11.79 chuze STYCH od garaze velky | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.81 disko gula dolu | 11.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+3,Spiider 3,3 Robin Spiider Mode 3,2.067,COLORRGB35,0.00,12,2,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.65 final flash | 11.76 ondra hodi koukain novy track MIDI | 11.79 chuze STYCH od garaze velky | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.81 disko gula dolu | 11.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+5,Spiider 5,3 Robin Spiider Mode 3,4.001,COLORRGB1,99.40,12,1,11.40 Flash | 11.42 Flash | 11.44 Flash | 11.46 Flash | 11.48 Flash | 11.50 Flash | 11.52 Flash | 11.54 Flash ...,repeated hard value candidate for preset cleanup
+5,Spiider 5,3 Robin Spiider Mode 3,4.001,COLORRGB2,99.40,12,1,11.40 Flash | 11.42 Flash | 11.44 Flash | 11.46 Flash | 11.48 Flash | 11.50 Flash | 11.52 Flash | 11.54 Flash ...,repeated hard value candidate for preset cleanup
+5,Spiider 5,3 Robin Spiider Mode 3,4.001,COLORRGB3,99.40,12,1,11.40 Flash | 11.42 Flash | 11.44 Flash | 11.46 Flash | 11.48 Flash | 11.50 Flash | 11.52 Flash | 11.54 Flash ...,repeated hard value candidate for preset cleanup
+6,Spiider 6,3 Robin Spiider Mode 3,4.034,COLORRGB31,0.00,12,2,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.65 final flash | 11.76 ondra hodi koukain novy track MIDI | 11.79 chuze STYCH od garaze velky | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.81 disko gula dolu | 11.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+6,Spiider 6,3 Robin Spiider Mode 3,4.034,COLORRGB32,0.00,12,2,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.65 final flash | 11.76 ondra hodi koukain novy track MIDI | 11.79 chuze STYCH od garaze velky | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.81 disko gula dolu | 11.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+6,Spiider 6,3 Robin Spiider Mode 3,4.034,COLORRGB33,0.00,12,2,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.65 final flash | 11.76 ondra hodi koukain novy track MIDI | 11.79 chuze STYCH od garaze velky | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.81 disko gula dolu | 11.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+6,Spiider 6,3 Robin Spiider Mode 3,4.034,COLORRGB35,0.00,12,2,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.65 final flash | 11.76 ondra hodi koukain novy track MIDI | 11.79 chuze STYCH od garaze velky | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.81 disko gula dolu | 11.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+7,Spiider 7,3 Robin Spiider Mode 3,4.067,COLORRGB31,0.00,12,2,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.65 final flash | 11.76 ondra hodi koukain novy track MIDI | 11.79 chuze STYCH od garaze velky | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.81 disko gula dolu | 11.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+7,Spiider 7,3 Robin Spiider Mode 3,4.067,COLORRGB32,0.00,12,2,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.65 final flash | 11.76 ondra hodi koukain novy track MIDI | 11.79 chuze STYCH od garaze velky | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.81 disko gula dolu | 11.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+7,Spiider 7,3 Robin Spiider Mode 3,4.067,COLORRGB33,0.00,12,2,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.65 final flash | 11.76 ondra hodi koukain novy track MIDI | 11.79 chuze STYCH od garaze velky | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.81 disko gula dolu | 11.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+7,Spiider 7,3 Robin Spiider Mode 3,4.067,COLORRGB35,0.00,12,2,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.65 final flash | 11.76 ondra hodi koukain novy track MIDI | 11.79 chuze STYCH od garaze velky | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.81 disko gula dolu | 11.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+8,Spiider 8,3 Robin Spiider Mode 3,4.100,COLORRGB31,0.00,12,2,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.65 final flash | 11.76 ondra hodi koukain novy track MIDI | 11.79 chuze STYCH od garaze velky | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.81 disko gula dolu | 11.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+8,Spiider 8,3 Robin Spiider Mode 3,4.100,COLORRGB32,0.00,12,2,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.65 final flash | 11.76 ondra hodi koukain novy track MIDI | 11.79 chuze STYCH od garaze velky | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.81 disko gula dolu | 11.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+8,Spiider 8,3 Robin Spiider Mode 3,4.100,COLORRGB33,0.00,12,2,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.65 final flash | 11.76 ondra hodi koukain novy track MIDI | 11.79 chuze STYCH od garaze velky | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.81 disko gula dolu | 11.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+8,Spiider 8,3 Robin Spiider Mode 3,4.100,COLORRGB35,0.00,12,2,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.65 final flash | 11.76 ondra hodi koukain novy track MIDI | 11.79 chuze STYCH od garaze velky | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.81 disko gula dolu | 11.89 koks KOUR GARAZ ...,repeated hard value candidate for preset cleanup
+41,RLB350M1 1,12 Robin LEDBeam 350 Mode 1,13.001,COLORRGB1,97.02,12,1,11.40 Flash | 11.42 Flash | 11.44 Flash | 11.46 Flash | 11.48 Flash | 11.50 Flash | 11.52 Flash | 11.54 Flash ...,repeated hard value candidate for preset cleanup
+41,RLB350M1 1,12 Robin LEDBeam 350 Mode 1,13.001,COLORRGB2,97.02,12,1,11.40 Flash | 11.42 Flash | 11.44 Flash | 11.46 Flash | 11.48 Flash | 11.50 Flash | 11.52 Flash | 11.54 Flash ...,repeated hard value candidate for preset cleanup
+41,RLB350M1 1,12 Robin LEDBeam 350 Mode 1,13.001,COLORRGB3,97.02,12,1,11.40 Flash | 11.42 Flash | 11.44 Flash | 11.46 Flash | 11.48 Flash | 11.50 Flash | 11.52 Flash | 11.54 Flash ...,repeated hard value candidate for preset cleanup
+42,RLB350M1 2,12 Robin LEDBeam 350 Mode 1,13.023,COLORRGB1,97.02,12,1,11.40 Flash | 11.42 Flash | 11.44 Flash | 11.46 Flash | 11.48 Flash | 11.50 Flash | 11.52 Flash | 11.54 Flash ...,repeated hard value candidate for preset cleanup
+42,RLB350M1 2,12 Robin LEDBeam 350 Mode 1,13.023,COLORRGB2,97.02,12,1,11.40 Flash | 11.42 Flash | 11.44 Flash | 11.46 Flash | 11.48 Flash | 11.50 Flash | 11.52 Flash | 11.54 Flash ...,repeated hard value candidate for preset cleanup
+42,RLB350M1 2,12 Robin LEDBeam 350 Mode 1,13.023,COLORRGB3,97.02,12,1,11.40 Flash | 11.42 Flash | 11.44 Flash | 11.46 Flash | 11.48 Flash | 11.50 Flash | 11.52 Flash | 11.54 Flash ...,repeated hard value candidate for preset cleanup
+47,RLB350M1 7,12 Robin LEDBeam 350 Mode 1,5.001,COLORRGB1,97.02,12,1,11.40 Flash | 11.42 Flash | 11.44 Flash | 11.46 Flash | 11.48 Flash | 11.50 Flash | 11.52 Flash | 11.54 Flash ...,repeated hard value candidate for preset cleanup
+47,RLB350M1 7,12 Robin LEDBeam 350 Mode 1,5.001,COLORRGB2,97.02,12,1,11.40 Flash | 11.42 Flash | 11.44 Flash | 11.46 Flash | 11.48 Flash | 11.50 Flash | 11.52 Flash | 11.54 Flash ...,repeated hard value candidate for preset cleanup
+47,RLB350M1 7,12 Robin LEDBeam 350 Mode 1,5.001,COLORRGB3,97.02,12,1,11.40 Flash | 11.42 Flash | 11.44 Flash | 11.46 Flash | 11.48 Flash | 11.50 Flash | 11.52 Flash | 11.54 Flash ...,repeated hard value candidate for preset cleanup
+48,RLB350M1 8,12 Robin LEDBeam 350 Mode 1,5.023,COLORRGB1,97.02,12,1,11.40 Flash | 11.42 Flash | 11.44 Flash | 11.46 Flash | 11.48 Flash | 11.50 Flash | 11.52 Flash | 11.54 Flash ...,repeated hard value candidate for preset cleanup
+48,RLB350M1 8,12 Robin LEDBeam 350 Mode 1,5.023,COLORRGB2,97.02,12,1,11.40 Flash | 11.42 Flash | 11.44 Flash | 11.46 Flash | 11.48 Flash | 11.50 Flash | 11.52 Flash | 11.54 Flash ...,repeated hard value candidate for preset cleanup
+48,RLB350M1 8,12 Robin LEDBeam 350 Mode 1,5.023,COLORRGB3,97.02,12,1,11.40 Flash | 11.42 Flash | 11.44 Flash | 11.46 Flash | 11.48 Flash | 11.50 Flash | 11.52 Flash | 11.54 Flash ...,repeated hard value candidate for preset cleanup
+1,Spiider 1,3 Robin Spiider Mode 3,2.001,COLORRGB3,100.00,6,2,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.75 Projede Lavka az na konci | 11.89 koks KOUR GARAZ | 11.98 Flo BLESK kdyz se vyfoti tereze | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+1,Spiider 1,3 Robin Spiider Mode 3,2.001,COLORRGB5,0.00,6,2,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.89 koks KOUR GARAZ | 11.98 Flo BLESK kdyz se vyfoti tereze | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+2,Spiider 2,3 Robin Spiider Mode 3,2.034,COLORRGB3,100.00,6,2,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.75 Projede Lavka az na konci | 11.89 koks KOUR GARAZ | 11.98 Flo BLESK kdyz se vyfoti tereze | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+2,Spiider 2,3 Robin Spiider Mode 3,2.034,COLORRGB5,0.00,6,2,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.89 koks KOUR GARAZ | 11.98 Flo BLESK kdyz se vyfoti tereze | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+3,Spiider 3,3 Robin Spiider Mode 3,2.067,COLORRGB3,100.00,6,2,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.75 Projede Lavka az na konci | 11.89 koks KOUR GARAZ | 11.98 Flo BLESK kdyz se vyfoti tereze | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+3,Spiider 3,3 Robin Spiider Mode 3,2.067,COLORRGB5,0.00,6,2,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.89 koks KOUR GARAZ | 11.98 Flo BLESK kdyz se vyfoti tereze | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+4,Spiider 4,3 Robin Spiider Mode 3,2.100,COLORRGB3,100.00,6,2,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.75 Projede Lavka az na konci | 11.89 koks KOUR GARAZ | 11.98 Flo BLESK kdyz se vyfoti tereze | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+4,Spiider 4,3 Robin Spiider Mode 3,2.100,COLORRGB5,0.00,6,2,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.89 koks KOUR GARAZ | 11.98 Flo BLESK kdyz se vyfoti tereze | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+5,Spiider 5,3 Robin Spiider Mode 3,4.001,COLORRGB3,100.00,6,2,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.75 Projede Lavka az na konci | 11.89 koks KOUR GARAZ | 11.98 Flo BLESK kdyz se vyfoti tereze | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+5,Spiider 5,3 Robin Spiider Mode 3,4.001,COLORRGB5,0.00,6,2,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.89 koks KOUR GARAZ | 11.98 Flo BLESK kdyz se vyfoti tereze | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+6,Spiider 6,3 Robin Spiider Mode 3,4.034,COLORRGB3,100.00,6,2,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.75 Projede Lavka az na konci | 11.89 koks KOUR GARAZ | 11.98 Flo BLESK kdyz se vyfoti tereze | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+6,Spiider 6,3 Robin Spiider Mode 3,4.034,COLORRGB5,0.00,6,2,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.89 koks KOUR GARAZ | 11.98 Flo BLESK kdyz se vyfoti tereze | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+7,Spiider 7,3 Robin Spiider Mode 3,4.067,COLORRGB3,100.00,6,2,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.75 Projede Lavka az na konci | 11.89 koks KOUR GARAZ | 11.98 Flo BLESK kdyz se vyfoti tereze | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+7,Spiider 7,3 Robin Spiider Mode 3,4.067,COLORRGB5,0.00,6,2,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.89 koks KOUR GARAZ | 11.98 Flo BLESK kdyz se vyfoti tereze | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+8,Spiider 8,3 Robin Spiider Mode 3,4.100,COLORRGB3,100.00,6,2,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.75 Projede Lavka az na konci | 11.89 koks KOUR GARAZ | 11.98 Flo BLESK kdyz se vyfoti tereze | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+8,Spiider 8,3 Robin Spiider Mode 3,4.100,COLORRGB5,0.00,6,2,2.1 Cue 1 | 11.27 beegees 6:37.6 | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.89 koks KOUR GARAZ | 11.98 Flo BLESK kdyz se vyfoti tereze | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+13,Esprite 3,11 Robin Esprite Mode 2,3.001,COLOR1,0.00,6,2,11.68 Ondra klavir satna | 11.84 Gobo sex | 11.112 DIKY | 11.113 lidi | 11.114 8:15.150 | 29.1 Cue 1,repeated hard value candidate for preset cleanup
+13,Esprite 3,11 Robin Esprite Mode 2,3.001,COLOR2,0.00,6,2,11.68 Ondra klavir satna | 11.84 Gobo sex | 11.112 DIKY | 11.113 lidi | 11.114 8:15.150 | 29.1 Cue 1,repeated hard value candidate for preset cleanup
+23,,,,COLORRGB1,0.00,6,1,11.1 lidi | 11.106 DUHA | 11.109 Blesk MIDI | 11.112 DIKY | 11.113 lidi | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+24,,,,COLORRGB1,0.00,6,1,11.1 lidi | 11.106 DUHA | 11.109 Blesk MIDI | 11.112 DIKY | 11.113 lidi | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+25,,,,COLORRGB1,0.00,6,1,11.1 lidi | 11.106 DUHA | 11.109 Blesk MIDI | 11.112 DIKY | 11.113 lidi | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+61,HotboxW8 1,14 Hotbox RGBW 8 channel,2.217,COLORRGB3,100.00,6,2,11.1 lidi | 11.36 9:46.888 | 11.36.5 koule pryc | 11.113 lidi | 11.114 8:15.150 | 24.1 Cue 1,repeated hard value candidate for preset cleanup
+61,HotboxW8 1,14 Hotbox RGBW 8 channel,2.217,COLORRGB5,0.00,6,2,11.1 lidi | 11.36 9:46.888 | 11.36.5 koule pryc | 11.113 lidi | 11.114 8:15.150 | 24.1 Cue 1,repeated hard value candidate for preset cleanup
+62,HotboxW8 2,14 Hotbox RGBW 8 channel,2.225,COLORRGB3,100.00,6,2,11.1 lidi | 11.36 9:46.888 | 11.36.5 koule pryc | 11.113 lidi | 11.114 8:15.150 | 24.1 Cue 1,repeated hard value candidate for preset cleanup
+62,HotboxW8 2,14 Hotbox RGBW 8 channel,2.225,COLORRGB5,0.00,6,2,11.1 lidi | 11.36 9:46.888 | 11.36.5 koule pryc | 11.113 lidi | 11.114 8:15.150 | 24.1 Cue 1,repeated hard value candidate for preset cleanup
+63,HotboxW8 3,14 Hotbox RGBW 8 channel,2.233,COLORRGB3,100.00,6,2,11.1 lidi | 11.36 9:46.888 | 11.36.5 koule pryc | 11.113 lidi | 11.114 8:15.150 | 24.1 Cue 1,repeated hard value candidate for preset cleanup
+63,HotboxW8 3,14 Hotbox RGBW 8 channel,2.233,COLORRGB5,0.00,6,2,11.1 lidi | 11.36 9:46.888 | 11.36.5 koule pryc | 11.113 lidi | 11.114 8:15.150 | 24.1 Cue 1,repeated hard value candidate for preset cleanup
+64,HotboxW8 4,14 Hotbox RGBW 8 channel,2.241,COLORRGB3,100.00,6,2,11.1 lidi | 11.36 9:46.888 | 11.36.5 koule pryc | 11.113 lidi | 11.114 8:15.150 | 24.1 Cue 1,repeated hard value candidate for preset cleanup
+64,HotboxW8 4,14 Hotbox RGBW 8 channel,2.241,COLORRGB5,0.00,6,2,11.1 lidi | 11.36 9:46.888 | 11.36.5 koule pryc | 11.113 lidi | 11.114 8:15.150 | 24.1 Cue 1,repeated hard value candidate for preset cleanup
+14,Esprite 4,11 Robin Esprite Mode 2,3.043,COLOR1,0.00,5,2,11.95 ukotveny zebrikr ondra nahoru blikam 111 | 11.112 DIKY | 11.113 lidi | 11.114 8:15.150 | 29.1 Cue 1,repeated hard value candidate for preset cleanup
+14,Esprite 4,11 Robin Esprite Mode 2,3.043,COLOR2,0.00,5,2,11.95 ukotveny zebrikr ondra nahoru blikam 111 | 11.112 DIKY | 11.113 lidi | 11.114 8:15.150 | 29.1 Cue 1,repeated hard value candidate for preset cleanup
+14,Esprite 4,11 Robin Esprite Mode 2,3.043,INTENSITYMACROS,0.00,5,2,11.1 lidi | 11.36 9:46.888 | 11.113 lidi | 11.114 8:15.150 | 29.1 Cue 1,repeated hard value candidate for preset cleanup
+16,Esprite 6,11 Robin Esprite Mode 2,3.127,COLOR1,0.00,5,1,11.84 Gobo sex | 11.89 koks KOUR GARAZ | 11.112 DIKY | 11.113 lidi | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+16,Esprite 6,11 Robin Esprite Mode 2,3.127,COLOR2,0.00,5,1,11.84 Gobo sex | 11.89 koks KOUR GARAZ | 11.112 DIKY | 11.113 lidi | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+21,,,,COLORRGB2,0.00,5,1,11.1 lidi | 11.106 DUHA | 11.109 Blesk MIDI | 11.113 lidi | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+21,,,,COLORRGB3,0.00,5,1,11.1 lidi | 11.106 DUHA | 11.109 Blesk MIDI | 11.113 lidi | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+21,,,,COLORRGB5,0.00,5,1,11.1 lidi | 11.106 DUHA | 11.109 Blesk MIDI | 11.113 lidi | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+22,,,,COLORRGB2,0.00,5,1,11.1 lidi | 11.106 DUHA | 11.109 Blesk MIDI | 11.113 lidi | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+22,,,,COLORRGB5,0.00,5,1,11.1 lidi | 11.106 DUHA | 11.109 Blesk MIDI | 11.113 lidi | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+23,,,,COLORRGB2,0.00,5,1,11.1 lidi | 11.106 DUHA | 11.109 Blesk MIDI | 11.113 lidi | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+23,,,,COLORRGB5,0.00,5,1,11.1 lidi | 11.106 DUHA | 11.109 Blesk MIDI | 11.113 lidi | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+24,,,,COLORRGB5,0.00,5,1,11.1 lidi | 11.106 DUHA | 11.109 Blesk MIDI | 11.113 lidi | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+25,,,,COLORRGB3,0.00,5,1,11.1 lidi | 11.106 DUHA | 11.109 Blesk MIDI | 11.113 lidi | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+25,,,,COLORRGB5,0.00,5,1,11.1 lidi | 11.106 DUHA | 11.109 Blesk MIDI | 11.113 lidi | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+26,,,,COLORRGB3,0.00,5,1,11.1 lidi | 11.106 DUHA | 11.109 Blesk MIDI | 11.113 lidi | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+26,,,,COLORRGB5,0.00,5,1,11.1 lidi | 11.106 DUHA | 11.109 Blesk MIDI | 11.113 lidi | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+61,HotboxW8 1,14 Hotbox RGBW 8 channel,2.217,COLORRGB1,23.93,5,1,11.1 lidi | 11.36 9:46.888 | 11.36.5 koule pryc | 11.113 lidi | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+61,HotboxW8 1,14 Hotbox RGBW 8 channel,2.217,COLORRGB2,30.85,5,1,11.1 lidi | 11.36 9:46.888 | 11.36.5 koule pryc | 11.113 lidi | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+62,HotboxW8 2,14 Hotbox RGBW 8 channel,2.225,COLORRGB1,23.93,5,1,11.1 lidi | 11.36 9:46.888 | 11.36.5 koule pryc | 11.113 lidi | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+62,HotboxW8 2,14 Hotbox RGBW 8 channel,2.225,COLORRGB2,30.85,5,1,11.1 lidi | 11.36 9:46.888 | 11.36.5 koule pryc | 11.113 lidi | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+63,HotboxW8 3,14 Hotbox RGBW 8 channel,2.233,COLORRGB1,23.93,5,1,11.1 lidi | 11.36 9:46.888 | 11.36.5 koule pryc | 11.113 lidi | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+63,HotboxW8 3,14 Hotbox RGBW 8 channel,2.233,COLORRGB2,30.85,5,1,11.1 lidi | 11.36 9:46.888 | 11.36.5 koule pryc | 11.113 lidi | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+64,HotboxW8 4,14 Hotbox RGBW 8 channel,2.241,COLORRGB1,23.93,5,1,11.1 lidi | 11.36 9:46.888 | 11.36.5 koule pryc | 11.113 lidi | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+64,HotboxW8 4,14 Hotbox RGBW 8 channel,2.241,COLORRGB2,30.85,5,1,11.1 lidi | 11.36 9:46.888 | 11.36.5 koule pryc | 11.113 lidi | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+13,Esprite 3,11 Robin Esprite Mode 2,3.001,COLORRGB3,100.00,4,2,11.84 Gobo sex | 11.112 DIKY | 11.113 lidi | 29.1 Cue 1,repeated hard value candidate for preset cleanup
+13,Esprite 3,11 Robin Esprite Mode 2,3.001,ZOOM,100.00,4,1,11.1 lidi | 11.36 9:46.888 | 11.36.5 koule pryc | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+14,Esprite 4,11 Robin Esprite Mode 2,3.043,ANIMATIONINDEXROTATE,50.20,4,2,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150 | 29.1 Cue 1,repeated hard value candidate for preset cleanup
+14,Esprite 4,11 Robin Esprite Mode 2,3.043,ANIMATIONWHEEL,0.00,4,2,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150 | 29.1 Cue 1,repeated hard value candidate for preset cleanup
+14,Esprite 4,11 Robin Esprite Mode 2,3.043,BLADE1A,0.00,4,2,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150 | 29.1 Cue 1,repeated hard value candidate for preset cleanup
+14,Esprite 4,11 Robin Esprite Mode 2,3.043,BLADE1B,50.20,4,2,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150 | 29.1 Cue 1,repeated hard value candidate for preset cleanup
+14,Esprite 4,11 Robin Esprite Mode 2,3.043,BLADE2A,0.00,4,2,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150 | 29.1 Cue 1,repeated hard value candidate for preset cleanup
+14,Esprite 4,11 Robin Esprite Mode 2,3.043,BLADE2B,50.20,4,2,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150 | 29.1 Cue 1,repeated hard value candidate for preset cleanup
+14,Esprite 4,11 Robin Esprite Mode 2,3.043,BLADE3A,0.00,4,2,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150 | 29.1 Cue 1,repeated hard value candidate for preset cleanup
+14,Esprite 4,11 Robin Esprite Mode 2,3.043,BLADE3B,50.20,4,2,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150 | 29.1 Cue 1,repeated hard value candidate for preset cleanup
+14,Esprite 4,11 Robin Esprite Mode 2,3.043,BLADE4A,0.00,4,2,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150 | 29.1 Cue 1,repeated hard value candidate for preset cleanup
+14,Esprite 4,11 Robin Esprite Mode 2,3.043,BLADE4B,50.20,4,2,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150 | 29.1 Cue 1,repeated hard value candidate for preset cleanup
+14,Esprite 4,11 Robin Esprite Mode 2,3.043,COLORMIXER,0.00,4,2,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150 | 29.1 Cue 1,repeated hard value candidate for preset cleanup
+14,Esprite 4,11 Robin Esprite Mode 2,3.043,COLORMIXMSPEED,0.00,4,2,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150 | 29.1 Cue 1,repeated hard value candidate for preset cleanup
+14,Esprite 4,11 Robin Esprite Mode 2,3.043,COLORMIXMSPEED2,0.00,4,2,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150 | 29.1 Cue 1,repeated hard value candidate for preset cleanup
+14,Esprite 4,11 Robin Esprite Mode 2,3.043,COLORRGB3,100.00,4,2,11.95 ukotveny zebrikr ondra nahoru blikam 111 | 11.112 DIKY | 11.113 lidi | 29.1 Cue 1,repeated hard value candidate for preset cleanup
+14,Esprite 4,11 Robin Esprite Mode 2,3.043,CTO,0.00,4,2,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150 | 29.1 Cue 1,repeated hard value candidate for preset cleanup
+14,Esprite 4,11 Robin Esprite Mode 2,3.043,EFFECTINDEXROTATE,0.00,4,2,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150 | 29.1 Cue 1,repeated hard value candidate for preset cleanup
+14,Esprite 4,11 Robin Esprite Mode 2,3.043,EFFECTMACROS,0.00,4,2,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150 | 29.1 Cue 1,repeated hard value candidate for preset cleanup
+14,Esprite 4,11 Robin Esprite Mode 2,3.043,EFFECTWHEEL,0.00,4,2,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150 | 29.1 Cue 1,repeated hard value candidate for preset cleanup
+14,Esprite 4,11 Robin Esprite Mode 2,3.043,FIXTUREGLOBALRESET,0.00,4,2,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150 | 29.1 Cue 1,repeated hard value candidate for preset cleanup
+14,Esprite 4,11 Robin Esprite Mode 2,3.043,GOBO1,0.00,4,2,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150 | 29.1 Cue 1,repeated hard value candidate for preset cleanup
+14,Esprite 4,11 Robin Esprite Mode 2,3.043,POSITIONMSPEED,0.00,4,2,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150 | 29.1 Cue 1,repeated hard value candidate for preset cleanup
+14,Esprite 4,11 Robin Esprite Mode 2,3.043,PWMFREQUENCY,0.00,4,2,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150 | 29.1 Cue 1,repeated hard value candidate for preset cleanup
+14,Esprite 4,11 Robin Esprite Mode 2,3.043,PWMFREQUENCYADJUST,50.20,4,2,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150 | 29.1 Cue 1,repeated hard value candidate for preset cleanup
+14,Esprite 4,11 Robin Esprite Mode 2,3.043,SHAPER ROT,50.20,4,2,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150 | 29.1 Cue 1,repeated hard value candidate for preset cleanup
+14,Esprite 4,11 Robin Esprite Mode 2,3.043,ZOOMMSPEED,0.00,4,2,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150 | 29.1 Cue 1,repeated hard value candidate for preset cleanup
+15,Esprite 5,11 Robin Esprite Mode 2,3.085,INTENSITYMACROS,0.00,4,1,11.1 lidi | 11.36 9:46.888 | 11.113 lidi | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+16,Esprite 6,11 Robin Esprite Mode 2,3.127,COLORRGB3,100.00,4,1,11.84 Gobo sex | 11.89 koks KOUR GARAZ | 11.112 DIKY | 11.113 lidi,repeated hard value candidate for preset cleanup
+21,,,,COLORRGB1,0.00,4,1,11.1 lidi | 11.112 DIKY | 11.113 lidi | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+21,,,,COLORRGB1,100.00,4,2,11.106 DUHA | 11.109 Blesk MIDI | 11.114 8:15.150 | 27.1 Cue 1,repeated hard value candidate for preset cleanup
+22,,,,COLORRGB1,0.00,4,1,11.1 lidi | 11.112 DIKY | 11.113 lidi | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+22,,,,COLORRGB1,100.00,4,2,11.106 DUHA | 11.109 Blesk MIDI | 11.114 8:15.150 | 27.1 Cue 1,repeated hard value candidate for preset cleanup
+22,,,,COLORRGB3,100.00,4,2,11.106 DUHA | 11.109 Blesk MIDI | 11.112 DIKY | 27.1 Cue 1,repeated hard value candidate for preset cleanup
+23,,,,COLORRGB3,100.00,4,2,11.106 DUHA | 11.109 Blesk MIDI | 11.112 DIKY | 27.1 Cue 1,repeated hard value candidate for preset cleanup
+24,,,,COLORRGB3,100.00,4,2,11.106 DUHA | 11.109 Blesk MIDI | 11.112 DIKY | 27.1 Cue 1,repeated hard value candidate for preset cleanup
+26,,,,COLORRGB1,0.00,4,1,11.1 lidi | 11.112 DIKY | 11.113 lidi | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+26,,,,COLORRGB1,100.00,4,2,11.106 DUHA | 11.109 Blesk MIDI | 11.114 8:15.150 | 27.1 Cue 1,repeated hard value candidate for preset cleanup
+1,Spiider 1,3 Robin Spiider Mode 3,2.001,COLORRGB1,100.00,3,2,2.1 Cue 1 | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.89 koks KOUR GARAZ,repeated hard value candidate for preset cleanup
+2,Spiider 2,3 Robin Spiider Mode 3,2.034,COLORRGB1,100.00,3,2,2.1 Cue 1 | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.89 koks KOUR GARAZ,repeated hard value candidate for preset cleanup
+3,Spiider 3,3 Robin Spiider Mode 3,2.067,COLORRGB1,100.00,3,2,2.1 Cue 1 | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.89 koks KOUR GARAZ,repeated hard value candidate for preset cleanup
+4,Spiider 4,3 Robin Spiider Mode 3,2.100,COLORRGB1,100.00,3,2,2.1 Cue 1 | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.89 koks KOUR GARAZ,repeated hard value candidate for preset cleanup
+4,Spiider 4,3 Robin Spiider Mode 3,2.100,COLORRGB5,100.00,3,2,9.1 Cue 1 | 11.65 final flash | 11.109 Blesk MIDI,repeated hard value candidate for preset cleanup
+5,Spiider 5,3 Robin Spiider Mode 3,4.001,COLORRGB1,100.00,3,2,2.1 Cue 1 | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.89 koks KOUR GARAZ,repeated hard value candidate for preset cleanup
+6,Spiider 6,3 Robin Spiider Mode 3,4.034,COLORRGB1,100.00,3,2,2.1 Cue 1 | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.89 koks KOUR GARAZ,repeated hard value candidate for preset cleanup
+7,Spiider 7,3 Robin Spiider Mode 3,4.067,COLORRGB1,100.00,3,2,2.1 Cue 1 | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.89 koks KOUR GARAZ,repeated hard value candidate for preset cleanup
+8,Spiider 8,3 Robin Spiider Mode 3,4.100,COLORRGB1,100.00,3,2,2.1 Cue 1 | 11.80 Alex gr STYCH od klaviru patrik osuka alexe | 11.89 koks KOUR GARAZ,repeated hard value candidate for preset cleanup
+11,Esprite 1,11 Robin Esprite Mode 2,2.133,COLOR1,0.00,3,1,11.84 Gobo sex | 11.112 DIKY | 11.113 lidi,repeated hard value candidate for preset cleanup
+11,Esprite 1,11 Robin Esprite Mode 2,2.133,COLOR2,0.00,3,1,11.84 Gobo sex | 11.112 DIKY | 11.113 lidi,repeated hard value candidate for preset cleanup
+11,Esprite 1,11 Robin Esprite Mode 2,2.133,COLORRGB3,100.00,3,1,11.84 Gobo sex | 11.112 DIKY | 11.113 lidi,repeated hard value candidate for preset cleanup
+12,Esprite 2,11 Robin Esprite Mode 2,2.175,COLOR1,0.00,3,1,11.84 Gobo sex | 11.112 DIKY | 11.113 lidi,repeated hard value candidate for preset cleanup
+12,Esprite 2,11 Robin Esprite Mode 2,2.175,COLOR2,0.00,3,1,11.84 Gobo sex | 11.112 DIKY | 11.113 lidi,repeated hard value candidate for preset cleanup
+12,Esprite 2,11 Robin Esprite Mode 2,2.175,COLORRGB3,100.00,3,1,11.84 Gobo sex | 11.112 DIKY | 11.113 lidi,repeated hard value candidate for preset cleanup
+13,Esprite 3,11 Robin Esprite Mode 2,3.001,PAN,-31.86,3,1,11.1 lidi | 11.36 9:46.888 | 11.36.5 koule pryc,repeated hard value candidate for preset cleanup
+13,Esprite 3,11 Robin Esprite Mode 2,3.001,TILT,-53.62,3,1,11.1 lidi | 11.36 9:46.888 | 11.36.5 koule pryc,repeated hard value candidate for preset cleanup
+14,Esprite 4,11 Robin Esprite Mode 2,3.043,GOBO2,0.00,3,2,11.1 lidi | 11.36 9:46.888 | 29.1 Cue 1,repeated hard value candidate for preset cleanup
+14,Esprite 4,11 Robin Esprite Mode 2,3.043,GOBO2_POS,50.20,3,2,11.1 lidi | 11.36 9:46.888 | 29.1 Cue 1,repeated hard value candidate for preset cleanup
+14,Esprite 4,11 Robin Esprite Mode 2,3.043,IRIS,75.00,3,2,11.1 lidi | 11.36 9:46.888 | 29.1 Cue 1,repeated hard value candidate for preset cleanup
+15,Esprite 5,11 Robin Esprite Mode 2,3.085,ANIMATIONINDEXROTATE,50.20,3,1,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+15,Esprite 5,11 Robin Esprite Mode 2,3.085,ANIMATIONWHEEL,0.00,3,1,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+15,Esprite 5,11 Robin Esprite Mode 2,3.085,BLADE1A,0.00,3,1,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+15,Esprite 5,11 Robin Esprite Mode 2,3.085,BLADE1B,50.20,3,1,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+15,Esprite 5,11 Robin Esprite Mode 2,3.085,BLADE2A,0.00,3,1,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+15,Esprite 5,11 Robin Esprite Mode 2,3.085,BLADE2B,50.20,3,1,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+15,Esprite 5,11 Robin Esprite Mode 2,3.085,BLADE3A,0.00,3,1,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+15,Esprite 5,11 Robin Esprite Mode 2,3.085,BLADE3B,50.20,3,1,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+15,Esprite 5,11 Robin Esprite Mode 2,3.085,BLADE4A,0.00,3,1,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+15,Esprite 5,11 Robin Esprite Mode 2,3.085,BLADE4B,50.20,3,1,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+15,Esprite 5,11 Robin Esprite Mode 2,3.085,COLOR1,0.00,3,1,11.112 DIKY | 11.113 lidi | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+15,Esprite 5,11 Robin Esprite Mode 2,3.085,COLOR2,0.00,3,1,11.112 DIKY | 11.113 lidi | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+15,Esprite 5,11 Robin Esprite Mode 2,3.085,COLORMIXER,0.00,3,1,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+15,Esprite 5,11 Robin Esprite Mode 2,3.085,COLORMIXMSPEED,0.00,3,1,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+15,Esprite 5,11 Robin Esprite Mode 2,3.085,COLORMIXMSPEED2,0.00,3,1,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+15,Esprite 5,11 Robin Esprite Mode 2,3.085,CTO,0.00,3,1,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+15,Esprite 5,11 Robin Esprite Mode 2,3.085,EFFECTINDEXROTATE,0.00,3,1,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+15,Esprite 5,11 Robin Esprite Mode 2,3.085,EFFECTMACROS,0.00,3,1,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+15,Esprite 5,11 Robin Esprite Mode 2,3.085,EFFECTWHEEL,0.00,3,1,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+15,Esprite 5,11 Robin Esprite Mode 2,3.085,FIXTUREGLOBALRESET,0.00,3,1,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+15,Esprite 5,11 Robin Esprite Mode 2,3.085,GOBO1,0.00,3,1,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+15,Esprite 5,11 Robin Esprite Mode 2,3.085,POSITIONMSPEED,0.00,3,1,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+15,Esprite 5,11 Robin Esprite Mode 2,3.085,PWMFREQUENCY,0.00,3,1,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+15,Esprite 5,11 Robin Esprite Mode 2,3.085,PWMFREQUENCYADJUST,50.20,3,1,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+15,Esprite 5,11 Robin Esprite Mode 2,3.085,SHAPER ROT,50.20,3,1,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+15,Esprite 5,11 Robin Esprite Mode 2,3.085,ZOOMMSPEED,0.00,3,1,11.1 lidi | 11.36 9:46.888 | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+17,Esprite 7,11 Robin Esprite Mode 2,4.133,COLOR1,0.00,3,1,11.84 Gobo sex | 11.112 DIKY | 11.113 lidi,repeated hard value candidate for preset cleanup
+17,Esprite 7,11 Robin Esprite Mode 2,4.133,COLOR2,0.00,3,1,11.84 Gobo sex | 11.112 DIKY | 11.113 lidi,repeated hard value candidate for preset cleanup
+17,Esprite 7,11 Robin Esprite Mode 2,4.133,COLORRGB3,100.00,3,1,11.84 Gobo sex | 11.112 DIKY | 11.113 lidi,repeated hard value candidate for preset cleanup
+18,Esprite 8,11 Robin Esprite Mode 2,4.175,COLOR1,0.00,3,1,11.84 Gobo sex | 11.112 DIKY | 11.113 lidi,repeated hard value candidate for preset cleanup
+18,Esprite 8,11 Robin Esprite Mode 2,4.175,COLOR2,0.00,3,1,11.84 Gobo sex | 11.112 DIKY | 11.113 lidi,repeated hard value candidate for preset cleanup
+18,Esprite 8,11 Robin Esprite Mode 2,4.175,COLORRGB3,100.00,3,1,11.84 Gobo sex | 11.112 DIKY | 11.113 lidi,repeated hard value candidate for preset cleanup
+21,,,,COLORRGB3,100.00,3,2,11.106 DUHA | 11.112 DIKY | 27.1 Cue 1,repeated hard value candidate for preset cleanup
+21,,,,PAN,-0.00,3,2,11.1 lidi | 11.113 lidi | 27.1 Cue 1,repeated hard value candidate for preset cleanup
+22,,,,COLORRGB3,0.00,3,1,11.1 lidi | 11.113 lidi | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+22,,,,PAN,-0.00,3,2,11.1 lidi | 11.113 lidi | 27.1 Cue 1,repeated hard value candidate for preset cleanup
+23,,,,COLORRGB1,100.00,3,2,11.106 DUHA | 11.114 8:15.150 | 27.1 Cue 1,repeated hard value candidate for preset cleanup
+23,,,,COLORRGB3,0.00,3,1,11.1 lidi | 11.113 lidi | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+23,,,,PAN,-0.00,3,2,11.1 lidi | 11.113 lidi | 27.1 Cue 1,repeated hard value candidate for preset cleanup
+24,,,,COLORRGB1,100.00,3,2,11.106 DUHA | 11.114 8:15.150 | 27.1 Cue 1,repeated hard value candidate for preset cleanup
+24,,,,COLORRGB2,0.00,3,1,11.1 lidi | 11.113 lidi | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+24,,,,COLORRGB2,100.00,3,2,11.106 DUHA | 11.109 Blesk MIDI | 27.1 Cue 1,repeated hard value candidate for preset cleanup
+24,,,,COLORRGB3,0.00,3,1,11.1 lidi | 11.113 lidi | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+24,,,,PAN,-0.00,3,2,11.1 lidi | 11.113 lidi | 27.1 Cue 1,repeated hard value candidate for preset cleanup
+25,,,,COLORRGB1,100.00,3,2,11.106 DUHA | 11.114 8:15.150 | 27.1 Cue 1,repeated hard value candidate for preset cleanup
+25,,,,COLORRGB2,0.00,3,1,11.1 lidi | 11.113 lidi | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+25,,,,COLORRGB2,100.00,3,2,11.106 DUHA | 11.109 Blesk MIDI | 27.1 Cue 1,repeated hard value candidate for preset cleanup
+25,,,,COLORRGB3,100.00,3,2,11.106 DUHA | 11.112 DIKY | 27.1 Cue 1,repeated hard value candidate for preset cleanup
+25,,,,PAN,-0.00,3,2,11.1 lidi | 11.113 lidi | 27.1 Cue 1,repeated hard value candidate for preset cleanup
+26,,,,COLORRGB2,0.00,3,1,11.1 lidi | 11.113 lidi | 11.114 8:15.150,repeated hard value candidate for preset cleanup
+26,,,,COLORRGB2,100.00,3,2,11.106 DUHA | 11.109 Blesk MIDI | 27.1 Cue 1,repeated hard value candidate for preset cleanup
+26,,,,COLORRGB3,100.00,3,2,11.106 DUHA | 11.112 DIKY | 27.1 Cue 1,repeated hard value candidate for preset cleanup
+26,,,,PAN,-0.00,3,2,11.1 lidi | 11.113 lidi | 27.1 Cue 1,repeated hard value candidate for preset cleanup
+43,RLB350M1 3,12 Robin LEDBeam 350 Mode 1,13.045,COLORRGB5,100.00,3,1,11.6 platforma dole | 11.65 final flash | 11.109 Blesk MIDI,repeated hard value candidate for preset cleanup
+44,RLB350M1 4,12 Robin LEDBeam 350 Mode 1,13.067,COLORRGB5,100.00,3,1,11.6 platforma dole | 11.65 final flash | 11.109 Blesk MIDI,repeated hard value candidate for preset cleanup
+45,RLB350M1 5,12 Robin LEDBeam 350 Mode 1,13.089,COLORRGB5,100.00,3,1,11.6 platforma dole | 11.65 final flash | 11.109 Blesk MIDI,repeated hard value candidate for preset cleanup
+46,RLB350M1 6,12 Robin LEDBeam 350 Mode 1,13.111,COLORRGB5,100.00,3,1,11.6 platforma dole | 11.65 final flash | 11.109 Blesk MIDI,repeated hard value candidate for preset cleanup
+49,RLB350M1 9,12 Robin LEDBeam 350 Mode 1,5.045,COLORRGB5,100.00,3,1,11.6 platforma dole | 11.65 final flash | 11.109 Blesk MIDI,repeated hard value candidate for preset cleanup
+50,RLB350M1 10,12 Robin LEDBeam 350 Mode 1,5.067,COLORRGB5,100.00,3,1,11.6 platforma dole | 11.65 final flash | 11.109 Blesk MIDI,repeated hard value candidate for preset cleanup
+51,RLB350M1 11,12 Robin LEDBeam 350 Mode 1,5.089,COLORRGB5,100.00,3,1,11.6 platforma dole | 11.65 final flash | 11.109 Blesk MIDI,repeated hard value candidate for preset cleanup
+52,RLB350M1 12,12 Robin LEDBeam 350 Mode 1,5.111,COLORRGB5,100.00,3,1,11.6 platforma dole | 11.65 final flash | 11.109 Blesk MIDI,repeated hard value candidate for preset cleanup
+67,HotboxW8 1,14 Hotbox RGBW 8 channel,1.401,COLORRGB5,0.00,3,2,11.105.5 PLATFORMA | 11.105.6 PLATFORMA | 34.1 Cue 1,repeated hard value candidate for preset cleanup

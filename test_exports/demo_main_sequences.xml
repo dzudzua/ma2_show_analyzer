@@ -1,0 +1,15 @@
+<Export>
+  <Sequence number="1" name="Intro">
+    <Cue number="1" name="Blackout" fade="0" delay="0" trigger="go">
+      <Value fixtureid="101" attribute="Dimmer" value="0" />
+      <Value fixtureid="102" attribute="Dimmer" value="Preset 1.5" />
+      <Value fixtureid="103" attribute="Position" value="Preset 2.7" />
+      <Command>Go Sequence 2 Cue 1</Command>
+    </Cue>
+    <Cue number="2" name="Build" fade="2" delay="0.5" trigger="follow">
+      <Value fixtureid="101" attribute="Dimmer" value="100" />
+      <Value fixtureid="102" attribute="Effect" value="Effect 12" />
+      <Value fixtureid="103" attribute="GroupRef" value="Group 3" />
+    </Cue>
+  </Sequence>
+</Export>

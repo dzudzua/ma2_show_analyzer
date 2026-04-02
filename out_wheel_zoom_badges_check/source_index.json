@@ -1,0 +1,24 @@
+{
+  "sequence_sources": [
+    "exports\\Studio54_all_sequences.xml",
+    "exports\\Studio54_main_sequences.xml",
+    "exports\\Tram_Analyz_main_sequences.xml"
+  ],
+  "preset_sources": [
+    "exports\\Studio54_preset_0.xml",
+    "exports\\Studio54_preset_2.xml",
+    "exports\\Tram_Analyz_preset_0.xml",
+    "exports\\Tram_Analyz_preset_2.xml",
+    "exports\\Tram_Analyz_preset_4.xml"
+  ],
+  "group_sources": [
+    "exports\\Studio54_groups.xml",
+    "exports\\Tram_Analyz_groups.xml"
+  ],
+  "effect_sources": [],
+  "patch_sources": [
+    "exports\\Studio54_patch.xml",
+    "exports\\Tram_Analyz_patch.xml"
+  ],
+  "generic_sources": []
+}

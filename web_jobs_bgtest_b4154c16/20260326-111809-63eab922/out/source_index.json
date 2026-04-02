@@ -1,0 +1,17 @@
+{
+  "sequence_sources": [
+    "web_jobs_bgtest_b4154c16\\20260326-111809-63eab922\\uploads\\Tram_Analyz_all_sequences.xml",
+    "web_jobs_bgtest_b4154c16\\20260326-111809-63eab922\\uploads\\Tram_Analyz_main_sequences.xml"
+  ],
+  "preset_sources": [
+    "web_jobs_bgtest_b4154c16\\20260326-111809-63eab922\\uploads\\Tram_Analyz_preset_0.xml"
+  ],
+  "group_sources": [
+    "web_jobs_bgtest_b4154c16\\20260326-111809-63eab922\\uploads\\Tram_Analyz_groups.xml"
+  ],
+  "effect_sources": [],
+  "patch_sources": [
+    "web_jobs_bgtest_b4154c16\\20260326-111809-63eab922\\uploads\\Tram_Analyz_patch.xml"
+  ],
+  "generic_sources": []
+}

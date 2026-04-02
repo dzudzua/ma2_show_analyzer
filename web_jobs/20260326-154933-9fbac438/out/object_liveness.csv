@@ -1,0 +1,90 @@
+object_type,object_number,object_name,usage_count,sequence_count,status
+preset,0.1,Kontra Zaklad,2,1,live
+preset,0.3,Schody,0,0,dead
+preset,0.4,tepla vsude,3,1,live
+preset,0.5,front,4,1,live
+preset,0.6,Zeme Pruvany,4,1,live
+preset,0.7,BertZjeveni,1,1,live
+preset,0.8,Usinani,1,1,live
+preset,0.9,Preset 0.9,0,0,dead
+preset,0.10,VildaZjeveniZed,1,1,live
+preset,0.11,Eff Front,0,0,dead
+preset,0.12,Vilda,2,1,live
+preset,0.13,q80-flo,0,0,dead
+preset,0.14,Zeme pruvany,1,1,live
+preset,0.15,soud2,2,1,live
+preset,0.16,Start Front,4,1,live
+preset,0.17,Q6-9,3,1,live
+preset,0.18,F-DoHnizda,4,1,live
+preset,0.19,Zeme Q6,1,1,live
+preset,0.20,Soud,3,1,live
+preset,0.21,Soud 2,1,1,live
+preset,0.22,Vrch Labus,1,1,live
+preset,0.23,stred,2,1,live
+preset,0.24,Prava strana,0,0,dead
+preset,0.25,Zeme Usinani Q19,1,1,live
+preset,0.26,Pruvany,1,1,live
+preset,0.27,Svicka kontra,1,1,live
+preset,0.28,BertStartSolo,1,1,live
+preset,0.30,Florian,1,1,live
+preset,0.32,Bert sokl,1,1,live
+preset,0.33,Front-UZnizono,1,1,live
+preset,0.34,Pruvany rackove,0,0,dead
+preset,0.36,STREDSTRED FRONT,2,1,live
+preset,0.37,Front Velky,1,1,live
+preset,0.42,Asteta Main,0,0,dead
+preset,0.43,pravej roh zem,1,1,live
+preset,0.44,Levy sokl,1,1,live
+preset,0.49,Do zdi-Start,4,1,live
+preset,0.50,Spot Stred,2,1,live
+preset,0.53,Kalibrace-stredni zadni kostka,0,0,dead
+preset,0.54,Kalibrace - stredy,0,0,dead
+preset,0.55,Kalibrace kostky,0,0,dead
+preset,0.56,Preset 0.56,0,0,dead
+preset,0.57,Prave schodiste,1,1,live
+preset,0.58,Prave schodiste-Klouzacka,1,1,live
+preset,0.60,Q53 zacatek TRIO,1,1,live
+preset,0.65,Hnizdo,2,1,live
+preset,0.66,Jirka-Schody,3,1,live
+preset,0.68,Zed Wilds,1,1,live
+preset,0.70,Labus vilda stred,1,1,live
+preset,0.71,Labus vrch,0,0,dead
+preset,0.72,Pravy Schody,1,1,live
+preset,0.73,Pravy schody 2,1,1,live
+preset,0.75,bert solo,0,0,dead
+preset,0.76,Bert na stred,1,1,live
+preset,0.78,Bert zjeveni,0,0,dead
+preset,0.81,Svicka_Ksicht,1,1,live
+preset,2.1,Preset 2.1,0,0,dead
+preset,2.31,White,0,0,dead
+preset,2.32,Red,0,0,dead
+preset,2.33,Orange,0,0,dead
+preset,2.34,Yellow,0,0,dead
+preset,2.35,Fern Green,0,0,dead
+preset,2.36,Green,0,0,dead
+preset,2.37,Sea Green,0,0,dead
+preset,2.38,Cyan,0,0,dead
+preset,2.39,Lavender,0,0,dead
+preset,2.40,Blue,0,0,dead
+preset,2.41,Violet,0,0,dead
+preset,2.42,Magenta,0,0,dead
+preset,2.43,Pink,0,0,dead
+preset,4.1,Light orange,1,1,live
+preset,4.2,Light blue,0,0,dead
+preset,4.3,orange,0,0,dead
+preset,4.10,orange,18,1,live
+preset,4.11,Preset 4.11,1,1,live
+preset,4.12,Light lavender,1,1,live
+preset,4.13,Light orange,0,0,dead
+preset,4.15,green,0,0,dead
+preset,4.16,Zlata,0,0,dead
+preset,4.18,fern green,0,0,dead
+preset,4.20,Light orange,1,1,live
+preset,4.21,Preset 4.21,0,0,dead
+preset,4.23,Novy toon,0,0,dead
+group,0,Astera,0,0,dead
+group,2,Front,0,0,dead
+group,3,Kontra,0,0,dead
+group,5,hERECKY ASTERY,0,0,dead
+group,6,Group 6,0,0,dead
+group,8,Astery 5 Kriz,0,0,dead

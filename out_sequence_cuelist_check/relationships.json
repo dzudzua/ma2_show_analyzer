@@ -1,0 +1,74 @@
+[
+  {
+    "source_type": "cue",
+    "source_id": "cue:1:1:demo_main_sequences.xml:1",
+    "target_type": "preset",
+    "target_id": "1.5",
+    "relation_type": "reference",
+    "evidence": "preset:1.5"
+  },
+  {
+    "source_type": "cue",
+    "source_id": "cue:1:1:demo_main_sequences.xml:1",
+    "target_type": "preset",
+    "target_id": "2.7",
+    "relation_type": "reference",
+    "evidence": "preset:2.7"
+  },
+  {
+    "source_type": "cue",
+    "source_id": "cue:1:1:demo_main_sequences.xml:1",
+    "target_type": "sequence",
+    "target_id": "2",
+    "relation_type": "reference_unresolved",
+    "evidence": "sequence:2"
+  },
+  {
+    "source_type": "cue",
+    "source_id": "cue:1:1:demo_main_sequences.xml:1",
+    "target_type": "preset",
+    "target_id": "1.5",
+    "relation_type": "value_reference",
+    "evidence": "atom:Dimmer=Preset 1.5"
+  },
+  {
+    "source_type": "cue",
+    "source_id": "cue:1:1:demo_main_sequences.xml:1",
+    "target_type": "preset",
+    "target_id": "2.7",
+    "relation_type": "value_reference",
+    "evidence": "atom:Position=Preset 2.7"
+  },
+  {
+    "source_type": "cue",
+    "source_id": "cue:1:2:demo_main_sequences.xml:2",
+    "target_type": "group",
+    "target_id": "3",
+    "relation_type": "reference",
+    "evidence": "group:3"
+  },
+  {
+    "source_type": "cue",
+    "source_id": "cue:1:2:demo_main_sequences.xml:2",
+    "target_type": "effect",
+    "target_id": "12",
+    "relation_type": "reference",
+    "evidence": "effect:12"
+  },
+  {
+    "source_type": "cue",
+    "source_id": "cue:1:2:demo_main_sequences.xml:2",
+    "target_type": "effect",
+    "target_id": "12",
+    "relation_type": "value_reference",
+    "evidence": "atom:Effect=Effect 12"
+  },
+  {
+    "source_type": "cue",
+    "source_id": "cue:1:2:demo_main_sequences.xml:2",
+    "target_type": "group",
+    "target_id": "3",
+    "relation_type": "value_reference",
+    "evidence": "atom:GroupRef=Group 3"
+  }
+]

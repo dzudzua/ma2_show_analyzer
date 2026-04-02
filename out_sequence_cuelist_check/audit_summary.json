@@ -1,0 +1,567 @@
+{
+  "cue_dependency_map": [
+    {
+      "cue_id": "cue:1:1:demo_main_sequences.xml:1",
+      "sequence_id": "sequence:1:demo_main_sequences.xml:1",
+      "sequence_number": "1",
+      "sequence_name": "Intro",
+      "cue_number": "1",
+      "cue_name": "Blackout",
+      "cue_position": 1,
+      "is_main_cue_list": true,
+      "fixture_count": 3,
+      "fixtures": [
+        101,
+        102,
+        103
+      ],
+      "fixture_details": [
+        "101 | Front Left Wash | Robe LEDWash 600 | 1.1",
+        "102 | Front Center Wash | Robe LEDWash 600 | 1.17",
+        "103 | DS Center Spot | Martin MAC Viper | 1.33"
+      ],
+      "attribute_count": 2,
+      "attributes": [
+        "Dimmer",
+        "Position"
+      ],
+      "feature_group_count": 2,
+      "feature_groups": [
+        "Dimmer",
+        "Position"
+      ],
+      "hard_value_count": 3,
+      "dimmer_value_count": 1,
+      "hard_fixture_count": 0,
+      "dimmer_fixture_count": 1,
+      "preset_ref_count": 2,
+      "preset_refs": [
+        "1.5",
+        "2.7"
+      ],
+      "group_ref_count": 0,
+      "group_refs": [],
+      "effect_ref_count": 0,
+      "effect_refs": [],
+      "zero_like_count": 3,
+      "mixed_fixture_count": 0,
+      "mixed_family_count": 0,
+      "control_mode": "mixed",
+      "fixture_attribute_map": {
+        "101": [
+          "Dimmer"
+        ],
+        "102": [
+          "Dimmer"
+        ],
+        "103": [
+          "Position"
+        ]
+      },
+      "fixture_hard_attribute_map": {
+        "101": []
+      },
+      "fixture_dimmer_attribute_map": {
+        "101": [
+          "Dimmer"
+        ]
+      },
+      "fixture_family_mode_map": {
+        "101": {
+          "Dimmer": [
+            "dimmer",
+            "preset"
+          ]
+        },
+        "102": {
+          "Dimmer": [
+            "preset"
+          ],
+          "Color": [
+            "preset"
+          ]
+        },
+        "103": {
+          "Position": [
+            "preset"
+          ]
+        }
+      },
+      "family_mode_summary": {
+        "Dimmer": {
+          "hard_fixtures": [],
+          "preset_fixtures": [
+            101,
+            102
+          ],
+          "mixed_fixtures": []
+        },
+        "Color": {
+          "hard_fixtures": [],
+          "preset_fixtures": [
+            102
+          ],
+          "mixed_fixtures": []
+        },
+        "Position": {
+          "hard_fixtures": [],
+          "preset_fixtures": [
+            103
+          ],
+          "mixed_fixtures": []
+        }
+      },
+      "signature_pairs": [
+        "101:Dimmer",
+        "102:Dimmer",
+        "103:Position"
+      ],
+      "source_file": "test_exports_xmlpatch\\demo_main_sequences.xml"
+    },
+    {
+      "cue_id": "cue:1:2:demo_main_sequences.xml:2",
+      "sequence_id": "sequence:1:demo_main_sequences.xml:1",
+      "sequence_number": "1",
+      "sequence_name": "Intro",
+      "cue_number": "2",
+      "cue_name": "Build",
+      "cue_position": 2,
+      "is_main_cue_list": true,
+      "fixture_count": 3,
+      "fixtures": [
+        101,
+        102,
+        103
+      ],
+      "fixture_details": [
+        "101 | Front Left Wash | Robe LEDWash 600 | 1.1",
+        "102 | Front Center Wash | Robe LEDWash 600 | 1.17",
+        "103 | DS Center Spot | Martin MAC Viper | 1.33"
+      ],
+      "attribute_count": 3,
+      "attributes": [
+        "Dimmer",
+        "Effect",
+        "GroupRef"
+      ],
+      "feature_group_count": 2,
+      "feature_groups": [
+        "Dimmer",
+        "Other"
+      ],
+      "hard_value_count": 2,
+      "dimmer_value_count": 1,
+      "hard_fixture_count": 0,
+      "dimmer_fixture_count": 1,
+      "preset_ref_count": 0,
+      "preset_refs": [],
+      "group_ref_count": 1,
+      "group_refs": [
+        "3"
+      ],
+      "effect_ref_count": 1,
+      "effect_refs": [
+        "12"
+      ],
+      "zero_like_count": 0,
+      "mixed_fixture_count": 0,
+      "mixed_family_count": 0,
+      "control_mode": "hard_only",
+      "fixture_attribute_map": {
+        "101": [
+          "Dimmer"
+        ],
+        "102": [
+          "Effect"
+        ],
+        "103": [
+          "GroupRef"
+        ]
+      },
+      "fixture_hard_attribute_map": {
+        "101": []
+      },
+      "fixture_dimmer_attribute_map": {
+        "101": [
+          "Dimmer"
+        ]
+      },
+      "fixture_family_mode_map": {
+        "101": {
+          "Dimmer": [
+            "dimmer"
+          ]
+        },
+        "102": {
+          "Other": []
+        },
+        "103": {
+          "Other": []
+        }
+      },
+      "family_mode_summary": {},
+      "signature_pairs": [
+        "101:Dimmer",
+        "102:Effect",
+        "103:GroupRef"
+      ],
+      "source_file": "test_exports_xmlpatch\\demo_main_sequences.xml"
+    }
+  ],
+  "cue_quality": [
+    {
+      "cue_id": "cue:1:1:demo_main_sequences.xml:1",
+      "sequence_id": "sequence:1:demo_main_sequences.xml:1",
+      "sequence_number": "1",
+      "sequence_name": "Intro",
+      "cue_number": "1",
+      "cue_name": "Blackout",
+      "cue_position": 1,
+      "is_main_cue_list": true,
+      "fixture_count": 3,
+      "attribute_count": 2,
+      "feature_group_count": 2,
+      "hard_value_count": 3,
+      "dimmer_value_count": 1,
+      "preset_ref_count": 2,
+      "group_ref_count": 0,
+      "effect_ref_count": 0,
+      "zero_like_count": 3,
+      "mixed_fixture_count": 0,
+      "mixed_family_count": 0,
+      "control_mode": "mixed",
+      "fade": null,
+      "delay": null,
+      "trigger": null,
+      "prev_similarity": 0.0,
+      "next_similarity": 0.2,
+      "local_similarity": 0.1,
+      "local_avg_hard": 2.5,
+      "local_avg_dimmer": 1.0,
+      "local_avg_preset": 1.0,
+      "local_avg_zero": 1.5,
+      "local_avg_feature_groups": 2.0,
+      "quality_risk_score": 0,
+      "severity": "low",
+      "reason_count": 0,
+      "reasons": [],
+      "reasons_text": "stable cue profile",
+      "source_file": "test_exports_xmlpatch\\demo_main_sequences.xml"
+    },
+    {
+      "cue_id": "cue:1:2:demo_main_sequences.xml:2",
+      "sequence_id": "sequence:1:demo_main_sequences.xml:1",
+      "sequence_number": "1",
+      "sequence_name": "Intro",
+      "cue_number": "2",
+      "cue_name": "Build",
+      "cue_position": 2,
+      "is_main_cue_list": true,
+      "fixture_count": 3,
+      "attribute_count": 3,
+      "feature_group_count": 2,
+      "hard_value_count": 2,
+      "dimmer_value_count": 1,
+      "preset_ref_count": 0,
+      "group_ref_count": 1,
+      "effect_ref_count": 1,
+      "zero_like_count": 0,
+      "mixed_fixture_count": 0,
+      "mixed_family_count": 0,
+      "control_mode": "hard_only",
+      "fade": null,
+      "delay": null,
+      "trigger": null,
+      "prev_similarity": 0.2,
+      "next_similarity": 0.0,
+      "local_similarity": 0.1,
+      "local_avg_hard": 2.5,
+      "local_avg_dimmer": 1.0,
+      "local_avg_preset": 1.0,
+      "local_avg_zero": 1.5,
+      "local_avg_feature_groups": 2.0,
+      "quality_risk_score": 0,
+      "severity": "low",
+      "reason_count": 0,
+      "reasons": [],
+      "reasons_text": "stable cue profile",
+      "source_file": "test_exports_xmlpatch\\demo_main_sequences.xml"
+    }
+  ],
+  "worst_blocks": [],
+  "fixture_inconsistency": [],
+  "repeated_hard_values": [],
+  "preset_heatmap": [
+    {
+      "preset_number": "1.5",
+      "preset_type": "1",
+      "preset_name": "Warm Front",
+      "cue_count": 1,
+      "sequence_count": 1,
+      "main_cue_count": 1,
+      "fixture_count": 2,
+      "fixture_types": [
+        "Robe LEDWash 600"
+      ],
+      "value_count": 2,
+      "usage_status": "single_cue",
+      "is_unused": false,
+      "is_single_cue": true,
+      "duplicate_candidates": [],
+      "duplicate_candidate_count": 0,
+      "source_file": "test_exports_xmlpatch\\demo_preset_1.xml"
+    },
+    {
+      "preset_number": "2.7",
+      "preset_type": "2",
+      "preset_name": "DS Center",
+      "cue_count": 1,
+      "sequence_count": 1,
+      "main_cue_count": 1,
+      "fixture_count": 1,
+      "fixture_types": [
+        "Martin MAC Viper"
+      ],
+      "value_count": 1,
+      "usage_status": "single_cue",
+      "is_unused": false,
+      "is_single_cue": true,
+      "duplicate_candidates": [],
+      "duplicate_candidate_count": 0,
+      "source_file": "test_exports_xmlpatch\\demo_preset_1.xml"
+    }
+  ],
+  "fixture_coverage": [
+    {
+      "fixture_id": 101,
+      "fixture_name": "Front Left Wash",
+      "fixture_type": "Robe LEDWash 600",
+      "fixture_patch": "1.1",
+      "sequence_count": 1,
+      "cue_count": 2,
+      "preset_count": 1,
+      "group_count": 1,
+      "effect_count": 0,
+      "hard_value_atoms": 0,
+      "dimmer_value_atoms": 2,
+      "preset_ref_atoms": 0,
+      "group_ref_atoms": 0,
+      "effect_ref_atoms": 0,
+      "preset_types_available": [
+        "1"
+      ],
+      "top_attributes": [
+        "Dimmer"
+      ],
+      "attribute_frequency": {
+        "Dimmer": 3
+      },
+      "feature_group_frequency": {
+        "Dimmer": 3
+      },
+      "orphan_patch": false,
+      "is_sparse": false,
+      "control_mode": "none"
+    },
+    {
+      "fixture_id": 102,
+      "fixture_name": "Front Center Wash",
+      "fixture_type": "Robe LEDWash 600",
+      "fixture_patch": "1.17",
+      "sequence_count": 1,
+      "cue_count": 2,
+      "preset_count": 1,
+      "group_count": 1,
+      "effect_count": 1,
+      "hard_value_atoms": 1,
+      "dimmer_value_atoms": 0,
+      "preset_ref_atoms": 1,
+      "group_ref_atoms": 0,
+      "effect_ref_atoms": 1,
+      "preset_types_available": [
+        "1"
+      ],
+      "top_attributes": [
+        "Color",
+        "Dimmer",
+        "Effect"
+      ],
+      "attribute_frequency": {
+        "Color": 1,
+        "Dimmer": 1,
+        "Effect": 1
+      },
+      "feature_group_frequency": {
+        "Color": 1,
+        "Dimmer": 1,
+        "Other": 1
+      },
+      "orphan_patch": false,
+      "is_sparse": false,
+      "control_mode": "preset_only"
+    },
+    {
+      "fixture_id": 103,
+      "fixture_name": "DS Center Spot",
+      "fixture_type": "Martin MAC Viper",
+      "fixture_patch": "1.33",
+      "sequence_count": 1,
+      "cue_count": 2,
+      "preset_count": 1,
+      "group_count": 1,
+      "effect_count": 0,
+      "hard_value_atoms": 1,
+      "dimmer_value_atoms": 0,
+      "preset_ref_atoms": 1,
+      "group_ref_atoms": 1,
+      "effect_ref_atoms": 0,
+      "preset_types_available": [
+        "2"
+      ],
+      "top_attributes": [
+        "Position",
+        "GroupRef"
+      ],
+      "attribute_frequency": {
+        "Position": 2,
+        "GroupRef": 1
+      },
+      "feature_group_frequency": {
+        "Position": 2,
+        "Other": 1
+      },
+      "orphan_patch": false,
+      "is_sparse": false,
+      "control_mode": "preset_only"
+    }
+  ],
+  "consistency_issues": [],
+  "risk_hotspots": [
+    {
+      "category": "cue",
+      "subject": "Seq 1 Cue 1 Blackout",
+      "risk_score": 2,
+      "details": "mixed hard and preset control"
+    }
+  ],
+  "control_balance": [
+    {
+      "sequence_number": "1",
+      "cue_number": "1",
+      "cue_name": "Blackout",
+      "fixture_id": 101,
+      "fixture_name": "Front Left Wash",
+      "fixture_type": "Robe LEDWash 600",
+      "fixture_patch": "1.1",
+      "control_mode": "preset_only",
+      "hard_attribute_count": 0,
+      "hard_attributes": [],
+      "dimmer_attribute_count": 1,
+      "dimmer_attributes": [
+        "Dimmer"
+      ],
+      "preset_ref_count": 1,
+      "preset_refs": [
+        "1.5"
+      ],
+      "preset_types": [
+        "1"
+      ]
+    },
+    {
+      "sequence_number": "1",
+      "cue_number": "1",
+      "cue_name": "Blackout",
+      "fixture_id": 102,
+      "fixture_name": "Front Center Wash",
+      "fixture_type": "Robe LEDWash 600",
+      "fixture_patch": "1.17",
+      "control_mode": "preset_only",
+      "hard_attribute_count": 0,
+      "hard_attributes": [],
+      "dimmer_attribute_count": 0,
+      "dimmer_attributes": [],
+      "preset_ref_count": 1,
+      "preset_refs": [
+        "1.5"
+      ],
+      "preset_types": [
+        "1"
+      ]
+    },
+    {
+      "sequence_number": "1",
+      "cue_number": "1",
+      "cue_name": "Blackout",
+      "fixture_id": 103,
+      "fixture_name": "DS Center Spot",
+      "fixture_type": "Martin MAC Viper",
+      "fixture_patch": "1.33",
+      "control_mode": "preset_only",
+      "hard_attribute_count": 0,
+      "hard_attributes": [],
+      "dimmer_attribute_count": 0,
+      "dimmer_attributes": [],
+      "preset_ref_count": 1,
+      "preset_refs": [
+        "2.7"
+      ],
+      "preset_types": [
+        "2"
+      ]
+    },
+    {
+      "sequence_number": "1",
+      "cue_number": "2",
+      "cue_name": "Build",
+      "fixture_id": 101,
+      "fixture_name": "Front Left Wash",
+      "fixture_type": "Robe LEDWash 600",
+      "fixture_patch": "1.1",
+      "control_mode": "none",
+      "hard_attribute_count": 0,
+      "hard_attributes": [],
+      "dimmer_attribute_count": 1,
+      "dimmer_attributes": [
+        "Dimmer"
+      ],
+      "preset_ref_count": 0,
+      "preset_refs": [],
+      "preset_types": []
+    }
+  ],
+  "object_liveness": [
+    {
+      "object_type": "preset",
+      "object_number": "1.5",
+      "object_name": "Warm Front",
+      "usage_count": 1,
+      "sequence_count": 1,
+      "status": "live"
+    },
+    {
+      "object_type": "preset",
+      "object_number": "2.7",
+      "object_name": "DS Center",
+      "usage_count": 1,
+      "sequence_count": 1,
+      "status": "live"
+    },
+    {
+      "object_type": "group",
+      "object_number": "3",
+      "object_name": "Washes",
+      "usage_count": 1,
+      "sequence_count": 1,
+      "status": "live"
+    },
+    {
+      "object_type": "effect",
+      "object_number": "12",
+      "object_name": "Circle FX",
+      "usage_count": 1,
+      "sequence_count": 1,
+      "status": "live"
+    }
+  ]
+}

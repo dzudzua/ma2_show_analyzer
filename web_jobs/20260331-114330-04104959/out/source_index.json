@@ -1,0 +1,19 @@
+{
+  "sequence_sources": [
+    "C:\\Users\\lukas\\Downloads\\ma2_show_analyzer\\ma2_show_analyzer\\web_jobs\\20260331-114330-04104959\\uploads\\Studio_54_all_sequences.xml",
+    "C:\\Users\\lukas\\Downloads\\ma2_show_analyzer\\ma2_show_analyzer\\web_jobs\\20260331-114330-04104959\\uploads\\Studio_54_main_sequences.xml"
+  ],
+  "preset_sources": [
+    "C:\\Users\\lukas\\Downloads\\ma2_show_analyzer\\ma2_show_analyzer\\web_jobs\\20260331-114330-04104959\\uploads\\Studio_54_preset_0.xml",
+    "C:\\Users\\lukas\\Downloads\\ma2_show_analyzer\\ma2_show_analyzer\\web_jobs\\20260331-114330-04104959\\uploads\\Studio_54_preset_2.xml"
+  ],
+  "group_sources": [
+    "C:\\Users\\lukas\\Downloads\\ma2_show_analyzer\\ma2_show_analyzer\\web_jobs\\20260331-114330-04104959\\uploads\\Studio_54_groups.xml"
+  ],
+  "effect_sources": [],
+  "patch_sources": [
+    "C:\\Users\\lukas\\Downloads\\ma2_show_analyzer\\ma2_show_analyzer\\web_jobs\\20260331-114330-04104959\\uploads\\Studio_54_channel_patch.xml",
+    "C:\\Users\\lukas\\Downloads\\ma2_show_analyzer\\ma2_show_analyzer\\web_jobs\\20260331-114330-04104959\\uploads\\Studio_54_fixture_patch.xml"
+  ],
+  "generic_sources": []
+}

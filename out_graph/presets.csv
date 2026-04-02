@@ -1,0 +1,12 @@
+id,preset_type,number,name,fixture_ids,fixture_details,references,value_count,source_file
+preset:1.1:patch666_preset_1.xml:1,1,1.1,100%,2 3 4 5 6,2 | RSpiide3 2 | 6 SPIIDER 33CH Mode 3 || 3 | RSpiide3 3 | 6 SPIIDER 33CH Mode 3 | 3.034 || 4 | RSpiide3 4 | 6 SPIIDER 33CH Mode 3 | 3.067 || 5 | RSpiide3 5 | 6 SPIIDER 33CH Mode 3 || 6 | RSpiide3 6 | 6 SPIIDER 33CH Mode 3 | 3.100,preset:2.4000001,8,exports\patch666_preset_1.xml
+preset:1.2:patch666_preset_1.xml:2,1,1.2,Preset 1.2,2 3 4 5 6,2 | RSpiide3 2 | 6 SPIIDER 33CH Mode 3 || 3 | RSpiide3 3 | 6 SPIIDER 33CH Mode 3 | 3.034 || 4 | RSpiide3 4 | 6 SPIIDER 33CH Mode 3 | 3.067 || 5 | RSpiide3 5 | 6 SPIIDER 33CH Mode 3 || 6 | RSpiide3 6 | 6 SPIIDER 33CH Mode 3 | 3.100,preset:2.4000001,7,exports\patch666_preset_1.xml
+preset:1.3:patch666_preset_1.xml:3,1,1.3,100%,2 3 4 5 6,2 | RSpiide3 2 | 6 SPIIDER 33CH Mode 3 || 3 | RSpiide3 3 | 6 SPIIDER 33CH Mode 3 | 3.034 || 4 | RSpiide3 4 | 6 SPIIDER 33CH Mode 3 | 3.067 || 5 | RSpiide3 5 | 6 SPIIDER 33CH Mode 3 || 6 | RSpiide3 6 | 6 SPIIDER 33CH Mode 3 | 3.100,preset:2.4000001,8,exports\patch666_preset_1.xml
+preset:4.1:patch666_preset_4.xml:1,4,4.1,orange,222,222 | R3LEDWm2 1 | 9 Robin 300 LEDWash Mode 2 | 6.001,preset:13.56314,12,exports\patch666_preset_4.xml
+preset:4.2:patch666_preset_4.xml:2,4,4.2,Light cyan,222,222 | R3LEDWm2 1 | 9 Robin 300 LEDWash Mode 2 | 6.001,,10,exports\patch666_preset_4.xml
+preset:4.3:patch666_preset_4.xml:3,4,4.3,Light green,222,222 | R3LEDWm2 1 | 9 Robin 300 LEDWash Mode 2 | 6.001,preset:14.357845 | preset:14.357853,10,exports\patch666_preset_4.xml
+preset:4.4:patch666_preset_4.xml:4,4,4.4,orange,222,222 | R3LEDWm2 1 | 9 Robin 300 LEDWash Mode 2 | 6.001,preset:6.6100516 | preset:1.8701264 | preset:13.675235 | preset:1.870136 | preset:13.675242,12,exports\patch666_preset_4.xml
+preset:4.5:patch666_preset_4.xml:5,4,4.5,Light red,222,222 | R3LEDWm2 1 | 9 Robin 300 LEDWash Mode 2 | 6.001,preset:6.5400996 | preset:4.4415331 | preset:4.4415426,12,exports\patch666_preset_4.xml
+preset:4.6:patch666_preset_4.xml:6,4,4.6,Light violet,222,222 | R3LEDWm2 1 | 9 Robin 300 LEDWash Mode 2 | 6.001,preset:9.4285021 | preset:13.67522 | preset:9.4285097,12,exports\patch666_preset_4.xml
+preset:4.7:patch666_preset_4.xml:7,4,4.7,red,222,222 | R3LEDWm2 1 | 9 Robin 300 LEDWash Mode 2 | 6.001,preset:4.5166273 | preset:1.7930169 | preset:13.390337 | preset:1.7930266 | preset:13.390345,26,exports\patch666_preset_4.xml
+preset:11:patch666_preset_4.xml:8,4,11,LED PINK,,,preset:7.3680468,3,exports\patch666_preset_4.xml

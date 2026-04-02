@@ -1,0 +1,44 @@
+id,number,name,cue_count,source_file,is_main_cue_list
+sequence:0:Studio54_all_sequences.xml:1,0,Sequence 0,2,exports\Studio54_all_sequences.xml,False
+sequence:1:Studio54_all_sequences.xml:2,1,Sequence 1,2,exports\Studio54_all_sequences.xml,False
+sequence:2:Tram_Analyz_main_sequences.xml:1,2,qju,91,exports\Tram_Analyz_main_sequences.xml,True
+sequence:3:Studio54_all_sequences.xml:4,3,Sequence 3,2,exports\Studio54_all_sequences.xml,False
+sequence:4:Studio54_all_sequences.xml:5,4,Sequence 4,2,exports\Studio54_all_sequences.xml,False
+sequence:5:Studio54_all_sequences.xml:6,5,Sequence 5,2,exports\Studio54_all_sequences.xml,False
+sequence:6:Studio54_all_sequences.xml:7,6,Sequence 6,2,exports\Studio54_all_sequences.xml,False
+sequence:7:Studio54_all_sequences.xml:8,7,Sequence 7,2,exports\Studio54_all_sequences.xml,False
+sequence:8:Studio54_all_sequences.xml:9,8,Sequence 8,2,exports\Studio54_all_sequences.xml,False
+sequence:9:Studio54_all_sequences.xml:10,9,Sequence 9,2,exports\Studio54_all_sequences.xml,False
+sequence:10:Studio54_main_sequences.xml:1,10,Sequence 10,117,exports\Studio54_main_sequences.xml,True
+sequence:11:Studio54_all_sequences.xml:12,11,Sequence 11,2,exports\Studio54_all_sequences.xml,False
+sequence:12:Studio54_all_sequences.xml:13,12,Sequence 12,2,exports\Studio54_all_sequences.xml,False
+sequence:13:Studio54_all_sequences.xml:14,13,2,3,exports\Studio54_all_sequences.xml,False
+sequence:14:Studio54_all_sequences.xml:15,14,Sequence 14,2,exports\Studio54_all_sequences.xml,False
+sequence:15:Studio54_all_sequences.xml:16,15,Sequence 15,2,exports\Studio54_all_sequences.xml,False
+sequence:16:Studio54_all_sequences.xml:17,16,Sequence 16,2,exports\Studio54_all_sequences.xml,False
+sequence:17:Studio54_all_sequences.xml:18,17,Sequence 17,2,exports\Studio54_all_sequences.xml,False
+sequence:18:Studio54_all_sequences.xml:19,18,Sequence 18,2,exports\Studio54_all_sequences.xml,False
+sequence:19:Studio54_all_sequences.xml:20,19,Sequence 19,2,exports\Studio54_all_sequences.xml,False
+sequence:20:Studio54_all_sequences.xml:21,20,Sequence 20,2,exports\Studio54_all_sequences.xml,False
+sequence:21:Studio54_all_sequences.xml:22,21,Kour,2,exports\Studio54_all_sequences.xml,False
+sequence:22:Studio54_all_sequences.xml:23,22,Sequence 22,2,exports\Studio54_all_sequences.xml,False
+sequence:23:Studio54_all_sequences.xml:24,23,Sequence 23,2,exports\Studio54_all_sequences.xml,False
+sequence:24:Studio54_all_sequences.xml:25,24,lidi,2,exports\Studio54_all_sequences.xml,False
+sequence:25:Studio54_all_sequences.xml:26,25,Sequence 25,2,exports\Studio54_all_sequences.xml,False
+sequence:26:Studio54_all_sequences.xml:27,26,Sequence 26,2,exports\Studio54_all_sequences.xml,False
+sequence:27:Studio54_all_sequences.xml:28,27,t1,2,exports\Studio54_all_sequences.xml,False
+sequence:28:Studio54_all_sequences.xml:29,28,Sequence 28,2,exports\Studio54_all_sequences.xml,False
+sequence:29:Studio54_all_sequences.xml:30,29,Sequence 29,2,exports\Studio54_all_sequences.xml,False
+sequence:30:Studio54_all_sequences.xml:31,30,Sequence 30,2,exports\Studio54_all_sequences.xml,False
+sequence:31:Studio54_all_sequences.xml:32,31,Sequence 31,2,exports\Studio54_all_sequences.xml,False
+sequence:32:Studio54_all_sequences.xml:33,32,Sequence 32,2,exports\Studio54_all_sequences.xml,False
+sequence:33:Studio54_all_sequences.xml:34,33,signal,2,exports\Studio54_all_sequences.xml,False
+sequence:34:Studio54_all_sequences.xml:35,34,Sequence 34,2,exports\Studio54_all_sequences.xml,False
+sequence:35:Studio54_all_sequences.xml:36,35,Sequence 35,2,exports\Studio54_all_sequences.xml,False
+sequence:36:Studio54_all_sequences.xml:37,36,Sequence 36,2,exports\Studio54_all_sequences.xml,False
+sequence:37:Studio54_all_sequences.xml:38,37,Sequence 37,2,exports\Studio54_all_sequences.xml,False
+sequence:38:Studio54_all_sequences.xml:39,38,36,3,exports\Studio54_all_sequences.xml,False
+sequence:39:Studio54_all_sequences.xml:40,39,38,3,exports\Studio54_all_sequences.xml,False
+sequence:40:Studio54_all_sequences.xml:41,40,40,3,exports\Studio54_all_sequences.xml,False
+sequence:41:Studio54_all_sequences.xml:42,41,41,3,exports\Studio54_all_sequences.xml,False
+sequence:42:Studio54_all_sequences.xml:43,42,Sequence 42,2,exports\Studio54_all_sequences.xml,False

@@ -1,0 +1,7 @@
+sequence_number,sequence_name,cue_number,cue_name,fixture_id,fixture_name,fixture_type,fixture_patch,dimmer,position,gobo,color,beam,focus,control,preset_refs,hard_value_count,preset_value_count
+1,Intro,1,Blackout,101,Front Left Wash,Robe LEDWash 600,1.1,"[""H Dimmer=0.00"", ""P1.5 Dimmer=100.00""]",[],[],[],[],[],[],"[""1.5""]",1,1
+1,Intro,1,Blackout,102,Front Center Wash,Robe LEDWash 600,1.17,[],[],[],"[""P1.5 Color=255.00""]",[],[],[],"[""1.5""]",0,1
+1,Intro,1,Blackout,103,DS Center Spot,Martin MAC Viper,1.33,[],"[""P2.7 Position=45.00""]",[],[],[],[],[],"[""2.7""]",0,1
+1,Intro,2,Build,101,Front Left Wash,Robe LEDWash 600,1.1,"[""H Dimmer=100.00""]",[],[],[],[],[],[],[],1,0
+1,Intro,2,Build,102,Front Center Wash,Robe LEDWash 600,1.17,[],[],[],[],[],[],[],[],0,0
+1,Intro,2,Build,103,DS Center Spot,Martin MAC Viper,1.33,[],[],[],[],[],[],[],[],0,0

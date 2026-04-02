@@ -1,0 +1,15 @@
+owner_type,owner_id,attribute,raw_value,value_type,fixture_id,reference_target,flags,source_path
+cue,cue:1:1:demo_main_sequences.xml:1,fade,0,hard,,,"[""timing""]",Cue
+cue,cue:1:1:demo_main_sequences.xml:1,delay,0,hard,,,"[""timing""]",Cue
+cue,cue:1:1:demo_main_sequences.xml:1,Dimmer,0,hard,101,,[],Cue/Value
+cue,cue:1:1:demo_main_sequences.xml:1,Dimmer,Preset 1.5,preset_ref,102,preset:1.5,[],Cue/Value
+cue,cue:1:1:demo_main_sequences.xml:1,Position,Preset 2.7,preset_ref,103,preset:2.7,[],Cue/Value
+cue,cue:1:1:demo_main_sequences.xml:1,text,Go Sequence 2 Cue 1,hard,,,[],Cue/Command
+cue,cue:1:2:demo_main_sequences.xml:2,fade,2,hard,,,"[""timing""]",Cue
+cue,cue:1:2:demo_main_sequences.xml:2,delay,0.5,hard,,,"[""timing""]",Cue
+cue,cue:1:2:demo_main_sequences.xml:2,Dimmer,100,hard,101,,[],Cue/Value
+cue,cue:1:2:demo_main_sequences.xml:2,Effect,Effect 12,effect_ref,102,effect:12,[],Cue/Value
+cue,cue:1:2:demo_main_sequences.xml:2,GroupRef,Group 3,group_ref,103,group:3,[],Cue/Value
+preset,preset:1.5:demo_preset_1.xml:1,Dimmer,100,hard,101,,[],Preset/Value
+preset,preset:1.5:demo_preset_1.xml:1,Color,255,hard,102,,[],Preset/Value
+preset,preset:2.7:demo_preset_1.xml:2,Position,45,hard,103,,[],Preset/Value

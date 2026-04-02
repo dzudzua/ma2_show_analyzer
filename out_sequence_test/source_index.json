@@ -1,0 +1,19 @@
+{
+  "sequence_sources": [
+    "exports\\Tram_Analyz_all_sequences.xml",
+    "exports\\Tram_Analyz_main_sequences.xml"
+  ],
+  "preset_sources": [
+    "exports\\Tram_Analyz_preset_0.xml",
+    "exports\\Tram_Analyz_preset_2.xml",
+    "exports\\Tram_Analyz_preset_4.xml"
+  ],
+  "group_sources": [
+    "exports\\Tram_Analyz_groups.xml"
+  ],
+  "effect_sources": [],
+  "patch_sources": [
+    "exports\\Tram_Analyz_patch.xml"
+  ],
+  "generic_sources": []
+}

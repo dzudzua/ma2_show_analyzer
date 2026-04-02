@@ -1,0 +1,172 @@
+category,subject,risk_score,details
+cue,Seq 11 Cue 1 lidi,10,many hard values (622); touches many feature groups (6); mixed hard and preset control; depends on several presets (6); dimmer hard values present (159)
+cue,Seq 11 Cue 112 DIKY,10,many hard values (645); touches many feature groups (6); mixed hard and preset control; depends on several presets (5); dimmer hard values present (186)
+cue,Seq 11 Cue 113 lidi,10,many hard values (605); touches many feature groups (6); mixed hard and preset control; depends on several presets (9); dimmer hard values present (176)
+cue,Seq 11 Cue 114 8:15.150,10,many hard values (815); touches many feature groups (7); mixed hard and preset control; depends on several presets (10); dimmer hard values present (272)
+cue,Seq 11 Cue 36 9:46.888,10,many hard values (75); touches many feature groups (7); mixed hard and preset control; depends on several presets (9); dimmer hard values present (250)
+cue,Seq 11 Cue 103 blesk,9,many hard values (48); touches many feature groups (5); mixed hard and preset control; dimmer hard values present (100)
+cue,Seq 11 Cue 106 DUHA,9,many hard values (547); touches many feature groups (5); mixed hard and preset control; dimmer hard values present (169)
+cue,Seq 11 Cue 109 Blesk MIDI,9,many hard values (640); touches many feature groups (6); mixed hard and preset control; dimmer hard values present (88)
+cue,Seq 11 Cue 27 beegees 6:37.6,9,many hard values (64); touches many feature groups (6); mixed hard and preset control; dimmer hard values present (32)
+cue,Seq 11 Cue 6 platforma dole,9,many hard values (49); touches many feature groups (5); mixed hard and preset control; dimmer hard values present (15)
+cue,Seq 11 Cue 75 Projede Lavka az na konci,9,many hard values (33); touches many feature groups (5); mixed hard and preset control; dimmer hard values present (31)
+cue,Seq 11 Cue 80 Alex gr STYCH od klaviru patrik osuka alexe,9,many hard values (64); touches many feature groups (6); mixed hard and preset control
+cue,Seq 11 Cue 81 disko gula dolu,9,many hard values (64); touches many feature groups (6); mixed hard and preset control; dimmer hard values present (13)
+cue,Seq 11 Cue 84 Gobo sex,9,many hard values (31); touches many feature groups (6); mixed hard and preset control; dimmer hard values present (37)
+cue,Seq 11 Cue 89 koks KOUR GARAZ,9,many hard values (77); touches many feature groups (6); mixed hard and preset control; dimmer hard values present (109)
+cue,Seq 11 Cue 98 Flo BLESK kdyz se vyfoti tereze,9,many hard values (65); touches many feature groups (5); mixed hard and preset control; dimmer hard values present (33)
+cue,Seq 27 Cue 1 Cue 1,9,many hard values (36); touches many feature groups (6); mixed hard and preset control; dimmer hard values present (138)
+cue,Seq 11 Cue 36.5 koule pryc,8,elevated hard values (19); touches many feature groups (7); mixed hard and preset control; depends on several presets (10); dimmer hard values present (275)
+cue,Seq 11 Cue 9 otevreni vrata,7,elevated hard values (19); touches many feature groups (6); mixed hard and preset control; dimmer hard values present (63)
+cue,Seq 29 Cue 1 Cue 1,7,many hard values (108); touches many feature groups (6); dimmer hard values present (56)
+cue,Seq 11 Cue 100 Natalka spot,5,touches many feature groups (6); mixed hard and preset control; dimmer hard values present (17)
+cue,Seq 11 Cue 104 Po blesku,5,touches many feature groups (5); mixed hard and preset control; dimmer hard values present (106)
+cue,Seq 11 Cue 105 najezd do sta,5,touches many feature groups (5); mixed hard and preset control; dimmer hard values present (28)
+cue,Seq 11 Cue 107 zaver u baru,5,touches many feature groups (6); mixed hard and preset control
+cue,Seq 11 Cue 108 zebrik,5,touches many feature groups (6); mixed hard and preset control
+cue,Seq 11 Cue 19 Scan,5,touches many feature groups (7); mixed hard and preset control; dimmer hard values present (49)
+cue,Seq 11 Cue 21 350 2,5,touches many feature groups (5); mixed hard and preset control
+cue,Seq 11 Cue 22 350 3,5,touches many feature groups (5); mixed hard and preset control
+cue,Seq 11 Cue 23 350 4,5,touches many feature groups (5); mixed hard and preset control
+cue,Seq 11 Cue 24 350 5,5,touches many feature groups (5); mixed hard and preset control
+cue,Seq 11 Cue 25 350 6,5,touches many feature groups (5); mixed hard and preset control
+cue,Seq 11 Cue 30 8:11.257,5,touches many feature groups (5); mixed hard and preset control
+cue,Seq 11 Cue 34 9:29.372,5,touches many feature groups (5); mixed hard and preset control
+cue,Seq 11 Cue 68 Ondra klavir satna,5,touches many feature groups (6); mixed hard and preset control; dimmer hard values present (26)
+cue,Seq 11 Cue 70 Strip na miste STYCH MIKI ZAPALOVAC,5,touches many feature groups (6); mixed hard and preset control
+cue,Seq 11 Cue 8 vrata,5,touches many feature groups (7); mixed hard and preset control
+cue,Seq 11 Cue 8.5 zebrik,5,touches many feature groups (6); mixed hard and preset control
+cue,Seq 11 Cue 82 buzno tanec,5,touches many feature groups (6); mixed hard and preset control; dimmer hard values present (28)
+cue,Seq 11 Cue 94 bejk nahore,5,touches many feature groups (5); mixed hard and preset control
+cue,Seq 11 Cue 95 ukotveny zebrikr ondra nahoru blikam 111,5,touches many feature groups (5); mixed hard and preset control
+cue,Seq 11 Cue 96 bouhnou konfety buzek zase blikam,5,touches many feature groups (6); mixed hard and preset control
+cue,Seq 11 Cue 40 Flash,4,many hard values (32); dimmer hard values present (8)
+cue,Seq 11 Cue 42 Flash,4,many hard values (32); dimmer hard values present (8)
+cue,Seq 11 Cue 44 Flash,4,many hard values (32); dimmer hard values present (8)
+cue,Seq 11 Cue 46 Flash,4,many hard values (32); dimmer hard values present (8)
+cue,Seq 11 Cue 48 Flash,4,many hard values (32); dimmer hard values present (8)
+cue,Seq 11 Cue 50 Flash,4,many hard values (32); dimmer hard values present (8)
+cue,Seq 11 Cue 52 Flash,4,many hard values (32); dimmer hard values present (8)
+cue,Seq 11 Cue 54 Flash,4,many hard values (32); dimmer hard values present (8)
+cue,Seq 11 Cue 56 Flash,4,many hard values (32); dimmer hard values present (8)
+cue,Seq 11 Cue 58 Flash,4,many hard values (32); dimmer hard values present (8)
+cue,Seq 11 Cue 60 Flash,4,many hard values (32); dimmer hard values present (8)
+cue,Seq 11 Cue 62 Flash,4,many hard values (32); dimmer hard values present (8)
+cue,Seq 11 Cue 65 final flash,4,many hard values (112); dimmer hard values present (214)
+cue,Seq 11 Cue 76 ondra hodi koukain novy track MIDI,4,many hard values (64)
+cue,Seq 11 Cue 79 chuze STYCH od garaze velky,4,many hard values (64)
+cue,Seq 11 Cue 85 groupen sex,4,many hard values (73); dimmer hard values present (36)
+cue,Seq 11 Cue 97 follow,4,many hard values (49); dimmer hard values present (22)
+cue,Seq 2 Cue 1 Cue 1,4,many hard values (64); dimmer hard values present (32)
+preset,Preset 0.34 350 plocha,3,critical dependency: used by 23 cues in 1 sequences
+preset,Preset 0.45 plocha spiider,3,critical dependency: used by 20 cues in 1 sequences
+cue,Seq 11 Cue 28 7:16.472,3,touches many feature groups (5)
+cue,Seq 11 Cue 29 8:03.383,3,touches many feature groups (5)
+cue,Seq 11 Cue 31 8:15.150,3,touches many feature groups (5)
+cue,Seq 11 Cue 32 8:58.183,3,touches many feature groups (5)
+cue,Seq 11 Cue 33 9:13.805,3,touches many feature groups (5)
+cue,Seq 11 Cue 38 kejs,3,touches many feature groups (6); dimmer hard values present (22)
+cue,Seq 11 Cue 77 kokain pro mikiho,3,touches multiple feature groups (3); mixed hard and preset control
+cue,Seq 11 Cue 92 vrchol dekkancers,3,touches many feature groups (6); dimmer hard values present (33)
+cue,Seq 39 Cue 1 Cue 1,3,touches many feature groups (6)
+cue,Seq 40 Cue 1 Cue 1,3,touches many feature groups (6)
+cue,Seq 40 Cue 2 Cue 2,3,touches many feature groups (6)
+cue,Seq 41 Cue 1 Cue 1,3,touches many feature groups (6)
+cue,Seq 42 Cue 1 Cue 1,3,touches many feature groups (6)
+fixture,Fixture 1 Spiider 1,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 11 Esprite 1,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 12 Esprite 2,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 13 Esprite 3,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 14 Esprite 4,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 15 Esprite 5,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 16 Esprite 6,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 17 Esprite 7,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 18 Esprite 8,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 2 Spiider 2,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 21,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 22,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 23,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 24,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 25,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 26,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 27,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 28,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 3 Spiider 3,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 4 Spiider 4,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 41 RLB350M1 1,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 42 RLB350M1 2,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 43 RLB350M1 3,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 44 RLB350M1 4,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 45 RLB350M1 5,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 46 RLB350M1 6,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 47 RLB350M1 7,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 48 RLB350M1 8,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 49 RLB350M1 9,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 5 Spiider 5,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 50 RLB350M1 10,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 51 RLB350M1 11,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 52 RLB350M1 12,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 6 Spiider 6,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 65 HotboxW8 5,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 66 HotboxW8 6,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 67 HotboxW8 1,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 7 Spiider 7,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 71 HelM1 1,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 72 HelM1 2,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 73 HelM1 3,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 74 HelM1 4,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 75 HelM1 5,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 76 HelM1 6,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 77 HelM1 7,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 78 HelM1 8,2,fixture receives both hard values and preset-driven control
+fixture,Fixture 8 Spiider 8,2,fixture receives both hard values and preset-driven control
+cue,Seq 11 Cue 105.5 PLATFORMA,2,mixed hard and preset control
+cue,Seq 11 Cue 41 catwalk,2,mixed hard and preset control; dimmer hard values present (38)
+cue,Seq 11 Cue 43 catwalk,2,mixed hard and preset control; dimmer hard values present (38)
+cue,Seq 11 Cue 45 catwalk,2,mixed hard and preset control; dimmer hard values present (38)
+cue,Seq 11 Cue 47 catwalk,2,mixed hard and preset control; dimmer hard values present (38)
+cue,Seq 11 Cue 49 catwalk,2,mixed hard and preset control; dimmer hard values present (38)
+cue,Seq 11 Cue 51 catwalk,2,mixed hard and preset control; dimmer hard values present (38)
+cue,Seq 11 Cue 53 catwalk,2,mixed hard and preset control; dimmer hard values present (38)
+cue,Seq 11 Cue 55 catwalk,2,mixed hard and preset control; dimmer hard values present (38)
+cue,Seq 11 Cue 57 catwalk,2,mixed hard and preset control; dimmer hard values present (38)
+cue,Seq 11 Cue 59 catwalk,2,mixed hard and preset control; dimmer hard values present (38)
+cue,Seq 11 Cue 61 catwalk,2,mixed hard and preset control; dimmer hard values present (38)
+cue,Seq 11 Cue 63 catwalk,2,mixed hard and preset control; dimmer hard values present (38)
+cue,Seq 11 Cue 66 konec,2,mixed hard and preset control; dimmer hard values present (102)
+cue,Seq 24 Cue 1 Cue 1,2,elevated hard values (24)
+cue,Seq 32 Cue 1 Cue 1,2,elevated hard values (24)
+fixture,Fixture 34 Robin SVB1 4,1,patched fixture appears unused in analyzed show data
+fixture,Fixture 35 Robin SVB1 5,1,patched fixture appears unused in analyzed show data
+fixture,Fixture 36 Robin SVB1 6,1,patched fixture appears unused in analyzed show data
+fixture,Fixture 37 Robin SVB1 7,1,patched fixture appears unused in analyzed show data
+fixture,Fixture 38 Robin SVB1 8,1,patched fixture appears unused in analyzed show data
+preset,Preset 0.21 350 nad lidi,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.22 350 doprava,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.23 350 doleva,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.25 beam,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.27 strobo,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.28 strobo,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.29 Preset 0.29,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.32 Spiddery gula,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.33 vorez,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.35 spii stred,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.37 byk,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.38 animacnigobo,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.40 tetra vstup,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.43 klavir,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.44 stred zacatek,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.46 spot fotka,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.48 lidi,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.53 Astery Start,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.59 Preset 0.59,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.68 Preset 0.68,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.69 Preset 0.69,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.79 bejk nahore,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.80 fial do halue,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.81 zaverecna cesta,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.89 bejk nahore350,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 0.99 Lajny,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 2.1 Preset 2.1,1,dead preset: loaded in pool but not referenced by any cue
+preset,Preset 2.2 Preset 2.2,1,dead preset: loaded in pool but not referenced by any cue
+cue,Seq 9 Cue 1 Cue 1,1,touches multiple feature groups (4)

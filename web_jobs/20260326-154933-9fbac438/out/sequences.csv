@@ -1,0 +1,12 @@
+id,number,name,is_main_cue_list,cue_count,source_file
+sequence:0:Tram_Analyz_all_sequences.xml:1,0,stripy,False,2,C:\Users\lukas\Downloads\ma2_show_analyzer\ma2_show_analyzer\web_jobs\20260326-154933-9fbac438\uploads\Tram_Analyz_all_sequences.xml
+sequence:1:Tram_Analyz_all_sequences.xml:2,1,astery,False,2,C:\Users\lukas\Downloads\ma2_show_analyzer\ma2_show_analyzer\web_jobs\20260326-154933-9fbac438\uploads\Tram_Analyz_all_sequences.xml
+sequence:2:Tram_Analyz_main_sequences.xml:1,2,qju,True,91,C:\Users\lukas\Downloads\ma2_show_analyzer\ma2_show_analyzer\web_jobs\20260326-154933-9fbac438\uploads\Tram_Analyz_main_sequences.xml
+sequence:3:Tram_Analyz_all_sequences.xml:4,3,Sequence 3,False,2,C:\Users\lukas\Downloads\ma2_show_analyzer\ma2_show_analyzer\web_jobs\20260326-154933-9fbac438\uploads\Tram_Analyz_all_sequences.xml
+sequence:4:Tram_Analyz_all_sequences.xml:5,4,Sequence 4,False,2,C:\Users\lukas\Downloads\ma2_show_analyzer\ma2_show_analyzer\web_jobs\20260326-154933-9fbac438\uploads\Tram_Analyz_all_sequences.xml
+sequence:5:Tram_Analyz_all_sequences.xml:6,5,Sequence 5,False,2,C:\Users\lukas\Downloads\ma2_show_analyzer\ma2_show_analyzer\web_jobs\20260326-154933-9fbac438\uploads\Tram_Analyz_all_sequences.xml
+sequence:6:Tram_Analyz_all_sequences.xml:7,6,Sequence 6,False,2,C:\Users\lukas\Downloads\ma2_show_analyzer\ma2_show_analyzer\web_jobs\20260326-154933-9fbac438\uploads\Tram_Analyz_all_sequences.xml
+sequence:7:Tram_Analyz_all_sequences.xml:8,7,Sequence 7,False,2,C:\Users\lukas\Downloads\ma2_show_analyzer\ma2_show_analyzer\web_jobs\20260326-154933-9fbac438\uploads\Tram_Analyz_all_sequences.xml
+sequence:8:Tram_Analyz_all_sequences.xml:9,8,dirigent,False,2,C:\Users\lukas\Downloads\ma2_show_analyzer\ma2_show_analyzer\web_jobs\20260326-154933-9fbac438\uploads\Tram_Analyz_all_sequences.xml
+sequence:9:Tram_Analyz_all_sequences.xml:10,9,lapicky,False,2,C:\Users\lukas\Downloads\ma2_show_analyzer\ma2_show_analyzer\web_jobs\20260326-154933-9fbac438\uploads\Tram_Analyz_all_sequences.xml
+sequence:10:Tram_Analyz_all_sequences.xml:11,10,Labus,False,2,C:\Users\lukas\Downloads\ma2_show_analyzer\ma2_show_analyzer\web_jobs\20260326-154933-9fbac438\uploads\Tram_Analyz_all_sequences.xml

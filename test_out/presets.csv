@@ -1,0 +1,3 @@
+id,preset_type,number,name,fixture_ids,references,value_count,source_file
+preset:1.5:demo_preset_1.xml:1,1,1.5,Warm Front,101 102,,2,test_exports\demo_preset_1.xml
+preset:2.7:demo_preset_1.xml:2,2,2.7,DS Center,103,,1,test_exports\demo_preset_1.xml

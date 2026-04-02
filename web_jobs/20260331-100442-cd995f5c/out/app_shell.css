@@ -1,0 +1,172 @@
+:root {
+  --app-bg: #111827;
+  --app-header: #0f172a;
+  --app-card: #1f2937;
+  --app-card-2: #172033;
+  --app-line: #334155;
+  --app-line-2: #475569;
+  --app-text: #e5e7eb;
+  --app-muted: #94a3b8;
+  --app-accent-soft: rgba(56, 189, 248, 0.14);
+  --app-accent-strong: rgba(56, 189, 248, 0.45);
+  --app-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: var(--app-bg);
+  color: var(--app-text);
+}
+
+header,
+.page-header {
+  padding: 14px 20px;
+  background: var(--app-header);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid var(--app-line);
+}
+
+.header-brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.header-brand img {
+  width: min(170px, 28vw);
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+
+.header-copy {
+  min-width: 0;
+}
+
+.wrap {
+  padding: 24px;
+}
+
+.card {
+  background: var(--app-card);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: var(--app-shadow);
+  margin-bottom: 20px;
+}
+
+.muted {
+  color: var(--app-muted);
+  font-size: 12px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.nav-shell {
+  display: grid;
+  gap: 8px;
+  min-width: min(640px, 100%);
+}
+
+.category-nav,
+.page-nav {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.nav-pill,
+.page-nav button,
+.link-list a,
+button {
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--app-line);
+  background: var(--app-card-2);
+  color: var(--app-text);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.nav-pill.active {
+  background: var(--app-accent-soft);
+  border-color: var(--app-accent-strong);
+  color: #e0f2fe;
+}
+
+.nav-pill:hover,
+.page-nav button:hover,
+.link-list a:hover,
+button:hover {
+  background: #22304b;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--app-line);
+  background: var(--app-header);
+  color: var(--app-text);
+  font: inherit;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  border-bottom: 1px solid var(--app-line);
+  padding: 8px;
+  vertical-align: top;
+}
+
+th {
+  position: sticky;
+  top: 0;
+  background: var(--app-card-2);
+  z-index: 1;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.stat {
+  background: var(--app-card-2);
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+}

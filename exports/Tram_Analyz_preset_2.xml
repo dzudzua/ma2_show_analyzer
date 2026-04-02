@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.malighting.de/grandma2/xml/MA" xsi:schemaLocation="http://schemas.malighting.de/grandma2/xml/MA http://schemas.malighting.de/grandma2/xml/3.9.60/MA.xsd" major_vers="3" minor_vers="9" stream_vers="60">
+	<Info datetime="2026-03-25T20:34:13" showfile="racek_brezen26_analyzer" />
+	<Preset index="0" SpecialUse="Normal">
+		<Values>
+			<Channels>
+				<PresetValue Value="5.1341186">
+					<Channel fixture_id="101" attribute_name="PAN" />
+				</PresetValue>
+				<PresetValue Value="100.62687">
+					<Channel fixture_id="101" attribute_name="TILT" />
+				</PresetValue>
+				<PresetValue Value="7.8341289">
+					<Channel fixture_id="102" attribute_name="PAN" />
+				</PresetValue>
+				<PresetValue Value="102.58186">
+					<Channel fixture_id="102" attribute_name="TILT" />
+				</PresetValue>
+			</Channels>
+		</Values>
+	</Preset>
+	<Preset index="30" name="White" preset_mode="Global" SpecialUse="Normal">
+		<Values>
+			<ChannelTypes>
+				<PresetValue Value="9.9999997e-06">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB1" />
+				</PresetValue>
+				<PresetValue Value="9.9999997e-06">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB2" />
+				</PresetValue>
+				<PresetValue Value="9.9999997e-06">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB3" />
+				</PresetValue>
+			</ChannelTypes>
+		</Values>
+	</Preset>
+	<Preset index="31" name="Red" preset_mode="Global" SpecialUse="Normal">
+		<Values>
+			<ChannelTypes>
+				<PresetValue Value="99.999992">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB1" />
+				</PresetValue>
+				<PresetValue Value="9.9999997e-06">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB2" />
+				</PresetValue>
+				<PresetValue Value="9.9999997e-06">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB3" />
+				</PresetValue>
+			</ChannelTypes>
+		</Values>
+	</Preset>
+	<Preset index="32" name="Orange" preset_mode="Global" SpecialUse="Normal">
+		<Values>
+			<ChannelTypes>
+				<PresetValue Value="99.999992">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB1" />
+				</PresetValue>
+				<PresetValue Value="50.000004">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB2" />
+				</PresetValue>
+				<PresetValue Value="9.9999997e-06">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB3" />
+				</PresetValue>
+			</ChannelTypes>
+		</Values>
+	</Preset>
+	<Preset index="33" name="Yellow" preset_mode="Global" SpecialUse="Normal">
+		<Values>
+			<ChannelTypes>
+				<PresetValue Value="99.999992">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB1" />
+				</PresetValue>
+				<PresetValue Value="99.999992">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB2" />
+				</PresetValue>
+				<PresetValue Value="9.9999997e-06">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB3" />
+				</PresetValue>
+			</ChannelTypes>
+		</Values>
+	</Preset>
+	<Preset index="34" name="Fern Green" preset_mode="Global" SpecialUse="Normal">
+		<Values>
+			<ChannelTypes>
+				<PresetValue Value="50.000004">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB1" />
+				</PresetValue>
+				<PresetValue Value="99.999992">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB2" />
+				</PresetValue>
+				<PresetValue Value="9.9999997e-06">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB3" />
+				</PresetValue>
+			</ChannelTypes>
+		</Values>
+	</Preset>
+	<Preset index="35" name="Green" preset_mode="Global" SpecialUse="Normal">
+		<Values>
+			<ChannelTypes>
+				<PresetValue Value="9.9999997e-06">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB1" />
+				</PresetValue>
+				<PresetValue Value="99.999992">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB2" />
+				</PresetValue>
+				<PresetValue Value="9.9999997e-06">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB3" />
+				</PresetValue>
+			</ChannelTypes>
+		</Values>
+	</Preset>
+	<Preset index="36" name="Sea Green" preset_mode="Global" SpecialUse="Normal">
+		<Values>
+			<ChannelTypes>
+				<PresetValue Value="9.9999997e-06">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB1" />
+				</PresetValue>
+				<PresetValue Value="99.999992">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB2" />
+				</PresetValue>
+				<PresetValue Value="50.000004">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB3" />
+				</PresetValue>
+			</ChannelTypes>
+		</Values>
+	</Preset>
+	<Preset index="37" name="Cyan" preset_mode="Global" SpecialUse="Normal">
+		<Values>
+			<ChannelTypes>
+				<PresetValue Value="9.9999997e-06">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB1" />
+				</PresetValue>
+				<PresetValue Value="99.999992">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB2" />
+				</PresetValue>
+				<PresetValue Value="99.999992">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB3" />
+				</PresetValue>
+			</ChannelTypes>
+		</Values>
+	</Preset>
+	<Preset index="38" name="Lavender" preset_mode="Global" SpecialUse="Normal">
+		<Values>
+			<ChannelTypes>
+				<PresetValue Value="9.9999997e-06">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB1" />
+				</PresetValue>
+				<PresetValue Value="50.000004">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB2" />
+				</PresetValue>
+				<PresetValue Value="99.999992">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB3" />
+				</PresetValue>
+			</ChannelTypes>
+		</Values>
+	</Preset>
+	<Preset index="39" name="Blue" preset_mode="Global" SpecialUse="Normal">
+		<Values>
+			<ChannelTypes>
+				<PresetValue Value="9.9999997e-06">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB1" />
+				</PresetValue>
+				<PresetValue Value="9.9999997e-06">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB2" />
+				</PresetValue>
+				<PresetValue Value="99.999992">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB3" />
+				</PresetValue>
+			</ChannelTypes>
+		</Values>
+	</Preset>
+	<Preset index="40" name="Violet" preset_mode="Global" SpecialUse="Normal">
+		<Values>
+			<ChannelTypes>
+				<PresetValue Value="50.000004">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB1" />
+				</PresetValue>
+				<PresetValue Value="9.9999997e-06">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB2" />
+				</PresetValue>
+				<PresetValue Value="99.999992">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB3" />
+				</PresetValue>
+			</ChannelTypes>
+		</Values>
+	</Preset>
+	<Preset index="41" name="Magenta" preset_mode="Global" SpecialUse="Normal">
+		<Values>
+			<ChannelTypes>
+				<PresetValue Value="99.999992">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB1" />
+				</PresetValue>
+				<PresetValue Value="9.9999997e-06">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB2" />
+				</PresetValue>
+				<PresetValue Value="99.999992">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB3" />
+				</PresetValue>
+			</ChannelTypes>
+		</Values>
+	</Preset>
+	<Preset index="42" name="Pink" preset_mode="Global" SpecialUse="Normal">
+		<Values>
+			<ChannelTypes>
+				<PresetValue Value="99.999992">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB1" />
+				</PresetValue>
+				<PresetValue Value="9.9999997e-06">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB2" />
+				</PresetValue>
+				<PresetValue Value="50.000004">
+					<ChannelType fixture_type="Helios Tube 42: RGB RGB - 8 Pixels - Strobe Off" module="1" attribute="COLORRGB3" />
+				</PresetValue>
+			</ChannelTypes>
+		</Values>
+	</Preset>
+</MA>

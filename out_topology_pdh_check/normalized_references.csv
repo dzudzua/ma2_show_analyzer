@@ -1,0 +1,10 @@
+owner_type,owner_id,kind,target,display,raw_reference,confidence,scope,fixture_id,channel_id,subfixture_id,patch_target_type,patch_target_id,patch_target_key,attribute,target_exists,source_path,source_file
+cue,cue:1:1:demo_main_sequences.xml:1,preset_ref,preset:1.5,1.5,Preset 1.5,0.85,inferred,102,,,fixture,102,fixture:102,Dimmer,True,Cue/Value,test_exports_xmlpatch\demo_main_sequences.xml
+cue,cue:1:1:demo_main_sequences.xml:1,preset_ref,preset:2.7,2.7,Preset 2.7,0.85,inferred,103,,,fixture,103,fixture:103,Position,True,Cue/Value,test_exports_xmlpatch\demo_main_sequences.xml
+cue,cue:1:1:demo_main_sequences.xml:1,preset_ref,preset:1.5,1.5,preset:1.5,1.0,explicit,,,,,,,,True,,test_exports_xmlpatch\demo_main_sequences.xml
+cue,cue:1:1:demo_main_sequences.xml:1,preset_ref,preset:2.7,2.7,preset:2.7,1.0,explicit,,,,,,,,True,,test_exports_xmlpatch\demo_main_sequences.xml
+cue,cue:1:1:demo_main_sequences.xml:1,sequence_ref,sequence:2,sequence:2,sequence:2,1.0,explicit,,,,,,,,False,,test_exports_xmlpatch\demo_main_sequences.xml
+cue,cue:1:2:demo_main_sequences.xml:2,effect_ref,effect:12,effect:12,Effect 12,0.85,inferred,102,,,fixture,102,fixture:102,Effect,True,Cue/Value,test_exports_xmlpatch\demo_main_sequences.xml
+cue,cue:1:2:demo_main_sequences.xml:2,group_ref,group:3,group:3,Group 3,0.85,inferred,103,,,fixture,103,fixture:103,GroupRef,True,Cue/Value,test_exports_xmlpatch\demo_main_sequences.xml
+cue,cue:1:2:demo_main_sequences.xml:2,group_ref,group:3,group:3,group:3,1.0,explicit,,,,,,,,True,,test_exports_xmlpatch\demo_main_sequences.xml
+cue,cue:1:2:demo_main_sequences.xml:2,effect_ref,effect:12,effect:12,effect:12,1.0,explicit,,,,,,,,True,,test_exports_xmlpatch\demo_main_sequences.xml

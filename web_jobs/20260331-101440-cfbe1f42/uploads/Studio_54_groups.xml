@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.malighting.de/grandma2/xml/MA" xsi:schemaLocation="http://schemas.malighting.de/grandma2/xml/MA http://schemas.malighting.de/grandma2/xml/3.9.61/MA.xsd" major_vers="3" minor_vers="9" stream_vers="61">
+	<Info datetime="2026-03-30T14:31:48" showfile="dekkadancers_studio54" />
+	<Group index="0" name="HelM1">
+		<Subfixtures>
+			<Subfixture fix_id="71" />
+			<Subfixture fix_id="72" />
+			<Subfixture fix_id="73" />
+			<Subfixture fix_id="74" />
+			<Subfixture fix_id="75" />
+			<Subfixture fix_id="76" />
+			<Subfixture fix_id="77" />
+			<Subfixture fix_id="78" />
+		</Subfixtures>
+	</Group>
+</MA>

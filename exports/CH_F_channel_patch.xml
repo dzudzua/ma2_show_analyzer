@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="styles/fixture+layer+layers@csv.xsl"?>
+<?xml-stylesheet type="text/xsl" href="styles/fixture+layer+layers@html@default.xsl" alternate="yes"?>
+<MA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.malighting.de/grandma2/xml/MA" xsi:schemaLocation="http://schemas.malighting.de/grandma2/xml/MA http://schemas.malighting.de/grandma2/xml/3.9.61/MA.xsd" major_vers="3" minor_vers="9" stream_vers="61">
+	<Info datetime="2026-03-30T11:38:23" showfile="graindma_zkusebni_export_patch" />
+	<Fixture index="0" name="Okno 1" channel_id="1">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>265</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="1" name="Okno 2" channel_id="2">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>266</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="2" name="Okno 3" channel_id="3">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>267</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="3" name="Okno 4" channel_id="4">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>268</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="4" name="Okno 5" channel_id="5">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>269</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="5" name="Dvere" channel_id="6">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>270</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="6" name="Dvere" channel_id="7">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>271</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="7" name="Dvere" channel_id="8">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>272</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="8" name="Dvere" channel_id="9">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>273</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="9" name="Dvere" channel_id="10">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>274</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="10" name="Dvere" channel_id="11">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>275</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+	<Fixture index="11" name="Dvere" channel_id="12">
+		<FixtureType name="2 Dimmer 00">
+			<No>2</No>
+		</FixtureType>
+		<SubFixture index="0" react_to_grandmaster="true" color="ffffff">
+			<Patch>
+				<Address>276</Address>
+			</Patch>
+			<AbsolutePosition>
+				<Location x="0" y="0" z="0" />
+				<Rotation x="0" y="-0" z="0" />
+				<Scaling x="1" y="1" z="1" />
+			</AbsolutePosition>
+			<Channel index="0" />
+		</SubFixture>
+	</Fixture>
+</MA>
