@@ -1,3 +1,0 @@
-[console_scripts]
-ma2showanalyzer = ma2showanalyzer.cli:main
-ma2showanalyzer-web = ma2showanalyzer.webapp:main
